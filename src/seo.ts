@@ -12,7 +12,7 @@ const DEFAULT_TITLE = 'OPH Lab | Declared OPH Paper Surface';
 const SITE_SUFFIX = ' | OPH Lab';
 
 const ROUTE_DESCRIPTIONS: Record<string, string> = {
-  '/': 'Explore the OPH zero-input fixed-point consensus surface: inspect the pixel fixed point P, the screen-capacity fixed-point target, gravity, de Sitter, electroweak comparison rows, Higgs/top, and tiered particle surfaces.',
+  '/': 'Explore the OPH zero-input fixed-point surface: inspect the pixel fixed point P, the screen-capacity fixed point N_CRC, the no-G scale certificate, gravity, de Sitter, the hierarchy bridge, Higgs/top, and tiered particle surfaces.',
   '/hints': 'Review the experimental and conceptual clues that motivate Observer Patch Holography as a deeper account of physical reality.',
   '/no-objective-reality': 'Explore the argument that physics should be built from observer-local descriptions instead of a single objective frame.',
   '/the-screen': 'Learn how OPH models reality on a holographic screen and uses local patches to recover spacetime structure as part of a concrete simulation-theory architecture.',

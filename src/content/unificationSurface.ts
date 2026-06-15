@@ -13,14 +13,14 @@ export type ExactBundleSection = {
 };
 
 export const LANDING_AUDIT_NOTES = [
-    'The landing page exposes the live descendants of the P fixed point and screen-capacity fixed-point target.',
-    'The particle surface includes an exact selected-class quark sextet, an exact same-family charged witness, weighted-cycle neutrino masses and splittings, and the D11 source-only Higgs/top split theorem.',
-    'The gravity-side local unification bundle uses the inverse G(P*) law and its downstream Lambda, de Sitter, and a0 descendants.',
+    'The landing page exposes the locked P fixed point, the N_CRC screen-capacity fixed point, and the selected no-G scale certificate.',
+    'The particle surface includes an exact selected-class quark sextet, an exact same-family charged witness, weighted-cycle neutrino masses and splittings, and the source-only Higgs/top split theorem.',
+    'The gravity-side bundle uses the scale-certificate Newton readout with downstream Lambda, de Sitter, and a0 descendants supplied by N_CRC.',
 ];
 
 export const LANDING_SCOPE_NOTES = [
-    'The live sliders are limited to rows with a published forward descendant law on the declared public surface.',
-    'The exact quark, charged-lepton, and neutrino bundles are shown separately because the papers do not publish one off-canonical slider family for every lane.',
+    'The first screen is a fixed-point dashboard. It does not expose a free universe configurator.',
+    'Off-point controls on later pages are formula-sensitivity diagnostics and stay separate from certified branch claims.',
 ];
 
 export const EXACT_BUNDLE_SECTIONS: ExactBundleSection[] = [
@@ -28,15 +28,15 @@ export const EXACT_BUNDLE_SECTIONS: ExactBundleSection[] = [
         id: 'structural-bosonic',
         title: 'Structural Zeros And Exact Bosonic Surface',
         scope: 'Structural exactness + calibration / compare-only sidecars',
-        note: 'These are the exact non-hadron rows on the declared paper surface: structural zeros, the exact frozen W/Z sidecar, and the exact source-only D11 split pair.',
+        note: 'These are the exact non-hadron rows on the declared paper surface: structural zeros, the exact frozen W/Z sidecar, and the exact source-only split pair.',
         rows: [
             { label: 'Photon', value: '0 GeV', note: 'Structural zero.' },
             { label: 'Gluon', value: '0 GeV', note: 'Structural zero.' },
             { label: 'Graviton', value: '0 GeV', note: 'Structural zero.' },
             { label: 'W boson', value: '80.377 GeV', note: 'Exact frozen authoritative repair surface.' },
             { label: 'Z boson', value: '91.18797809193725 GeV', note: 'Exact frozen authoritative repair surface.' },
-            { label: 'Higgs boson', value: '125.1995304097179 GeV', note: 'Exact D11 source-only split theorem.' },
-            { label: 'Top quark', value: '172.35235532883115 GeV', note: 'Exact D11 split companion; also carried by the selected-class quark theorem.' },
+            { label: 'Higgs boson', value: '125.1995304097179 GeV', note: 'Exact source-only split theorem.' },
+            { label: 'Top quark', value: '172.35235532883115 GeV', note: 'Exact split companion; also carried by the selected-class quark theorem.' },
         ],
     },
     {

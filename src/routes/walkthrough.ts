@@ -57,7 +57,7 @@ export const PART_COLORS: Record<PartId, string> = {
 
 export const WALKTHROUGH_STEPS: WalkthroughStep[] = [
     // Foundation
-    { to: '/', icon: BookOpen, label: 'Unification Test', part: 'foundation', seoTitle: 'Configure Your Universe | OPH Unification Test' },
+    { to: '/', icon: BookOpen, label: 'Fixed-Point Lab', part: 'foundation', seoTitle: 'OPH Fixed-Point Lab | Zero-Input Closure Surface' },
     { to: '/hints/', icon: Lightbulb, label: 'Five Hints', part: 'foundation', seoTitle: 'Five Experimental Hints That Reality Is Not What It Seems' },
     { to: '/no-objective-reality/', icon: Eye, label: 'No Objective Reality', part: 'foundation', seoTitle: 'Why There Is No Objective Reality | The 10 Hardest Questions in Physics' },
     { to: '/the-screen/', icon: Globe, label: 'The Holographic Screen', part: 'foundation', seoTitle: 'The Holographic Screen | How a 2D Sphere Creates 3D Spacetime' },

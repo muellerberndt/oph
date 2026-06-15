@@ -22,8 +22,8 @@ export function SynthesisPage() {
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Two Fixed Points, All of Physics</h3>
             <p style={{ marginBottom: '16px' }}>
-                OPH is formulated as a zero-input closure theory. Its two quantitative constants are closure-selected
-                values, not freely tuned parameters:
+                OPH is formulated as a zero-input closure theory. Its two quantitative constants are
+                closure-selected fixed-point values:
             </p>
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '16px', marginBottom: '24px' }}>
@@ -50,10 +50,10 @@ export function SynthesisPage() {
             </div>
 
             <p style={{ marginBottom: '16px' }}>
-                With the screen-capacity fixed point, Lambda = 3pi / (G N*) and the remaining public quantitative
-                surfaces are downstream readouts. The OPH paper set separates recovered
-                structural theorems, explicit branch-conditional results, closed calibration sectors, and open
-                continuation lanes.
+                With the screen-capacity fixed point, Lambda = 3pi / (G* N<sub>CRC</sub>), where G* is supplied by
+                the selected no-G scale certificate. The hierarchy bridge uses the exact electroweak capacity bridge
+                and the 24-tick repair lock. The OPH paper set separates recovered structural theorems, explicit
+                branch-conditional results, closed calibration sectors, and open continuation lanes.
             </p>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Six Surfaces, One Program</h3>

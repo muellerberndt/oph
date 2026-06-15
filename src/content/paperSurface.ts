@@ -124,7 +124,7 @@ export const CORE_PARAMETERS = [
         label: 'Local pixel fixed point',
         value: 'a_cell ~ 1.63 l_P^2',
         equation: 'P* = phi + sqrt(pi) / A_T(P*)',
-        note: 'Sets the local gravity and calibration scale through the unique outer/inner pixel closure.',
+        note: 'Sets the local observation and particle-side calibration scale through the unique outer/inner pixel closure.',
     },
     {
         label: 'Global capacity fixed point',

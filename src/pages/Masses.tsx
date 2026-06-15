@@ -166,9 +166,9 @@ export function MassesPage() {
                     In the bosonic calibration sector, W/Z sit on the public electroweak repair
                     surface. Higgs/top sit on the source-only Higgs/top split surface. The exact
                     inverse pair is a check surface.
-                    The canonical published bosonic surface uses P = {formatPixelConstant(PIXEL_REFERENCE)}; the interactive
-                    readout below shows how the same bosonic formulas respond if you move that one
-                    shared pixel input.
+                    The canonical published bosonic surface uses P = {formatPixelConstant(PIXEL_REFERENCE)}. The
+                    sensitivity panel below moves the source coordinate away from that certified fixed point and reports
+                    the formula response as a diagnostic.
                 </p>
             </div>
 
@@ -183,7 +183,7 @@ export function MassesPage() {
             </div>
 
             <div className="demo-container">
-                <div className="demo-label">Interactive Bosonic Surface From P</div>
+                <div className="demo-label">Diagnostic Bosonic Surface Around P*</div>
 
                 <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '14px' }}>
                     <button
@@ -196,15 +196,14 @@ export function MassesPage() {
                 </div>
 
                 <p style={{ marginTop: 0, marginBottom: '14px' }}>
-                    Default P = <strong>{formatPixelConstant(PIXEL_REFERENCE)}</strong> reproduces the published
-                    bosonic candidate surface. Moving the slider below evaluates the same bosonic
-                    formulas off that canonical point. It is a branch readout on the same public
-                    surface.
+                    P* = <strong>{formatPixelConstant(PIXEL_REFERENCE)}</strong> is the published fixed point. Moving
+                    the slider evaluates the same bosonic formulas off that point. Treat the result as sensitivity data,
+                    not as a generated branch of OPH.
                 </p>
 
                 <div style={{ marginBottom: '18px' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.82em' }}>
-                        <span style={{ color: 'var(--accent-gold)' }}>Pixel constant P = a_cell / l_P^2</span>
+                        <span style={{ color: 'var(--accent-gold)' }}>diagnostic P coordinate</span>
                         <span style={{ color: 'var(--accent-cyan)' }}>
                             {formatPixelConstant(pixelConstant)} ({pixelConstant >= PIXEL_REFERENCE ? '+' : ''}
                             {formatPixelConstant(pixelConstant - PIXEL_REFERENCE)} vs canonical)
@@ -265,7 +264,7 @@ export function MassesPage() {
                             <div style={{ fontSize: '0.76em', color: 'var(--text-muted)', marginBottom: '6px' }}>
                                 {row.tier === 'structural'
                                     ? 'Invariant under P on the structural lane.'
-                                    : `Delta from canonical P = ${formatPixelConstant(PIXEL_REFERENCE)}: ${formatSignedMass(row.deltaGeV)}`}
+                                    : `Delta from fixed P* = ${formatPixelConstant(PIXEL_REFERENCE)}: ${formatSignedMass(row.deltaGeV)}`}
                             </div>
                             <div style={{ fontSize: '0.8em', color: 'var(--text-secondary)' }}>{row.note}</div>
                         </div>
@@ -310,7 +309,7 @@ export function MassesPage() {
                 </div>
             </div>
 
-            <Explainer title="Why only some rows move with P">
+            <Explainer title="Why the diagnostic moves some rows">
                 <p>
                     The particle paper makes a sharp split. Photon, gluons, and graviton are structural zeros on the
                     realized gauge/gravity branch, so their masses stay exactly zero. W and Z sit
@@ -318,11 +317,10 @@ export function MassesPage() {
                     source-only Higgs/top split surface fed by the same gauge core.
                 </p>
                 <p>
-                    That is why changing P moves the bosonic rows but not the massless structural
-                    rows. It does not say the entire matter sector closes from P on the declared
-                    surface. Charged leptons and the full quark story away from the public frame
-                    sit on separate surfaces; hadrons are closed out-of-scope until an OPH
-                    hadron backend exists.
+                    The diagnostic changes the source coordinate used by those formulas, so the bosonic rows move while
+                    the massless structural rows stay fixed. The certified branch remains the fixed-point value P*.
+                    Charged leptons and the full quark story away from the public frame sit on separate surfaces;
+                    hadrons require an OPH hadron backend.
                 </p>
             </Explainer>
         </div>

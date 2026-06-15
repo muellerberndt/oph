@@ -1,5 +1,6 @@
 import { Explainer } from '../components/Explainer';
 import { BOSON_PUBLIC_ROWS, PARTICLE_LANE_STATUS, STANDARD_MODEL_SURFACE } from '../content/paperSurface';
+import { SCREEN_CAPACITY_REFERENCE_DISPLAY } from '../core/ophMath';
 
 export function QftEmergesPage() {
     return (
@@ -156,7 +157,7 @@ export function QftEmergesPage() {
                         <li>T6: directed colimit of transportable edge sectors with objectwise finite-dimensional fibers</li>
                     </ul>
                     <div style={{ marginTop: '12px', padding: '8px', background: 'rgba(0,0,0,0.2)', fontSize: '0.9em' }}>
-                        <strong>Current quantitative fixed points on the public surface</strong>
+                        <strong>Quantitative fixed points on the public surface</strong>
                         <div style={{ color: 'var(--text-muted)', marginTop: '4px' }}>
                             P (pixel closure) and N<sub>CRC</sub> (cosmic record capacity); both are fixed-point values, with local and cosmological descendants downstream.
                         </div>
@@ -169,7 +170,7 @@ export function QftEmergesPage() {
                 Quantum field theory is an <strong>effective continuum limit</strong> of the screen algebra when:
             </p>
             <ul style={{ paddingLeft: '20px', lineHeight: '1.8', marginBottom: '16px' }}>
-                <li>The number of pixels is large (N &sim; 10<sup>122</sup>)</li>
+                <li>The number of pixels is large (N<sub>CRC</sub> &asymp; {SCREEN_CAPACITY_REFERENCE_DISPLAY})</li>
                 <li>The curvature scale is much larger than the Planck length (L &gt;&gt; l<sub>P</sub>)</li>
                 <li>The observables are "coarse-grained" over many pixels</li>
             </ul>
@@ -206,8 +207,8 @@ export function QftEmergesPage() {
                     <li><strong>Chain 2 (QFT):</strong> Emphasizes overlap consistency, gauge-as-gluing, then R0/R1/T1 with MAR and T4-T6 for compact gauge reconstruction. Result: the structural Standard Model branch plus downstream continuation lanes.</li>
                 </ul>
                 <p>
-                    The two chains are not independent: they share the same screen and foundational structure. MAR
-                    is the extended-theory selector that resolves admissible branches in Chain 2.
+                    The two chains share the same screen and foundational structure. MAR is the extended-theory
+                    selector that resolves admissible branches in Chain 2.
                 </p>
                 <p>
                     Synthesis page shows how they combine into a unified picture.
@@ -219,10 +220,10 @@ export function QftEmergesPage() {
                     Chain 2 separates a strong structural core from several matter-sector boundaries:
                 </p>
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
-                    <li>Quarks carry a maximal theorem-emitted structure on the declared ledger: the D12 mass ray, the negative selector <code>sigma_ref</code>, and a restricted-scope affine mean structure; the exact minimal extension above that structure is the triple <code>H_mass</code>, <code>H_phys</code>, and <code>H_abs</code></li>
-                    <li>Charged-lepton centered-operator promotion and the later affine descent to &mu;<sub>phys</sub>(Y<sub>e</sub>)</li>
+                    <li>Quarks carry the selected-class exact public sextet on one physical frame fixed by P. A full classification of all quark frames is separate.</li>
+                    <li>Charged leptons carry an exact same-family readback. The source landing to full physical charged masses is work in progress.</li>
                     <li>Neutrino theorem pair emitted on the weighted-cycle branch; exact adapters serve as diagnostic-only readouts beneath that branch</li>
-                    <li>Higgs/top proof structure and scope discipline around the closed D11 source-only split theorem</li>
+                    <li>Higgs/top proof structure and scope discipline around the closed source-only split theorem</li>
                     <li>Hadron backend / compute-bound closure</li>
                 </ul>
                 <p>

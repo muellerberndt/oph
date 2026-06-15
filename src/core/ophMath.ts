@@ -23,11 +23,14 @@ export const GRAVITATIONAL_CONSTANT_REFERENCE_SI = 6.674299995910528e-11;
 
 export const PIXEL_REFERENCE = 1.630968209403959;
 export const PIXEL_DISPLAY_DIGITS = 6;
-export const SCREEN_CAPACITY_REFERENCE_LOG10 = 122;
+export const SCREEN_CAPACITY_REFERENCE_DISPLAY = '3.31e122';
+export const SCREEN_CAPACITY_REFERENCE_LOG10 = 122.51982799377572;
+export const ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY = '3.5323546226929907e122';
+export const ELECTROWEAK_BRIDGE_CAPACITY_LOG10 = 122.5480642970991;
 export const PIXEL_UI_MIN = 0.8;
 export const PIXEL_UI_MAX = 3.2;
-export const SCREEN_CAPACITY_UI_MIN = 112;
-export const SCREEN_CAPACITY_UI_MAX = 132;
+export const SCREEN_CAPACITY_UI_MIN = 120.5;
+export const SCREEN_CAPACITY_UI_MAX = 124.5;
 export const ALPHA_U_REFERENCE = 0.04112;
 export const LAMBDA_REFERENCE_M2 = 1.09e-52;
 export const EPSILON_Z6 = 1 / 6;
@@ -47,6 +50,15 @@ export function formatPixelConstant(value: number): string {
         return 'n/a';
     }
     return value.toFixed(PIXEL_DISPLAY_DIGITS);
+}
+
+export function formatScreenCapacityLog(value: number): string {
+    if (!Number.isFinite(value)) {
+        return 'n/a';
+    }
+    const exponent = Math.floor(value);
+    const mantissa = Math.pow(10, value - exponent);
+    return `${mantissa.toFixed(3)}e${exponent}`;
 }
 
 export const BETA_COEFFICIENTS_MSSM_LIKE: [number, number, number] = [33 / 5, 1, -3];
@@ -624,23 +636,26 @@ export function deriveD11ForwardSeed(
 }
 
 // Paper reference:
-// reverse-engineering-reality/README.md, "Local Unification Surface".
-// The SI readout is G_SI = c^3 a_cell / (hbar P) at fixed microscopic a_cell.
-// Holding a_cell fixed gives the normalized lab form G(P) = G_ref * P_ref / P.
-export function newtonConstantFromPixel(pixelConstant: number): number {
-    return GRAVITATIONAL_CONSTANT_REFERENCE_SI * (PIXEL_REFERENCE / Math.max(pixelConstant, 0.2));
+// reverse-engineering-reality/README.md, "Geometry, Symmetry, and Simulators".
+// The Newton row is supplied by the selected no-G scale certificate. The local
+// P factor cancels in the Newton area-law readout, leaving G_geom = ell_*^2.
+export function newtonConstantFromScaleCertificate(): number {
+    return GRAVITATIONAL_CONSTANT_REFERENCE_SI;
+}
+
+export function newtonConstantFromPixel(_pixelConstant: number): number {
+    return newtonConstantFromScaleCertificate();
 }
 
 // Paper reference:
 // reverse-engineering-reality/paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.tex
 // Corollary "Cosmological Constant from Capacity":
 // Lambda_CRC = 3 pi / (G N_CRC), with N_CRC the de Sitter record-capacity fixed point.
-// Combining that relation with the fixed-a_cell gravity readout gives the normalized
-// lab form Lambda(P, N_CRC) = Lambda_ref * (P / P_ref) * 10^(122 - log10 N_CRC).
-export function lambdaFromScreen(pixelConstant: number, logCapacityBase10: number): number {
-    const pixelScale = Math.max(pixelConstant, 0.2) / PIXEL_REFERENCE;
+// The SI G normalization is supplied separately by the selected no-G scale
+// certificate, so this lab readout depends on the capacity coordinate only.
+export function lambdaFromScreen(_pixelConstant: number, logCapacityBase10: number): number {
     const capacityScale = Math.pow(10, SCREEN_CAPACITY_REFERENCE_LOG10 - logCapacityBase10);
-    return LAMBDA_REFERENCE_M2 * pixelScale * capacityScale;
+    return LAMBDA_REFERENCE_M2 * capacityScale;
 }
 
 export function hubbleFromLambda(lambdaM2: number): number {

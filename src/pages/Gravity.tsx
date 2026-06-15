@@ -3,11 +3,10 @@ import { Explainer } from '../components/Explainer';
 import { GRAVITY_SURFACE } from '../content/paperSurface';
 import {
     PIXEL_REFERENCE,
-    PIXEL_UI_MAX,
-    PIXEL_UI_MIN,
-    SCREEN_CAPACITY_UI_MAX,
-    SCREEN_CAPACITY_UI_MIN,
+    SCREEN_CAPACITY_REFERENCE_DISPLAY,
+    SCREEN_CAPACITY_REFERENCE_LOG10,
     deSitterRadiusFromLambda,
+    formatPixelConstant,
     lambdaFromScreen,
 } from '../core/ophMath';
 import { useLabSetting, useLabState } from '../state/labState';
@@ -20,8 +19,6 @@ function formatNumber(value: number, digits = 3) {
 }
 
 export function GravityPage() {
-    const [pixelConstant, setPixelConstant] = useLabSetting('gravity.pixelConstant');
-    const [logCapacity, setLogCapacity] = useLabSetting('gravity.logCapacity');
     const [nullEnergy, setNullEnergy] = useLabSetting('gravity.nullEnergy');
     const [curvatureResponse, setCurvatureResponse] = useLabSetting('gravity.curvatureResponse');
     const [stripWeight, setStripWeight] = useLabSetting('gravity.stripWeight');
@@ -29,8 +26,8 @@ export function GravityPage() {
     const { resetKeys } = useLabState();
 
     const derivation = useMemo(() => {
-        const gRatio = PIXEL_REFERENCE / pixelConstant;
-        const lambda = lambdaFromScreen(pixelConstant, logCapacity);
+        const gRatio = 1;
+        const lambda = lambdaFromScreen(PIXEL_REFERENCE, SCREEN_CAPACITY_REFERENCE_LOG10);
         const deSitterRadius = deSitterRadiusFromLambda(lambda);
 
         const effectiveWeight = stripWeight * nullGenerators;
@@ -53,13 +50,13 @@ export function GravityPage() {
             deltaSGen,
             einsteinResidual: trialRkk - einsteinTarget,
         };
-    }, [curvatureResponse, logCapacity, nullEnergy, nullGenerators, pixelConstant, stripWeight]);
+    }, [curvatureResponse, nullEnergy, nullGenerators, stripWeight]);
 
     const stepCards = [
         {
             title: 'Step 1: Null-sheet area response',
-            equation: 'delta(A/4G_eff) = -(W / 4G_eff) * R_kk',
-            value: `delta(A/4G_eff) = ${derivation.deltaSArea.toFixed(6)}`,
+            equation: 'delta(A/4G_*) = -(W / 4G_*) * R_kk',
+            value: `delta(A/4G_*) = ${derivation.deltaSArea.toFixed(6)}`,
             concept: 'Raychaudhuri area variation on local null strips',
         },
         {
@@ -70,25 +67,25 @@ export function GravityPage() {
         },
         {
             title: 'Step 3: Entanglement equilibrium condition',
-            equation: 'delta(S_gen) = delta(A/4G_eff) + delta(S_bulk)',
+            equation: 'delta(S_gen) = delta(A/4G_*) + delta(S_bulk)',
             value: `delta(S_gen) = ${derivation.deltaSGen.toFixed(6)}`,
             concept: 'Fixed-cap stationarity target is zero on the admissible variation class',
         },
         {
             title: 'Step 4: Rest-frame Einstein relation',
-            equation: 'R_kk ?= 8pi G_eff T_kk',
+            equation: 'R_kk ?= 8pi G_* T_kk',
             value: `R_kk = ${derivation.trialRkk.toFixed(6)}, target = ${derivation.einsteinTarget.toFixed(6)}`,
             concept: 'Null-stress bridge plus stationarity fixes the local scalar relation on the stated branch',
         },
         {
             title: 'Step 5: Tensor reconstruction (up to Lambda g_ab)',
-            equation: 'G_ab + Lambda g_ab - 8pi G_eff<T_ab> = 0',
+            equation: 'G_ab + Lambda g_ab - 8pi G_*<T_ab> = 0',
             value: `Null residual = ${derivation.einsteinResidual.toExponential(3)}`,
             concept: 'Null data fix the tensor only up to the null-invisible metric term',
         },
         {
             title: 'Step 6: Global completion',
-            equation: 'N_CRC = F(N_CRC), Lambda_CRC = 3pi / (G_eff N_CRC)',
+            equation: 'N_CRC = F(N_CRC), Lambda_CRC = 3pi / (G_* N_CRC)',
             value: `Lambda = ${formatNumber(derivation.lambda, 2)} m^-2`,
             concept: 'Self-closure capacity fixed point closes the Lambda ambiguity',
         },
@@ -108,7 +105,7 @@ export function GravityPage() {
             </p>
 
             <div className="card" style={{ marginBottom: '20px', borderLeft: '3px solid var(--accent-cyan)' }}>
-                <h3 style={{ margin: '0 0 10px 0', fontSize: '0.95em' }}>Current gravity audit</h3>
+                <h3 style={{ margin: '0 0 10px 0', fontSize: '0.95em' }}>Gravity audit</h3>
                 <div style={{ display: 'grid', gap: '8px' }}>
                     {GRAVITY_SURFACE.map((item) => (
                         <div key={item} style={{ fontSize: '0.82em', color: 'var(--text-secondary)' }}>
@@ -121,37 +118,16 @@ export function GravityPage() {
             <div className="demo-container">
                 <div className="demo-label">Interactive Einstein Derivation (Expanded)</div>
 
+                <div className="card" style={{ padding: '14px', marginBottom: '18px', background: 'rgba(0,0,0,0.18)', borderLeft: '3px solid var(--accent-gold)' }}>
+                    <h3 style={{ margin: '0 0 8px 0', fontSize: '0.9em' }}>Locked OPH scale inputs</h3>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(190px, 1fr))', gap: '10px', fontSize: '0.8em', color: 'var(--text-secondary)' }}>
+                        <div><strong>P*</strong>: {formatPixelConstant(PIXEL_REFERENCE)}</div>
+                        <div><strong>N<sub>CRC</sub></strong>: {SCREEN_CAPACITY_REFERENCE_DISPLAY}</div>
+                        <div><strong>G*</strong>: selected no-G scale certificate</div>
+                    </div>
+                </div>
+
                 <div style={{ display: 'grid', gap: '14px', marginBottom: '18px' }}>
-                    <div>
-                        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.82em' }}>
-                            <span style={{ color: 'var(--accent-gold)' }}>Pixel constant P = a_cell / l_P^2</span>
-                            <span style={{ color: 'var(--accent-cyan)' }}>{pixelConstant.toFixed(4)}</span>
-                        </div>
-                        <input
-                            type="range"
-                            min={PIXEL_UI_MIN}
-                            max={PIXEL_UI_MAX}
-                            step="0.01"
-                            value={pixelConstant}
-                            onChange={event => setPixelConstant(Number(event.target.value))}
-                        />
-                    </div>
-
-                    <div>
-                        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.82em' }}>
-                            <span style={{ color: 'var(--accent-gold)' }}>log10 N_CRC</span>
-                            <span style={{ color: 'var(--accent-cyan)' }}>{logCapacity.toFixed(2)}</span>
-                        </div>
-                        <input
-                            type="range"
-                            min={SCREEN_CAPACITY_UI_MIN}
-                            max={SCREEN_CAPACITY_UI_MAX}
-                            step="0.1"
-                            value={logCapacity}
-                            onChange={event => setLogCapacity(Number(event.target.value))}
-                        />
-                    </div>
-
                     <div>
                         <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.82em' }}>
                             <span style={{ color: 'var(--accent-gold)' }}>Null stress flux T_kk</span>
@@ -221,8 +197,6 @@ export function GravityPage() {
                         className="btn btn-ghost"
                         onClick={() =>
                             resetKeys([
-                                'gravity.pixelConstant',
-                                'gravity.logCapacity',
                                 'gravity.nullEnergy',
                                 'gravity.stripWeight',
                                 'gravity.nullGenerators',
@@ -237,7 +211,7 @@ export function GravityPage() {
 
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr))', gap: '10px' }}>
                     <div className="card" style={{ padding: '12px' }}>
-                        <div style={{ fontSize: '0.72em', color: 'var(--text-muted)' }}>G_eff / G_ref</div>
+                        <div style={{ fontSize: '0.72em', color: 'var(--text-muted)' }}>G* / G_ref</div>
                         <div style={{ color: 'var(--accent-cyan)', fontWeight: 700 }}>{derivation.gRatio.toFixed(4)}</div>
                     </div>
                     <div className="card" style={{ padding: '12px' }}>
@@ -288,7 +262,7 @@ export function GravityPage() {
             <div className="card" style={{ borderLeft: '3px solid var(--accent-blue)', marginBottom: '18px' }}>
                 <h4 style={{ marginTop: 0, fontSize: '0.86em' }}>Symbol Dictionary</h4>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '8px', fontSize: '0.78em' }}>
-                    <div><strong>G_eff</strong>: effective gravitational scale ratio from P.</div>
+                    <div><strong>G*</strong>: gravitational scale from the selected no-G scale certificate.</div>
                     <div><strong>T_kk</strong>: null-projected stress tensor flux through the local horizon strip.</div>
                     <div><strong>R_kk</strong>: null-projected Ricci response of local geometry.</div>
                     <div><strong>W</strong>: sampled strip weight across null generators.</div>
@@ -321,10 +295,9 @@ export function GravityPage() {
 
             <Explainer title="How P and N_CRC enter">
                 <p>
-                    P is the local pixel fixed point and changes the effective gravitational and entropy scales in this
-                    toy readout. The N_CRC record-capacity fixed point changes only the global Lambda completion.
-                    This split matches the declared OPH paper surface, where the local gravity branch and the
-                    cosmological-capacity branch are distinct.
+                    P is the local pixel fixed point on the observation and particle side. In the Newton row its
+                    factor cancels, leaving the scale certificate to supply G. The N_CRC record-capacity fixed point
+                    fixes the global Lambda completion. This split matches the declared OPH paper surface.
                 </p>
             </Explainer>
 

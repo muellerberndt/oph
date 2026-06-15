@@ -1,8 +1,13 @@
 import { Explainer } from '../components/Explainer';
 import {
     PIXEL_REFERENCE,
+    SCREEN_CAPACITY_REFERENCE_DISPLAY,
+    SCREEN_CAPACITY_REFERENCE_LOG10,
+    SCREEN_CAPACITY_UI_MAX,
+    SCREEN_CAPACITY_UI_MIN,
     deSitterRadiusFromLambda,
     formatPixelConstant,
+    formatScreenCapacityLog,
     gibbonsHawkingTemperatureFromHubble,
     hubbleFromLambda,
     lambdaFromScreen,
@@ -18,6 +23,7 @@ export function DeSitterPage() {
     const TdS = gibbonsHawkingTemperatureFromHubble(H);
     const rH = deSitterRadiusFromLambda(lambda);
     const SBH = Math.pow(10, logDimH);
+    const isClosurePoint = Math.abs(logDimH - SCREEN_CAPACITY_REFERENCE_LOG10) < 0.005;
 
     return (
         <div>
@@ -54,7 +60,7 @@ export function DeSitterPage() {
             <p style={{ marginBottom: '8px' }}>
                 OPH is formulated as zero-input closure: after the local gravity branch leaves the separate metric
                 ambiguity, the global capacity fixed point is the cosmic record-closure readback fixed point. In the lab
-                we hold the reference pixel normalization fixed at P = {formatPixelConstant(PIXEL_REFERENCE)} and scan the
+                we hold the reference pixel normalization fixed at P = {formatPixelConstant(PIXEL_REFERENCE)} and show the
                 global capacity descendant:
             </p>
             <div className="math-block" style={{ fontSize: '1.1em' }}>
@@ -62,7 +68,7 @@ export function DeSitterPage() {
                 &nbsp;&Lambda;<sub>CRC</sub> = 3&pi; / (G N<sub>CRC</sub>)
             </div>
             <p style={{ marginBottom: '16px' }}>
-                With N<sub>CRC</sub> &asymp; 3.31 x 10<sup>122</sup> (in natural units), this gives the observed
+                With N<sub>CRC</sub> = {SCREEN_CAPACITY_REFERENCE_DISPLAY} (in natural units), this gives the observed
                 value of &Lambda; &asymp; 10<sup>&minus;52</sup> m<sup>&minus;2</sup>. Informally,
                 N<sub>CRC</sub> is the unique point where outside total horizon capacity and inside observer-accessible
                 public record capacity agree. Observers inside infer geometry, horizons, entropy, &Lambda;, history,
@@ -84,10 +90,10 @@ export function DeSitterPage() {
             </p>
 
             <div className="demo-container">
-                <div className="demo-label">Calculator: De Sitter Parameters from N_CRC</div>
+                <div className="demo-label">Diagnostic: De Sitter Parameters Around N_CRC</div>
                 <p style={{ fontSize: '0.85em', color: 'var(--text-muted)', marginBottom: '16px' }}>
-                    Adjust log<sub>10</sub>(N<sub>CRC</sub>) and see how the cosmological
-                    parameters change.
+                    Move the diagnostic capacity coordinate to see formula sensitivity. The OPH branch is the fixed
+                    point N<sub>CRC</sub> = {SCREEN_CAPACITY_REFERENCE_DISPLAY}.
                 </p>
 
                 <div style={{ marginBottom: '16px' }}>
@@ -97,26 +103,26 @@ export function DeSitterPage() {
                             style={{ fontSize: '0.72em', padding: '4px 10px' }}
                             onClick={() => resetKeys(['deSitter.logDimH'])}
                         >
-                            Reset to Observed 10^122
+                            Reset to N_CRC
                         </button>
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.85em', marginBottom: '4px' }}>
-                        <span style={{ color: 'var(--accent-gold)' }}>log<sub>10</sub>(N<sub>CRC</sub>)</span>
-                        <span style={{ color: 'var(--accent-cyan)', fontWeight: 700 }}>10<sup>{logDimH}</sup></span>
+                        <span style={{ color: 'var(--accent-gold)' }}>diagnostic log<sub>10</sub>(N)</span>
+                        <span style={{ color: 'var(--accent-cyan)', fontWeight: 700 }}>{formatScreenCapacityLog(logDimH)}</span>
                     </div>
                     <input
                         type="range"
-                        min="100"
-                        max="140"
-                        step="1"
+                        min={SCREEN_CAPACITY_UI_MIN}
+                        max={SCREEN_CAPACITY_UI_MAX}
+                        step="0.01"
                         value={logDimH}
-                        onChange={e => setLogDimH(parseInt(e.target.value))}
+                        onChange={e => setLogDimH(parseFloat(e.target.value))}
                         style={{ width: '100%' }}
                     />
                     <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.7em', color: 'var(--text-muted)' }}>
-                        <span>10<sup>100</sup></span>
-                        <span>10<sup>122</sup> (observed)</span>
-                        <span>10<sup>140</sup></span>
+                        <span>{formatScreenCapacityLog(SCREEN_CAPACITY_UI_MIN)}</span>
+                        <span>{SCREEN_CAPACITY_REFERENCE_DISPLAY} fixed point</span>
+                        <span>{formatScreenCapacityLog(SCREEN_CAPACITY_UI_MAX)}</span>
                     </div>
                 </div>
 
@@ -163,10 +169,10 @@ export function DeSitterPage() {
                     </div>
                     <div style={{ padding: '12px', background: 'rgba(0,0,0,0.2)', border: '1px solid var(--border-color)' }}>
                         <div style={{ fontSize: '0.7em', textTransform: 'uppercase', color: 'var(--text-muted)', marginBottom: '4px' }}>
-                            Match to Observed?
+                            Closure Status
                         </div>
-                        <div style={{ fontSize: '1em', color: Math.abs(logDimH - 122) <= 2 ? 'var(--accent-green)' : 'var(--accent-rose)', fontWeight: 700 }}>
-                            {Math.abs(logDimH - 122) <= 2 ? 'YES' : 'NO'}
+                        <div style={{ fontSize: '1em', color: isClosurePoint ? 'var(--accent-green)' : 'var(--accent-rose)', fontWeight: 700 }}>
+                            {isClosurePoint ? 'fixed point' : 'off-closure diagnostic'}
                         </div>
                     </div>
                 </div>
@@ -174,8 +180,9 @@ export function DeSitterPage() {
 
             <Explainer title="De Sitter entropy and the total bit count">
                 <p>
-                    The de Sitter horizon entropy S<sub>dS</sub> = A<sub>H</sub>/(4l<sub>P</sub>&sup2;) &asymp;
-                    10<sup>122</sup> is the observed-branch total public record capacity for a single observer.
+                    The de Sitter horizon entropy S<sub>dS</sub> = A<sub>H</sub>/(4l<sub>P</sub>&sup2;) is
+                    {SCREEN_CAPACITY_REFERENCE_DISPLAY} on the observed branch. It is the total public record capacity
+                    for a single observer.
                     In OPH this is the cosmic record-closure fixed point N<sub>CRC</sub> = F(N<sub>CRC</sub>):
                     the single screen size where outside horizon capacity and inside observer-readable record
                     capacity agree. The normalized self-closing observer-form count is the finite-count
@@ -183,7 +190,7 @@ export function DeSitterPage() {
                 </p>
                 <p>
                     This gives an entirely different perspective on the "largeness" of the universe. The universe
-                    is large because the screen has &sim;10<sup>122</sup> Planck-area pixels. This is one large
+                    is large because the screen has &sim;{SCREEN_CAPACITY_REFERENCE_DISPLAY} Planck-area pixels. This is one large
                     number that sets the scale.
                 </p>
             </Explainer>

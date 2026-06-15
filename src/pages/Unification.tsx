@@ -4,6 +4,7 @@ import { STANDARD_MODEL_SURFACE } from '../content/paperSurface';
 import {
     BETA_COEFFICIENTS_MSSM_LIKE,
     BETA_COEFFICIENTS_SM_1LOOP,
+    PIXEL_REFERENCE,
     PIXEL_UI_MAX,
     PIXEL_UI_MIN,
     formatPixelConstant,
@@ -104,7 +105,8 @@ export function UnificationPage() {
 
             <p style={{ marginBottom: '16px' }}>
                 This page follows the supplement derivation directly: choose an edge-running model, solve the pixel
-                closure for <strong>alpha_U</strong>, then inspect one-loop running at any scale.
+                closure for <strong>alpha_U</strong>, then inspect one-loop running at any scale. The certified OPH
+                branch uses P* = {formatPixelConstant(PIXEL_REFERENCE)}; the P slider is a sensitivity coordinate.
             </p>
 
             <div className="card" style={{ marginBottom: '20px', borderLeft: '3px solid var(--accent-cyan)' }}>
@@ -191,8 +193,11 @@ export function UnificationPage() {
 
                     <div>
                         <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.82em' }}>
-                            <span style={{ color: 'var(--accent-gold)' }}>Pixel constant P = a_cell / l_P^2</span>
-                            <span style={{ color: 'var(--accent-cyan)' }}>{formatPixelConstant(pixelConstant)}</span>
+                            <span style={{ color: 'var(--accent-gold)' }}>diagnostic P coordinate</span>
+                            <span style={{ color: 'var(--accent-cyan)' }}>
+                                {formatPixelConstant(pixelConstant)}
+                                {Math.abs(pixelConstant - PIXEL_REFERENCE) < 0.0005 ? ' fixed point' : ' off-closure'}
+                            </span>
                         </div>
                         <input
                             type="range"
@@ -314,7 +319,7 @@ export function UnificationPage() {
                     M_U = (E_P / e^(2pi)) * P^(1/6)
                 </div>
                 <div style={{ fontSize: '0.82em', color: 'var(--text-secondary)' }}>
-                    M_U = {formatNumber(closure.unificationScaleGeV, 3)} GeV from P = {formatPixelConstant(pixelConstant)}
+                    M_U = {formatNumber(closure.unificationScaleGeV, 3)} GeV from diagnostic P = {formatPixelConstant(pixelConstant)}
                 </div>
             </div>
 
@@ -370,7 +375,7 @@ export function UnificationPage() {
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '8px', fontSize: '0.78em' }}>
                     <div><strong>b_i</strong>: one-loop beta coefficients for U(1), SU(2), SU(3).</div>
                     <div><strong>Delta b_i</strong>: edge-sector shift relative to SM one-loop running.</div>
-                    <div><strong>P</strong>: pixel constant controlling M_U and closure target P/4.</div>
+                    <div><strong>P</strong>: unique pixel fixed point; this page uses a diagnostic coordinate around P*.</div>
                     <div><strong>lbar_SU2/lbar_SU3</strong>: edge entropy means from heat-kernel sums.</div>
                     <div><strong>alpha_U</strong>: unified coupling solved by entropy closure, not fit directly.</div>
                     <div><strong>mu</strong>: probe scale where running couplings are evaluated.</div>

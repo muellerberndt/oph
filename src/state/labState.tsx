@@ -136,7 +136,7 @@ export const LAB_DEFAULT_SETTINGS: LabSettingMap = {
     'landing.pixelConstant': PIXEL_REFERENCE,
     'landing.logCapacity': SCREEN_CAPACITY_REFERENCE_LOG10,
 
-    'deSitter.logDimH': 122,
+    'deSitter.logDimH': SCREEN_CAPACITY_REFERENCE_LOG10,
     'darkMatter.logMass': 11,
     'darkMatter.a0Multiplier': 1.0,
 
@@ -288,7 +288,7 @@ function toLabExport(settings: LabSettingMap): LabExportPayload {
             deSitterRadius: gravityDeSitterRadius,
             hubble: gravityHubble,
             gSi: newtonConstantFromPixel(gravityPixel),
-            gRatio: PIXEL_REFERENCE / gravityPixel,
+            gRatio: 1,
         },
         masses: {
             alphaU: massesClosure.alphaU,
@@ -334,7 +334,7 @@ function toLabExport(settings: LabSettingMap): LabExportPayload {
             ncOddPass: standardNc % 2 === 1,
         },
         metadata: {
-            basis: 'Latest OPH Lab simulation state',
+            basis: 'OPH Lab fixed-point surface state',
             canonicalDefaults: deepClone(LAB_DEFAULT_SETTINGS),
         },
     };
