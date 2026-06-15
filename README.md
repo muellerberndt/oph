@@ -21,9 +21,23 @@ Research status is controlled from the sibling `reverse-engineering-reality/` re
 
 When the paper status changes, update those sources first, then sync the OPH Lab copy.
 
-## Research Status
+## Paper Surface Summary
 
 This section is the lab-maintainer summary of the public paper surface.
+
+### Fixed-point and scale surface
+
+- The landing page is a fixed-point dashboard, not a universe configurator.
+- The two quantitative OPH constants are the local pixel fixed point
+  `P = 1.630968209403959` and the cosmic record-capacity fixed point
+  `N_CRC = 3.31e122`.
+- The electroweak hierarchy bridge uses the exact bridge capacity
+  `N_EW(P*) = 3.5323546226929907e122` and the representation-to-spectrum
+  repair count `2(8 + 3 + 1) = 24`.
+- `G_SI` comes from the selected no-G scale certificate. The Newton row must
+  stay separate from variable P-slider diagnostics.
+- Off-point controls in the app are formula-sensitivity diagnostics. They are
+  separate from certified branch claims.
 
 ### Gravity / Lorentz branch
 
@@ -55,35 +69,25 @@ This section is the lab-maintainer summary of the public paper surface.
   - gluons
   - graviton
 - Electroweak:
-  - `W/Z` are compare-only frozen-adapter rows until the candidate `P` root,
-    Ward-projected Thomson endpoint, and RG/matching certificates close.
+  - `W/Z` are closed public rows on the electroweak repair surface.
 - Higgs/top:
-  - public rows are carried on the declared D10/D11 surface
-  - the exact inverse pair is compare-only
+  - public rows are carried by the source-only Higgs/top split surface
+  - the exact inverse pair is a check sidecar
+  - the selected exact branch solves the electroweak hierarchy/naturality
+    problem with `epsilon_H = 0`, using the finite readback certificate,
+    the 24-count repair lock, and the exact global-capacity bridge
 - Charged leptons:
-  - still open at `C_hat_e^{cand}`
-  - then at the post-promotion affine descent to `mu_phys(Y_e)`
-  - with `charged_physical_identity_mode_equalizer` beneath that scalar
+  - exact same-family readback is explicit
+  - the source landing to full physical charged masses is work in progress
 - Quarks:
-  - the maximal theorem-emitted package on the present ledger is the D12 mass ray, the negative selector `sigma_ref`, and the restricted-scope affine mean package
-  - the emitted scales are `g_ch = 0.9231656602589082` on `shared_budget_only` and `(g_u, g_d) = (0.7797392875757557, 0.12172551081512113)` on `current_family_only`
-  - the stronger physical closure objects are absent on that ledger
-  - the exact minimal extension triple above that package is:
-    `H_mass : ell_ud = log(c_d / c_u)`,
-    `H_phys : s_ud^phys : M_ud^{CR,phys} -> Sigma_ud^phys`,
-    `H_abs : A_q^phys : Sigma_ud^phys -> R`
-  - a continuation-only D12 internal backread sidecar fixes the mass-side scalar package numerically, but it does not replace the public theorem frontier
+  - OPH closes one exact public quark sextet on one physical frame fixed by P
+  - full classification of all quark frames is a separate object
 - Neutrinos:
-  - the weighted-cycle theorem pair emits
-    `C_nu = sum_gap^2 * prod_qbar * solar_response_over_mstar^-0.5`
-  - `P_nu = 6.699825740519345`
-  - `B_nu = P_nu * C_nu = 6.696004159297337`
-  - the absolute weighted-cycle neutrino family is emitted on that branch
-  - the exact adapter, bridge corridor, and correction audit are diagnostic-only sidecars
+  - the weighted-cycle theorem branch emits the absolute family, central
+    splittings, and the physical Majorana pair
+  - exact adapters remain diagnostic-only sidecars
 - Hadrons:
-  - closed out-of-scope / computationally blocked in issues #153/#157, not solved
-  - reopen only when a working OPH hadron backend such as GLORB/Echosahedron
-    emits the Ward-projected spectral measure and systematics
+  - production masses require a working OPH hadron backend and systematics
 
 ### Consensus branch
 
@@ -130,7 +134,10 @@ Use these rules whenever editing explainer text.
 These are the common places where public copy tends to overstate the paper claims.
 
 - Home / landing summary:
-  - avoid “everything follows from the axioms” wording
+  - keep the first screen as a fixed-point dashboard
+  - avoid free-constant language
+  - keep `G_SI` tied to the no-G scale certificate
+  - mark any off-point slider as a sensitivity diagnostic
 - Modular-flow / Lorentz pages:
   - keep the BW branch qualifier explicit
   - avoid unconditional `K_C = 2 pi B_C`
@@ -140,10 +147,12 @@ These are the common places where public copy tends to overstate the paper claim
 - Axioms / synthesis pages:
   - separate local axioms from bridge assumptions and open scaffold objects
 - Particle / masses / predictions pages:
-  - keep `W/Z` compare-only until the endpoint and matching gates close
-  - keep Higgs/top on the declared D10/D11 surface plus compare-only inverse sidecar
+  - keep `W/Z` on the public electroweak repair surface
+  - keep Higgs/top on the source-only split surface plus the inverse check sidecar
+  - keep the hierarchy/naturality claim scoped to the selected exact branch with
+    the 24-tick repair lock and exact capacity bridge
   - keep charged, quark, and neutrino lanes labeled by their declared claim tiers
-  - keep hadrons labeled closed out-of-scope / computationally blocked, not solved
+  - keep hadrons tied to the missing OPH hadron backend
   - keep GW comb / discrete Hawking / deep-IR galaxy-response language separated by claim tier
 - Consensus / microphysics pages:
   - do not demote them to flavor text beneath the gravity and QFT chains
