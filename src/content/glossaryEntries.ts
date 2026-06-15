@@ -33,6 +33,20 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
         usedIn: ['The Screen', 'Entropy'],
     },
     {
+        term: 'Sphere Ladder',
+        symbol: 'S^0 -> S^1 -> S^2 -> S^3',
+        definition: 'Reader-facing OPH role map: seed/readout, recurrence loop, horizon screen or public archive, and reconstructed bulk geometry.',
+        category: 'foundation',
+        usedIn: ['The Screen', 'Synthesis'],
+    },
+    {
+        term: 'Screen-Sieve',
+        symbol: '12-port icosahedral orbit',
+        definition: 'Theorem-level sampling rule: a triangulated S^2 screen carries twelve unit curvature defects, exposed as central ports on the 12-vertex icosahedral orbit.',
+        category: 'foundation',
+        usedIn: ['The Screen', 'Matter Continuations', 'Synthesis'],
+    },
+    {
         term: 'Observer',
         symbol: 'O=(P,A(P),rho,R)',
         definition: 'An internal pattern defined by a patch, local algebra, local state, and record set.',
@@ -350,6 +364,13 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
         definition: 'Unique global readback fixed point controlling the cosmological constant and cosmology scales.',
         category: 'spectrum',
         usedIn: ['Matter Continuations', 'De Sitter', 'Synthesis'],
+    },
+    {
+        term: 'Capacity-Electroweak Bridge',
+        symbol: 'v/E_cell = (N_EW/pi)^(-P*/12)',
+        definition: 'Hierarchy bridge reading the weak scale as a local projection of the global screen-capacity repair rhythm. The 12-port screen-sieve theorem gives the geometric origin of the exponent.',
+        category: 'spectrum',
+        usedIn: ['Matter Continuations', 'Synthesis'],
     },
     {
         term: 'Unification Scale',

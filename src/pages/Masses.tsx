@@ -3,9 +3,11 @@ import { Explainer } from '../components/Explainer';
 import { CLAIM_TIER_LEGEND, PARTICLE_LANE_STATUS } from '../content/paperSurface';
 import {
     BETA_COEFFICIENTS_MSSM_LIKE,
+    ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY,
     PIXEL_REFERENCE,
     PIXEL_UI_MAX,
     PIXEL_UI_MIN,
+    SCREEN_CAPACITY_REFERENCE_DISPLAY,
     deriveD11ForwardSeed,
     deriveTargetFreeElectroweakRepair,
     formatPixelConstant,
@@ -180,6 +182,20 @@ export function MassesPage() {
                     <li><strong>Neutrinos:</strong> one weighted-cycle branch emits an absolute family, the central splittings, and one physical Majorana pair. The exact fitting adapters are checks and stay off the public surface.</li>
                     <li><strong>Hadrons:</strong> issues #153/#157 are closed out-of-scope, not solved; production masses wait on a working OPH hadron backend and systematics.</li>
                 </ul>
+            </div>
+
+            <div className="card" style={{ marginBottom: '16px', borderLeft: '3px solid var(--accent-purple)' }}>
+                <h3 style={{ margin: '0 0 10px 0', fontSize: '0.95em' }}>Capacity-electroweak bridge</h3>
+                <p style={{ margin: '0 0 10px 0' }}>
+                    The hierarchy bridge reads the weak scale as
+                    v/E<sub>cell</sub> = (N<sub>EW</sub>/pi)<sup>-P*/12</sup>. On the public endpoint branch,
+                    N<sub>EW</sub> = {ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY}.
+                </p>
+                <p style={{ margin: 0, color: 'var(--text-secondary)' }}>
+                    The de Sitter capacity display remains {SCREEN_CAPACITY_REFERENCE_DISPLAY}. The 12-port
+                    icosahedral screen-sieve theorem gives the geometric origin of the exponent, and the
+                    algebraic bridge is the closed hierarchy-package statement.
+                </p>
             </div>
 
             <div className="demo-container">

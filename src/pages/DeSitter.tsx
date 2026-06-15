@@ -1,5 +1,6 @@
 import { Explainer } from '../components/Explainer';
 import {
+    ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY,
     PIXEL_REFERENCE,
     SCREEN_CAPACITY_REFERENCE_DISPLAY,
     SCREEN_CAPACITY_REFERENCE_LOG10,
@@ -73,6 +74,11 @@ export function DeSitterPage() {
                 N<sub>CRC</sub> is the unique point where outside total horizon capacity and inside observer-accessible
                 public record capacity agree. Observers inside infer geometry, horizons, entropy, &Lambda;, history,
                 and records from information available inside the universe.
+            </p>
+            <p style={{ marginBottom: '16px' }}>
+                The electroweak hierarchy bridge uses a separate exact bridge capacity,
+                N<sub>EW</sub> = {ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY}. This page tracks the de Sitter capacity branch;
+                the hierarchy bridge is shown on the matter and synthesis pages.
             </p>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Why This Solves the Cosmological Constant Problem</h3>
@@ -192,6 +198,10 @@ export function DeSitterPage() {
                     This gives an entirely different perspective on the "largeness" of the universe. The universe
                     is large because the screen has &sim;{SCREEN_CAPACITY_REFERENCE_DISPLAY} Planck-area pixels. This is one large
                     number that sets the scale.
+                </p>
+                <p>
+                    The electroweak bridge capacity is {ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY}. It belongs to the
+                    hierarchy projection equation; this page's entropy count is the de Sitter branch.
                 </p>
             </Explainer>
 

@@ -61,7 +61,7 @@ export const OPH_PAPERS: PaperSummary[] = [
         title: 'Deriving the Particle Zoo from Observer Consistency',
         href: `${GITHUB_PDF_BASE}/deriving_the_particle_zoo_from_observer_consistency.pdf`,
         surface: 'Particles',
-        summary: 'The particle-status paper. It separates structural outputs, public calibration rows, exact sidecars, continuation lanes, and open fronts.',
+        summary: 'The particle-status paper. It separates structural outputs, public calibration rows, the capacity-electroweak bridge, exact sidecars, continuation lanes, and theorem surfaces.',
     },
     {
         slug: 'consensus',
@@ -130,7 +130,7 @@ export const CORE_PARAMETERS = [
         label: 'Global capacity fixed point',
         value: 'N_CRC ~ 3.31e122',
         equation: 'N_CRC = F(N_CRC)',
-        note: 'Defines the input-free readback fixed point for the de Sitter cosmic record capacity.',
+        note: 'Defines the input-free readback fixed point for the de Sitter cosmic record capacity. The electroweak bridge uses its own exact bridge capacity.',
     },
 ];
 
@@ -181,6 +181,10 @@ export const PARTICLE_LANE_STATUS = [
     {
         label: 'Hadrons',
         summary: 'Issues #153/#157 are closed out-of-scope, not solved; hadron masses wait on a working OPH backend and production systematics.',
+    },
+    {
+        label: 'Capacity-electroweak bridge',
+        summary: 'The bridge uses v/E_cell = (N_EW/pi)^(-P*/12). The 12-port icosahedral screen-sieve theorem gives the geometric origin of the exponent.',
     },
 ];
 

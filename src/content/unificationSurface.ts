@@ -14,6 +14,7 @@ export type ExactBundleSection = {
 
 export const LANDING_AUDIT_NOTES = [
     'The landing page exposes the locked P fixed point, the N_CRC screen-capacity fixed point, and the selected no-G scale certificate.',
+    'The hierarchy surface distinguishes the de Sitter capacity display from the exact capacity-electroweak bridge N_EW.',
     'The particle surface includes an exact selected-class quark sextet, an exact same-family charged witness, weighted-cycle neutrino masses and splittings, and the source-only Higgs/top split theorem.',
     'The gravity-side bundle uses the scale-certificate Newton readout with downstream Lambda, de Sitter, and a0 descendants supplied by N_CRC.',
 ];

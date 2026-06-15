@@ -1,5 +1,6 @@
 import { Explainer } from '../components/Explainer';
 import { CORE_PARAMETERS, OPH_PAPERS } from '../content/paperSurface';
+import { ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY } from '../core/ophMath';
 
 export function SynthesisPage() {
     return (
@@ -54,6 +55,11 @@ export function SynthesisPage() {
                 the selected no-G scale certificate. The hierarchy bridge uses the exact electroweak capacity bridge
                 and the 24-tick repair lock. The OPH paper set separates recovered structural theorems, explicit
                 branch-conditional results, closed calibration sectors, and open continuation lanes.
+            </p>
+            <p style={{ marginBottom: '16px' }}>
+                The compact hierarchy readout is v/E<sub>cell</sub> = (N<sub>EW</sub>/pi)<sup>-P*/12</sup>,
+                with N<sub>EW</sub> = {ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY} on the public endpoint branch.
+                The 12-port icosahedral screen-sieve theorem gives the geometric origin of that exponent.
             </p>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Six Surfaces, One Program</h3>

@@ -205,6 +205,18 @@ export function TheScreenPage() {
                 </p>
             </Explainer>
 
+            <Explainer title="Sphere ladder">
+                <p>
+                    The reader-facing ladder is S<sup>0</sup> &rarr; S<sup>1</sup> &rarr; S<sup>2</sup> &rarr; S<sup>3</sup>:
+                    seed/readout, recurrence loop, horizon screen or public archive, and reconstructed bulk geometry.
+                </p>
+                <p>
+                    This ladder names roles in the readback architecture. Particle identities stay on the Lorentz
+                    and gauge branches: photon on the electromagnetic branch, gluons on color, graviton on geometry,
+                    W/Z/H on the electroweak and Higgs surfaces, and hadrons as QCD composites.
+                </p>
+            </Explainer>
+
             <Explainer title="Key equations">
                 <p>
                     Bekenstein-Hawking entropy: <strong>S<sub>BH</sub> = A/(4l<sub>P</sub>&sup2;)</strong>
