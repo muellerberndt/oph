@@ -17,7 +17,6 @@ import {
     newtonConstantFromScaleCertificate,
     pDrivenQuarkMassesFromClosure,
     solveGaugeClosure,
-    thomsonEndpointAlphaInverse,
 } from '../core/ophMath';
 
 type CoreLockRow = {
@@ -43,6 +42,8 @@ const CANONICAL_GAUGE_OPTIONS = {
     su3MaxIndex: 14,
     alphaRange: { min: 0.015, max: 0.09, step: 0.0005 },
 } as const;
+
+const ALPHA_ROOT_INV = 136.99483516462165;
 
 function formatFixed(value: number, digits = 6): string {
     if (!Number.isFinite(value)) {
@@ -123,9 +124,7 @@ export function Home() {
         const newtonConstant = newtonConstantFromScaleCertificate();
         const lambda = lambdaFromScreen(PIXEL_REFERENCE, SCREEN_CAPACITY_REFERENCE_LOG10);
         const hubble = hubbleFromLambda(lambda);
-        const thomsonAlphaInv = Number.isFinite(closure.alphaEm) && closure.alphaEm > 0
-            ? thomsonEndpointAlphaInverse(1 / closure.alphaEm)
-            : Number.NaN;
+        const sourcePlusBareAlphaUInv = ALPHA_ROOT_INV + closure.alphaU;
 
         return {
             closure,
@@ -134,7 +133,7 @@ export function Home() {
             newtonConstant,
             lambda,
             hubble,
-            thomsonAlphaInv,
+            sourcePlusBareAlphaUInv,
         };
     }, []);
 
@@ -217,18 +216,18 @@ export function Home() {
                 family: 'EXACT',
                 familyClass: 'exact' as const,
                 primaryLabel: 'selected branch',
-                primaryValue: 'epsilon_H = 0',
+                primaryValue: '0',
                 secondaryLabel: 'bridge',
                 secondaryValue: '24 ticks',
             },
             {
-                label: 'Inverse fine-structure constant',
+                label: 'Fine-structure endpoint',
                 family: 'COUPLINGS',
                 familyClass: 'qft' as const,
-                primaryLabel: 'OPH',
-                primaryValue: formatFixed(canonicalSurface.thomsonAlphaInv, 9),
-                secondaryLabel: 'surface',
-                secondaryValue: 'P fixed point',
+                primaryLabel: 'alpha root + alpha U',
+                primaryValue: formatFixed(canonicalSurface.sourcePlusBareAlphaUInv, 9),
+                secondaryLabel: 'endpoint',
+                secondaryValue: 'QCD payload required',
             },
             {
                 label: 'W boson mass',
