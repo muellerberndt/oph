@@ -224,7 +224,7 @@ export function Home() {
                 label: 'Fine-structure endpoint',
                 family: 'COUPLINGS',
                 familyClass: 'qft' as const,
-                primaryLabel: 'alpha root + alpha U',
+                primaryLabel: 'source + gauge width',
                 primaryValue: formatFixed(canonicalSurface.sourcePlusBareAlphaUInv, 9),
                 secondaryLabel: 'endpoint',
                 secondaryValue: 'QCD payload required',

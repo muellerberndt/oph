@@ -206,9 +206,9 @@ export function NeutrinosPage() {
         <article className="card neutrino-story-card">
           <h2 style={{ marginTop: 0, fontSize: '0.96rem' }}>Scope Of This Page</h2>
           <p style={{ margin: '0 0 12px 0' }}>
-            This page presents one emitted absolute family, the central splittings, and one physical
-            Majorana pair. Flavor-labeled neutrino masses and arbitrary off-canonical browser sliders
-            sit outside this page. Diagnostic fitting adapters also sit outside this page.
+            The displayed scope contains one emitted absolute family, the central splittings, and one physical
+            Majorana pair. Flavor-labeled neutrino masses, arbitrary off-canonical browser sliders, and diagnostic
+            fitting adapters sit outside this page.
           </p>
           <p style={{ margin: 0 }}>
             The displayed masses, splittings, and Majorana pair come from the emitted branch itself.

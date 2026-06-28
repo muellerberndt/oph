@@ -6,7 +6,7 @@ const CATEGORY_LABELS: Record<GlossaryCategory, { label: string; color: string }
     foundation: { label: 'Foundation', color: 'var(--accent-gold)' },
     axioms: { label: 'Axioms & Assumptions', color: 'var(--accent-amber)' },
     gravity: { label: 'Gravity Chain', color: 'var(--accent-rose)' },
-    gauge: { label: 'Gauge & MAR', color: 'var(--accent-blue)' },
+    gauge: { label: 'Gauge & Selection', color: 'var(--accent-blue)' },
     spectrum: { label: 'Spectrum Math', color: 'var(--accent-cyan)' },
     methods: { label: 'Methods', color: 'var(--accent-purple)' },
     predictions: { label: 'Predictions', color: 'var(--accent-green)' },

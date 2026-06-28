@@ -139,8 +139,8 @@ export function ErrorCorrectionPage() {
                 <p>
                     The Planck area l<sub>P</sub>&sup2; = ℏG/c&sup3; is the "pixel size" of the screen.
                     The code distance is the number of pixels in the minimal RT surface, which is A(&gamma;)/(4l<sub>P</sub>&sup2;).
-                    This is why gravity breaks down at the Planck scale: you cannot correct errors smaller than one
-                    pixel.
+                    Gravity breaks down at the Planck scale because errors smaller than one pixel cannot be
+                    corrected.
                 </p>
             </Explainer>
 

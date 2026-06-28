@@ -24,7 +24,7 @@ export function PredictionsPage() {
 
             <p style={{ marginBottom: '16px' }}>
                 The OPH papers do not put every empirical statement on one tier. Some outputs are public quantitative
-                rows. Some are continuation-level signal templates. Others are open phenomenology. This page follows
+                rows. Some are continuation-level signal templates. Others are open phenomenology. The page follows
                 that ledger directly.
             </p>
 

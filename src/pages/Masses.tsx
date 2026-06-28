@@ -153,9 +153,9 @@ export function MassesPage() {
             </div>
 
             <p style={{ marginBottom: '16px' }}>
-                This page summarizes the OPH matter-sector status instead of presenting the withdrawn
-                public calculator. It separates structural outputs, closed public rows, diagnostic
-                checks, and the gaps that sit outside the public surface.
+                The matter-sector page summarizes the OPH matter-sector status and does not present the withdrawn
+                public calculator. It separates structural outputs, closed public rows, diagnostic checks, and the
+                gaps that sit outside the public surface.
             </p>
 
             <div className="card" style={{ marginBottom: '16px', borderLeft: '3px solid var(--accent-gold)' }}>
@@ -180,7 +180,7 @@ export function MassesPage() {
                     <li><strong>Quarks:</strong> OPH closes one exact public sextet on one physical frame fixed by P. A full classification of all quark frames is a separate object.</li>
                     <li><strong>Charged leptons:</strong> the exact same-family readback is explicit. The open step is the source landing that turns the shared geometric data into full physical charged masses.</li>
                     <li><strong>Neutrinos:</strong> one weighted-cycle branch emits an absolute family, the central splittings, and one physical Majorana pair. The exact fitting adapters are checks and stay off the public surface.</li>
-                    <li><strong>Hadrons:</strong> issues #153/#157 are closed out-of-scope, not solved; production masses wait on a working OPH hadron backend and systematics.</li>
+                    <li><strong>Hadrons:</strong> production masses sit outside the closed public scope until a working OPH hadron backend and systematics exist.</li>
                 </ul>
             </div>
 

@@ -105,7 +105,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
         links: [{ label: 'Fawzi-Renner (arXiv:1410.0664)', url: 'https://arxiv.org/abs/1410.0664' }],
     },
     {
-        term: 'Axiom A5 / MAR',
+        term: 'Axiom A5 / Minimal Admissible Realization',
         definition: 'Minimal Admissible Realization: lexicographic selector on admissible gauge sectors.',
         category: 'axioms',
         usedIn: ['Axioms', 'Standard Model'],
@@ -141,13 +141,13 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
         usedIn: ['Axioms', 'Gravity'],
     },
     {
-        term: 'Premise R0',
+        term: 'Regulator Premise',
         definition: 'Regulated local algebras are type-I finite-dimensional factors.',
         category: 'methods',
         usedIn: ['Gauge Symmetry', 'Standard Model'],
     },
     {
-        term: 'Premise R1',
+        term: 'Boundary Fixed-Point Premise',
         definition: 'Region observables are fixed points under boundary gauge action.',
         category: 'methods',
         usedIn: ['Gauge Symmetry', 'Standard Model'],
@@ -306,7 +306,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
         links: [{ label: 'Admissibility simulator', url: '/standard-model' }],
     },
     {
-        term: 'Selection Axiom MAR',
+        term: 'Selection Axiom: Minimal Admissible Realization',
         symbol: 'C(Sigma)=(chi_faith,N_nonab,N_c,N_g)',
         definition: 'Minimal Admissible Realization: select lexicographically minimal C(Sigma) only after admissibility filters; a selection rule distinct from a dynamics law.',
         category: 'gauge',
@@ -382,7 +382,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     {
         term: 'Unified Coupling',
         symbol: 'alpha_U',
-        definition: 'Single coupling solved from pixel-constraint closure.',
+        definition: 'Finite-screen unified gauge-width coupling solved from pixel-constraint closure.',
         category: 'spectrum',
         usedIn: ['Matter Continuations'],
     },
@@ -572,7 +572,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     {
         term: 'No-Cheat Audit',
         symbol: 'Input contract',
-        definition: 'Methodological check that the prediction pipeline depends only on declared inputs, derived structures, and any theorem targets explicitly marked as not yet discharged.',
+        definition: 'Methodological check that the prediction pipeline depends only on declared inputs, derived structures, and explicitly open theorem targets.',
         category: 'meta',
         usedIn: ['Matter Continuations', 'Synthesis'],
     },

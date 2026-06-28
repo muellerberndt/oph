@@ -88,7 +88,7 @@ export function SynthesisPage() {
                         fontWeight: 700,
                         fontSize: '1em',
                     }}>
-                        CORE AXIOMS A1-A4
+                        CORE SCREEN AXIOMS
                     </div>
                     <div style={{ color: 'var(--text-muted)', margin: '8px 0', fontSize: '1.2em' }}>&darr;</div>
                 </div>
@@ -114,7 +114,7 @@ export function SynthesisPage() {
                         <div style={{ padding: '8px 16px', background: 'rgba(122,184,212,0.15)', border: '1px solid var(--accent-blue)', color: 'var(--accent-blue)', fontSize: '0.8em', fontWeight: 600, textAlign: 'center', width: '100%' }}>
                             CHAIN 2: QFT
                         </div>
-                        {['R0+R1+T1+MAR+T4-T6', 'QM from Overlap Consistency', 'Gauge-as-Gluing', '[SU(3)\u00d7SU(2)\u00d7U(1)]/Z6', 'Edge-Sector Dynamics', 'Structural SM + Continuations'].map((step, i) => (
+                        {['Compact-gauge premises + Minimal Admissible Realization', 'QM from Overlap Consistency', 'Gauge-as-Gluing', '[SU(3)\u00d7SU(2)\u00d7U(1)]/Z6', 'Edge-Sector Dynamics', 'Structural SM + Continuations'].map((step, i) => (
                             <div key={i} style={{ width: '100%' }}>
                                 <div style={{ padding: '6px 12px', background: 'rgba(122,184,212,0.05)', border: '1px solid rgba(122,184,212,0.2)', fontSize: '0.75em', color: 'var(--text-secondary)', textAlign: 'center' }}>
                                     {step}
@@ -143,9 +143,9 @@ export function SynthesisPage() {
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>What OPH Unifies</h3>
             <p style={{ marginBottom: '16px' }}>
-                The deepest achievement of OPH is a shared quantum-algebraic observer-patch architecture for
-                gravity, gauge structure, and the effective quantum description. In the standard picture, these
-                are separate theories with incompatible foundations:
+                OPH supplies a shared quantum-algebraic observer-patch architecture for gravity, gauge structure,
+                and the effective quantum description. The standard picture treats these as separate theories with
+                incompatible foundations:
             </p>
 
             <div className="card" style={{ marginBottom: '24px' }}>
@@ -185,30 +185,30 @@ export function SynthesisPage() {
                 OPH represents a profound shift in the foundations of physics:
             </p>
             <div style={{ display: 'grid', gridTemplateColumns: 'auto 1fr auto 1fr', gap: '8px 16px', fontSize: '0.85em', marginBottom: '24px' }}>
-                <span style={{ color: 'var(--accent-rose)', fontWeight: 600 }}>Old:</span>
+                <span style={{ color: 'var(--accent-rose)', fontWeight: 600 }}>Standard:</span>
                 <span style={{ color: 'var(--text-secondary)' }}>Spacetime is fundamental</span>
-                <span style={{ color: 'var(--accent-green)', fontWeight: 600 }}>New:</span>
+                <span style={{ color: 'var(--accent-green)', fontWeight: 600 }}>OPH:</span>
                 <span style={{ color: 'var(--text-secondary)' }}>Spacetime is emergent from information</span>
 
-                <span style={{ color: 'var(--accent-rose)', fontWeight: 600 }}>Old:</span>
+                <span style={{ color: 'var(--accent-rose)', fontWeight: 600 }}>Standard:</span>
                 <span style={{ color: 'var(--text-secondary)' }}>Objective reality exists independently</span>
-                <span style={{ color: 'var(--accent-green)', fontWeight: 600 }}>New:</span>
+                <span style={{ color: 'var(--accent-green)', fontWeight: 600 }}>OPH:</span>
                 <span style={{ color: 'var(--text-secondary)' }}>Reality = intersubjective consistency</span>
 
-                <span style={{ color: 'var(--accent-rose)', fontWeight: 600 }}>Old:</span>
+                <span style={{ color: 'var(--accent-rose)', fontWeight: 600 }}>Standard:</span>
                 <span style={{ color: 'var(--text-secondary)' }}>Laws of physics are inputs</span>
-                <span style={{ color: 'var(--accent-green)', fontWeight: 600 }}>New:</span>
+                <span style={{ color: 'var(--accent-green)', fontWeight: 600 }}>OPH:</span>
                 <span style={{ color: 'var(--text-secondary)' }}>Some laws are recovered structurally; others remain branch-conditional or continuation-level</span>
 
-                <span style={{ color: 'var(--accent-rose)', fontWeight: 600 }}>Old:</span>
+                <span style={{ color: 'var(--accent-rose)', fontWeight: 600 }}>Standard:</span>
                 <span style={{ color: 'var(--text-secondary)' }}>Parameters are tuned</span>
-                <span style={{ color: 'var(--accent-green)', fontWeight: 600 }}>New:</span>
+                <span style={{ color: 'var(--accent-green)', fontWeight: 600 }}>OPH:</span>
                 <span style={{ color: 'var(--text-secondary)' }}>The two quantitative constants are fixed-point closure targets</span>
 
-                <span style={{ color: 'var(--accent-rose)', fontWeight: 600 }}>Old:</span>
+                <span style={{ color: 'var(--accent-rose)', fontWeight: 600 }}>Standard:</span>
                 <span style={{ color: 'var(--text-secondary)' }}>Gravity and QM are separate</span>
-                <span style={{ color: 'var(--accent-green)', fontWeight: 600 }}>New:</span>
-                <span style={{ color: 'var(--text-secondary)' }}>Both emerge from core axioms; gauge uniqueness uses MAR</span>
+                <span style={{ color: 'var(--accent-green)', fontWeight: 600 }}>OPH:</span>
+                <span style={{ color: 'var(--text-secondary)' }}>Both emerge from core axioms; gauge uniqueness uses Minimal Admissible Realization</span>
             </div>
 
             <Explainer title="Is this too good to be true?">
@@ -216,7 +216,7 @@ export function SynthesisPage() {
                     A healthy skepticism is warranted. Key questions to ask:
                 </p>
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
-                    <li><strong>Are the assumptions really as minimal as claimed?</strong> The five axioms are supplemented by theorem-local technical premises such as T1-T6, R0/R1, and branch-specific conditions. A full assessment must count all logical inputs.</li>
+                    <li><strong>Are the assumptions really as minimal as claimed?</strong> The five axioms are supplemented by theorem-local technical premises and branch-specific conditions. A full assessment must count all logical inputs.</li>
                     <li><strong>Are the derivations rigorous?</strong> The recovered structural core is stronger than the downstream continuation lanes. BW internalization, some particle continuations, and several phenomenology surfaces remain conditional or open.</li>
                     <li><strong>Can it be falsified?</strong> Yes (see Predictions page). This is the most important test of any theory.</li>
                 </ul>

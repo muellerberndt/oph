@@ -113,9 +113,9 @@
     "pure_b_source_status": "source_values_derived_from_source_emission"
   },
   "notes": [
-    "The exact default-universe masses are still anchor values, not arbitrary-P theorem emissions.",
+    "The exact default-universe masses are anchor values, not arbitrary-P theorem emissions.",
     "This contract exists to prevent browser/runtime drift while the theorem-grade off-canonical lane remains open.",
-    "Closing issue #212 still requires replacing this candidate contract with emitted off-canonical sigma and pure-B data.",
+    "Issue #212 requires replacing this candidate contract with emitted off-canonical sigma and pure-B data.",
     "Selected-class pure-B payload values do not by themselves close the arbitrary-P pure-B family."
   ],
   "promotion_blockers": [

@@ -180,11 +180,11 @@ export const PARTICLE_LANE_STATUS = [
     },
     {
         label: 'Hadrons',
-        summary: 'Issues #153/#157 are closed out-of-scope, not solved; hadron masses wait on a working OPH backend and production systematics.',
+        summary: 'Hadron masses sit outside the closed public scope until a working OPH backend and production systematics exist.',
     },
     {
         label: 'Capacity-electroweak bridge',
-        summary: 'The bridge uses v/E_cell = (N_EW/pi)^(-P*/12). The 12-port icosahedral screen-sieve theorem gives the geometric origin of the exponent.',
+        summary: 'The bridge uses the reference pixel constant in the capacity relation. The 12-port icosahedral screen-sieve theorem gives the geometric origin of the exponent.',
     },
 ];
 

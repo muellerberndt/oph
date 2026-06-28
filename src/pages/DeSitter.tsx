@@ -76,9 +76,9 @@ export function DeSitterPage() {
                 and records from information available inside the universe.
             </p>
             <p style={{ marginBottom: '16px' }}>
-                The electroweak hierarchy bridge uses a separate exact bridge capacity,
-                N<sub>EW</sub> = {ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY}. This page tracks the de Sitter capacity branch;
-                the hierarchy bridge is shown on the matter and synthesis pages.
+                The electroweak hierarchy bridge uses a separate exact bridge capacity of
+                {ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY}. The de Sitter capacity branch is tracked here; the hierarchy
+                bridge is shown on the matter and synthesis pages.
             </p>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Why This Solves the Cosmological Constant Problem</h3>

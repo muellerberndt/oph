@@ -189,9 +189,10 @@ export function StandardModelPage() {
             </div>
 
             <p style={{ marginBottom: '16px' }}>
-                This page follows the declared manuscript derivation: the admissible compact sector class is reduced
-                by MAR lexicographic minimality to the unique global quotient
-                {' '}<strong>[SU(3) x SU(2) x U(1)] / Z6</strong> with <strong>Nc=3</strong> and <strong>Ng=3</strong>.
+                The declared manuscript derivation reduces the admissible compact sector class by Minimal Admissible
+                Realization (MAR) lexicographic minimality to the unique global quotient
+                {' '}<strong>[SU(3) x SU(2) x U(1)] / Z6</strong> with <strong>three colors</strong> and
+                <strong> three generations</strong>.
             </p>
 
             <div className="card" style={{ marginBottom: '20px', borderLeft: '3px solid var(--accent-cyan)' }}>
@@ -206,7 +207,7 @@ export function StandardModelPage() {
             </div>
 
             <div className="demo-container">
-                <div className="demo-label">Admissibility + MAR Eliminator</div>
+                <div className="demo-label">Admissibility + Minimal Admissible Realization Eliminator</div>
 
                 <div style={{ marginBottom: '14px' }}>
                     <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '8px' }}>
@@ -242,8 +243,8 @@ export function StandardModelPage() {
                         <span>Admissible</span>
                         <span>min chi</span>
                         <span>min N_nonab</span>
-                        <span>min N_c</span>
-                        <span>min N_g</span>
+                        <span>min color</span>
+                        <span>min generations</span>
                     </div>
                 </div>
 
@@ -318,7 +319,7 @@ export function StandardModelPage() {
                 </div>
             </div>
 
-            <h3 style={{ fontSize: '1em', marginTop: '28px' }}>N_c and N_g Subproof Playground</h3>
+            <h3 style={{ fontSize: '1em', marginTop: '28px' }}>Color and Generation Subproof Playground</h3>
             <p style={{ marginBottom: '12px', fontSize: '0.85em', color: 'var(--text-muted)' }}>
                 Independent checks used after product-group structure is fixed.
             </p>
@@ -387,20 +388,20 @@ export function StandardModelPage() {
                 </p>
             </Explainer>
 
-            <Explainer title="How MAR differs from plain minimality">
+            <Explainer title="How Minimal Admissible Realization differs from plain minimality">
                 <p>
-                    MAR does not pick the absolutely smallest group. It minimizes only after admissibility filters are
-                    enforced. This prevents trivial sectors (like pure U(1)) that fail chiral, CP, or Yukawa criteria.
-                    Within the admissible class, this is <strong>Nature's Occam's razor</strong>.
+                    Minimal Admissible Realization minimizes only after admissibility filters are enforced. Trivial
+                    sectors such as pure U(1) fail the chiral, CP, or Yukawa criteria. Within the admissible class,
+                    this is <strong>Nature's Occam's razor</strong>.
                 </p>
             </Explainer>
 
             <Explainer title="Page Scope">
                 <p>
-                    This page tracks the recovered gauge quotient, exact hypercharges, realized color triplet, and
-                    generation count. Full flavor closure, hadron phenomenology, and downstream
-                    matter-sector theorem objects sit on separate pages; hadron backend issues
-                    #153/#157 are closed out-of-scope until production OPH backend output exists.
+                    The page scope covers the recovered gauge quotient, exact hypercharges, realized color triplet,
+                    and generation count. Full flavor closure, hadron phenomenology, and downstream
+                    matter-sector theorem objects sit on separate pages; hadron backend work is out of scope until
+                    production OPH backend output exists.
                 </p>
                 <p>
                     On the declared public surface, the Standard Model quotient, exact hypercharges, and the

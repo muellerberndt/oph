@@ -16,7 +16,7 @@ const ROUTE_DESCRIPTIONS: Record<string, string> = {
   '/hints': 'Review the experimental and conceptual clues that motivate Observer Patch Holography as a deeper account of physical reality.',
   '/no-objective-reality': 'Explore the argument that physics should be built from observer-local descriptions instead of a single objective frame.',
   '/the-screen': 'Learn how OPH models reality on a holographic screen, uses local patches to recover spacetime structure, and reads the S0 to S3 sphere ladder as a role map.',
-  '/axioms': 'See the five OPH axioms, including MAR as Axiom 5, together with the technical-premise ledger used by the declared papers.',
+  '/axioms': 'See the five OPH axioms, including Minimal Admissible Realization as the selection axiom, together with the technical-premise ledger used by the declared papers.',
   '/entropy': 'Follow the entropy and area-bound intuition that connects finite information capacity to holographic physics.',
   '/entanglement-geometry': 'Understand how entanglement structure gives rise to geometry in the OPH reconstruction program.',
   '/lorentz': 'Study the OPH route from screen-local consistency to Lorentz symmetry and relativistic structure.',

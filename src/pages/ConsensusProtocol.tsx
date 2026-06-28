@@ -10,10 +10,10 @@ export function ConsensusProtocolPage() {
             </div>
 
             <p style={{ marginBottom: '16px' }}>
-                This page covers the dedicated consensus paper, the place where OPH says most directly what reality
-                is doing: observer-based fixed-point consensus. It asks a narrower question than the gravity and
-                gauge pages: if observer patches repair disagreements locally, do different repair orders lead to
-                different worlds, and does that result survive controlled coarse-graining?
+                The dedicated consensus paper states OPH's direct account of reality as observer-based fixed-point
+                consensus. It asks a narrower question than the gravity and gauge pages: if observer patches repair
+                disagreements locally, do different repair orders lead to different worlds, and does that result
+                survive controlled coarse-graining?
             </p>
 
             <div className="math-block" style={{ fontSize: '1em', marginBottom: '16px' }}>
@@ -69,8 +69,8 @@ export function ConsensusProtocolPage() {
                     ambiguous bookkeeping convention.
                 </p>
                 <p>
-                    This is also where stable records enter the formal story. The paper makes those records explicit on
-                    a fixed-cutoff algebra.
+                    Stable records enter the formal story here. The paper makes those records explicit on a
+                    fixed-cutoff algebra.
                 </p>
             </Explainer>
 

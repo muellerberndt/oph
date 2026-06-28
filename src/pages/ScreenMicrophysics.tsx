@@ -10,9 +10,9 @@ export function ScreenMicrophysicsPage() {
             </div>
 
             <p style={{ marginBottom: '16px' }}>
-                This is the concrete implementation surface of OPH. The microphysics paper writes abstract patches
-                and overlaps into a federated patch-carrier model with echosahedral interfaces, recurrent toroidal
-                subchannels, record algebras, repair instruments, and synchronization rules.
+                The concrete implementation surface of OPH writes abstract patches and overlaps into a federated
+                patch-carrier model with echosahedral interfaces, recurrent toroidal subchannels, record algebras,
+                repair instruments, and synchronization rules.
             </p>
 
             <div className="math-block" style={{ fontSize: '1em', marginBottom: '24px' }}>

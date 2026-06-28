@@ -274,12 +274,12 @@ export function GravityPage() {
             <div className="card" style={{ borderLeft: '3px solid var(--accent-gold)', marginBottom: '18px' }}>
                 <h4 style={{ marginTop: 0, fontSize: '0.86em' }}>Premise Stack Used Here</h4>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '8px', fontSize: '0.78em' }}>
-                    <div>A4: recoverable generalized entropy</div>
-                    <div>A3: local MaxEnt and refinement-stable branch</div>
-                    <div>D4: null modular bridge, with half-line generator/charge identification internalized</div>
-                    <div>D3 + T2: explicit BW branch and scaling-limit scope</div>
-                    <div>D5 input: separate bounded-interval projective branch in the small-ball step</div>
-                    <div>T3: fixed-cap generalized-entropy stationarity</div>
+                    <div>Recoverable generalized entropy</div>
+                    <div>Local MaxEnt and refinement-stable branch</div>
+                    <div>Null modular bridge, with half-line generator/charge identification internalized</div>
+                    <div>Explicit BW branch and scaling-limit scope</div>
+                    <div>Separate bounded-interval projective branch in the small-ball step</div>
+                    <div>Fixed-cap generalized-entropy stationarity</div>
                     <div>Null ambiguity lemma: tensor reconstruction up to Lambda g_ab</div>
                     <div>Global capacity closure for Lambda</div>
                 </div>

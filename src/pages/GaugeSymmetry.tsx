@@ -15,14 +15,14 @@ export function GaugeSymmetryPage() {
             </p>
             <p style={{ marginBottom: '24px' }}>
                 The derivation identifies the admissible compact groups carried by that overlap structure and then
-                selects the realized sector with the MAR rule.
+                selects the realized sector with the Minimal Admissible Realization rule.
             </p>
             <p style={{ marginBottom: '16px' }}>
-                The derivation then adds the extended axiom and premise set
-                <strong> R0 + R1 + T1 + MAR + T4-T6</strong>: admissibility defines the candidate class, with T1 meaning
-                vanishing relevant transport obstruction ([z]=0 on the central branch or q<sub>&Sigma;</sub>=0 on the
-                genuinely noncentral branch), T4-T6 supplying the compact gauge-reconstruction premises, and MAR choosing
-                the lexicographically minimal admissible sector.
+                The derivation adds the extended selection and premise package used by the compact-gauge proof:
+                admissibility defines the candidate class, the transport premise removes the relevant obstruction
+                on the branch where global transportability is invoked, the compact reconstruction premises supply
+                the gauge category, and Minimal Admissible Realization chooses the lexicographically minimal
+                admissible sector.
             </p>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Gauge-as-Gluing Route</h3>
@@ -70,8 +70,8 @@ export function GaugeSymmetryPage() {
                 </div>
             </div>
             <p style={{ marginBottom: '16px' }}>
-                This is why gauge groups are compact: edge-sector fusion rules satisfy the axioms of a compact
-                group representation category. Compactness follows from the reconstruction.
+                Gauge groups are compact because edge-sector fusion rules satisfy the axioms of a compact group
+                representation category. Compactness follows from the reconstruction.
             </p>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Why Product Groups?</h3>
@@ -143,17 +143,18 @@ export function GaugeSymmetryPage() {
 
             <Explainer title="Why This Gauge Group">
                 <p>
-                    The selection of SU(3) &times; SU(2) &times; U(1) comes from admissibility plus MAR:
+                    The selection of SU(3) &times; SU(2) &times; U(1) comes from admissibility plus
+                    Minimal Admissible Realization (MAR):
                 </p>
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
                     <li><strong>Admissibility:</strong> anomaly-free, chiral-stable, single-Higgs-completable, CP-capable, weak UV-completable, and loop-coherent ([z]=0).</li>
                     <li><strong>Complexity vector:</strong> C(&Sigma;) = (&chi;<sub>faith</sub>, N<sub>nonab</sub>, N<sub>c</sub>, N<sub>g</sub>).</li>
-                    <li><strong>MAR:</strong> lexicographically minimize C over admissible sectors only (not over all groups).</li>
+                    <li><strong>Selection rule:</strong> lexicographically minimize C over admissible sectors only.</li>
                 </ul>
                 <p>
                     This singles out [SU(3)&times;SU(2)&times;U(1)]/Z<sub>6</sub> with N<sub>c</sub>=3,
-                    N<sub>g</sub>=3. The Standard Model gauge structure is the unique MAR-selected admissible
-                    solution. Equivalently, MAR acts as <strong>Nature's Occam's razor</strong> after admissibility.
+                    N<sub>g</sub>=3. The Standard Model gauge structure is the unique admissible solution selected
+                    by Minimal Admissible Realization. In short: Nature's Occam's razor applies after admissibility.
                 </p>
             </Explainer>
 

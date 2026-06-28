@@ -51,14 +51,14 @@ export function AxiomsPage() {
         <div>
             <div className="section-header">
                 <span className="section-tag foundation">Foundation</span>
-                <h1 style={{ fontSize: '1.5rem', margin: 0 }}>Core Axioms and MAR Layer</h1>
+                <h1 style={{ fontSize: '1.5rem', margin: 0 }}>Core Axioms and Selection Layer</h1>
             </div>
 
             <p style={{ marginBottom: '24px' }}>
-                The extended formulation presents OPH as <strong>five axioms: A1-A4 + MAR</strong>. The paper
-                surface also uses theorem-local technical premises T1-T6 when specific Lorentz, Einstein, or gauge
-                statements are invoked. MAR is a selection axiom in the foundational ledger. It is distinct from a
-                local dynamics equation.
+                The extended formulation presents OPH as five axioms: the four local screen axioms plus
+                <strong> Minimal Admissible Realization (MAR)</strong>. The paper surface also uses theorem-local
+                technical premises when specific Lorentz, Einstein, or gauge statements are invoked. MAR is a
+                selection axiom in the foundational ledger. It is distinct from a local dynamics equation.
             </p>
 
             <div style={{ display: 'flex', gap: '8px', marginBottom: '24px' }}>
@@ -107,36 +107,34 @@ export function AxiomsPage() {
             ))}
 
             <div className="card" style={{ marginBottom: '16px', borderLeft: '3px solid var(--accent-blue)' }}>
-                <h3 style={{ margin: '0 0 10px 0', fontSize: '0.95em' }}>MAR in Axiom 5</h3>
+                <h3 style={{ margin: '0 0 10px 0', fontSize: '0.95em' }}>Minimal Admissible Realization in Axiom 5</h3>
                 <div style={{ fontSize: '0.84em', color: 'var(--text-secondary)', marginBottom: '10px' }}>
-                    Gauge-reconstruction surface: R0/R1 + T1 + MAR + T4-T6
+                    Gauge-reconstruction surface: regulator, boundary fixed point, transport, compact-reconstruction, and selection inputs
                 </div>
                 <div className="math-block" style={{ fontSize: '0.84em', marginTop: 0 }}>
-                    C(Sigma) = (chi_faith, N_nonab, N_c, N_g), lexicographic minimum over admissible Sigma
+                    selector vector = faithful edge capacity, nonabelian factor count, color count, generation count
                 </div>
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8', margin: 0, fontSize: '0.84em' }}>
-                    <li><strong>R0:</strong> finite-dimensional regulator premise for local factors.</li>
-                    <li><strong>R1:</strong> region observables are fixed points of boundary gauge action.</li>
-                    <li><strong>T1:</strong> vanishing of the relevant transport obstruction when global transportability is invoked: [z]=0 on the central branch, or q<sub>&Sigma;</sub>=0 on the genuinely noncentral branch.</li>
-                    <li><strong>MAR:</strong> pick the lexicographically minimal admissible low-energy sector.</li>
+                    <li><strong>Regulator premise:</strong> local factors are finite-dimensional at the regulated stage.</li>
+                    <li><strong>Boundary fixed point:</strong> region observables are fixed points of boundary gauge action.</li>
+                    <li><strong>Transport premise:</strong> the relevant transport obstruction vanishes where global transportability is invoked.</li>
+                    <li><strong>Selection axiom:</strong> pick the lexicographically minimal admissible low-energy sector.</li>
                 </ul>
                 <p style={{ margin: '10px 0 0 0', fontSize: '0.82em', color: 'var(--text-muted)' }}>
-                    MAR fixes the realized admissible gauge branch. The downstream structural and continuation
-                    surfaces use the later theorem-local premises.
+                    Minimal Admissible Realization fixes the realized admissible gauge branch. The downstream
+                    structural and continuation surfaces use the later theorem-local premises.
                 </p>
             </div>
 
-            <Explainer title="Extended Inputs Beyond Core A1-A4">
+            <Explainer title="Extended Inputs Beyond Core Axioms">
                 <p>The papers distinguish the five axioms from theorem-local technical premises and branch conditions:</p>
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
-                    <li><strong>MAR (Axiom 5)</strong>: admissible-branch selector used in the gauge derivation</li>
-                    <li><strong>T1</strong>: vanishing relevant transport obstruction when global transportability is invoked: [z]=0 on the central branch or q<sub>&Sigma;</sub>=0 on the genuinely noncentral branch</li>
-                    <li><strong>T2</strong>: Lorentz/null-modular/Einstein statements are scaling-limit claims. Literal fixed-cutoff matrix identities appear only in special representations.</li>
-                    <li><strong>T3</strong>: fixed-cap generalized-entropy stationarity for the admissible first-variation class used in the Jacobson branch</li>
-                    <li><strong>T4</strong>: symmetric braiding in the 3+1D EFT branch</li>
-                    <li><strong>T5</strong>: bosonic Tannakian fiber functor, or an explicit super-Tannakian fork</li>
-                    <li><strong>T6</strong>: directed colimit of transportable edge sectors with objectwise finite-dimensional fibers wherever compact gauge reconstruction is invoked</li>
-                    <li><strong>R0/R1</strong>: regulator and fixed-point premises used in the gauge reconstruction</li>
+                    <li><strong>Minimal Admissible Realization:</strong> admissible-branch selector used in the gauge derivation</li>
+                    <li><strong>Transport premise:</strong> vanishing relevant transport obstruction when global transportability is invoked</li>
+                    <li><strong>Scaling premise:</strong> Lorentz/null-modular/Einstein statements are scaling-limit claims. Literal fixed-cutoff matrix identities appear only in special representations.</li>
+                    <li><strong>Stationarity premise:</strong> fixed-cap generalized-entropy stationarity for the admissible first-variation class used in the Jacobson branch</li>
+                    <li><strong>Compact reconstruction premises:</strong> symmetric braiding, bosonic fiber functor or explicit super-Tannakian fork, and a directed colimit of transportable edge sectors where compact gauge reconstruction is invoked</li>
+                    <li><strong>Regulator and fixed-point premises:</strong> local factor regulation and boundary fixed-point structure used in gauge reconstruction</li>
                 </ul>
             </Explainer>
 
@@ -149,7 +147,7 @@ export function AxiomsPage() {
                     <li>Massless photon and graviton remain symmetry-protected structural outputs.</li>
                 </ul>
                 <p>
-                    Adding R0/R1, T1, MAR, and T4-T6 yields the realized Standard Model gauge branch
+                    Adding the regulator, transport, compact-reconstruction, and Minimal Admissible Realization inputs yields the realized Standard Model gauge branch
                     ([SU(3)&times;SU(2)&times;U(1)]/Z<sub>6</sub>, N<sub>c</sub>=3, N<sub>g</sub>=3).
                     Later particle lanes then split into closed calibration sectors, continuation surfaces, compare-only
                     adapters, and open theorem objects depending on the sector.

@@ -11,14 +11,14 @@ export function QftEmergesPage() {
             </div>
 
             <p style={{ marginBottom: '16px' }}>
-                This is the <strong>synthesis page for Chain 2</strong>. It traces the reconstruction from the
-                quantum-algebraic OPH ledger plus theorem-local technical premises to the structural Standard Model branch and
-                several downstream matter-sector continuations. Quantum field theory appears here as an
+                The <strong>Chain 2 synthesis page</strong> traces the reconstruction from the quantum-algebraic OPH
+                ledger plus theorem-local technical premises to the structural Standard Model branch and several
+                downstream matter-sector continuations. Quantum field theory appears here as an
                 <strong>emergent effective description</strong> that arises from the screen algebra in the appropriate limits.
             </p>
 
             <div className="math-block" style={{ fontSize: '0.95em', lineHeight: '2.2' }}>
-                quantum-algebraic screen + A1-A4 + R0 + R1 + T1 + MAR + T4-T6 &rarr; Gauge-as-Gluing &rarr;
+                quantum-algebraic screen plus compact-gauge premises and Minimal Admissible Realization &rarr; Gauge-as-Gluing &rarr;
                 [SU(3)&times;SU(2)&times;U(1)]/Z6, N_c=3, N_g=3 &rarr; Structural SM + Continuation Lanes
             </div>
 
@@ -71,7 +71,7 @@ export function QftEmergesPage() {
                     {
                         step: '5',
                         title: 'Standard Model gauge group',
-                        detail: 'Admissibility filters + MAR lexicographic minimization over C=(chi_faith,N_nonab,N_c,N_g) \u2192 [SU(3)\u00d7SU(2)\u00d7U(1)]/Z6 with N_c=3, N_g=3.',
+                        detail: 'Admissibility filters plus Minimal Admissible Realization select [SU(3)\u00d7SU(2)\u00d7U(1)]/Z6 with three colors and three generations.',
                         color: 'var(--accent-cyan)',
                     },
                     {
@@ -144,17 +144,17 @@ export function QftEmergesPage() {
                 <div style={{ padding: '12px', background: 'rgba(201, 169, 110, 0.1)', border: '1px solid rgba(201, 169, 110, 0.3)', fontSize: '0.85em' }}>
                     <div style={{ color: 'var(--accent-gold)', fontWeight: 600, marginBottom: '4px' }}>Input Ledger</div>
                     <ul style={{ paddingLeft: '16px', margin: 0, lineHeight: '1.8' }}>
-                        <li>A1: Screen net (patches on S&sup2;)</li>
-                        <li>A2: Overlap consistency</li>
-                        <li>A3: local MaxEnt and refinement stability</li>
-                        <li>A4: recoverable generalized entropy</li>
-                        <li>R0: finite-dimensional regulator premise</li>
-                        <li>R1: boundary gauge fixed-point premise</li>
-                        <li>T1: vanishing relevant transport obstruction where global transportability is invoked: [z]=0 on the central branch or q<sub>&Sigma;</sub>=0 on the genuinely noncentral branch</li>
-                        <li>MAR: minimal admissible realization selection axiom</li>
-                        <li>T4: symmetric braiding in the 3+1D EFT branch</li>
-                        <li>T5: bosonic fiber-functor premise, or explicit super-Tannakian fork</li>
-                        <li>T6: directed colimit of transportable edge sectors with objectwise finite-dimensional fibers</li>
+                        <li>Screen-net finite access</li>
+                        <li>Overlap consistency</li>
+                        <li>Local MaxEnt and refinement stability</li>
+                        <li>Recoverable generalized entropy</li>
+                        <li>Finite-dimensional regulator premise</li>
+                        <li>Boundary gauge fixed-point premise</li>
+                        <li>Vanishing transport obstruction on the branch where global transportability is invoked</li>
+                        <li>Minimal Admissible Realization selection axiom</li>
+                        <li>Symmetric braiding in the 3+1D EFT branch</li>
+                        <li>Bosonic fiber-functor premise, or explicit super-Tannakian fork</li>
+                        <li>Directed colimit of transportable edge sectors with objectwise finite-dimensional fibers</li>
                     </ul>
                     <div style={{ marginTop: '12px', padding: '8px', background: 'rgba(0,0,0,0.2)', fontSize: '0.9em' }}>
                         <strong>Quantitative fixed points on the public surface</strong>
@@ -199,16 +199,16 @@ export function QftEmergesPage() {
 
             <Explainer title="Chain 1 and Chain 2: same axioms, different paths">
                 <p>
-                    Both chains share the same core local axioms A1-A4, and the extended theory adds MAR as an
-                    axiom-level selector:
+                    Both chains share the same core local axioms, and the extended theory adds Minimal Admissible
+                    Realization as an axiom-level selector:
                 </p>
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
                     <li><strong>Chain 1 (GR):</strong> Emphasizes recoverability, generalized entropy, the explicit BW scaling branch, the null bridge, the separate bounded-interval projective branch, and fixed-cap stationarity. Result: a conditional Lorentz branch and a conditional Jacobson-type Einstein branch.</li>
-                    <li><strong>Chain 2 (QFT):</strong> Emphasizes overlap consistency, gauge-as-gluing, then R0/R1/T1 with MAR and T4-T6 for compact gauge reconstruction. Result: the structural Standard Model branch plus downstream continuation lanes.</li>
+                    <li><strong>Chain 2 (QFT):</strong> Emphasizes overlap consistency, gauge-as-gluing, compact-gauge premises, transportability, and Minimal Admissible Realization for compact gauge reconstruction. Result: the structural Standard Model branch plus downstream continuation lanes.</li>
                 </ul>
                 <p>
-                    The two chains share the same screen and foundational structure. MAR is the extended-theory
-                    selector that resolves admissible branches in Chain 2.
+                    The two chains share the same screen and foundational structure. Minimal Admissible Realization
+                    is the extended-theory selector that resolves admissible branches in Chain 2.
                 </p>
                 <p>
                     Synthesis page shows how they combine into a unified picture.

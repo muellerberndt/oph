@@ -12,7 +12,7 @@ export type NeutrinoScalarRow = {
 };
 
 // Weighted-cycle neutrino surface.
-// This page carries a concrete result:
+// Displayed concrete result:
 // one absolute mass family, one pair of central splittings, and one physical
 // Majorana pair on one explicit transport branch.
 //

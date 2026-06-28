@@ -104,9 +104,9 @@ export function UnificationPage() {
             </div>
 
             <p style={{ marginBottom: '16px' }}>
-                This page follows the supplement derivation directly: choose an edge-running model, solve the pixel
-                closure for <strong>alpha_U</strong>, then inspect one-loop running at any scale. The certified OPH
-                branch uses P* = {formatPixelConstant(PIXEL_REFERENCE)}; the P slider is a sensitivity coordinate.
+                The supplement derivation chooses an edge-running model, solves the pixel closure for the finite-screen
+                unified gauge-width coupling, then inspects one-loop running at any scale. The certified OPH branch
+                uses the reference pixel constant {formatPixelConstant(PIXEL_REFERENCE)}; the slider is a sensitivity coordinate.
             </p>
 
             <div className="card" style={{ marginBottom: '20px', borderLeft: '3px solid var(--accent-cyan)' }}>
@@ -119,8 +119,8 @@ export function UnificationPage() {
                     ))}
                 </div>
                 <p style={{ margin: 0, fontSize: '0.82em', color: 'var(--text-secondary)' }}>
-                    This is why the lab describes the unification lane as geometric and edge-driven. It should not
-                    imply that a simple-group GUT or superpartner spectrum has been derived underneath it.
+                    The lab therefore describes the unification lane as geometric and edge-driven. It carries no
+                    simple-group GUT or superpartner spectrum underneath it.
                 </p>
             </div>
 

@@ -9,18 +9,18 @@ export function ClassicalPhysicsPage() {
             </div>
 
             <p style={{ marginBottom: '16px' }}>
-                This is the <strong>synthesis page for Chain 1</strong>. On the declared paper surface, the gravity
-                route is a conditional branch: Lorentz kinematics sits on the explicit BW branch and the Einstein step
-                sits on a Jacobson-type entanglement-equilibrium branch with the null bridge, the separate
-                bounded-interval projective branch, and fixed-cap stationarity kept explicit. Classical physics is
-                then discussed as the effective limiting behavior of that branch.
+                The <strong>Chain 1 synthesis page</strong> treats the gravity route as a conditional branch on the
+                declared paper surface. Lorentz kinematics sits on the explicit BW branch, and the Einstein step sits
+                on a Jacobson-type entanglement-equilibrium branch with the null bridge, the separate bounded-interval
+                projective branch, and fixed-cap stationarity kept explicit. Classical physics is the effective
+                limiting behavior of that branch.
             </p>
             <p style={{ marginBottom: '24px' }}>
                 The derivation chain is:
             </p>
 
             <div className="math-block" style={{ fontSize: '1em', lineHeight: '2.2' }}>
-                A1-A4 (Axioms) &rarr; Recoverability + Generalized Entropy &rarr; Conditional Lorentz Branch &rarr;
+                Core screen axioms &rarr; Recoverability + Generalized Entropy &rarr; Conditional Lorentz Branch &rarr;
                 Geometric Modular Flow (BW branch) &rarr; Null Bridge + Bounded-Interval Projective Branch +
                 Fixed-cap Stationarity &rarr;
                 Conditional Einstein Branch &rarr; Classical Limits
@@ -142,22 +142,21 @@ export function ClassicalPhysicsPage() {
                 <div style={{ padding: '12px', background: 'rgba(201, 169, 110, 0.1)', border: '1px solid rgba(201, 169, 110, 0.3)', fontSize: '0.85em' }}>
                     <div style={{ color: 'var(--accent-gold)', fontWeight: 600, marginBottom: '4px' }}>Input Ledger</div>
                     <ul style={{ paddingLeft: '16px', margin: 0, lineHeight: '1.8' }}>
-                        <li>A1: Screen net (patches on S&sup2;)</li>
-                        <li>A2: Overlap consistency</li>
-                        <li>A3: local MaxEnt and refinement stability</li>
-                        <li>A4: recoverable generalized entropy</li>
-                        <li>T2/T3 and the null-bridge premises where invoked</li>
+                        <li>Screen net on local patches</li>
+                        <li>Overlap consistency</li>
+                        <li>Local MaxEnt and refinement stability</li>
+                        <li>Recoverable generalized entropy</li>
+                        <li>Scaling, stationarity, and null-bridge premises where invoked</li>
                     </ul>
                 </div>
             </div>
 
             <Explainer title="What about electromagnetism?">
                 <p>
-                    Electromagnetism and the other gauge forces are not part of Chain 1. They arise from
-                    <strong> Chain 2</strong> (Axioms &rarr; QFT) via the gauge-as-gluing mechanism. Chain 1 gives
-                    gravity; Chain 2 gives the gauge forces. Both chains share core A1-A4, but Chain 2 additionally
-                    uses MAR (Axiom 5) with technical premises R0/R1, T1, and T4-T6 plus different branch-specific
-                    assumptions.
+                    Electromagnetism and the other gauge forces belong to <strong>Chain 2</strong> via the
+                    gauge-as-gluing mechanism. Chain 1 gives gravity; Chain 2 gives the gauge forces. Both chains
+                    share the core screen axioms. Chain 2 also uses Minimal Admissible Realization with regulator,
+                    transport, compact-reconstruction, and branch-specific assumptions.
                 </p>
             </Explainer>
 
@@ -177,7 +176,8 @@ export function ClassicalPhysicsPage() {
             <Explainer title="Is this really a derivation?">
                 <p>
                     A derivation earns its keep by producing quantitative consequences that distinguish it from
-                    standard physics. The decisive test is whether the axioms predict anything <em>new</em>.
+                    standard physics. The decisive test is whether the axioms produce target values before the
+                    relevant measurements are used as inputs.
                 </p>
                 <p>
                     Yes. Chain 1 makes novel predictions:

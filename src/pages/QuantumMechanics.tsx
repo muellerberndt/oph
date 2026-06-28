@@ -9,10 +9,10 @@ export function QuantumMechanicsPage() {
             </div>
 
             <p style={{ marginBottom: '16px' }}>
-                This page states the OPH starting point for Chain 2. OPH uses a quantum-algebraic
-                screen: patch algebras, states, trace/Born event probabilities on declared record
-                surfaces, and generalized entropy. This is a deliberate algebraic-information basis,
-                not a demand to derive every mathematical ingredient from a blank starting point.
+                Chain 2 starts from a quantum-algebraic screen: patch algebras, states, trace/Born event
+                probabilities on declared record surfaces, and generalized entropy. The basis is deliberately
+                algebraic and informational. It does not demand a derivation of every mathematical ingredient from
+                a blank starting point.
             </p>
             <p style={{ marginBottom: '24px' }}>
                 The punchline: <strong>quantum mechanics is the algebraic information language carried by
@@ -56,9 +56,9 @@ export function QuantumMechanicsPage() {
             <p style={{ marginBottom: '16px' }}>
                 In OPH, overlap consistency supplies the compatibility demand on shared event algebras: the
                 probability of an outcome on P<sub>1</sub> &cap; P<sub>2</sub> must agree across the two patches.
-                Additivity and the dimension condition belong to the supplied algebraic setting. This supports
-                the quantum event law inside OPH as part of the declared algebraic setting rather than a
-                preliminary derivation that must come before the rest of the reconstruction.
+                Additivity and the dimension condition belong to the supplied algebraic setting. This places the
+                quantum event law inside OPH's declared algebraic setting as one supplied input for the
+                reconstruction.
             </p>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Step 3: "Collapse" = Belief Updating</h3>
