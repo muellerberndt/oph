@@ -7,7 +7,7 @@ import { WalkthroughNav } from './WalkthroughNav';
 import { installLinkTracking, trackPageView } from '../lib/analytics';
 import { SeoManager } from './SeoManager';
 import { getSeoMeta } from '../seo';
-import { APPLICATIONS_URL, BLOG_URL, BOOK_URL, CHALLENGE_URL, COHERENCE_URL, OVERVIEW_URL, PHYSICS_UNIFICATION_URL, RESEARCH_LICENSE_URL, RESEARCH_PATENT_POLICY_URL, RESEARCH_REPO_URL, SIMULATION_URL, TEXTBOOKS_URL, THEORY_URL, THREE_BODY_DEMO_URL } from '../content/paperSurface';
+import { APPLICATIONS_URL, BLOG_URL, BOOK_URL, CHALLENGE_URL, COHERENCE_URL, MINI_UNIVERSE_SIMULATION_URL, OVERVIEW_URL, PHYSICS_UNIFICATION_URL, RESEARCH_LICENSE_URL, RESEARCH_PATENT_POLICY_URL, RESEARCH_REPO_URL, SIMULATION_URL, TEXTBOOKS_URL, THEORY_URL, THREE_BODY_DEMO_URL } from '../content/paperSurface';
 
 export function Layout() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -120,6 +120,13 @@ export function Layout() {
                                 <small>Search entry page for the unification claim.</small>
                             </span>
                         </a>
+                        <a className="global-resource-link" href={MINI_UNIVERSE_SIMULATION_URL}>
+                            <Orbit size={18} />
+                            <span>
+                                <strong>Mini-Universe Simulation</strong>
+                                <small>Observer patches, overlap readback, records, and repair in motion.</small>
+                            </span>
+                        </a>
                         <a className="global-resource-link" href={APPLICATIONS_URL}>
                             <Cpu size={18} />
                             <span>
@@ -160,6 +167,8 @@ export function Layout() {
                                 <a href={PHYSICS_UNIFICATION_URL} style={{ color: 'var(--accent-gold)', textDecoration: 'none' }}>Physics Unification</a>
                                 {' \u2022 '}
                                 <a href={SIMULATION_URL} style={{ color: 'var(--accent-gold)', textDecoration: 'none' }}>Simulation Theory</a>
+                                {' \u2022 '}
+                                <a href={MINI_UNIVERSE_SIMULATION_URL} style={{ color: 'var(--accent-gold)', textDecoration: 'none' }}>Mini-Universe Simulation</a>
                                 {' \u2022 '}
                                 <a href={BOOK_URL} style={{ color: 'var(--accent-gold)', textDecoration: 'none' }}>Book</a>
                                 {' \u2022 '}

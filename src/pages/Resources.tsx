@@ -7,6 +7,7 @@ import {
     COHERENCE_URL,
     LAB_REPO_URL,
     APPLICATIONS_URL,
+    MINI_UNIVERSE_SIMULATION_URL,
     OPH_PAPERS,
     OVERVIEW_URL,
     PHYSICS_UNIFICATION_URL,
@@ -164,6 +165,18 @@ export function ResourcesPage() {
                     </p>
                     <a href={TEXTBOOKS_URL} target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.85em' }}>
                         learn.floatingpragma.io &rarr;
+                    </a>
+                </div>
+
+                <div className="card" style={{ borderLeft: '3px solid var(--accent-gold)' }}>
+                    <h4 style={{ margin: '0 0 8px 0', fontSize: '0.9em', color: 'var(--accent-gold)' }}>
+                        Mini-Universe Simulation
+                    </h4>
+                    <p style={{ margin: '0 0 8px 0', fontSize: '0.85em' }}>
+                        Visual explorer for observer patches, overlap readback, repair pressure, records, and emergent geometry.
+                    </p>
+                    <a href={MINI_UNIVERSE_SIMULATION_URL} target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.85em' }}>
+                        simulation.floatingpragma.io &rarr;
                     </a>
                 </div>
 
