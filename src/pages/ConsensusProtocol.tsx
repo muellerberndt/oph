@@ -1,5 +1,5 @@
 import { Explainer } from '../components/Explainer';
-import { CONSENSUS_HIGHLIGHTS } from '../content/paperSurface';
+import { CONSENSUS_HIGHLIGHTS, MATH_FOUNDATIONS_PAPER } from '../content/paperSurface';
 
 export function ConsensusProtocolPage() {
     return (
@@ -34,6 +34,61 @@ export function ConsensusProtocolPage() {
                     </div>
                 ))}
             </div>
+
+            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Four Independent Proof Obligations</h3>
+            <p style={{ marginBottom: '16px', fontSize: '0.85em', color: 'var(--text-muted)' }}>
+                The standalone mathematical companion keeps four questions separate. Proving one does not silently
+                discharge the others.
+            </p>
+            <div style={{ display: 'grid', gap: '12px', marginBottom: '24px' }}>
+                <div className="card" style={{ borderLeft: '3px solid var(--accent-purple)' }}>
+                    <h4 style={{ margin: '0 0 8px 0', fontSize: '0.9em', color: 'var(--accent-purple)' }}>
+                        Same-source confluence
+                    </h4>
+                    <p style={{ margin: 0, fontSize: '0.82em', color: 'var(--text-secondary)' }}>
+                        Different accepted repair orders starting from one fixed quotient state must reach the same
+                        normal form. This is schedule independence; it does not compare different initial states.
+                    </p>
+                </div>
+                <div className="card" style={{ borderLeft: '3px solid var(--accent-cyan)' }}>
+                    <h4 style={{ margin: '0 0 8px 0', fontSize: '0.9em', color: 'var(--accent-cyan)' }}>
+                        Cross-source identification
+                    </h4>
+                    <p style={{ margin: 0, fontSize: '0.82em', color: 'var(--text-secondary)' }}>
+                        Different sources with the same protected observation have matching endpoints modulo gauge
+                        exactly when that observation identifies consistent states modulo the declared silent
+                        equivalence, assuming observation preservation and that normal forms are the consistent states.
+                    </p>
+                </div>
+                <div className="card" style={{ borderLeft: '3px solid var(--accent-gold)' }}>
+                    <h4 style={{ margin: '0 0 8px 0', fontSize: '0.9em', color: 'var(--accent-gold)' }}>
+                        Normalization and liveness
+                    </h4>
+                    <p style={{ margin: 0, fontSize: '0.82em', color: 'var(--text-secondary)' }}>
+                        Weak normalization shows that an endpoint exists. Fairness, strong normalization, or another
+                        liveness certificate is needed before every allowed execution may be said to settle.
+                    </p>
+                </div>
+                <div className="card" style={{ borderLeft: '3px solid var(--accent-blue)' }}>
+                    <h4 style={{ margin: '0 0 8px 0', fontSize: '0.9em', color: 'var(--accent-blue)' }}>
+                        Local repairability
+                    </h4>
+                    <p style={{ margin: 0, fontSize: '0.82em', color: 'var(--text-secondary)' }}>
+                        A unique consistent extension need not be constructible by the declared local write support.
+                        In the finite collar model, a total exact collar-preserving repair exists exactly when every
+                        protected collar value has a consistent local extension.
+                    </p>
+                </div>
+            </div>
+
+            <p style={{ marginBottom: '24px', fontSize: '0.85em' }}>
+                <a href={MATH_FOUNDATIONS_PAPER.href} target="_blank" rel="noopener noreferrer">
+                    Read {MATH_FOUNDATIONS_PAPER.title}
+                </a>{' '}
+                for the application-neutral theorem, counterexample, stability, refinement, and Lean-audit layers.
+                Its generic equivalence does not by itself prove that a particular physical boundary map is injective
+                on its consistent quotient; that remains an application certificate.
+            </p>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>The Core Objects</h3>
             <div style={{ display: 'grid', gap: '12px', marginBottom: '24px' }}>
@@ -80,8 +135,8 @@ export function ConsensusProtocolPage() {
                     single out one microscopic repair law on every branch.
                 </p>
                 <p>
-                    Law-space selection stays in a meta-model box. The finite patch-net theorem stack carries the
-                    main claim.
+                    Same-source confluence, cross-source boundary identification, liveness, and local repairability
+                    have separate hypotheses. Law-space selection stays in a meta-model box.
                 </p>
             </Explainer>
         </div>

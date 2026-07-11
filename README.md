@@ -93,9 +93,15 @@ This section is the lab-maintainer summary of the public paper surface.
 
 - Accepted local repairs lower the touched-overlap inconsistency potential `Phi`.
 - On the finite patch net, that local-fit contract makes `Phi` a Lyapunov functional for accepted repair moves.
-- Under repair completeness and quotient-compatible union-collar gluing, the repair dynamics has a unique schedule-independent normal form.
+- Under repair completeness and quotient-compatible union-collar gluing, each fixed initial quotient state has a unique schedule-independent normal form.
+- Same-source confluence does not by itself identify endpoints from different sources with the same boundary. That stronger statement requires the protected observation to identify the consistent quotient modulo the declared silent or gauge equivalence.
+- Weak normalization supplies an endpoint; fairness, strong normalization, or another liveness argument is still needed to show that every allowed schedule settles.
+- A unique extension need not be constructible by the declared local write support. Local repairability is a separate proof obligation.
 - Global consistency is still obstructed by cycle / holonomy defects. Pairwise overlap agreement alone is not enough.
 - Gauge-invariant uniqueness belongs on the quotient, not on raw microscopic representatives.
+- The standalone mathematical companion
+  [Observation-Determined Normal Forms](https://github.com/FloatingPragma/observer-patch-holography/blob/main/extra/observable_normal_forms.pdf)
+  develops these distinctions without importing OPH-specific assumptions into the paper.
 
 ### Screen microphysics branch
 

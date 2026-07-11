@@ -496,7 +496,26 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     },
     {
         term: 'Normal Form',
-        definition: 'Repair-fixed patch-net state reached after all accepted local reconciliations are exhausted. Under the stated completeness and gluing assumptions it is schedule-independent.',
+        definition: 'Repair-fixed patch-net state reached from a specified source after accepted local reconciliations are exhausted. Under the stated completeness and gluing assumptions it is independent of the repair schedule from that source; comparing different sources requires a separate observation-fiber condition.',
+        category: 'methods',
+        usedIn: ['Consensus Protocol'],
+    },
+    {
+        term: 'Observation Fiber',
+        symbol: 'C_b',
+        definition: 'Consistent states sharing one protected observation b. An empty fiber is unrealizable, a singleton fiber is reconstructing, and a fiber with multiple inequivalent states is ambiguous.',
+        category: 'methods',
+        usedIn: ['Consensus Protocol'],
+    },
+    {
+        term: 'Observation-Determined Normal Form',
+        definition: 'A consistent endpoint determined by protected observation data, modulo the declared silent or gauge equivalence. This is stronger than same-source confluence and does not by itself supply normalization or liveness.',
+        category: 'methods',
+        usedIn: ['Consensus Protocol'],
+    },
+    {
+        term: 'Cross-Source Identification',
+        definition: 'Agreement of normal endpoints reached from possibly different sources with the same protected observation. Under observation preservation and normal-form completeness, it is equivalent to the observation identifying the consistent quotient.',
         category: 'methods',
         usedIn: ['Consensus Protocol'],
     },

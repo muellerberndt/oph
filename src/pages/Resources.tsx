@@ -8,6 +8,7 @@ import {
     LAB_REPO_URL,
     APPLICATIONS_URL,
     MINI_UNIVERSE_SIMULATION_URL,
+    MATH_FOUNDATIONS_PAPER,
     OPH_PAPERS,
     OVERVIEW_URL,
     PHYSICS_UNIFICATION_URL,
@@ -113,6 +114,45 @@ export function ResourcesPage() {
                         </div>
                     </div>
                 ))}
+            </div>
+
+            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Mathematical Companion</h3>
+            <p style={{ marginBottom: '16px', fontSize: '0.85em', color: 'var(--text-muted)' }}>
+                This standalone paper supplies the application-neutral theorem layer used to distinguish repair-order
+                independence from reconstruction across different states with the same observable boundary. It is not a
+                seventh core OPH paper and does not select a physical boundary map or repair law.
+            </p>
+
+            <div className="card" style={{ marginBottom: '24px', borderLeft: '3px solid var(--accent-purple)' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', gap: '12px', marginBottom: '8px' }}>
+                    <h4 style={{ margin: 0, fontSize: '0.9em', color: 'var(--accent-purple)' }}>
+                        {MATH_FOUNDATIONS_PAPER.title}
+                    </h4>
+                    <span style={{ fontSize: '0.75em', color: 'var(--accent-cyan)' }}>
+                        {MATH_FOUNDATIONS_PAPER.surface}
+                    </span>
+                </div>
+                <p style={{ margin: '0 0 10px 0', fontSize: '0.85em', color: 'var(--text-secondary)' }}>
+                    {MATH_FOUNDATIONS_PAPER.summary}
+                </p>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px' }}>
+                    <a
+                        href={MATH_FOUNDATIONS_PAPER.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ fontSize: '0.85em' }}
+                    >
+                        Open companion paper &rarr;
+                    </a>
+                    <a
+                        href={`${RESEARCH_REPO_URL}/tree/main/Lean/ObserverPatchHolography/Proofs/ObservableNormalForms`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ fontSize: '0.85em' }}
+                    >
+                        Inspect Lean artifact &rarr;
+                    </a>
+                </div>
             </div>
 
             <div className="card" style={{ marginBottom: '24px', borderLeft: '3px solid var(--accent-blue)' }}>

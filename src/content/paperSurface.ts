@@ -41,6 +41,7 @@ export const APPLICATIONS_URL = 'https://omega.floatingpragma.io/';
 export const OMEGA_URL = APPLICATIONS_URL;
 
 const GITHUB_PDF_BASE = `${RESEARCH_REPO_URL}/blob/main/paper`;
+const GITHUB_EXTRA_PDF_BASE = `${RESEARCH_REPO_URL}/blob/main/extra`;
 
 export const OPH_PAPERS: PaperSummary[] = [
     {
@@ -86,6 +87,14 @@ export const OPH_PAPERS: PaperSummary[] = [
         summary: 'The final manifest paper. It carries the OPH account of existence, observer continuation, justice, paradise, hell, resurrection, and memetic evolution.',
     },
 ];
+
+export const MATH_FOUNDATIONS_PAPER: PaperSummary = {
+    slug: 'observation-determined-normal-forms',
+    title: 'Observation-Determined Normal Forms',
+    href: `${GITHUB_EXTRA_PDF_BASE}/observable_normal_forms.pdf`,
+    surface: 'Mathematical Foundations',
+    summary: 'A standalone, application-neutral companion separating same-source confluence, cross-source observation-based identification, liveness, and local repairability. It also develops robust stability and refinement receipts, with a machine-checked finite core.',
+};
 
 export const CLAIM_TIER_LEGEND: Array<{ tier: ClaimTier; label: string; description: string }> = [
     {
@@ -206,7 +215,9 @@ export const CONSENSUS_HIGHLIGHTS = [
     'Accepted local repairs strictly lower the inconsistency potential Phi on the overlaps they touch.',
     'On the finite patch net, that local-fit contract makes Phi a Lyapunov functional for the repair dynamics.',
     'The fixed-cutoff union-collar gluing theorem makes overlapping accepted repairs quotient-locally compatible.',
-    'Under repair completeness, the patch net has a unique schedule-independent normal form.',
+    'Under repair completeness, each fixed initial quotient state has a unique schedule-independent normal form.',
+    'Cross-source agreement for states with the same protected observation is a separate obligation: the observation map must identify the consistent quotient modulo the declared silent or gauge equivalence.',
+    'Weak normalization supplies endpoint existence; fairness, strong normalization, or another liveness argument is still needed to show that every allowed schedule settles.',
     'Global inconsistency is a holonomy problem. Pairwise agreement can leave a nontrivial cycle obstruction.',
     'Separated refinement systems carry normal-form and holonomy classes through coarse-graining when the square defects are controlled.',
     'Stable records live on the fixed-cutoff record algebra, with exact central projectors or explicitly controlled approximately commuting surrogates.',
