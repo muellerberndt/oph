@@ -133,7 +133,7 @@ export function AxiomsPage() {
                     <li><strong>Transport premise:</strong> vanishing relevant transport obstruction when global transportability is invoked</li>
                     <li><strong>Scaling premise:</strong> Lorentz/null-modular/Einstein statements are scaling-limit claims. Literal fixed-cutoff matrix identities appear only in special representations.</li>
                     <li><strong>Stationarity premise:</strong> fixed-cap generalized-entropy stationarity for the admissible first-variation class used in the Jacobson branch</li>
-                    <li><strong>Compact reconstruction premises:</strong> symmetric braiding, bosonic fiber functor or explicit super-Tannakian fork, and a directed colimit of transportable edge sectors where compact gauge reconstruction is invoked</li>
+                    <li><strong>Compact-gauge refinement receipt:</strong> finite-state extendability, center-compatible block-multiplicity embeddings, common stagewise strict representatives with coherent surjective boundary-group maps that intertwine them, finite tensor realizations, compatible forgetful fibers, and symmetric braiding (or an explicit super-Tannakian fork)</li>
                     <li><strong>Regulator and fixed-point premises:</strong> local factor regulation and boundary fixed-point structure used in gauge reconstruction</li>
                 </ul>
             </Explainer>

@@ -153,6 +153,12 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
         usedIn: ['Gauge Symmetry', 'Standard Model'],
     },
     {
+        term: 'Compact-Gauge Refinement Receipt',
+        definition: 'Explicit refinement data supplying finite-state extendability, center-compatible block-multiplicity embeddings, common stagewise strict representatives with coherent surjective boundary-group maps that intertwine them, finite tensor realizations, and compatible forgetful fibers. Compact-gauge colimit reconstruction is conditional on this receipt.',
+        category: 'gauge',
+        usedIn: ['Axioms', 'Gauge Symmetry', 'Standard Model', 'QFT Emerges', 'Synthesis'],
+    },
+    {
         term: 'Axiom MX',
         definition: 'Exponential mixing of conditional mutual information across collars.',
         category: 'methods',
@@ -277,7 +283,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     },
     {
         term: 'Tannaka-Krein Reconstruction',
-        definition: 'Reconstructs compact group from representation/fusion category data.',
+        definition: 'Reconstructs a compact group as the unitary symmetric monoidal automorphism group Aut_tensor(F) of a faithful finite-dimensional fiber functor on a rigid symmetric C*-tensor category; the category need not have finitely many simple objects.',
         category: 'gauge',
         usedIn: ['Gauge Symmetry', 'Standard Model'],
         links: [{ label: 'Tannaka-Krein duality', url: 'https://en.wikipedia.org/wiki/Tannaka%E2%80%93Krein_duality' }],

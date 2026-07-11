@@ -18,7 +18,7 @@ export function QftEmergesPage() {
             </p>
 
             <div className="math-block" style={{ fontSize: '0.95em', lineHeight: '2.2' }}>
-                quantum-algebraic screen plus compact-gauge premises and Minimal Admissible Realization &rarr; Gauge-as-Gluing &rarr;
+                quantum-algebraic screen plus the compact-gauge refinement receipt and Minimal Admissible Realization &rarr; Gauge-as-Gluing &rarr;
                 [SU(3)&times;SU(2)&times;U(1)]/Z6, N_c=3, N_g=3 &rarr; Structural SM + Continuation Lanes
             </div>
 
@@ -65,7 +65,7 @@ export function QftEmergesPage() {
                     {
                         step: '4',
                         title: 'Gauge symmetry from patch gluing',
-                        detail: 'Gauge-as-gluing route: transition functions on overlaps \u2192 gauge group. Tannaka-Krein: edge-sector fusion rules \u2192 compact G.',
+                        detail: 'Gauge-as-gluing fixes one common strict transport representative per stage and retains the seed sectors trivial under it. On a cofinal tail carrying the explicit refinement receipt, Tannaka-Krein reconstructs compact G from the tensor category and forgetful fiber.',
                         color: 'var(--accent-cyan)',
                     },
                     {
@@ -153,8 +153,8 @@ export function QftEmergesPage() {
                         <li>Vanishing transport obstruction on the branch where global transportability is invoked</li>
                         <li>Minimal Admissible Realization selection axiom</li>
                         <li>Symmetric braiding in the 3+1D EFT branch</li>
-                        <li>Bosonic fiber-functor premise, or explicit super-Tannakian fork</li>
-                        <li>Directed colimit of transportable edge sectors with objectwise finite-dimensional fibers</li>
+                        <li>Compact-gauge refinement receipt: finite extendability, explicit center-compatible block-multiplicity embeddings, common stagewise strict representatives, and coherent surjective boundary-group maps that intertwine them</li>
+                        <li>Finite tensor realizations and compatible objectwise finite-dimensional forgetful fibers, or an explicit super-Tannakian fork</li>
                     </ul>
                     <div style={{ marginTop: '12px', padding: '8px', background: 'rgba(0,0,0,0.2)', fontSize: '0.9em' }}>
                         <strong>Quantitative fixed points on the public surface</strong>
@@ -204,7 +204,7 @@ export function QftEmergesPage() {
                 </p>
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
                     <li><strong>Chain 1 (GR):</strong> Emphasizes recoverability, generalized entropy, the explicit BW scaling branch, the null bridge, the separate bounded-interval projective branch, and fixed-cap stationarity. Result: a conditional Lorentz branch and a conditional Jacobson-type Einstein branch.</li>
-                    <li><strong>Chain 2 (QFT):</strong> Emphasizes overlap consistency, gauge-as-gluing, compact-gauge premises, transportability, and Minimal Admissible Realization for compact gauge reconstruction. Result: the structural Standard Model branch plus downstream continuation lanes.</li>
+                    <li><strong>Chain 2 (QFT):</strong> Emphasizes overlap consistency, gauge-as-gluing, transportability, the explicit compact-gauge refinement receipt, and Minimal Admissible Realization. Result: receipt-conditional compact gauge reconstruction, the structural Standard Model branch, and downstream continuation lanes.</li>
                 </ul>
                 <p>
                     The two chains share the same screen and foundational structure. Minimal Admissible Realization

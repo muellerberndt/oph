@@ -14,15 +14,20 @@ export function GaugeSymmetryPage() {
                 descriptions of the same overlap region.
             </p>
             <p style={{ marginBottom: '24px' }}>
-                The derivation identifies the admissible compact groups carried by that overlap structure and then
-                selects the realized sector with the Minimal Admissible Realization rule.
+                One common strict transport representative is fixed at each stage, and the visible edge blocks
+                with trivial loop action under that same choice are tensor-generating seeds, not a finite list
+                closed under tensor product. Their replete rigid tensor category may have infinitely many simple objects. On a
+                cofinal tail carrying the compact-gauge refinement receipt, the construction reconstructs a compact
+                group and then selects the realized sector with the Minimal Admissible Realization rule.
             </p>
             <p style={{ marginBottom: '16px' }}>
                 The derivation adds the extended selection and premise package used by the compact-gauge proof:
                 admissibility defines the candidate class, the transport premise removes the relevant obstruction
-                on the branch where global transportability is invoked, the compact reconstruction premises supply
-                the gauge category, and Minimal Admissible Realization chooses the lexicographically minimal
-                admissible sector.
+                on the branch where global transportability is invoked, and the compact-gauge refinement receipt
+                supplies finite-state extendability, center-compatible block-multiplicity embeddings, coherent
+                surjective group pullbacks that intertwine the common stagewise representatives, finite tensor
+                realizations, and compatible forgetful fibers. Minimal
+                Admissible Realization then chooses the lexicographically minimal admissible sector.
             </p>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Gauge-as-Gluing Route</h3>
@@ -53,7 +58,9 @@ export function GaugeSymmetryPage() {
                 complement. These edge modes transform under representations of the gauge group.
             </p>
             <p style={{ marginBottom: '16px' }}>
-                The <strong>fusion rules</strong> of these edge-sector representations determine the gauge group.
+                The visible edge carriers retained under one common stagewise strict representative generate a
+                rigid tensor category. On the receipt-certified refinement
+                tail, its tensor rules and faithful forgetful fiber determine the reconstructed gauge group.
                 A theorem from abstract algebra (Tannaka-Krein reconstruction) says:
             </p>
             <div className="card" style={{ marginBottom: '24px', borderLeft: '3px solid var(--accent-blue)' }}>
@@ -61,18 +68,33 @@ export function GaugeSymmetryPage() {
                     Tannaka-Krein Reconstruction
                 </h4>
                 <p style={{ margin: '0 0 8px 0', fontSize: '0.85em' }}>
-                    Given a collection of representations with tensor product, direct sum, and duality operations
-                    (a "fusion category"), there exists a unique compact group G such that these representations
-                    are exactly Rep(G).
+                    Given a rigid symmetric C*-tensor category with simple unit and a faithful finite-dimensional
+                    symmetric fiber functor F, the unitary symmetric monoidal natural automorphisms
+                    Aut<sub>&otimes;</sub>(F) form a compact group G. The category may have infinitely many simple
+                    objects; it is not assumed to be a finite fusion category.
                 </p>
                 <div className="math-block" style={{ fontSize: '0.85em', margin: '8px 0 0' }}>
-                    Edge-sector fusion rules &rArr; Compact gauge group G
+                    Receipt-certified tensor category + forgetful fiber &rArr; Compact gauge group G
                 </div>
             </div>
             <p style={{ marginBottom: '16px' }}>
-                Gauge groups are compact because edge-sector fusion rules satisfy the axioms of a compact group
-                representation category. Compactness follows from the reconstruction.
+                Compactness follows from reconstruction on the receipt-certified tensor/fiber package, not from a
+                finite fusion table or from a finite-state coarse-graining map alone.
             </p>
+
+            <div className="card" style={{ marginBottom: '24px', borderLeft: '3px solid var(--accent-green)' }}>
+                <h4 style={{ margin: '0 0 8px 0', fontSize: '0.9em', color: 'var(--accent-green)' }}>
+                    U(1) cutoff acceptance test
+                </h4>
+                <p style={{ margin: 0, fontSize: '0.85em' }}>
+                    If charge one is visible and retained under the common stagewise representative, rigid tensor
+                    closure contains every integer charge. Charge two
+                    lives in End(W<sub>1</sub>&otimes;W<sub>1</sub>), represented by a finite two-collar realization;
+                    its projector need not belong to the original one-collar center. At the next refinement,
+                    surjective group pullback preserves its one-dimensional carrier and the compatible forgetful
+                    fiber is still C, with the identity comparison map.
+                </p>
+            </div>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Why Product Groups?</h3>
             <p style={{ marginBottom: '16px' }}>

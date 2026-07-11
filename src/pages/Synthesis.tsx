@@ -14,8 +14,9 @@ export function SynthesisPage() {
                 Both chains converge, but they do so at different claim tiers. Chain 1 yields a conditional Lorentz
                 branch on the BW scaling surface, a conditional Jacobson-type Einstein branch under the null bridge,
                 the separate bounded-interval projective branch, and fixed-cap stationarity, and separate
-                cosmological-capacity consequences. Chain 2 yields the structural Standard Model branch together with
-                several downstream continuation lanes. The same paper surface includes a dedicated consensus
+                cosmological-capacity consequences. Given the explicit compact-gauge refinement receipt, Chain 2
+                yields the receipt-conditional structural Standard Model branch together with several downstream
+                continuation lanes. The same paper surface includes a dedicated consensus
                 spine and a concrete screen-microphysics architecture. Both start from the same five-axiom basis on a
                 holographic screen S&sup2;, while specific pages add the theorem-local technical premises needed for
                 Lorentz, gauge, particle, or observer-level statements.
@@ -114,7 +115,7 @@ export function SynthesisPage() {
                         <div style={{ padding: '8px 16px', background: 'rgba(122,184,212,0.15)', border: '1px solid var(--accent-blue)', color: 'var(--accent-blue)', fontSize: '0.8em', fontWeight: 600, textAlign: 'center', width: '100%' }}>
                             CHAIN 2: QFT
                         </div>
-                        {['Compact-gauge premises + Minimal Admissible Realization', 'QM from Overlap Consistency', 'Gauge-as-Gluing', '[SU(3)\u00d7SU(2)\u00d7U(1)]/Z6', 'Edge-Sector Dynamics', 'Structural SM + Continuations'].map((step, i) => (
+                        {['Compact-gauge refinement receipt + Minimal Admissible Realization', 'QM from Overlap Consistency', 'Gauge-as-Gluing', '[SU(3)\u00d7SU(2)\u00d7U(1)]/Z6', 'Edge-Sector Dynamics', 'Structural SM + Continuations'].map((step, i) => (
                             <div key={i} style={{ width: '100%' }}>
                                 <div style={{ padding: '6px 12px', background: 'rgba(122,184,212,0.05)', border: '1px solid rgba(122,184,212,0.2)', fontSize: '0.75em', color: 'var(--text-secondary)', textAlign: 'center' }}>
                                     {step}
@@ -208,7 +209,7 @@ export function SynthesisPage() {
                 <span style={{ color: 'var(--accent-rose)', fontWeight: 600 }}>Standard:</span>
                 <span style={{ color: 'var(--text-secondary)' }}>Gravity and QM are separate</span>
                 <span style={{ color: 'var(--accent-green)', fontWeight: 600 }}>OPH:</span>
-                <span style={{ color: 'var(--text-secondary)' }}>Both emerge from core axioms; gauge uniqueness uses Minimal Admissible Realization</span>
+                <span style={{ color: 'var(--text-secondary)' }}>Both share the core axioms; compact-gauge reconstruction uses the refinement receipt, and gauge uniqueness then uses Minimal Admissible Realization</span>
             </div>
 
             <Explainer title="Is this too good to be true?">

@@ -62,7 +62,7 @@ const QUESTIONS: Question[] = [
         problem: 'Proton stability',
         conventional: 'Grand Unified Theories predict proton decay. Never observed.',
         hiddenAssumption: 'Forces were unified in a simple group that was then broken.',
-        ophResolution: 'OPH selects a product gauge group from patch gluing. That structure carries no leptoquark bosons and gives no proton decay.',
+        ophResolution: 'On the receipt-certified compact-gauge branch, gluing supplies fixed-stage seeds, the refinement receipt supplies the tensor/fiber colimit, and MAR selects a product gauge group. That structure carries no leptoquark bosons and gives no gauge-mediated proton decay.',
     },
     {
         problem: 'The hard problem of consciousness',
