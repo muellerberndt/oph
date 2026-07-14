@@ -121,14 +121,34 @@ export function ErrorCorrectionPage() {
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Connection to OPH</h3>
             <p style={{ marginBottom: '16px' }}>
-                In OPH, quantum error correction is the mechanism by which the bulk spacetime emerges from the
-                screen:
+                In OPH, collar recovery is a controlled comparison-and-gluing ingredient in the geometric branch.
+                Its theorem has two distinct routes:
             </p>
             <ul style={{ paddingLeft: '20px', lineHeight: '1.8', marginBottom: '16px' }}>
-                <li><strong>Axiom A4 (Recoverable Generalized Entropy):</strong> The collar recoverability condition is the error-correction ingredient. It says that bulk data in the entanglement wedge of A can be recovered from A alone, up to controlled error.</li>
+                <li><strong>Exact central-interface route:</strong> the edge split agrees with the Markov split and I(A<sub>&delta;</sub>:D<sub>&delta;</sub>|B<sub>&delta;</sub>) = 0 exactly.</li>
+                <li><strong>Conditional Gibbs route:</strong> a faithful finite-range Gibbs family must also satisfy a uniform strong conditional matrix-mixing envelope. Ordinary two-point clustering does not supply that premise.</li>
                 <li><strong>Axiom A4 (Generalized entropy side):</strong> The area term limits the code rate: how much bulk data can be encoded per unit of boundary area.</li>
                 <li><strong>Axiom A1 (Screen Net):</strong> The isotony condition A(P) &sub; A(Q) for P &sub; Q ensures that the code is consistent across scales.</li>
             </ul>
+
+            <div className="card" style={{ marginBottom: '20px', borderLeft: '3px solid var(--accent-cyan)' }}>
+                <h4 style={{ margin: '0 0 10px 0', fontSize: '0.9em' }}>Conditional collar-recovery contract</h4>
+                <div className="math-block" style={{ margin: '0 0 10px 0', fontSize: '0.8em' }}>
+                    I(A_delta:D_delta|B_delta) &le; kappa |partial C|_UV exp(-(m-r0)/zeta)
+                    <br />
+                    &le; c |partial C|_UV exp(-delta/xi)
+                </div>
+                <p style={{ margin: '0 0 8px 0', fontSize: '0.82em', color: 'var(--text-secondary)' }}>
+                    Here m = delta/l<sub>UV</sub>, xi = zeta l<sub>UV</sub>, and c = kappa exp(r0/zeta).
+                    The bound vanishes only with the full rate margin delta/xi - log|partial C|<sub>UV</sub> &rarr; +infinity.
+                    The weaker ratio delta/l<sub>UV</sub> &rarr; infinity can lose to the growing boundary count.
+                </p>
+                <p style={{ margin: 0, fontSize: '0.82em', color: 'var(--text-secondary)' }}>
+                    Finite measurements of regional CMI, the matrix defect, boundary count, held-out cuts, and recovery
+                    error are branch-instantiation proxies, not proofs of a cofinal limit. CMI is a scalar recovery
+                    diagnostic; it is not a stress tensor or dark-sector source.
+                </p>
+            </div>
 
             <Explainer title="The code distance and the Planck scale">
                 <p>
@@ -152,10 +172,10 @@ export function ErrorCorrectionPage() {
                     is exponentially complex.
                 </p>
                 <p>
-                    In OPH terms, the Markov recovery map (Axiom A4) exists with &epsilon; small, but its circuit
-                    complexity grows exponentially after scrambling time. The interior is encoded in the boundary
-                    but is computationally inaccessible. This connects quantum error correction to the complexity
-                    equals volume (CV) and complexity equals action (CA) conjectures.
+                    In OPH terms, once the exact branch or the conditional mixing theorem establishes small CMI,
+                    Fawzi-Renner supplies a recovered comparison state. The collar theorem controls recovery error;
+                    it does not derive the circuit complexity of that map. Complexity-equals-volume and
+                    complexity-equals-action remain separate conjectural interpretations.
                 </p>
             </Explainer>
 

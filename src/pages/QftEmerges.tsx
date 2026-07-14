@@ -77,7 +77,7 @@ export function QftEmergesPage() {
                     {
                         step: '6',
                         title: 'Matter-sector continuations',
-                        detail: 'Quotient-constrained flavor structure and Koide-type relations sit on downstream continuation branches outside the recovered-core theorem stack.',
+                        detail: 'The icosahedral screen supplies an exact A5/C3 local three-corner carrier. Its physical charged-family attachment and mass-value laws remain downstream continuations outside the recovered-core theorem stack.',
                         color: 'var(--accent-gold)',
                     },
                     {
@@ -150,7 +150,7 @@ export function QftEmergesPage() {
                         <li>Recoverable generalized entropy</li>
                         <li>Finite-dimensional regulator premise</li>
                         <li>Boundary gauge fixed-point premise</li>
-                        <li>Vanishing transport obstruction on the branch where global transportability is invoked</li>
+                        <li>Central or higher-associator strictification plus at least one allowed strict representative with trivial represented loop holonomy where global transportability is invoked</li>
                         <li>Minimal Admissible Realization selection axiom</li>
                         <li>Symmetric braiding in the 3+1D EFT branch</li>
                         <li>Compact-gauge refinement receipt: finite extendability, explicit center-compatible block-multiplicity embeddings, common stagewise strict representatives, and coherent surjective boundary-group maps that intertwine them</li>
@@ -220,17 +220,17 @@ export function QftEmergesPage() {
                     Chain 2 separates a strong structural core from several matter-sector boundaries:
                 </p>
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
-                    <li>Quarks carry the selected-class exact public sextet on one physical frame fixed by P. A full classification of all quark frames is separate.</li>
-                    <li>Charged leptons carry an exact same-family readback. The source landing to full physical charged masses is work in progress.</li>
-                    <li>Neutrino theorem pair emitted on the weighted-cycle branch; exact adapters serve as diagnostic-only readouts beneath that branch</li>
+                    <li>Quark source equations leave a free (R<sub>&gt;0</sub>)<sup>2</sup> spread fiber, so numeric rows remain withheld; the mixed-scheme target packet and GeV mass textures do not define physical dimensionless Yukawas.</li>
+                    <li>Charged leptons have an exact A<sub>5</sub>/C<sub>3</sub> face-corner carrier and a conditional fixed-point theorem for one declared map. An engineered digital CFQ model closes schema nonemptiness and gives a central record dilation, but its registers, automaton, grading, clock, and response are authored inputs, and historical no-target ancestry fails audit. A conditional nature/pole theorem gives the correct transport implications after the physical Yukawa response and CFQ-to-Dyson singularity readout are assumed; its zero-self-energy kernel is only a free witness. Its 0.000300 ppm headline uses rounded fields; the tau residual is -1.387289 ppm against the packet's higher-precision central value. Physical source selection, attachment, determinant, coherent branch, cofinal refinement, interacting kernel, and infrared completion remain open.</li>
+                    <li>Neutrino isotropic no-go retained; the target-informed weighted-cycle point is a rejected comparison candidate with open source, basis, Takagi, and ordering gates</li>
                     <li>Higgs/top proof structure and scope discipline around the closed source-only split theorem</li>
                     <li>Hadron backend / compute-bound closure</li>
                 </ul>
                 <p>
                     The foundation (axioms &rarr; gauge branch &rarr; particle-structure ledger) is stronger than the
-                    detailed matter continuations. Some bosonic sectors and the weighted-cycle neutrino branch are
-                    closed on their declared surfaces, while the charged and physical-quark lanes remain open at
-                    sharper theorem objects.
+                    detailed matter continuations. Some bosonic sectors are closed on their declared surfaces. The
+                    weighted-cycle neutrino candidate is rejected, while the charged lane and the quark source-spread,
+                    scheme-coordinate, and physical-Yukawa boundaries remain explicit.
                 </p>
                 <div style={{ display: 'grid', gap: '8px', marginTop: '12px' }}>
                     {PARTICLE_LANE_STATUS.map((lane) => (

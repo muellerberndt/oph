@@ -70,7 +70,7 @@ export const WALKTHROUGH_STEPS: WalkthroughStep[] = [
     { to: '/modular-flow/', icon: Clock, label: 'Time from Modular Flow', part: 'chain1-gr', seoTitle: 'Modular Flow on the OPH BW Branch' },
     { to: '/gravity/', icon: Apple, label: 'Gravity from Entanglement', part: 'chain1-gr', seoTitle: 'Conditional Gravity Branch from Entanglement and Null-Modular Data' },
     { to: '/de-sitter/', icon: Telescope, label: 'The de Sitter Universe', part: 'chain1-gr', seoTitle: 'Solving the Cosmological Constant Problem | de Sitter Space from Holography' },
-    { to: '/dark-matter/', icon: Moon, label: 'Dark Matter', part: 'chain1-gr', seoTitle: 'Dark Matter & MOND Explained | Galaxy Rotation Curves from Holography' },
+    { to: '/dark-matter/', icon: Moon, label: 'Dark-Sector Benchmark', part: 'chain1-gr', seoTitle: 'Dark-Sector Continuation | MOND and Rotation-Curve Benchmark' },
     { to: '/classical-physics/', icon: Orbit, label: 'Classical Physics Emerges', part: 'chain1-gr', seoTitle: 'How Classical Physics Emerges from Quantum Gravity' },
 
     // Chain 2: Axioms -> QFT
@@ -80,7 +80,7 @@ export const WALKTHROUGH_STEPS: WalkthroughStep[] = [
     { to: '/gauge-symmetry/', icon: Layers, label: 'Gauge from Gluing', part: 'chain2-qft', seoTitle: 'Origin of Gauge Symmetry | Why SU(3)\u00d7SU(2)\u00d7U(1)?' },
     { to: '/standard-model/', icon: Box, label: 'The Standard Model', part: 'chain2-qft', seoTitle: 'Deriving the Standard Model | Particle Physics from Holography' },
     { to: '/masses/', icon: Scale, label: 'Matter Continuations', part: 'chain2-qft', seoTitle: 'Matter Continuations | OPH Sector Status' },
-    { to: '/neutrinos/', icon: Atom, label: 'Neutrino Branch', part: 'chain2-qft', seoTitle: 'Neutrino Theorem Branch | Weighted-Cycle Family and Majorana Pair' },
+    { to: '/neutrinos/', icon: Atom, label: 'Neutrino Audit', part: 'chain2-qft', seoTitle: 'Neutrino Audit | Rejected Weighted-Cycle Candidate and Open Source Gates' },
     { to: '/unification/', icon: Merge, label: 'Coupling Unification', part: 'chain2-qft', seoTitle: 'Grand Unification Without GUTs | Coupling Constant Convergence' },
     { to: '/qft-emerges/', icon: Atom, label: 'QFT Emerges', part: 'chain2-qft', seoTitle: 'How Quantum Field Theory Emerges from a Holographic Screen' },
 

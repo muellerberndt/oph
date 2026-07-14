@@ -11,7 +11,10 @@ export type QuarkPDrivenPromotionBlocker =
   | 'edge_statistics_bridge_not_closed'
   | 'off_canonical_odd_response_not_closed'
   | 'pure_B_source_payload_not_closed'
-  | 'off_canonical_pure_B_payload_family_not_closed';
+  | 'off_canonical_pure_B_payload_family_not_closed'
+  | 'source_spread_two_modulus_nonidentifiability'
+  | 'mixed_scheme_mass_coordinates_not_single_running_sextet'
+  | 'physical_dimensionless_yukawa_normalization_missing';
 
 export type QuarkPDrivenMassRow = {
   id: string;
@@ -56,11 +59,63 @@ export type QuarkPDrivenEvaluatorContract = {
   notes: string[];
   proof_status: 'candidate_only';
   public_promotion_allowed: false;
-  runtime_status: 'shared_candidate_evaluator';
+  runtime_status: 'target_anchored_diagnostic_only';
   scope: string;
   theorem_grade_closure: false;
   promotion_blockers: QuarkPDrivenPromotionBlocker[];
+  audit_classification: {
+    target_anchored: true;
+    public_numeric_rows_allowed: false;
+    source_spread_fiber: '(R_{>0})^2';
+    source_spread_status: 'closed_current_corpus_nonidentifiability_obstruction';
+    comparison_packet_status: 'mixed_scheme_mass_coordinates_not_one_running_sextet';
+    matrix_status: 'GeV_mass_textures_not_physical_dimensionless_Yukawas';
+  };
 };
 
-export const QUARK_P_DRIVEN_EVALUATOR_CONTRACT =
-  JSON.parse(evaluatorContractRaw) as QuarkPDrivenEvaluatorContract;
+type StoredQuarkPDrivenEvaluatorContract = Omit<
+  QuarkPDrivenEvaluatorContract,
+  'runtime_status' | 'promotion_blockers' | 'audit_classification'
+> & {
+  runtime_status: string;
+  promotion_blockers: string[];
+};
+
+const storedContract = JSON.parse(evaluatorContractRaw) as StoredQuarkPDrivenEvaluatorContract;
+
+const mandatoryAuditBlockers: QuarkPDrivenPromotionBlocker[] = [
+  'source_spread_two_modulus_nonidentifiability',
+  'mixed_scheme_mass_coordinates_not_single_running_sextet',
+  'physical_dimensionless_yukawa_normalization_missing',
+];
+
+// The checked-in JSON is a historical runtime contract. Normalize it at the
+// browser boundary so target anchors and fitted spreads cannot be mistaken for
+// source-emitted public quark predictions.
+export const QUARK_P_DRIVEN_EVALUATOR_CONTRACT: QuarkPDrivenEvaluatorContract = {
+  ...storedContract,
+  proof_status: 'candidate_only',
+  public_promotion_allowed: false,
+  runtime_status: 'target_anchored_diagnostic_only',
+  scope: 'Target-anchored off-canonical sensitivity diagnostic only. It emits no public numeric quark row and no physical dimensionless Yukawa matrix.',
+  theorem_grade_closure: false,
+  promotion_blockers: Array.from(
+    new Set([
+      ...(storedContract.promotion_blockers as QuarkPDrivenPromotionBlocker[]),
+      ...mandatoryAuditBlockers,
+    ]),
+  ),
+  notes: [
+    ...storedContract.notes,
+    'The current source corpus leaves an exact free (R_{>0})^2 spread fiber; selected-frame descent is not a spread selector.',
+    'The stored target coordinates mix light, heavy, and top conventions, and the GeV-valued matrices are mass textures rather than physical dimensionless Yukawas.',
+  ],
+  audit_classification: {
+    target_anchored: true,
+    public_numeric_rows_allowed: false,
+    source_spread_fiber: '(R_{>0})^2',
+    source_spread_status: 'closed_current_corpus_nonidentifiability_obstruction',
+    comparison_packet_status: 'mixed_scheme_mass_coordinates_not_one_running_sextet',
+    matrix_status: 'GeV_mass_textures_not_physical_dimensionless_Yukawas',
+  },
+};

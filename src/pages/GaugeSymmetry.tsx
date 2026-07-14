@@ -169,7 +169,7 @@ export function GaugeSymmetryPage() {
                     Minimal Admissible Realization (MAR):
                 </p>
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
-                    <li><strong>Admissibility:</strong> anomaly-free, chiral-stable, single-Higgs-completable, CP-capable, weak UV-completable, and loop-coherent ([z]=0).</li>
+                    <li><strong>Admissibility:</strong> anomaly-free, chiral-stable, single-Higgs-completable, CP-capable, weak UV-completable, and loop-coherent (central or higher-associator strictification plus an allowed trivial-holonomy strict representative).</li>
                     <li><strong>Complexity vector:</strong> C(&Sigma;) = (&chi;<sub>faith</sub>, N<sub>nonab</sub>, N<sub>c</sub>, N<sub>g</sub>).</li>
                     <li><strong>Selection rule:</strong> lexicographically minimize C over admissible sectors only.</li>
                 </ul>

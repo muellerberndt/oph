@@ -99,7 +99,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     },
     {
         term: 'Axiom A4',
-        definition: 'Recoverable generalized-entropy axiom supplying the entropy/recoverability structure used in the collar and gravity branches.',
+        definition: 'Recoverable generalized-entropy axiom. Its collar clause is exact on the declared central-interface Markov branch; the nonexact Gibbs bound additionally requires uniform strong conditional matrix mixing and a boundary-aware scaling rate.',
         category: 'axioms',
         usedIn: ['Axioms', 'Gravity'],
         links: [{ label: 'Fawzi-Renner (arXiv:1410.0664)', url: 'https://arxiv.org/abs/1410.0664' }],
@@ -112,7 +112,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     },
     {
         term: 'Local MaxEnt Branch',
-        definition: 'Finite local-constraint branch selected by Axiom A3, supplying the local-Gibbs and refinement-stable state family used in later arguments.',
+        definition: 'Finite local-constraint branch selected by Axiom A3, supplying the local-Gibbs and refinement-stable state family used in later arguments. Local Gibbs form alone does not imply strong conditional matrix mixing or collar CMI decay.',
         category: 'axioms',
         usedIn: ['Entropy', 'Gravity'],
     },
@@ -160,7 +160,28 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     },
     {
         term: 'Axiom MX',
-        definition: 'Exponential mixing of conditional mutual information across collars.',
+        symbol: '||E_z|| <= kappa exp(-(m-r0)/zeta)',
+        definition: 'Legacy label for the theorem-local nonexact collar premise: the matrix conditional log-density defect has a boundary-anchor expansion with uniform strong exponential decay. Ordinary two-point clustering, a Lieb-Robinson bound, or a spectral gap does not imply it for a general noncommuting Gibbs state.',
+        category: 'methods',
+        usedIn: ['Gravity', 'Error Correction'],
+    },
+    {
+        term: 'Central-Interface Collar Branch',
+        symbol: 'I(A:D|B)=0',
+        definition: 'Declared branch on which the edge split and Markov split align, so collar CMI vanishes exactly without a decay limit or strong-mixing premise.',
+        category: 'methods',
+        usedIn: ['Gravity', 'Error Correction'],
+    },
+    {
+        term: 'Collar Rate Margin',
+        symbol: 'delta/xi - log|partial C|_UV',
+        definition: 'Boundary-aware exponent controlling the nonexact collar envelope. It must tend to +infinity for the bound to vanish; delta/l_UV -> infinity alone is insufficient when the UV boundary count grows.',
+        category: 'methods',
+        usedIn: ['Gravity', 'Error Correction'],
+    },
+    {
+        term: 'Finite Collar Receipt',
+        definition: 'Finite-stage proxy recording the interaction contract, separator and boundary count, regional CMI, matrix defect, predeclared mixing constants, held-out coverage, recovery error, and rate margin. A finite receipt does not prove the cofinal scaling limit.',
         category: 'methods',
         usedIn: ['Gravity', 'Error Correction'],
     },
@@ -298,8 +319,8 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     },
     {
         term: 'Loop-Coherent Gluing',
-        symbol: '[z]=0',
-        definition: 'Vanishing loop obstruction class enforcing transportable sector gluing across overlaps.',
+        symbol: '[z]=0, Hol=1',
+        definition: 'Combined transport test: the central triangle class vanishes or the noncentral higher associator strictifies, and at least one allowed strict edge 1-cocycle representative has trivial represented holonomy around every closed overlap loop.',
         category: 'gauge',
         usedIn: ['Axioms', 'Gauge Symmetry', 'Standard Model'],
         links: [{ label: 'Selection and transportability notes', url: '/standard-model' }],
@@ -407,11 +428,25 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
         usedIn: ['Matter Continuations', 'Standard Model'],
     },
     {
-        term: 'Koide Phase',
+        term: 'Koide Continuation Phase',
         symbol: 'delta = 2/9',
-        definition: 'Derived generation-space phase entering lepton-structure relations.',
+        definition: 'Frozen phenomenological phase used by the charged-lepton continuation. Current OPH dynamics does not derive it as a generation-space holonomy.',
         category: 'spectrum',
         usedIn: ['Matter Continuations'],
+    },
+    {
+        term: 'Icosahedral Face-Corner Carrier',
+        symbol: 'A5/C3',
+        definition: 'Exact OPH screen geometry in which each outward-oriented icosahedral face has a local three-corner cyclic fiber. The sixty global face-corner flags do not canonically select one physical charged-family space. A conditional weight theorem and engineered digital CFQ model close formal schema consistency, not OPH dynamical or physical charged-sector selection.',
+        category: 'spectrum',
+        usedIn: ['Matter Continuations', 'Standard Model'],
+    },
+    {
+        term: 'CFQ Digital Carrier',
+        symbol: 'CFQ1-CFQ8 fixture',
+        definition: 'Engineered finite software model of the stipulated charged face-quotient register and path schema. It verifies reciprocal trace arithmetic, a central accepted/rejected record dilation, A5 graph covariance, and inert stabilization. Its dimensions, automaton, grading, clock, and response are hard-coded, so historical no-target ancestry and physical charged-source selection remain open.',
+        category: 'spectrum',
+        usedIn: ['Matter Continuations', 'Standard Model'],
     },
     {
         term: 'Texture Exponents',
@@ -483,7 +518,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     {
         term: 'Recovery Map',
         symbol: 'R_{B->BC}',
-        definition: 'CPTP map reconstructing missing subsystem information from overlap mediator region when CMI is small.',
+        definition: 'Fawzi-Renner CPTP map producing a recovered comparison state when CMI is small. Exact Markov splice identities require the separate exact or controlled-limit conditions and Markov-split alignment.',
         category: 'methods',
         usedIn: ['Error Correction', 'Gravity'],
     },
@@ -552,9 +587,9 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     {
         term: 'Conditional Mutual Information',
         symbol: 'I(A:D|B)',
-        definition: 'Information-theoretic separator measure controlling recoverability and Markov quality.',
+        definition: 'Scalar separator measure controlling recoverability and Markov quality. It has no tensor indices and is not, by itself, a stress tensor, local energy density, or dark-sector source.',
         category: 'methods',
-        usedIn: ['Entropy', 'Error Correction'],
+        usedIn: ['Entropy', 'Error Correction', 'Gravity'],
     },
     {
         term: 'KMS Condition',

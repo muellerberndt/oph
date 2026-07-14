@@ -173,18 +173,14 @@ export type TextureMassOptions = {
     leptonExponentShift?: number;
 };
 
-export type PDrivenQuarkMassPrediction = {
+export type TargetAuditQuarkMassDiagnostic = {
     id: string;
     label: string;
     sector: 'up' | 'down';
     massGeV: number;
     baselineMassGeV: number;
-};
-
-export type NeutrinoMassPrediction = {
-    mNu1Ev: number;
-    mNu2Ev: number;
-    mNu3Ev: number;
+    claimTier: 'target_anchored_diagnostic_only';
+    publicNumericRowAllowed: false;
 };
 
 export type HadronMassEstimate = {
@@ -722,7 +718,7 @@ export function textureMassesFromVev(vGeV: number, options?: TextureMassOptions)
     });
 }
 
-function quarkCandidateSectorMeans(rhoOrd: number, x2: number, sigmaU: number, sigmaD: number) {
+function quarkTargetAuditSectorMeans(rhoOrd: number, x2: number, sigmaU: number, sigmaD: number) {
     const sigmaSeed = 0.5 * (sigmaU + sigmaD);
     const eta = 0.5 * (sigmaU - sigmaD);
     const meanDenominator = 1 + rhoOrd - x2 * x2;
@@ -738,14 +734,13 @@ function quarkCandidateSectorMeans(rhoOrd: number, x2: number, sigmaU: number, s
 // Paper reference:
 // reverse-engineering-reality/paper/deriving_the_particle_zoo_from_observer_consistency.tex
 //
-// Browser boundary for the moving quark rows:
-// - The public anchor at P = 1.630968 is the exact quark sextet emitted by the
-//   particle codebase on the physical quark frame fixed by P.
-// - Away from that anchor, the browser consumes the shared candidate evaluator
-//   contract emitted by the particle runtime.
-// - The contract is candidate-only until the off-canonical transport shell,
-//   odd response, and pure-B source payload are theorem-closed.
-function quarkCandidateEvenLogs(rhoOrd: number, sigmaU: number, sigmaD: number) {
+// Browser boundary for the retained quark runtime diagnostic:
+// - Its default masses and spread values descend from a target-anchored audit.
+// - The source equations leave an exact free (R_{>0})^2 spread fiber.
+// - The target packet mixes light, heavy, and top mass conventions.
+// - The GeV-valued matrices are mass textures, not physical dimensionless
+//   Yukawa matrices. This calculation must not populate public prediction rows.
+function quarkTargetAuditEvenLogs(rhoOrd: number, sigmaU: number, sigmaD: number) {
     const denominator = 3 * (1 + rhoOrd);
     const vU = [
         -((2 * rhoOrd) + 1) / denominator,
@@ -763,33 +758,33 @@ function quarkCandidateEvenLogs(rhoOrd: number, sigmaU: number, sigmaD: number) 
     };
 }
 
-export function pDrivenQuarkMassesFromClosure(
+export function targetAuditQuarkMassDiagnosticsFromClosure(
     closure: Pick<GaugeClosureResult, 'alphaU'>
-): PDrivenQuarkMassPrediction[] {
-    // The checked-in contract keeps browser and runtime constants synchronized
-    // without promoting this candidate lane to theorem-grade closure.
+): TargetAuditQuarkMassDiagnostic[] {
+    // The checked-in contract keeps an historical diagnostic reproducible. Its
+    // target anchors and fitted spreads have no public/source prediction status.
     const alphaRatio = Math.max(closure.alphaU, 1.0e-12) / QUARK_P_DRIVEN_ALPHA_U_REFERENCE;
     const sigmaU = QUARK_P_DRIVEN_SIGMA_U_REFERENCE * Math.pow(alphaRatio, QUARK_P_DRIVEN_ALPHA_EXPONENT_UP);
     const sigmaD = QUARK_P_DRIVEN_SIGMA_D_REFERENCE * Math.pow(alphaRatio, QUARK_P_DRIVEN_ALPHA_EXPONENT_DOWN);
 
-    const baselineMeans = quarkCandidateSectorMeans(
+    const baselineMeans = quarkTargetAuditSectorMeans(
         QUARK_P_DRIVEN_RHO_REFERENCE,
         QUARK_P_DRIVEN_X2_REFERENCE,
         QUARK_P_DRIVEN_SIGMA_U_REFERENCE,
         QUARK_P_DRIVEN_SIGMA_D_REFERENCE
     );
-    const baselineLogs = quarkCandidateEvenLogs(
+    const baselineLogs = quarkTargetAuditEvenLogs(
         QUARK_P_DRIVEN_RHO_REFERENCE,
         QUARK_P_DRIVEN_SIGMA_U_REFERENCE,
         QUARK_P_DRIVEN_SIGMA_D_REFERENCE
     );
-    const currentMeans = quarkCandidateSectorMeans(
+    const currentMeans = quarkTargetAuditSectorMeans(
         QUARK_P_DRIVEN_RHO_REFERENCE,
         QUARK_P_DRIVEN_X2_REFERENCE,
         sigmaU,
         sigmaD
     );
-    const currentLogs = quarkCandidateEvenLogs(
+    const currentLogs = quarkTargetAuditEvenLogs(
         QUARK_P_DRIVEN_RHO_REFERENCE,
         sigmaU,
         sigmaD
@@ -800,6 +795,8 @@ export function pDrivenQuarkMassesFromClosure(
             id: anchor.id,
             label: anchor.label,
             sector: 'up' as const,
+            claimTier: 'target_anchored_diagnostic_only' as const,
+            publicNumericRowAllowed: false as const,
             baselineMassGeV: anchor.mass_gev,
             massGeV:
                 anchor.mass_gev *
@@ -812,6 +809,8 @@ export function pDrivenQuarkMassesFromClosure(
             id: anchor.id,
             label: anchor.label,
             sector: 'down' as const,
+            claimTier: 'target_anchored_diagnostic_only' as const,
+            publicNumericRowAllowed: false as const,
             baselineMassGeV: anchor.mass_gev,
             massGeV:
                 anchor.mass_gev *
@@ -821,17 +820,6 @@ export function pDrivenQuarkMassesFromClosure(
                 ),
         })),
     ];
-}
-
-export function neutrinoMassesFromScreen(logCapacityBase10: number, pixelConstant: number): NeutrinoMassPrediction {
-    const lambda = lambdaFromScreen(pixelConstant, logCapacityBase10);
-    const scale = Math.sqrt(lambda / LAMBDA_REFERENCE_M2);
-    const mNu3Ev = 0.003 * scale;
-    return {
-        mNu3Ev,
-        mNu2Ev: EPSILON_Z6 * mNu3Ev,
-        mNu1Ev: EPSILON_Z6 * EPSILON_Z6 * mNu3Ev,
-    };
 }
 
 export function estimateQcdScaleGeV(alphaStrongAtMu: number, muGeV: number, nFlavors = 5): number {

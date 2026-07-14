@@ -24,7 +24,8 @@ export function SynthesisPage() {
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Two Fixed Points, All of Physics</h3>
             <p style={{ marginBottom: '16px' }}>
-                OPH is formulated as a zero-input closure theory. Its two quantitative constants are
+                OPH is formulated as a zero-dial closure theory: zero quantitative inputs at the theory layer,
+                with working borrows counted in the scorecard. Its two quantitative constants are
                 closure-selected fixed-point values:
             </p>
 
@@ -204,7 +205,7 @@ export function SynthesisPage() {
                 <span style={{ color: 'var(--accent-rose)', fontWeight: 600 }}>Standard:</span>
                 <span style={{ color: 'var(--text-secondary)' }}>Parameters are tuned</span>
                 <span style={{ color: 'var(--accent-green)', fontWeight: 600 }}>OPH:</span>
-                <span style={{ color: 'var(--text-secondary)' }}>The two quantitative constants are fixed-point closure targets</span>
+                <span style={{ color: 'var(--text-secondary)' }}>The two quantitative constants are estimated from measured alpha and Lambda (inputs); exact loop closure on them is the open test, and the remaining program is finite: four named computations and one selector</span>
 
                 <span style={{ color: 'var(--accent-rose)', fontWeight: 600 }}>Standard:</span>
                 <span style={{ color: 'var(--text-secondary)' }}>Gravity and QM are separate</span>
@@ -225,7 +226,8 @@ export function SynthesisPage() {
                     OPH should be evaluated by the same standards as any physical theory: internal consistency,
                     agreement with existing data, and testable predictions. The paper stack carries a
                     mixed ledger of structural theorems, branch conditions, closed calibration sectors, and open
-                    scaffold items.
+                    scaffold items. The open set is finite and enumerated: four generator computations and one
+                    flavor-orbit selector stand between the current standing and full closure.
                 </p>
             </Explainer>
 

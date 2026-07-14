@@ -36,9 +36,9 @@ const AXIOMS: Axiom[] = [
     {
         id: 'A4',
         name: 'Recoverable Generalized Entropy',
-        plain: 'Generalized entropy combines the area term with bulk entropy, and local collar regions admit recoverability control that supports the gravity branch.',
-        physics: 'A generalized entropy functional exists, S_gen(C) = Tr(\u03c1 \u00b7 L_C) + S_bulk(C), together with the recoverability/focusing structure used in the collar and null-modular arguments.',
-        formal: 'S_gen(C) = Tr(\u03c1 \u00b7 L_C) + S_bulk(C), with the collar structure controlled by recovery theory and conditional-mutual-information bounds on shrinking separators.',
+        plain: 'Generalized entropy combines the area term with bulk entropy. Collar recovery is exact on the declared central-interface branch and conditional on a stronger mixing premise away from that branch.',
+        physics: 'A generalized entropy functional exists, S_gen(C) = Tr(\u03c1 \u00b7 L_C) + S_bulk(C). The central-interface branch has exact Markov recovery. A nonexact finite-range Gibbs family has a quantitative recovery bound only under uniform strong conditional matrix mixing; ordinary two-point clustering is insufficient.',
+        formal: 'S_gen(C) = Tr(\u03c1 \u00b7 L_C) + S_bulk(C). Exact route: I(A_delta:D_delta|B_delta)=0. Conditional route: I <= kappa |partial C|_UV exp(-(m-r0)/zeta) <= c |partial C|_UV exp(-delta/xi), with m=delta/l_UV, xi=zeta l_UV, c=kappa exp(r0/zeta), and delta/xi - log|partial C|_UV -> +infinity for vanishing CMI.',
     },
 ];
 
@@ -117,7 +117,7 @@ export function AxiomsPage() {
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8', margin: 0, fontSize: '0.84em' }}>
                     <li><strong>Regulator premise:</strong> local factors are finite-dimensional at the regulated stage.</li>
                     <li><strong>Boundary fixed point:</strong> region observables are fixed points of boundary gauge action.</li>
-                    <li><strong>Transport premise:</strong> the relevant transport obstruction vanishes where global transportability is invoked.</li>
+                    <li><strong>Transport premise:</strong> the central triangle class vanishes or the noncentral higher associator strictifies, and at least one allowed strict edge 1-cocycle representative has trivial represented holonomy where global transportability is invoked.</li>
                     <li><strong>Selection axiom:</strong> pick the lexicographically minimal admissible low-energy sector.</li>
                 </ul>
                 <p style={{ margin: '10px 0 0 0', fontSize: '0.82em', color: 'var(--text-muted)' }}>
@@ -130,9 +130,11 @@ export function AxiomsPage() {
                 <p>The papers distinguish the five axioms from theorem-local technical premises and branch conditions:</p>
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
                     <li><strong>Minimal Admissible Realization:</strong> admissible-branch selector used in the gauge derivation</li>
-                    <li><strong>Transport premise:</strong> vanishing relevant transport obstruction when global transportability is invoked</li>
+                    <li><strong>Transport premise:</strong> central or higher-associator strictification plus at least one allowed strict representative with trivial represented loop holonomy when global transportability is invoked</li>
                     <li><strong>Scaling premise:</strong> Lorentz/null-modular/Einstein statements are scaling-limit claims. Literal fixed-cutoff matrix identities appear only in special representations.</li>
                     <li><strong>Stationarity premise:</strong> fixed-cap generalized-entropy stationarity for the admissible first-variation class used in the Jacobson branch</li>
+                    <li><strong>Collar-recovery branch:</strong> either the exact central-interface Markov route, or a faithful finite-range Gibbs family with uniform strong conditional matrix mixing and the full boundary-aware rate margin. Ordinary clustering and a bare delta/l<sub>UV</sub> &rarr; infinity ratio do not discharge this premise.</li>
+                    <li><strong>Finite collar receipts:</strong> interaction bounds, boundary counts, regional CMI, matrix-defect norms, predeclared mixing constants, held-out cuts, recovery error, and rate margins are finite proxies; they do not prove a cofinal limit.</li>
                     <li><strong>Compact-gauge refinement receipt:</strong> finite-state extendability, center-compatible block-multiplicity embeddings, common stagewise strict representatives with coherent surjective boundary-group maps that intertwine them, finite tensor realizations, compatible forgetful fibers, and symmetric braiding (or an explicit super-Tannakian fork)</li>
                     <li><strong>Regulator and fixed-point premises:</strong> local factor regulation and boundary fixed-point structure used in gauge reconstruction</li>
                 </ul>
@@ -143,6 +145,7 @@ export function AxiomsPage() {
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
                     <li>From the screen identity and the explicit BW scaling branch, OPH recovers Lorentz kinematics on the extracted prime geometric subnet.</li>
                     <li>From the null bridge, the separate bounded-interval projective branch, and fixed-cap stationarity, OPH states a conditional Jacobson-type Einstein branch with those added ingredients kept explicit.</li>
+                    <li>Collar CMI controls recovery error on its exact or conditional branch. As a scalar, it is not a stress tensor or dark-sector source.</li>
                     <li>The half-line generator/null-stress charge identification is internal to the null bridge; UV/BW cap-pair extraction and ordered cut-pair rigidity remain explicit scaffold items.</li>
                     <li>Massless photon and graviton remain symmetry-protected structural outputs.</li>
                 </ul>

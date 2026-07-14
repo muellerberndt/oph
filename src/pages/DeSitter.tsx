@@ -59,7 +59,7 @@ export function DeSitterPage() {
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>&Lambda; from N_CRC</h3>
             <p style={{ marginBottom: '8px' }}>
-                OPH is formulated as zero-input closure: after the local gravity branch leaves the separate metric
+                OPH is formulated as zero-dial closure (zero quantitative inputs at the theory layer; working borrows counted in the scorecard): after the local gravity branch leaves the separate metric
                 ambiguity, the global capacity fixed point is the cosmic record-closure readback fixed point. In the lab
                 we hold the reference pixel normalization fixed at P = {formatPixelConstant(PIXEL_REFERENCE)} and show the
                 global capacity descendant:

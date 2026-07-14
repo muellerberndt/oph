@@ -14,13 +14,13 @@ const QUESTIONS: Question[] = [
         problem: 'How do gravity and QM fit together?',
         conventional: 'Try to quantize the gravitational field. Leads to non-renormalizable infinities.',
         hiddenAssumption: 'Spacetime is fundamental and must be quantized.',
-        ophResolution: 'Spacetime is emergent from information. Gravity = consistency condition on entanglement. Einstein\'s equations are derived, not quantized.',
+        ophResolution: 'Spacetime is emergent from information. Gravity = consistency condition on entanglement. Einstein\'s equations are recovered on the declared branch (generalized entropy stationarity plus the stated bridge conditions), not quantized.',
     },
     {
         problem: 'The measurement problem',
         conventional: 'Wave function collapses upon observation. Nobody agrees on what triggers collapse.',
         hiddenAssumption: 'A God\'s-eye view exists where the wave function is "really" in superposition.',
-        ophResolution: 'There is no God\'s-eye view. "Collapse" is just belief-updating within a patch. Born probabilities are the unique consistent assignment.',
+        ophResolution: 'There is no God\'s-eye view. "Collapse" is just belief-updating within a patch. Born probabilities enter as the consistency-selected assignment under the stated axioms (Gleason-type input conditions), not as a free postulate.',
     },
     {
         problem: 'Why is the universe so uniform?',
@@ -44,7 +44,7 @@ const QUESTIONS: Question[] = [
         problem: 'The dark matter problem',
         conventional: 'Galaxy rotation curves are flat. Add invisible massive particles.',
         hiddenAssumption: 'Extra gravitational pull must come from extra matter.',
-        ophResolution: 'Markov imperfection (information deficit at large scales) mimics extra gravity. MOND scale a\u2080 derived from \u039b. No particles needed.',
+        ophResolution: 'Collar recovery is exact on the declared central-interface branch, or conditionally bounded for finite-range Gibbs states with uniform strong matrix mixing. Scalar CMI is recovery-only. The MOND curve is a continuation benchmark; a physical source still needs source-tensor, conservation, normalization, and coupling receipts.',
     },
     {
         problem: 'Black hole information paradox',

@@ -15,7 +15,6 @@ import {
     hubbleFromLambda,
     lambdaFromScreen,
     newtonConstantFromScaleCertificate,
-    pDrivenQuarkMassesFromClosure,
     solveGaugeClosure,
 } from '../core/ophMath';
 
@@ -43,7 +42,12 @@ const CANONICAL_GAUGE_OPTIONS = {
     alphaRange: { min: 0.015, max: 0.09, step: 0.0005 },
 } as const;
 
-const ALPHA_ROOT_INV = 136.99483516462165;
+// Interval-certified unique fixed point of the declared source map (CL-6, closed 2026-07-14).
+// The earlier printed tail 136.99483516462165 came from an unconverged run and is superseded beyond digit 9.
+const ALPHA_ROOT_INV = 136.994835177413;
+// Certified self-consistent gauge-width fixed point (CL-2, 2.5e-6 relative to measurement).
+// The previously displayed 137.0359595008... was a mixed-provenance display packet, not a fixed point of any single declared map.
+const ALPHA_GAUGE_WIDTH_FP_INV = 137.035660136946577;
 
 function formatFixed(value: number, digits = 6): string {
     if (!Number.isFinite(value)) {
@@ -87,7 +91,8 @@ function renderCompactSurfaceBoard(rows: SurfaceBoardRow[]) {
                 <div>
                     <h3 style={{ margin: 0, fontSize: '0.95em' }}>Fixed-point readouts</h3>
                     <p className="compact-live-board-copy">
-                        Each tile shows a paper-surface readout tied to the locked OPH closure values.
+                        Each tile shows a public paper-surface readout tied to the locked OPH closure values.
+                        Target-anchored quark diagnostics are excluded.
                     </p>
                 </div>
                 <span style={{ fontSize: '0.72em', color: 'var(--accent-gold)', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
@@ -124,7 +129,6 @@ export function Home() {
         const newtonConstant = newtonConstantFromScaleCertificate();
         const lambda = lambdaFromScreen(PIXEL_REFERENCE, SCREEN_CAPACITY_REFERENCE_LOG10);
         const hubble = hubbleFromLambda(lambda);
-        const sourcePlusBareAlphaUInv = ALPHA_ROOT_INV + closure.alphaU;
 
         return {
             closure,
@@ -133,7 +137,6 @@ export function Home() {
             newtonConstant,
             lambda,
             hubble,
-            sourcePlusBareAlphaUInv,
         };
     }, []);
 
@@ -170,20 +173,7 @@ export function Home() {
         },
     ], []);
 
-    const surfaceBoardRows = useMemo<SurfaceBoardRow[]>(() => {
-        const quarkRows = pDrivenQuarkMassesFromClosure(canonicalSurface.closure)
-            .filter((row) => ['up', 'down', 'strange', 'charm', 'bottom', 'top'].includes(row.id))
-            .map((row) => ({
-                label: `${row.label[0].toUpperCase()}${row.label.slice(1)} quark`,
-                family: 'QUARKS',
-                familyClass: 'candidate' as const,
-                primaryLabel: 'OPH',
-                primaryValue: `${formatFixed(row.massGeV, 9)} GeV`,
-                secondaryLabel: 'public frame',
-                secondaryValue: `${formatFixed(row.baselineMassGeV, 9)} GeV`,
-            }));
-
-        return [
+    const surfaceBoardRows = useMemo<SurfaceBoardRow[]>(() => [
             {
                 label: "Newton's gravitational constant",
                 family: 'GRAVITY',
@@ -224,10 +214,10 @@ export function Home() {
                 label: 'Fine-structure endpoint',
                 family: 'COUPLINGS',
                 familyClass: 'qft' as const,
-                primaryLabel: 'source + gauge width',
-                primaryValue: formatFixed(canonicalSurface.sourcePlusBareAlphaUInv, 9),
-                secondaryLabel: 'endpoint',
-                secondaryValue: 'QCD payload required',
+                primaryLabel: 'gauge-width fixed point (CL-2)',
+                primaryValue: formatFixed(ALPHA_GAUGE_WIDTH_FP_INV, 9),
+                secondaryLabel: 'source root (CL-1); QCD payload required',
+                secondaryValue: formatFixed(ALPHA_ROOT_INV, 9),
             },
             {
                 label: 'W boson mass',
@@ -263,11 +253,9 @@ export function Home() {
                 primaryLabel: 'OPH',
                 primaryValue: `${formatFixed(canonicalSurface.higgsTop.mtPoleGeV, 9)} GeV`,
                 secondaryLabel: 'surface',
-                secondaryValue: 'selected class',
+                secondaryValue: 'Higgs/top split',
             },
-            ...quarkRows,
-        ];
-    }, [canonicalSurface]);
+        ], [canonicalSurface]);
 
     return (
         <div className="landing-surface-page">
@@ -297,7 +285,9 @@ export function Home() {
                 The first screen is a readout of the certified branch. P fixes the local observation scale and the
                 electromagnetic lane. N<sub>CRC</sub> fixes the cosmic record capacity and the cosmological constant.
                 The Newton row comes from the scale certificate, and the hierarchy row uses the exact N-side bridge
-                with the 24-tick repair lock.
+                with the 24-tick repair lock. Numeric quark rows are absent because the current source equations leave
+                a free (R<sub>&gt;0</sub>)<sup>2</sup> spread fiber. The retained target audit also mixes mass schemes,
+                and its GeV-valued matrices are not physical dimensionless Yukawas.
             </p>
 
             <section className="card landing-links-card">

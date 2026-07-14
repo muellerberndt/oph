@@ -10,7 +10,6 @@ import {
     gibbonsHawkingTemperatureFromHubble,
     hubbleFromLambda,
     lambdaFromScreen,
-    neutrinoMassesFromScreen,
     newtonConstantFromPixel,
     solveGaugeClosure,
     textureMassesFromVev,
@@ -101,7 +100,6 @@ export type LabSettingMap = {
     'standardModel.ngTrial': number;
 
     'masses.pixelConstant': number;
-    'masses.logCapacity': number;
     'masses.runningModel': RunningModel;
     'masses.su2MaxJ': number;
     'masses.su3MaxIndex': number;
@@ -153,7 +151,6 @@ export const LAB_DEFAULT_SETTINGS: LabSettingMap = {
     'standardModel.ngTrial': 3,
 
     'masses.pixelConstant': PIXEL_REFERENCE,
-    'masses.logCapacity': SCREEN_CAPACITY_REFERENCE_LOG10,
     'masses.runningModel': 'edge-mssm-like',
     'masses.su2MaxJ': 30,
     'masses.su3MaxIndex': 14,
@@ -251,7 +248,6 @@ function toLabExport(settings: LabSettingMap): LabExportPayload {
         downExponentShift: settings['masses.downExponentShift'],
         leptonExponentShift: settings['masses.leptonExponentShift'],
     });
-    const massesNeutrinos = neutrinoMassesFromScreen(settings['masses.logCapacity'], settings['masses.pixelConstant']);
     const lambdaQcd = estimateQcdScaleGeV(massesClosure.alpha3, massesClosure.muStarGeV, settings['masses.qcdFlavors']);
     const massesHadrons = estimateHadronMassesFromQcdScale(lambdaQcd);
 
@@ -300,7 +296,6 @@ function toLabExport(settings: LabSettingMap): LabExportPayload {
             sin2ThetaW: massesClosure.sin2ThetaW,
             alphaS: massesClosure.alpha3,
             lambdaQcdGeV: lambdaQcd,
-            neutrinosEv: massesNeutrinos,
             hadronEstimatesGeV: massesHadrons,
             topTexture: massesTexture.find(item => item.id === 'top')?.massGeV ?? null,
             electronTexture: massesTexture.find(item => item.id === 'electron')?.massGeV ?? null,

@@ -25,6 +25,7 @@ const routes = [
   'gauge-symmetry',
   'standard-model',
   'masses',
+  'neutrinos',
   'unification',
   'qft-emerges',
   'consensus-protocol',
@@ -125,6 +126,11 @@ const routeMeta = {
     title: 'Matter-Sector Continuations | OPH Lab',
     description:
       'Review the OPH discussion of downstream matter-sector continuations and coupling structure.',
+  },
+  neutrinos: {
+    title: 'Neutrino Audit - Rejected Weighted-Cycle Candidate | OPH Lab',
+    description:
+      'Audit the rejected target-informed OPH weighted-cycle neutrino candidate, its NuFIT 6.1 correlated-profile failure, and the source, basis, Takagi, and ordering gates required before any physical prediction.',
   },
   unification: {
     title: 'Grand Unification Without GUTs - Coupling Constant Convergence | OPH Lab',

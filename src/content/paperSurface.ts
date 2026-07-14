@@ -178,15 +178,15 @@ export const PARTICLE_LANE_STATUS = [
     },
     {
         label: 'Quarks',
-        summary: 'OPH closes one exact public quark sextet on one physical frame fixed by P. A full classification of all quark frames sits outside that result.',
+        summary: 'The current source equations leave a free (R>0)^2 spread fiber, so numeric quark rows remain withheld. The target audit mixes mass conventions, and its GeV-valued matrices are mass textures rather than physical dimensionless Yukawas.',
     },
     {
         label: 'Charged leptons',
-        summary: 'The exact same-family readback is explicit. The open step is the source landing that turns the shared geometric data into full physical charged masses.',
+        summary: 'The icosahedral screen supplies an exact A5/C3 face-corner carrier. A target-informed continuation gives (0.510998950843, 105.658375501, 1776.930000014) MeV on one hybrid branch. Its declared affine map is conditionally contractive. An engineered digital CFQ model proves the stipulated schema is nonempty and supplies a central record dilation, but hard-codes its registers, automaton, signs, clock, and response; historical no-target ancestry fails audit. The 0.000300 ppm headline uses rounded fields, and the tau residual is -1.387289 ppm against the packet\'s higher-precision central value. Physical source selection, attachment, determinant, coherent branch, cofinal refinement, and pole scheme remain open.',
     },
     {
         label: 'Neutrinos',
-        summary: 'The weighted-cycle branch emits one absolute family, the central splittings, and one physical Majorana pair. The fitting adapters stay on the diagnostic side.',
+        summary: 'The isotropic ansatz has an exact no-go. The target-informed weighted-cycle point is a rejected comparison candidate; no source-closed physical PMNS matrix, ordering, absolute mass family, or Majorana pair is emitted.',
     },
     {
         label: 'Hadrons',
@@ -201,6 +201,9 @@ export const PARTICLE_LANE_STATUS = [
 export const GRAVITY_SURFACE = [
     'Lorentz kinematics is recovered on the explicit BW scaling branch from the screen identity Conf+(S^2) = SO+(3,1).',
     'The Jacobson-type Einstein relation is local and branch-conditional. It uses the null-modular bridge, the separate bounded-interval projective branch, and fixed-cap generalized-entropy stationarity.',
+    'Collar recovery has two routes: exact zero CMI on the declared central-interface branch, or a conditional finite-range Gibbs theorem requiring uniform strong conditional matrix mixing.',
+    'On the conditional route, I(A_delta:D_delta|B_delta) <= c |partial C|_UV exp(-delta/xi), and vanishing requires delta/xi - log|partial C|_UV -> +infinity. The ratio delta/l_UV -> infinity and ordinary two-point clustering are both insufficient.',
+    'Finite CMI and matrix-defect receipts are finite proxies for the collar branch. Scalar CMI is not the rank-two stress tensor or a dark-sector source.',
     'Null data fix the tensor only up to the null-invisible metric term. The global screen-capacity branch closes Lambda separately.',
     'The UV/BW scaffold is the realized cap-pair extraction plus ordered cut-pair rigidity on the extracted prime geometric subnet.',
 ];

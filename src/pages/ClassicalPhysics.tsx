@@ -135,7 +135,7 @@ export function ClassicalPhysicsPage() {
                         <li>Newton's laws of motion</li>
                         <li>Newtonian gravity</li>
                         <li>Laws of thermodynamics</li>
-                        <li>MOND-like dark matter phenomenology</li>
+                        <li>Exact or conditional collar recovery on its declared premises</li>
                         <li>De Sitter cosmology</li>
                     </ul>
                 </div>
@@ -146,6 +146,7 @@ export function ClassicalPhysicsPage() {
                         <li>Overlap consistency</li>
                         <li>Local MaxEnt and refinement stability</li>
                         <li>Recoverable generalized entropy</li>
+                        <li>Central-interface structure, or finite-range Gibbs plus strong conditional matrix mixing</li>
                         <li>Scaling, stationarity, and null-bridge premises where invoked</li>
                     </ul>
                 </div>
@@ -173,24 +174,26 @@ export function ClassicalPhysicsPage() {
                 </p>
             </Explainer>
 
-            <Explainer title="Is this really a derivation?">
+            <Explainer title="What the collar result does and does not derive">
                 <p>
                     A derivation earns its keep by producing quantitative consequences that distinguish it from
                     standard physics. The decisive test is whether the axioms produce target values before the
                     relevant measurements are used as inputs.
                 </p>
                 <p>
-                    Yes. Chain 1 makes novel predictions:
+                    The present collar packet has a narrower output ledger:
                 </p>
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
-                    <li>The precise value of a<sub>0</sub> from &Lambda;</li>
-                    <li>&Lambda; from screen capacity</li>
-                    <li>Galaxy-response anomalies from Markov defect</li>
-                    <li>Discrete Hawking spectrum (from finite pixel count)</li>
-                    <li>Gravitational wave horizon spectroscopy comb</li>
+                    <li>Zero collar CMI on the declared central-interface branch</li>
+                    <li>A boundary-prefactored exponential CMI bound under uniform strong conditional matrix mixing</li>
+                    <li>A sharp double-scaling margin that includes the growing UV boundary count</li>
+                    <li>A recovery-error receipt derived from that scalar CMI envelope</li>
                 </ul>
                 <p>
-                    These are testable predictions that distinguish OPH from standard physics. See the Predictions page.
+                    This does not derive a precise a<sub>0</sub>, a galaxy force law, or an effective dark source.
+                    Those steps remain a continuation until separate source-tensor, conservation, normalization,
+                    coupling, and observational receipts are supplied. Other Chain 1 claims stand or fall on their
+                    own declared branch receipts.
                 </p>
             </Explainer>
         </div>

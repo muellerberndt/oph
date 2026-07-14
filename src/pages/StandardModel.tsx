@@ -26,7 +26,7 @@ type GaugeCandidate = {
 };
 
 const ADMISSIBILITY_LABELS: Array<{ key: CheckKey; label: string; details: string }> = [
-    { key: 'loopCoherent', label: '[z]=0 loop-coherent gluing', details: 'DHR transportability of charges across patches' },
+    { key: 'loopCoherent', label: 'Combined loop-coherent gluing', details: '[z]=0 plus an allowed strictification with trivial represented holonomy' },
     { key: 'anomalyFree', label: 'Perturbative + global anomaly-free', details: 'ABJ, Witten SU(2), and mixed gravitational anomalies' },
     { key: 'chiralStable', label: 'Refinement-stable chiral matter', details: 'No unprotected relevant vector-like masses at UV' },
     { key: 'singleHiggs', label: 'Single-Higgs Yukawa complete', details: 'Mass generation with one (1,2,1/2) scalar doublet' },
@@ -375,7 +375,7 @@ export function StandardModelPage() {
                     <div><strong>N_nonab</strong>: number of nonabelian simple factors.</div>
                     <div><strong>N_c</strong>: color-fundamental dimension of complex nonabelian factor.</div>
                     <div><strong>N_g</strong>: number of chiral generations.</div>
-                    <div><strong>[z]=0</strong>: loop-coherent gluing / transportability condition.</div>
+                    <div><strong>[z]=0</strong>: the triangle defect can be strictified; transportability also requires an allowed strictification with trivial represented loop holonomy.</div>
                     <div><strong>Z6 quotient</strong>: trivially acting center subgroup for realized matter reps.</div>
                 </div>
             </div>

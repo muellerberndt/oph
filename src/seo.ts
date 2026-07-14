@@ -6,13 +6,13 @@ export type SeoMeta = {
 };
 
 const DEFAULT_DESCRIPTION =
-  'Interactive guide to OPH as zero-input observer-based fixed-point consensus, mapping the declared theorem surfaces across quantum gravity, Standard Model unified with gravity routes, the cosmological constant derivation, particles, records, and screen microphysics.';
+  'Interactive guide to OPH as zero-dial observer-based fixed-point consensus (zero quantitative inputs at the theory layer; working borrows counted in the scorecard), mapping the declared theorem surfaces across quantum gravity, Standard Model unified with gravity routes, the cosmological constant derivation, particles, records, and screen microphysics.';
 
 const DEFAULT_TITLE = 'OPH Lab | Declared OPH Paper Surface';
 const SITE_SUFFIX = ' | OPH Lab';
 
 const ROUTE_DESCRIPTIONS: Record<string, string> = {
-  '/': 'Explore the OPH zero-input fixed-point surface: inspect the pixel fixed point P, the screen-capacity fixed point N_CRC, the no-G scale certificate, gravity, de Sitter, the hierarchy bridge, Higgs/top, and tiered particle surfaces.',
+  '/': 'Explore the OPH zero-dial fixed-point surface (zero quantitative inputs at the theory layer; working borrows counted in the scorecard): inspect the pixel fixed point P, the screen-capacity fixed point N_CRC, the no-G scale certificate, gravity, de Sitter, the hierarchy bridge, Higgs/top, and tiered particle surfaces.',
   '/hints': 'Review the experimental and conceptual clues that motivate Observer Patch Holography as a deeper account of physical reality.',
   '/no-objective-reality': 'Explore the argument that physics should be built from observer-local descriptions instead of a single objective frame.',
   '/the-screen': 'Learn how OPH models reality on a holographic screen, uses local patches to recover spacetime structure, and reads the S0 to S3 sphere ladder as a role map.',
@@ -31,13 +31,13 @@ const ROUTE_DESCRIPTIONS: Record<string, string> = {
   '/gauge-symmetry': 'See how gauge symmetry is framed as a gluing phenomenon in the OPH reconstruction.',
   '/standard-model': 'Review the OPH route toward Standard Model structure as emergent effective physics and its connection to the Standard Model unified with gravity search route.',
   '/masses': 'Review the OPH matter-sector surface, including the capacity-electroweak hierarchy bridge, Higgs/top split, and downstream continuation lanes.',
-  '/neutrinos': 'Inspect the OPH weighted-cycle neutrino theorem branch: bridge invariant C_nu, absolute attachment lambda_nu, the absolute mass family, central splittings, and the shared-basis Majorana pair.',
+  '/neutrinos': 'Audit the rejected target-informed OPH weighted-cycle neutrino candidate, its NuFIT 6.1 correlated-profile failure, basis and Takagi defects, and the source-closure gates required before any physical neutrino prediction.',
   '/unification': 'Inspect the coupling-unification lesson and the OPH account of apparent grand-unification patterns, Standard Model plus gravity, and broader physics unification.',
   '/qft-emerges': 'Follow the argument that quantum field theory is an effective layer emerging from deeper screen dynamics.',
   '/consensus-protocol': 'Explore OPH as observer-based fixed-point consensus: overlap repair, Lyapunov descent, schedule-independent normal form, controlled coarse-graining, holonomy obstructions, and record stability.',
   '/screen-microphysics': 'Inspect the federated patch-carrier architecture used by OPH to model records, measurement, checkpoint/restoration, public hardware evidence, and observer synchronization.',
   '/predictions': 'Review the OPH pressure-test surface, separating public quantitative rows from continuation-level signatures and open phenomenology.',
-  '/synthesis': 'See how OPH ties the derivation chain together as a zero-input closure program with two fixed-point constants, the hierarchy bridge, and downstream structural, particle, consensus, and observer surfaces.',
+  '/synthesis': 'See how OPH ties the derivation chain together as a zero-dial closure program (zero quantitative inputs at the theory layer; working borrows counted in the scorecard) with two fixed-point constants, the hierarchy bridge, and downstream structural, particle, consensus, and observer surfaces.',
   '/glossary': 'Use the OPH Lab glossary for concise definitions of the core holography, gravity, and quantum-information terms.',
   '/resources': 'Find the six-paper OPH stack, HTML paper summaries, book, blog, search-entry pages for Standard Model unified with gravity and cosmological constant derivation, coherence map, applications page, extra demos, challenge, and supporting reading for deeper study of Observer Patch Holography.',
 };

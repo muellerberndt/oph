@@ -7,6 +7,7 @@ export function DarkMatterPage() {
     const [a0Multiplier, setA0Multiplier] = useLabSetting('darkMatter.a0Multiplier');
     const { resetKeys } = useLabState();
 
+    // Selected MOND benchmark scale; this is not promoted as an OPH-derived value.
     const a0_base = 1.03e-10; // m/s^2
     const a0 = a0_base * a0Multiplier;
     const G = 6.674e-11;
@@ -27,7 +28,7 @@ export function DarkMatterPage() {
             // Newtonian: v = sqrt(GM/r) (point mass approximation, declining)
             const vNewt = Math.sqrt(G * M / r);
 
-            // MOND/OPH: interpolation function mu(x)x = g_N
+            // MOND continuation benchmark: interpolation function mu(x)x = g_N
             // In deep MOND regime (a << a0): v^4 = G*M*a0
             // Full interpolation: g = g_N / mu(g/a0) where mu(x) = x/sqrt(1+x^2)
             const gN = G * M / (r * r);
@@ -73,52 +74,54 @@ export function DarkMatterPage() {
         <div>
             <div className="section-header">
                 <span className="section-tag gr">Chain 1: GR</span>
-                <h1 style={{ fontSize: '1.5rem', margin: 0 }}>Dark Matter &amp; MOND</h1>
+                <h1 style={{ fontSize: '1.5rem', margin: 0 }}>Dark-Sector Continuation &amp; MOND Benchmark</h1>
             </div>
 
             <p style={{ marginBottom: '16px' }}>
-                Galaxy rotation curves are flat: stars at the edges of galaxies orbit just as fast as stars near
-                the center. Newtonian gravity predicts they should slow down (v &prop; r<sup>&minus;1/2</sup>).
-                The standard solution: add invisible "dark matter" halos around every galaxy.
+                Galaxy rotation curves motivate several dark-sector models. This page compares a point-mass
+                Newtonian baseline, an illustrative NFW halo, and a MOND interpolation curve. It is a continuation
+                benchmark, not a fitted galaxy analysis or a derivation of any of the three models.
             </p>
             <p style={{ marginBottom: '16px' }}>
-                OPH offers a different explanation: the Markov defect. At large distances where gravitational
-                acceleration drops below a critical scale a<sub>0</sub>, the approximate Markov condition (Axiom A4)
-                becomes imperfect. This information deficit mimics extra gravitational pull without any extra matter.
+                The collar conditional mutual information (CMI) used by OPH is a scalar recoverability diagnostic.
+                Small CMI controls reconstruction across a collar. By itself it is not a mass density, a rank-two
+                stress tensor, a metric correction, or a force law, so it cannot be identified with extra
+                gravitational pull.
             </p>
 
-            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>The MOND Scale from &Lambda;</h3>
+            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>What the Collar Theorem Establishes</h3>
             <p style={{ marginBottom: '8px' }}>
-                Milgrom's Modified Newtonian Dynamics (MOND) empirically identified a critical acceleration
-                a<sub>0</sub> &asymp; 1.2 &times; 10<sup>&minus;10</sup> m/s&sup2; below which gravitational dynamics
-                deviate from Newton. In OPH, this scale is <strong>derived</strong> from the cosmological constant:
+                There are two sufficient recovery routes. On the declared central-interface branch, the edge split
+                aligns with the Markov split and the collar CMI is exactly zero. Away from that branch, a faithful
+                finite-range Gibbs family gives the quantitative bound
             </p>
             <div className="math-block" style={{ fontSize: '1.1em' }}>
-                a<sub>0</sub> = (15 / 8&pi;&sup2;) &middot; c&sup2; &middot; &radic;(&Lambda;/3) &asymp; 1.03 &times; 10<sup>&minus;10</sup> m/s&sup2;
+                I(A<sub>&delta;</sub>:D<sub>&delta;</sub> | B<sub>&delta;</sub>)
+                &nbsp;&le;&nbsp; c |&part;C|<sub>UV</sub> exp(&minus;&delta;/&xi;<sub>&ell;</sub>)
             </div>
             <p style={{ marginBottom: '16px' }}>
-                The numerical coefficient 15/(8&pi;&sup2;) comes from the Markov defect calculation.
-                a<sub>0</sub> &sim; cH<sub>0</sub> because both a<sub>0</sub> and H<sub>0</sub> are set by the
-                same screen capacity.
+                only when the local dimensions, interaction range, degree, and interaction strength are uniformly
+                bounded and the family satisfies uniform strong conditional matrix mixing. Ordinary two-point
+                exponential clustering does not imply that premise for a general noncommuting Gibbs state.
             </p>
 
-            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>The Markov Defect Mechanism</h3>
+            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>The Sharp Scaling Condition</h3>
             <p style={{ marginBottom: '16px' }}>
-                Axiom A4 says the conditional mutual information I(A:D|B) &le; &epsilon; for tripartitions A-B-D.
-                When &epsilon; = 0 (exact Markov), information recovery is perfect and gravity is exactly Newtonian.
-                But &epsilon; is not exactly zero. It is controlled by the ratio a/a<sub>0</sub> where a is
-                the gravitational acceleration.
+                The declared double scaling takes &ell;<sub>UV</sub> &rarr; 0, &delta; &rarr; 0, and
+                &delta;/&ell;<sub>UV</sub> &rarr; &infin;. Because the UV boundary count also grows, CMI is forced to
+                zero only when the full rate margin &delta;/&xi;<sub>&ell;</sub> &minus;
+                log |&part;C|<sub>UV</sub> tends to +&infin;. The thick-collar ratio alone is not sufficient.
             </p>
             <p style={{ marginBottom: '16px' }}>
-                When a &gt;&gt; a<sub>0</sub> (strong field): &epsilon; &asymp; 0, recovery is near-perfect, Newtonian
-                gravity works. When a &lt;&lt; a<sub>0</sub> (weak field): &epsilon; grows, recovery fails, and
-                the missing information manifests as apparent extra gravitational pull. The interpolation between
-                these regimes reproduces the MOND interpolation function.
+                A finite receipt can check the regulator and tripartition hashes, interaction bounds, separator and
+                boundary-cell count, regional CMI, matrix defect, declared mixing constants, held-out cuts, the log
+                envelope, and the recovery error. Such a receipt tests the recovery theorem; it does not certify a
+                physical dark-sector source.
             </p>
 
             <div className="card" style={{ marginBottom: '24px', borderLeft: '3px solid var(--accent-rose)' }}>
                 <h4 style={{ margin: '0 0 12px 0', fontSize: '0.9em', color: 'var(--accent-gold)' }}>
-                    Two Regimes
+                    Curves Used in the Benchmark
                 </h4>
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', fontSize: '0.85em' }}>
                     <div>
@@ -127,7 +130,7 @@ export function DarkMatterPage() {
                         </div>
                         <div className="math-block" style={{ fontSize: '0.85em' }}>v &prop; r<sup>&minus;1/2</sup></div>
                         <p style={{ color: 'var(--text-secondary)', margin: '8px 0 0' }}>
-                            Markov condition satisfied. Standard 1/r&sup2; gravity.
+                            Point-mass Newtonian baseline with 1/r&sup2; gravity.
                         </p>
                     </div>
                     <div>
@@ -136,7 +139,7 @@ export function DarkMatterPage() {
                         </div>
                         <div className="math-block" style={{ fontSize: '0.85em' }}>v<sup>4</sup> = G M a<sub>0</sub></div>
                         <p style={{ color: 'var(--text-secondary)', margin: '8px 0 0' }}>
-                            Markov defect dominant. Flat rotation curves.
+                            Selected MOND continuation law; not inferred from collar CMI.
                         </p>
                     </div>
                 </div>
@@ -145,8 +148,8 @@ export function DarkMatterPage() {
             <div className="demo-container">
                 <div className="demo-label">Interactive: Galaxy Rotation Curves</div>
                 <p style={{ fontSize: '0.85em', color: 'var(--text-muted)', marginBottom: '16px' }}>
-                    Adjust the galaxy mass and the MOND acceleration scale a<sub>0</sub>. Compare Newtonian, CDM (dark matter halo),
-                    and OPH/MOND predictions.
+                    Adjust the point-mass parameter and the selected MOND acceleration scale a<sub>0</sub>. Compare
+                    Newtonian, illustrative NFW, and MOND benchmark curves. These are not OPH predictions.
                 </p>
                 <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '10px' }}>
                     <button
@@ -176,7 +179,7 @@ export function DarkMatterPage() {
                     </div>
                     <div style={{ flex: 1, minWidth: '200px' }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.8em', marginBottom: '4px' }}>
-                            <span style={{ color: 'var(--accent-gold)' }}>a<sub>0</sub> multiplier</span>
+                            <span style={{ color: 'var(--accent-gold)' }}>benchmark a<sub>0</sub> multiplier</span>
                             <span style={{ color: 'var(--text-muted)' }}>{a0Multiplier.toFixed(2)} &times; 1.03 &times; 10<sup>&minus;10</sup></span>
                         </div>
                         <input
@@ -247,59 +250,51 @@ export function DarkMatterPage() {
                     <line x1={svgW - pad.right - 145} y1={pad.top + 36} x2={svgW - pad.right - 125} y2={pad.top + 36} stroke="var(--accent-purple)" strokeWidth="2" />
                     <text x={svgW - pad.right - 120} y={pad.top + 40} fill="var(--accent-purple)" fontSize="9" fontFamily="var(--font-mono)">CDM (NFW)</text>
                     <line x1={svgW - pad.right - 145} y1={pad.top + 52} x2={svgW - pad.right - 125} y2={pad.top + 52} stroke="var(--accent-cyan)" strokeWidth="2.5" />
-                    <text x={svgW - pad.right - 120} y={pad.top + 56} fill="var(--accent-cyan)" fontSize="9" fontFamily="var(--font-mono)">OPH/MOND</text>
+                    <text x={svgW - pad.right - 120} y={pad.top + 56} fill="var(--accent-cyan)" fontSize="9" fontFamily="var(--font-mono)">MOND benchmark</text>
                 </svg>
             </div>
 
-            <Explainer title="Why no dark matter particles?">
+            <Explainer title="What the benchmark does not claim">
                 <p>
-                    In OPH, the "missing mass" is not mass at all. It is missing <em>information</em>. At scales
-                    where a &lt; a<sub>0</sub>, the Markov recovery map (Axiom A4) fails to fully reconstruct
-                    the state. The unrecovered information looks, gravitationally, like additional matter,
-                    but there are no particles producing it.
+                    The comparison does not show that missing information replaces dark matter, predict a null result
+                    for particle searches, or derive the baryonic Tully-Fisher relation. It also does not show that a
+                    collar defect changes the full metric, lensing, clusters, or the CMB.
                 </p>
                 <p>
-                    This predicts that direct detection experiments will find no dark matter particles, and that
-                    the "dark matter" signal will always correlate with the baryonic distribution via the
-                    MOND relation v<sup>4</sup> = GMa<sub>0</sub> (the baryonic Tully-Fisher relation).
+                    The proved output is narrower: exact or quantitatively controlled state recovery across a collar,
+                    on the hypotheses stated above. The MOND curve remains useful for exploring what a future
+                    continuation would have to reproduce.
                 </p>
             </Explainer>
 
-            <Explainer title="Successes and differences from pure MOND">
+            <Explainer title="Receipts needed for a physical dark-sector continuation">
                 <p>
-                    OPH reproduces the empirical successes of MOND:
+                    Promoting a scalar recovery diagnostic to a physical source requires separate, checkable data:
                 </p>
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
-                    <li>Flat rotation curves of spiral galaxies</li>
-                    <li>Baryonic Tully-Fisher relation: M &prop; v<sup>4</sup></li>
-                    <li>The a<sub>0</sub> &sim; cH<sub>0</sub> cosmic coincidence</li>
-                    <li>Freeman limit and Fish law for surface brightness</li>
+                    <li>A source-tensor map from microscopic observables to a symmetric local &Delta;T<sub>ab</sub></li>
+                    <li>Conservation or Ward receipts for &nabla;<sup>a</sup>&Delta;T<sub>ab</sub> = 0</li>
+                    <li>Normalization and scale-setting receipts that do not import the target galaxy value</li>
+                    <li>A universal coupling and dynamics prescription for matter, light, and cosmological probes</li>
+                    <li>Likelihood receipts against rotation curves, lensing, clusters, and CMB data</li>
                 </ul>
                 <p>
-                    But OPH also addresses MOND's weaknesses:
+                    Until those receipts are supplied together, the dark-sector interpretation is continuation-only.
                 </p>
-                <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
-                    <li>Cluster-scale behavior: the Markov defect has a different form for hot gas dominated systems</li>
-                    <li>Relativistic lensing: automatically handled because the Markov defect modifies the full metric</li>
-                    <li>CMB acoustic peaks: modified by screen-capacity effects at early times</li>
-                </ul>
             </Explainer>
 
-            <Explainer title="The cosmic coincidence a_0 ~ cH_0">
+            <Explainer title="Why compare a_0 with cH_0?">
                 <p>
-                    One of the deepest puzzles in MOND phenomenology: why is the acceleration scale a<sub>0</sub>
-                    of the same order as the "cosmic acceleration" cH<sub>0</sub>? In the standard model, galaxy
-                    dynamics has nothing to do with cosmology.
-                </p>
-                <p>
-                    In OPH, both scales are set by the N_CRC record-capacity fixed point:
+                    MOND phenomenology notes that a<sub>0</sub> is of the same order as cH<sub>0</sub>. That
+                    numerical comparison motivates a possible cosmological continuation:
                 </p>
                 <div className="math-block" style={{ fontSize: '0.85em' }}>
                     a<sub>0</sub> &sim; c&sup2;&radic;(&Lambda;/3) &sim; cH<sub>0</sub>
                 </div>
                 <p>
-                    This is because &Lambda; = 3H<sup>2</sup> (in the de Sitter limit) and
-                    a<sub>0</sub> &prop; c&sup2;&radic;&Lambda;. The cosmic coincidence is automatic.
+                    Here, 1.03 &times; 10<sup>&minus;10</sup> m/s&sup2; is a selected benchmark value. The collar
+                    theorem neither fixes its coefficient nor proves that it and the cosmological scale have a common
+                    origin. Those are normalization and dynamics gates for the continuation.
                 </p>
             </Explainer>
         </div>

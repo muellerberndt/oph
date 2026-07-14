@@ -78,14 +78,37 @@ This section is the lab-maintainer summary of the public paper surface.
     the 24-count repair lock, and the exact global-capacity bridge
 - Charged leptons:
   - exact same-family readback is explicit
-  - the source landing to full physical charged masses is work in progress
+  - the icosahedral screen supplies an exact `A5/C3` face-corner carrier
+  - a target-informed continuation on that carrier gives
+    `(0.510998950843, 105.658375501, 1776.930000014) MeV` with maximum
+    residual `0.000300 ppm` against rounded fields on one hybrid branch; the
+    tau residual is `-1.387289 ppm` against the packet's higher-precision
+    central value
+  - the declared affine repair map is conditionally contractive with one fixed
+    point, while source-multiplier witnesses leave that map unselected
+  - an engineered digital CFQ model proves the stipulated packet is nonempty
+    and supplies a fixed-cutoff central accepted/rejected record dilation
+  - that model hard-codes its registers, automaton, signs, clock, and response;
+    its historical no-target claim fails audit
+  - a conditional nature/pole theorem transports the face response only after
+    assuming the physical Yukawa identity and CFQ-to-Dyson singularity readout;
+    its zero-self-energy kernel is a free witness, not the interacting kernel
+  - physical source selection, attachment, phase and determinant laws,
+    coherent source branch, cofinal refinement, and pole-mass scheme remain open
+  - the face-incidence result is a completion conjecture, not a prediction
+  - the theorem-grade source landing to physical charged masses remains open
 - Quarks:
-  - OPH closes one exact public quark sextet on one physical frame fixed by P
-  - full classification of all quark frames is a separate object
+  - the source equations leave an exact free `(R_{>0})^2` spread fiber, so
+    selected-frame descent does not emit either physical spread modulus
+  - numeric quark rows remain withheld from the public surface
+  - the target audit mixes light, heavy, and top mass conventions; its
+    GeV-valued matrices are mass textures, not physical dimensionless Yukawas
 - Neutrinos:
-  - the weighted-cycle theorem branch emits the absolute family, central
-    splittings, and the physical Majorana pair
-  - exact adapters remain diagnostic-only sidecars
+  - the isotropic neutrino-only ansatz has an exact no-go
+  - the target-informed weighted-cycle point is rejected by the NuFIT 6.1
+    correlated profile and remains a comparison record only
+  - physical PMNS, ordering, absolute masses, and Majorana phases remain open
+    behind source, basis, Takagi, ordering, and no-target-leak gates
 - Hadrons:
   - production masses require a working OPH hadron backend and systematics
 
@@ -158,6 +181,9 @@ These are the common places where public copy tends to overstate the paper claim
   - keep the hierarchy/naturality claim scoped to the selected exact branch with
     the 24-tick repair lock and exact capacity bridge
   - keep charged, quark, and neutrino lanes labeled by their declared claim tiers
+  - keep the quark `(R_{>0})^2` source-spread obstruction separate from the
+    mixed-scheme target audit and physical-Yukawa normalization blocker
+  - do not publish the six target-anchored quark coordinates as OPH mass rows
   - keep hadrons tied to the missing OPH hadron backend
   - keep GW comb / discrete Hawking / deep-IR galaxy-response language separated by claim tier
 - Consensus / microphysics pages:

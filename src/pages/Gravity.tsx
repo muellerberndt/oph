@@ -101,7 +101,8 @@ export function GravityPage() {
             <p style={{ marginBottom: '16px' }}>
                 This simulator visualizes the declared conditional gravity branch: local null-modular data and
                 generalized-entropy stationarity yield the rest-frame Einstein relation on the stated BW/null-stress
-                assumptions, and the global self-closure capacity fixed point fixes the separate Lambda term.
+                assumptions, and the global self-closure capacity fixed point fixes the separate Lambda term. The
+                stress slider represents the independently reconstructed null charge; it is not scalar collar CMI.
             </p>
 
             <div className="card" style={{ marginBottom: '20px', borderLeft: '3px solid var(--accent-cyan)' }}>
@@ -112,6 +113,22 @@ export function GravityPage() {
                             {item}
                         </div>
                     ))}
+                </div>
+            </div>
+
+            <div className="card" style={{ marginBottom: '20px', borderLeft: '3px solid var(--accent-gold)' }}>
+                <h3 style={{ margin: '0 0 10px 0', fontSize: '0.95em' }}>Collar recoverability boundary</h3>
+                <div style={{ display: 'grid', gap: '8px', fontSize: '0.82em', color: 'var(--text-secondary)' }}>
+                    <div><strong>Exact route:</strong> the declared central-interface branch is exactly Markov, so I(A<sub>&delta;</sub>:D<sub>&delta;</sub>|B<sub>&delta;</sub>) = 0 without a decay limit.</div>
+                    <div><strong>Conditional route:</strong> a faithful finite-range Gibbs family obeys the quantitative bound only under uniform strong conditional matrix mixing. Ordinary two-point clustering is insufficient.</div>
+                    <div className="math-block" style={{ margin: 0, fontSize: '0.95em' }}>
+                        I(A_delta:D_delta|B_delta) &le; kappa |partial C|_UV exp(-(m-r0)/zeta)
+                        <br />
+                        &le; c |partial C|_UV exp(-delta/xi)
+                    </div>
+                    <div>m = delta/l<sub>UV</sub>, xi = zeta l<sub>UV</sub>, c = kappa exp(r0/zeta). The vanishing criterion is delta/xi - log|partial C|<sub>UV</sub> &rarr; +infinity; delta/l<sub>UV</sub> &rarr; infinity alone is insufficient.</div>
+                    <div>Finite boundary-count, CMI, matrix-defect, held-out-cut, recovery-error, and rate-margin receipts are proxies for branch instantiation. They do not prove a scaling limit.</div>
+                    <div><strong>Source boundary:</strong> scalar CMI controls recovery quality only. A stress source requires directional modular charges, rank-two tomography, conservation, normalization, and coupling receipts.</div>
                 </div>
             </div>
 
@@ -268,6 +285,7 @@ export function GravityPage() {
                     <div><strong>W</strong>: sampled strip weight across null generators.</div>
                     <div><strong>delta S_bulk</strong>: modular first-law matter contribution.</div>
                     <div><strong>delta S_gen</strong>: generalized entropy variation, target 0 at equilibrium.</div>
+                    <div><strong>Collar CMI</strong>: scalar recovery diagnostic, not the T_kk input shown here.</div>
                 </div>
             </div>
 
@@ -276,6 +294,8 @@ export function GravityPage() {
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '8px', fontSize: '0.78em' }}>
                     <div>Recoverable generalized entropy</div>
                     <div>Local MaxEnt and refinement-stable branch</div>
+                    <div>Exact central-interface collar branch, or finite-range Gibbs plus uniform strong conditional matrix mixing</div>
+                    <div>Boundary-aware collar rate margin; finite receipts remain proxies</div>
                     <div>Null modular bridge, with half-line generator/charge identification internalized</div>
                     <div>Explicit BW branch and scaling-limit scope</div>
                     <div>Separate bounded-interval projective branch in the small-ball step</div>
@@ -291,6 +311,11 @@ export function GravityPage() {
                     The global part is separate because null data leave a metric ambiguity and cannot determine
                     Lambda by themselves.
                 </p>
+                <p>
+                    The collar theorem controls the recovery remainder entering that branch. It does not construct
+                    the T_kk slider: the displayed stress variable belongs to the separate modular-charge and
+                    tensor-reconstruction packet.
+                </p>
             </Explainer>
 
             <Explainer title="How P and N_CRC enter">
@@ -301,7 +326,7 @@ export function GravityPage() {
                 </p>
             </Explainer>
 
-            <Explainer title="What is open">
+            <Explainer title="Branch conditions and open receipts">
                 <div style={{ display: 'grid', gap: '10px' }}>
                     {GRAVITY_SURFACE.slice(2).map((item) => (
                         <p key={item} style={{ margin: 0 }}>

@@ -177,9 +177,9 @@ export function MassesPage() {
             <div className="card" style={{ marginBottom: '16px' }}>
                 <h3 style={{ margin: '0 0 10px 0', fontSize: '0.95em' }}>Open matter-sector lanes</h3>
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8', margin: 0, color: 'var(--text-secondary)' }}>
-                    <li><strong>Quarks:</strong> OPH closes one exact public sextet on one physical frame fixed by P. A full classification of all quark frames is a separate object.</li>
-                    <li><strong>Charged leptons:</strong> the exact same-family readback is explicit. The open step is the source landing that turns the shared geometric data into full physical charged masses.</li>
-                    <li><strong>Neutrinos:</strong> one weighted-cycle branch emits an absolute family, the central splittings, and one physical Majorana pair. The exact fitting adapters are checks and stay off the public surface.</li>
+                    <li><strong>Quarks:</strong> the source equations leave a free (R<sub>&gt;0</sub>)<sup>2</sup> spread fiber, so no numeric public quark row is emitted. The target audit mixes mass conventions, and its GeV-valued matrices are mass textures rather than physical dimensionless Yukawas.</li>
+                    <li><strong>Charged leptons:</strong> the icosahedral screen gives an exact A<sub>5</sub>/C<sub>3</sub> face-corner carrier. A target-informed continuation gives (0.510998950843, 105.658375501, 1776.930000014) MeV on one hybrid branch. Its declared affine map is conditionally contractive. An engineered digital CFQ model proves the stipulated schema is nonempty and supplies a central record dilation, but hard-codes its registers, automaton, signs, clock, and response; historical no-target ancestry fails audit. A conditional nature/pole theorem transports the face operator only after assuming the physical Yukawa identity and CFQ-to-Dyson singularity readout. Its zero-self-energy kernel is a free witness, not an interacting charged kernel. The 0.000300 ppm headline uses rounded fields, and the tau residual is -1.387289 ppm against the packet's higher-precision central value. Physical source selection, attachment, determinant, coherent branch, cofinal refinement, interacting kernel, and infrared completion remain open.</li>
+                    <li><strong>Neutrinos:</strong> the isotropic ansatz has an exact no-go. The target-informed weighted-cycle point is rejected by the NuFIT 6.1 correlated profile and has no physical PMNS, ordering, absolute-mass, or Majorana prediction status.</li>
                     <li><strong>Hadrons:</strong> production masses sit outside the closed public scope until a working OPH hadron backend and systematics exist.</li>
                 </ul>
             </div>
@@ -335,7 +335,8 @@ export function MassesPage() {
                 <p>
                     The diagnostic changes the source coordinate used by those formulas, so the bosonic rows move while
                     the massless structural rows stay fixed. The certified branch remains the fixed-point value P*.
-                    Charged leptons and the full quark story away from the public frame sit on separate surfaces;
+                    Charged leptons remain on a separate source-landing surface. The quark runtime is a target-anchored
+                    diagnostic behind the two-modulus spread obstruction and the common-scale physical-Yukawa blocker;
                     hadrons require an OPH hadron backend.
                 </p>
             </Explainer>
