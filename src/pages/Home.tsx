@@ -142,22 +142,22 @@ export function Home() {
 
     const coreLocks = useMemo<CoreLockRow[]>(() => [
         {
-            label: 'Local pixel fixed point P',
+            label: 'Verified local pixel closure P',
             value: formatPixelConstant(PIXEL_REFERENCE),
             equation: 'P* = phi + sqrt(pi) / A_T(P*)',
-            note: 'This is a certified root of the declared local map. The map lacks the same-scheme hadronic transport needed for a physical electromagnetic endpoint.',
+            note: 'Lean checks the contraction-based fixed-point theorem. Exact interval certificates give one root for each declared map. The physical Thomson endpoint still requires source-derived same-scheme hadronic transport.',
         },
         {
-            label: 'Global correctable-record capacity',
+            label: 'Conditional global N extension',
             value: SCREEN_CAPACITY_REFERENCE_DISPLAY,
             equation: 'N = log M0(U_N); finite: M0(q) = alpha(Gq)',
-            note: 'N_CRC = log D*. On the exact reversible branch M0(q) = |X_reach(q)|; Lambda supplies an independent comparison through horizon saturation.',
+            note: 'This is the conditional global companion to P. On the exact reversible branch M0(q) = |X_reach(q)|. The physical checkpoint packet, unique slack zero, and horizon identification are work in progress.',
         },
         {
             label: 'Conditional electroweak bridge capacity',
             value: ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY,
             equation: 'N_EW(P*) from the exact bridge condition',
-            note: 'This algebraic value is about 6.6% above the Lambda-located central capacity. COMMON-EW-LOAD-CARRIER tests whether the same global load controls the Higgs hierarchy.',
+            note: 'This algebraic value is about 6.6% above the Lambda-located central capacity. A common screen and electroweak carrier must show that the same global load controls the Higgs hierarchy.',
         },
         {
             label: 'Repair tick lock',
