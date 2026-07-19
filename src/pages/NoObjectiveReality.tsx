@@ -38,13 +38,13 @@ const QUESTIONS: Question[] = [
         problem: 'The cosmological constant problem',
         conventional: 'QFT predicts vacuum energy 10\u00b9\u00b2\u2070 times too large.',
         hiddenAssumption: 'Vacuum energy gravitates like other energy.',
-        ophResolution: 'Gravity is derived from null surfaces. Vacuum energy is null-blind (T\u2096\u2096 = 0). \u039b belongs to the global screen-capacity branch, not vacuum energy. The 120-order discrepancy was never real.',
+        ophResolution: 'The conditional null-surface branch leaves a metric term undetermined. OPH closes it globally through correctable public-record capacity, one physical zero of the finite-size slack, and horizon-record saturation.',
     },
     {
         problem: 'The dark matter problem',
         conventional: 'Galaxy rotation curves are flat. Add invisible massive particles.',
         hiddenAssumption: 'Extra gravitational pull must come from extra matter.',
-        ophResolution: 'Collar recovery is exact on the declared central-interface branch, or conditionally bounded for finite-range Gibbs states with uniform strong matrix mixing. Scalar CMI is recovery-only. The MOND curve is a continuation benchmark; a physical source still needs source-tensor, conservation, normalization, and coupling receipts.',
+        ophResolution: 'Collar recovery is exact on the declared central-interface branch, or conditionally bounded for finite-range Gibbs states with uniform strong matrix mixing. Scalar CMI is recovery-only. The MOND curve is a continuation benchmark; a physical source requires source-tensor, conservation, normalization, and coupling receipts.',
     },
     {
         problem: 'Black hole information paradox',
@@ -56,13 +56,13 @@ const QUESTIONS: Question[] = [
         problem: 'Why three generations?',
         conventional: 'The Standard Model has 3 copies of each fermion type. No explanation why.',
         hiddenAssumption: 'Generation count is a free parameter.',
-        ophResolution: 'CP violation requires \u2265 3. UV stability (asymptotic freedom) allows \u2264 5. Minimality selects exactly 3.',
+        ophResolution: 'On the declared nonempty one-Higgs chiral MAR class, CP capability requires at least 3 and the weak-sector clause bounds the count; minimality selects 3.',
     },
     {
         problem: 'Proton stability',
         conventional: 'Grand Unified Theories predict proton decay. Never observed.',
         hiddenAssumption: 'Forces were unified in a simple group that was then broken.',
-        ophResolution: 'On the receipt-certified compact-gauge branch, gluing supplies fixed-stage seeds, the refinement receipt supplies the tensor/fiber colimit, and MAR selects a product gauge group. That structure carries no leptoquark bosons and gives no gauge-mediated proton decay.',
+        ophResolution: 'On the declared product-adjoint branch there is no simple-GUT X/Y generator, so the ordinary X/Y-mediated channel is absent. Other baryon-violating mechanisms remain separate.',
     },
     {
         problem: 'The hard problem of consciousness',

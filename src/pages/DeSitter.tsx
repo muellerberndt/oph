@@ -24,7 +24,7 @@ export function DeSitterPage() {
     const TdS = gibbonsHawkingTemperatureFromHubble(H);
     const rH = deSitterRadiusFromLambda(lambda);
     const SBH = Math.pow(10, logDimH);
-    const isClosurePoint = Math.abs(logDimH - SCREEN_CAPACITY_REFERENCE_LOG10) < 0.005;
+    const isReferencePoint = Math.abs(logDimH - SCREEN_CAPACITY_REFERENCE_LOG10) < 0.005;
 
     return (
         <div>
@@ -57,31 +57,31 @@ export function DeSitterPage() {
                 bath at temperature T<sub>dS</sub>.
             </p>
 
-            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>&Lambda; from N_CRC</h3>
+            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Conditional &Lambda;-Capacity Relation</h3>
             <p style={{ marginBottom: '8px' }}>
-                OPH is formulated as zero-dial closure (zero quantitative inputs at the theory layer; working borrows counted in the scorecard): after the local gravity branch leaves the separate metric
-                ambiguity, the global capacity fixed point is the cosmic record-closure readback fixed point. In the lab
-                we hold the reference pixel normalization fixed at P = {formatPixelConstant(PIXEL_REFERENCE)} and show the
-                global capacity descendant:
+                The local gravity branch leaves a separate metric ambiguity. OPH determines it through global
+                correctable-record capacity. The lab holds the reference pixel normalization at
+                P = {formatPixelConstant(PIXEL_REFERENCE)} and displays the Lambda-located comparison coordinate:
             </p>
             <div className="math-block" style={{ fontSize: '1.1em' }}>
-                N<sub>CRC</sub> = F(N<sub>CRC</sub>),
-                &nbsp;&Lambda;<sub>CRC</sub> = 3&pi; / (G N<sub>CRC</sub>)
+                N = log M<sub>0</sub>(𝔘<sub>N</sub>),
+                &nbsp;M<sub>0</sub>(q) = &alpha;(G<sub>q</sub>),
+                &nbsp;𝔉<sub>r,0</sub>(D<sub>*</sub>) = {'{'}D<sub>*</sub>{'}'},
+                &nbsp;N<sub>CRC</sub> = log D<sub>*</sub>
             </div>
             <p style={{ marginBottom: '16px' }}>
-                With N<sub>CRC</sub> = {SCREEN_CAPACITY_REFERENCE_DISPLAY} (in natural units), this gives the observed
-                value of &Lambda; &asymp; 10<sup>&minus;52</sup> m<sup>&minus;2</sup>. Informally,
-                N<sub>CRC</sub> is the unique point where outside total horizon capacity and inside observer-accessible
-                public record capacity agree. Observers inside infer geometry, horizons, entropy, &Lambda;, history,
-                and records from information available inside the universe.
+                On the exact reversible branch every authorized checkpoint is injective and
+                M<sub>0</sub>(q) = |X<sub>reach</sub>(q)|, turning the readback into exact CSP/model counting.
+                Horizon-record saturation then gives &Lambda;&ell;<sub>*</sub><sup>2</sup> = 3&pi;/N<sub>CRC</sub>.
+                The measured &Lambda; comparison locates N<sub>&Lambda;</sub> near {SCREEN_CAPACITY_REFERENCE_DISPLAY}.
             </p>
             <p style={{ marginBottom: '16px' }}>
-                The electroweak hierarchy bridge uses a separate exact bridge capacity of
-                {ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY}. The de Sitter capacity branch is tracked here; the hierarchy
-                bridge is shown on the matter and synthesis pages.
+                The conditional electroweak hierarchy bridge gives {ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY}, about 6.6%
+                above the Lambda-located central value. COMMON-EW-LOAD-CARRIER asks whether the same capacity load
+                controls the Higgs hierarchy; the joint cosmological posterior is a separate registered comparison.
             </p>
 
-            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Why This Solves the Cosmological Constant Problem</h3>
+            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>The Proposed Cosmological-Constant Route</h3>
             <p style={{ marginBottom: '16px' }}>
                 The standard cosmological constant problem: QFT predicts a vacuum energy density &rho;<sub>vac</sub> &sim;
                 M<sub>P</sub><sup>4</sup> &sim; 10<sup>76</sup> GeV<sup>4</sup>, but the observed value is
@@ -91,15 +91,16 @@ export function DeSitterPage() {
                 In OPH, this comparison is meaningless. Vacuum energy is "null-blind": the vacuum stress-energy
                 tensor satisfies T<sub>kk</sub> = T<sub>ab</sub>k<sup>a</sup>k<sup>b</sup> = 0 for null vectors k.
                 Since gravity is derived from null surface thermodynamics (&delta;Q = TdS on null horizons), vacuum
-                energy does not contribute to the gravitational equations at all. &Lambda; comes from the global screen-capacity branch,
-                not from vacuum fluctuations. The 120-order discrepancy was comparing apples and oranges.
+                energy does not contribute to the null-projected local equation. OPH proposes that &Lambda; belongs to
+                a separate global screen-capacity branch, closed by the public checkpoint packet and one physical zero
+                of s(D) = log D - log M<sub>0</sub>(D).
             </p>
 
             <div className="demo-container">
-                <div className="demo-label">Diagnostic: De Sitter Parameters Around N_CRC</div>
+                <div className="demo-label">Diagnostic: De Sitter Parameters Around The Lambda Reference</div>
                 <p style={{ fontSize: '0.85em', color: 'var(--text-muted)', marginBottom: '16px' }}>
-                    Move the diagnostic capacity coordinate to see formula sensitivity. The OPH branch is the fixed
-                    point N<sub>CRC</sub> = {SCREEN_CAPACITY_REFERENCE_DISPLAY}.
+                    Move the diagnostic capacity coordinate to see formula sensitivity. The marked value is the
+                    Lambda-located reference N<sub>&Lambda;</sub> = {SCREEN_CAPACITY_REFERENCE_DISPLAY}.
                 </p>
 
                 <div style={{ marginBottom: '16px' }}>
@@ -109,7 +110,7 @@ export function DeSitterPage() {
                             style={{ fontSize: '0.72em', padding: '4px 10px' }}
                             onClick={() => resetKeys(['deSitter.logDimH'])}
                         >
-                            Reset to N_CRC
+                            Reset to Lambda Reference
                         </button>
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.85em', marginBottom: '4px' }}>
@@ -127,7 +128,7 @@ export function DeSitterPage() {
                     />
                     <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.7em', color: 'var(--text-muted)' }}>
                         <span>{formatScreenCapacityLog(SCREEN_CAPACITY_UI_MIN)}</span>
-                        <span>{SCREEN_CAPACITY_REFERENCE_DISPLAY} fixed point</span>
+                        <span>{SCREEN_CAPACITY_REFERENCE_DISPLAY} Lambda reference</span>
                         <span>{formatScreenCapacityLog(SCREEN_CAPACITY_UI_MAX)}</span>
                     </div>
                 </div>
@@ -177,8 +178,8 @@ export function DeSitterPage() {
                         <div style={{ fontSize: '0.7em', textTransform: 'uppercase', color: 'var(--text-muted)', marginBottom: '4px' }}>
                             Closure Status
                         </div>
-                        <div style={{ fontSize: '1em', color: isClosurePoint ? 'var(--accent-green)' : 'var(--accent-rose)', fontWeight: 700 }}>
-                            {isClosurePoint ? 'fixed point' : 'off-closure diagnostic'}
+                        <div style={{ fontSize: '1em', color: isReferencePoint ? 'var(--accent-gold)' : 'var(--accent-rose)', fontWeight: 700 }}>
+                            {isReferencePoint ? 'Lambda-located reference' : 'sensitivity coordinate'}
                         </div>
                     </div>
                 </div>
@@ -187,12 +188,11 @@ export function DeSitterPage() {
             <Explainer title="De Sitter entropy and the total bit count">
                 <p>
                     The de Sitter horizon entropy S<sub>dS</sub> = A<sub>H</sub>/(4l<sub>P</sub>&sup2;) is
-                    {SCREEN_CAPACITY_REFERENCE_DISPLAY} on the observed branch. It is the total public record capacity
-                    for a single observer.
-                    In OPH this is the cosmic record-closure fixed point N<sub>CRC</sub> = F(N<sub>CRC</sub>):
-                    the single screen size where outside horizon capacity and inside observer-readable record
-                    capacity agree. The normalized self-closing observer-form count is the finite-count
-                    representation of the same closure.
+                    {SCREEN_CAPACITY_REFERENCE_DISPLAY} on the observed branch. Measured Lambda supplies this entropy
+                    estimate. OPH's official equation is N = log M<sub>0</sub>(𝔘<sub>N</sub>).
+                    It identifies finite self-reading capacity directly through
+                    M<sub>0</sub>(q) = &alpha;(G<sub>q</sub>) and robust whole-fiber saturation
+                    𝔉<sub>r,0</sub>(D<sub>*</sub>) = {'{'}D<sub>*</sub>{'}'}.
                 </p>
                 <p>
                     This gives an entirely different perspective on the "largeness" of the universe. The universe
@@ -200,8 +200,9 @@ export function DeSitterPage() {
                     number that sets the scale.
                 </p>
                 <p>
-                    The electroweak bridge capacity is {ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY}. It belongs to the
-                    hierarchy projection equation; this page's entropy count is the de Sitter branch.
+                    The conditional electroweak bridge capacity is {ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY}. Its 6.6%
+                    central gap from the Lambda-located estimate cannot be adjudicated until the bridge premises close
+                    and the cosmological posterior is propagated.
                 </p>
             </Explainer>
 

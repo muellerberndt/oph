@@ -38,7 +38,7 @@ const HINTS: Hint[] = [
         title: '5. The Universe Is Fine-Tuned',
         intuition: 'The laws of physics just are what they are. There\'s nothing to explain about the values of fundamental constants.',
         reality: 'The parameters of physics appear suspiciously tuned for complexity. Tiny changes to quark masses, coupling constants, or the cosmological constant would make atoms, stars, or chemistry impossible.',
-        detail: 'This is the fine-tuning problem. OPH reframes it: under the strange-loop axioms, two substrate constants are closure-defined, their working values are located from measurement (P from the fine-structure constant, N from the cosmological constant) pending exact closure, and the hypothesis requires the closure equations to hold exactly. The theory layer takes no measured number; working borrows are counted in the compression scorecard. Whether they do is tracked on the closure ledger; the residuals are open. The remaining program is finite: four named computations (blind hadronic transport, the capacity readback map F, the repaired forward electroweak chain, solver hygiene) and one flavor-orbit selector stand between the current standing and full closure.',
+        detail: 'This is the fine-tuning problem. OPH replaces fitted continuous inputs with local closure and the official global equation N=log M0(U_N). Its rigorous finite form is Fr,0(D*)={D*}, with an exact reversible counting branch and a finite packet/slack proof frontier. Alpha and Lambda remain comparison coordinates for the completed physical bridges.',
     },
 ];
 

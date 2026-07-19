@@ -13,29 +13,29 @@ export type ExactBundleSection = {
 };
 
 export const LANDING_AUDIT_NOTES = [
-    'The landing page exposes the locked P fixed point, the N_CRC screen-capacity fixed point, and the selected no-G scale certificate.',
-    'The hierarchy surface distinguishes the de Sitter capacity display from the exact capacity-electroweak bridge N_EW.',
+    'The landing page exposes a certified root of the declared incomplete P map, the Lambda-located capacity comparison coordinate, and the selected no-G scale certificate.',
+    'The hierarchy surface distinguishes the de Sitter capacity estimate from the conditional capacity-electroweak bridge. Their central values differ by about 6.6%.',
     'The particle surface includes a two-modulus quark source-spread obstruction, an exact same-family charged witness, the source-only Higgs/top split theorem, and a neutrino audit that rejects the target-informed weighted-cycle candidate.',
-    'The gravity-side bundle uses the scale-certificate Newton readout with downstream Lambda, de Sitter, and a0 descendants supplied by N_CRC.',
+    'The gravity-side bundle uses the scale-certificate Newton readout with Lambda, de Sitter, and a0 displays evaluated at the Lambda-located capacity coordinate.',
 ];
 
 export const LANDING_SCOPE_NOTES = [
-    'The first screen is a fixed-point dashboard. It does not expose a free universe configurator.',
+    'The first screen is a status dashboard. Its incomplete-map and comparison coordinates carry no physical prediction status.',
     'Off-point controls on later pages are formula-sensitivity diagnostics and stay separate from certified branch claims.',
 ];
 
 export const EXACT_BUNDLE_SECTIONS: ExactBundleSection[] = [
     {
         id: 'structural-bosonic',
-        title: 'Structural Zeros And Exact Bosonic Surface',
-        scope: 'Structural exactness + calibration / compare-only sidecars',
-        note: 'These are the exact non-hadron rows on the declared paper surface: structural zeros, the exact frozen W/Z sidecar, and the exact source-only split pair.',
+        title: 'Structural Zeros And Bosonic Diagnostics',
+        scope: 'Structural exactness + calibration / compare-only charts',
+        note: 'The massless rows are structural. The W/Z pair is compare-only, and its source chart has no physical mass status until the full renormalization and complex-pole map is supplied.',
         rows: [
             { label: 'Photon', value: '0 GeV', note: 'Structural zero.' },
             { label: 'Gluon', value: '0 GeV', note: 'Structural zero.' },
             { label: 'Graviton', value: '0 GeV', note: 'Structural zero.' },
-            { label: 'W boson', value: '80.377 GeV', note: 'Exact frozen authoritative repair surface. Calibration lane: the measured pair is consumed as input, so this row is not an output.' },
-            { label: 'Z boson', value: '91.18797809193725 GeV', note: 'Exact frozen authoritative repair surface. Calibration lane: the measured pair is consumed as input, so this row is not an output.' },
+            { label: 'W boson comparison coordinate', value: '80.377 GeV', note: 'The measured pair is consumed as input. The separate 80.330 GeV source chart has no pole-prediction status without the missing scheme map.' },
+            { label: 'Z boson comparison coordinate', value: '91.18797809193725 GeV', note: 'The measured pair is consumed as input. The separate 91.119 GeV source chart has no pole-prediction status without the missing scheme map.' },
             { label: 'Higgs boson', value: '125.1995304097179 GeV', note: 'Exact source-only split theorem. The pair consumed its measured targets; audit witness, not an output row.' },
             { label: 'Top quark', value: '172.35235532883115 GeV', note: 'Exact split companion on the declared electroweak surface; consumed its measured target, and not a separate source-only quark-mass row.' },
         ],

@@ -409,9 +409,9 @@ export function StandardModelPage() {
                     production OPH backend output exists.
                 </p>
                 <p>
-                    On the declared public surface, the Standard Model quotient, exact hypercharges, and the
-                    product-group consequence of no gauge-mediated proton decay belong to the recovered core. The
-                    particle pages carry the sharper continuation and compare-only bookkeeping.
+                    On the declared nonempty one-Higgs chiral MAR class, the quotient and hypercharges are exact.
+                    The product adjoint excludes the ordinary simple-GUT X/Y channel only. The particle pages carry
+                    the sharper continuation and compare-only bookkeeping.
                 </p>
             </Explainer>
         </div>

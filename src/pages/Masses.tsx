@@ -26,7 +26,7 @@ type DynamicMassRow = {
     label: string;
     valueGeV: number;
     deltaGeV: number;
-    tier: 'structural' | 'calibration';
+    tier: 'structural' | 'calibration' | 'compare-only';
     note: string;
 };
 
@@ -56,7 +56,9 @@ function formatScalar(value: number, digits = 6) {
 }
 
 function tierBorderColor(tier: DynamicMassRow['tier']) {
-    return tier === 'structural' ? 'var(--accent-gold)' : 'var(--accent-green)';
+    if (tier === 'structural') return 'var(--accent-gold)';
+    if (tier === 'compare-only') return 'var(--accent-cyan)';
+    return 'var(--accent-green)';
 }
 
 export function MassesPage() {
@@ -114,18 +116,18 @@ export function MassesPage() {
                 note: 'Structural spin-2 zero on the OPH dynamical-metric branch. The P slider does not alter that exact structural statement.',
             },
             {
-                label: 'W',
+                label: 'W running chart',
                 valueGeV: electroweakRepair.mWGeV,
                 deltaGeV: electroweakRepair.mWGeV - canonicalElectroweakRepair.mWGeV,
-                tier: 'calibration',
-                note: 'Public electroweak repair readout from the P-driven source basis.',
+                tier: 'compare-only',
+                note: 'Running-chart coordinate. A physical W comparison requires a renormalized vev and tadpole convention, thresholds, matching, and complex-pole conversion.',
             },
             {
-                label: 'Z',
+                label: 'Z running chart',
                 valueGeV: electroweakRepair.mZGeV,
                 deltaGeV: electroweakRepair.mZGeV - canonicalElectroweakRepair.mZGeV,
-                tier: 'calibration',
-                note: 'Companion public electroweak repair row on the same source basis.',
+                tier: 'compare-only',
+                note: 'Companion running-chart coordinate. Experimental Breit-Wigner and complex-pole masses are different observables, so no pull is defined on this surface.',
             },
             {
                 label: 'H',
@@ -153,21 +155,21 @@ export function MassesPage() {
             </div>
 
             <p style={{ marginBottom: '16px' }}>
-                The matter-sector page summarizes the OPH matter-sector status and does not present the withdrawn
-                public calculator. It separates structural outputs, closed public rows, diagnostic checks, and the
-                gaps that sit outside the public surface.
+                This page separates structural outputs, calibration rows, diagnostic charts, and work-in-progress
+                physical source laws.
             </p>
 
             <div className="card" style={{ marginBottom: '16px', borderLeft: '3px solid var(--accent-gold)' }}>
-                <h3 style={{ margin: '0 0 10px 0', fontSize: '0.95em' }}>Closed structural and calibration surfaces</h3>
+                <h3 style={{ margin: '0 0 10px 0', fontSize: '0.95em' }}>Structural, calibration, and chart surfaces</h3>
                 <p style={{ margin: '0 0 10px 0' }}>
-                    The structural core includes the Standard Model gauge quotient, exact hypercharges,
-                    N<sub>c</sub> = 3, N<sub>g</sub> = 3, and symmetry-protected massless photon/graviton zeros.
+                    The compact-gauge/MAR branch yields the Standard Model gauge quotient, exact hypercharges,
+                    N<sub>c</sub> = 3, and N<sub>g</sub> = 3. Its finite A<sub>5</sub> coefficient theorem is exact
+                    under the unit-split and selector premises; physical current and global-form descent carry separate receipts.
                 </p>
                 <p style={{ margin: 0, color: 'var(--text-secondary)' }}>
-                    In the bosonic calibration sector, W/Z sit on the public electroweak repair
-                    surface. Higgs/top sit on the source-only Higgs/top split surface. The exact
-                    inverse pair is a check surface.
+                    W/Z carry running-chart status and no physical pole-mass status. Their renormalized vev,
+                    tadpole convention, thresholds, matching, and complex-pole conversion are missing. Higgs/top sit
+                    on the source-only Higgs/top split surface, and the inverse pair is a check surface.
                     The canonical published bosonic surface uses P = {formatPixelConstant(PIXEL_REFERENCE)}. The
                     sensitivity panel below moves the source coordinate away from that certified fixed point and reports
                     the formula response as a diagnostic.
@@ -177,8 +179,8 @@ export function MassesPage() {
             <div className="card" style={{ marginBottom: '16px' }}>
                 <h3 style={{ margin: '0 0 10px 0', fontSize: '0.95em' }}>Open matter-sector lanes</h3>
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8', margin: 0, color: 'var(--text-secondary)' }}>
-                    <li><strong>Quarks:</strong> the source equations leave a free (R<sub>&gt;0</sub>)<sup>2</sup> spread fiber, so no numeric public quark row is emitted. The target audit mixes mass conventions, and its GeV-valued matrices are mass textures rather than physical dimensionless Yukawas.</li>
-                    <li><strong>Charged leptons:</strong> the icosahedral screen gives an exact A<sub>5</sub>/C<sub>3</sub> face-corner carrier. A target-informed continuation gives (0.510998950843, 105.658375501, 1776.930000014) MeV on one hybrid branch. Its declared affine map is conditionally contractive. An engineered digital CFQ model proves the stipulated schema is nonempty and supplies a central record dilation, but hard-codes its registers, automaton, signs, clock, and response; historical no-target ancestry fails audit. A conditional nature/pole theorem transports the face operator only after assuming the physical Yukawa identity and CFQ-to-Dyson singularity readout. Its zero-self-energy kernel is a free witness, not an interacting charged kernel. The 0.000300 ppm headline uses rounded fields, and the tau residual is -1.387289 ppm against the packet's higher-precision central value. Physical source selection, attachment, determinant, coherent branch, cofinal refinement, interacting kernel, and infrared completion remain open.</li>
+                    <li><strong>Quarks:</strong> the source equations leave a free (R<sub>&gt;0</sub>)<sup>2</sup> spread fiber, so no numeric quark prediction is emitted. The flavor-orbit selector, quark-Higgs carrier, and common-scheme transport are work in progress.</li>
+                    <li><strong>Charged leptons:</strong> the icosahedral screen gives an exact A<sub>5</sub>/C<sub>3</sub> face-corner carrier. The finite CFQ model proves its stipulated schema is nonempty but authors the registers, automaton, clock, and response. Physical source selection, family/Yukawa attachment, determinant descent, interacting refinement, and pole scheme are work in progress; no nonzero source-only mass is emitted.</li>
                     <li><strong>Neutrinos:</strong> the isotropic ansatz has an exact no-go. The target-informed weighted-cycle point is rejected by the NuFIT 6.1 correlated profile and has no physical PMNS, ordering, absolute-mass, or Majorana prediction status.</li>
                     <li><strong>Hadrons:</strong> production masses sit outside the closed public scope until a working OPH hadron backend and systematics exist.</li>
                 </ul>
@@ -188,13 +190,14 @@ export function MassesPage() {
                 <h3 style={{ margin: '0 0 10px 0', fontSize: '0.95em' }}>Capacity-electroweak bridge</h3>
                 <p style={{ margin: '0 0 10px 0' }}>
                     The hierarchy bridge reads the weak scale as
-                    v/E<sub>cell</sub> = (N<sub>EW</sub>/pi)<sup>-P*/12</sup>. On the public endpoint branch,
+                    v/E<sub>cell</sub> = (N<sub>EW</sub>/pi)<sup>-P*/12</sup>. On the conditional bridge branch,
                     N<sub>EW</sub> = {ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY}.
                 </p>
                 <p style={{ margin: 0, color: 'var(--text-secondary)' }}>
-                    The de Sitter capacity display remains {SCREEN_CAPACITY_REFERENCE_DISPLAY}. The 12-port
-                    icosahedral screen-sieve theorem gives the geometric origin of the exponent, and the
-                    algebraic bridge is the closed hierarchy-package statement.
+                    The Lambda-located capacity is {SCREEN_CAPACITY_REFERENCE_DISPLAY}. The bridge value is about
+                    6.6% higher at central value. The common electroweak load carrier, source checkpoint packet,
+                    unique slack zero, and propagation of the joint cosmological posterior determine whether this is
+                    one common capacity; until then it is a conditional comparison rather than a contradiction.
                 </p>
             </div>
 
@@ -261,7 +264,7 @@ export function MassesPage() {
                 </div>
 
                 <div className="math-block" style={{ fontSize: '0.84em' }}>
-                    P -&gt; alpha_U(P), eta_source(P), v(P) -&gt; electroweak repair -&gt; (W, Z)
+                    P -&gt; alpha_U(P), eta_source(P), v(P) -&gt; electroweak running chart -&gt; (W, Z)
                     <br />
                     rho_HT(P) = log(1 + tau2_tree_exact(P)) -&gt; (pi_y(P), pi_lambda(P)) -&gt; Higgs/top split -&gt; (H, t)
                 </div>
@@ -280,7 +283,7 @@ export function MassesPage() {
                             <div style={{ fontSize: '0.76em', color: 'var(--text-muted)', marginBottom: '6px' }}>
                                 {row.tier === 'structural'
                                     ? 'Invariant under P on the structural lane.'
-                                    : `Delta from fixed P* = ${formatPixelConstant(PIXEL_REFERENCE)}: ${formatSignedMass(row.deltaGeV)}`}
+                                    : `Delta from fixed P* = ${formatPixelConstant(PIXEL_REFERENCE)}: ${formatSignedMass(row.deltaGeV)} (${row.tier})`}
                             </div>
                             <div style={{ fontSize: '0.8em', color: 'var(--text-secondary)' }}>{row.note}</div>
                         </div>
@@ -328,9 +331,9 @@ export function MassesPage() {
             <Explainer title="Why the diagnostic moves some rows">
                 <p>
                     The particle paper makes a sharp split. Photon, gluons, and graviton are structural zeros on the
-                    realized gauge/gravity branch, so their masses stay exactly zero. W and Z sit
-                    on the closed electroweak repair surface, and Higgs/top sit on the downstream
-                    source-only Higgs/top split surface fed by the same gauge core.
+                    realized gauge/gravity branch, so their masses stay exactly zero. W and Z sit on an incomplete
+                    running chart with no physical pole comparison, while Higgs/top sit on the downstream source-only
+                    split surface fed by the same gauge core.
                 </p>
                 <p>
                     The diagnostic changes the source coordinate used by those formulas, so the bosonic rows move while

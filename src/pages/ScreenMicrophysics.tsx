@@ -61,8 +61,9 @@ export function ScreenMicrophysicsPage() {
                     federated finite-patch architecture. It is a concrete part of the OPH suite.
                 </p>
                 <p>
-                    The octahedral Z2/S3 simulator is a digital calibration note. Hardware claims require
-                    public evidence bundles with stable hashes, calibration records, controls, and verifier receipts.
+                    The octahedral Z2/S3 simulator is a digital calibration note. Its hardware run reproduces a
+                    standard quantum target and supplies no OPH-specific alternative, so it is non-discriminating.
+                    Hardware claims require public evidence bundles with calibration records, controls, and verifier receipts.
                 </p>
             </Explainer>
 

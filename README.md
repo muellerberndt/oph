@@ -28,10 +28,10 @@ This section is the lab-maintainer summary of the public paper surface.
 ### Fixed-point and scale surface
 
 - The landing page is a fixed-point dashboard, not a universe configurator.
-- The two quantitative OPH constants are the local pixel fixed point
-  `P = 1.630968209403959` and the cosmic record-capacity fixed point
-  `N_CRC = 3.31e122`.
-- The electroweak hierarchy bridge uses the exact bridge capacity
+- The local pixel map has fixed point `P = 1.630968209403959`. Measured
+  `Lambda` locates the comparison coordinate `N_Lambda = 3.31e122`; the
+  physical capacity readback map is work in progress.
+- The conditional electroweak hierarchy bridge uses the algebraic capacity
   `N_EW(P*) = 3.5323546226929907e122` and the representation-to-spectrum
   repair count `2(8 + 3 + 1) = 24`.
 - `G_SI` comes from the selected no-G scale certificate. The Newton row must
@@ -56,53 +56,44 @@ This section is the lab-maintainer summary of the public paper surface.
 
 ### Gauge / Standard Model structural branch
 
-- The compact gauge route to the realized Standard Model quotient
-  `SU(3) x SU(2) x U(1) / Z_6` is part of the recovered structural core.
-- The exact hypercharge lattice, realized color triplet `N_c = 3`, and
-  generation count `N_g = 3` are on the paper-facing structural surface.
-- The sharp exclusion on this surface is `no gauge-mediated proton decay`.
+- On the strict unit-splitting and source-selected twelve-port branch, the
+  explicit `A5`-equivariant coefficient bracket has Lie type
+  `u(1) + su(3) + su(2)`. Central record projectors commute.
+- A full-rank compact skew-adjoint inner-current lift is required to identify
+  that coefficient algebra with a physical gauge-current algebra.
+- Trace balance integrates the coefficient algebra to `S(U(3) x U(2))` with
+  a six-element cover kernel. MAR, the tensor kernel, spin, determinant, and
+  descent receipts give the physical quotient `SU(3) x SU(2) x U(1) / Z_6`,
+  its hypercharge lattice, `N_c = 3`, and `N_g = 3`.
+- The sharp exclusion is the ordinary simple-GUT `X/Y` gauge channel, not every proton-decay mechanism.
 
 ### Particle branch
 
-- Structural exact zeros:
+- Symmetry-protected classical carrier zeros:
   - photon
   - gluons
   - graviton
 - Electroweak:
-  - `W/Z` are closed public rows on the electroweak repair surface.
+  - `W/Z` values form a declared running/chart surface, not physical pole-mass predictions
 - Higgs/top:
   - public rows are carried by the source-only Higgs/top split surface
   - the exact inverse pair is a check sidecar
-  - the selected exact branch solves the electroweak hierarchy/naturality
-    problem with `epsilon_H = 0`, using the finite readback certificate,
-    the 24-count repair lock, and the exact global-capacity bridge
+  - the selected algebraic branch has `epsilon_H = 0`; its physical hierarchy
+    interpretation requires `HIERARCHY-SCREEN-READOUT`
 - Charged leptons:
-  - exact same-family readback is explicit
   - the icosahedral screen supplies an exact `A5/C3` face-corner carrier
-  - a target-informed continuation on that carrier gives
-    `(0.510998950843, 105.658375501, 1776.930000014) MeV` with maximum
-    residual `0.000300 ppm` against rounded fields on one hybrid branch; the
-    tau residual is `-1.387289 ppm` against the packet's higher-precision
-    central value
-  - the declared affine repair map is conditionally contractive with one fixed
-    point, while source-multiplier witnesses leave that map unselected
   - an engineered digital CFQ model proves the stipulated packet is nonempty
     and supplies a fixed-cutoff central accepted/rejected record dilation
-  - that model hard-codes its registers, automaton, signs, clock, and response;
-    its historical no-target claim fails audit
-  - a conditional nature/pole theorem transports the face response only after
-    assuming the physical Yukawa identity and CFQ-to-Dyson singularity readout;
-    its zero-self-energy kernel is a free witness, not the interacting kernel
-  - physical source selection, attachment, phase and determinant laws,
-    coherent source branch, cofinal refinement, and pole-mass scheme remain open
-  - the face-incidence result is a completion conjecture, not a prediction
-  - the theorem-grade source landing to physical charged masses remains open
+  - the model authors its registers, automaton, clock, and response
+  - physical source selection, family/Yukawa attachment, phase and determinant
+    descent, interacting refinement, and pole-mass scheme are work in progress
+  - no nonzero source-only charged-lepton mass is emitted
 - Quarks:
   - the source equations leave an exact free `(R_{>0})^2` spread fiber, so
     selected-frame descent does not emit either physical spread modulus
   - numeric quark rows remain withheld from the public surface
-  - the target audit mixes light, heavy, and top mass conventions; its
-    GeV-valued matrices are mass textures, not physical dimensionless Yukawas
+  - the physical flavor-orbit selector, quark-Higgs carrier, and common-scheme
+    source transport are work in progress
 - Neutrinos:
   - the isotropic neutrino-only ansatz has an exact no-go
   - the target-informed weighted-cycle point is rejected by the NuFIT 6.1
@@ -118,9 +109,9 @@ This section is the lab-maintainer summary of the public paper surface.
 - On the finite patch net, that local-fit contract makes `Phi` a Lyapunov functional for accepted repair moves.
 - Under repair completeness and quotient-compatible union-collar gluing, each fixed initial quotient state has a unique schedule-independent normal form.
 - Same-source confluence does not by itself identify endpoints from different sources with the same boundary. That stronger statement requires the protected observation to identify the consistent quotient modulo the declared silent or gauge equivalence.
-- Weak normalization supplies an endpoint; fairness, strong normalization, or another liveness argument is still needed to show that every allowed schedule settles.
+- Weak normalization supplies an endpoint; settlement under every allowed schedule requires fairness, strong normalization, or another liveness argument.
 - A unique extension need not be constructible by the declared local write support. Local repairability is a separate proof obligation.
-- Global consistency is still obstructed by cycle / holonomy defects. Pairwise overlap agreement alone is not enough.
+- Cycle and holonomy defects obstruct global consistency. Pairwise overlap agreement alone is insufficient.
 - Gauge-invariant uniqueness belongs on the quotient, not on raw microscopic representatives.
 - The standalone mathematical companion
   [Observation-Determined Normal Forms](https://github.com/FloatingPragma/observer-patch-holography/blob/main/extra/observable_normal_forms.pdf)
@@ -178,8 +169,8 @@ These are the common places where public copy tends to overstate the paper claim
 - Particle / masses / predictions pages:
   - keep `W/Z` on the public electroweak repair surface
   - keep Higgs/top on the source-only split surface plus the inverse check sidecar
-  - keep the hierarchy/naturality claim scoped to the selected exact branch with
-    the 24-tick repair lock and exact capacity bridge
+  - keep the hierarchy/naturality identity conditional on
+    `HIERARCHY-SCREEN-READOUT`
   - keep charged, quark, and neutrino lanes labeled by their declared claim tiers
   - keep the quark `(R_{>0})^2` source-spread obstruction separate from the
     mixed-scheme target audit and physical-Yukawa normalization blocker

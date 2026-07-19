@@ -25,7 +25,7 @@ export function NeutrinosPage() {
         </div>
 
         <p style={{ margin: 0 }}>
-          OPH does not currently derive a physical PMNS matrix, neutrino mass ordering,
+          OPH does not derive a physical PMNS matrix, neutrino mass ordering,
           absolute mass family, or Majorana phases. The former weighted-cycle claim is retained
           here as a frozen failure record: it was target-informed, fails the NuFIT 6.1 correlated
           profile, and does not close its source or basis contracts.

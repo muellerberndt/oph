@@ -28,6 +28,19 @@ export function PredictionsPage() {
                 that ledger directly.
             </p>
 
+            <div className="card" style={{ marginBottom: '24px', borderLeft: '3px solid var(--accent-green)' }}>
+                <h4 style={{ margin: '0 0 10px 0', fontSize: '0.9em', color: 'var(--accent-green)' }}>
+                    Why the cumulative result matters
+                </h4>
+                <p style={{ margin: 0, color: 'var(--text-secondary)' }}>
+                    OPH uses no fitted continuous values in its structural theory layer, yet the same observer-patch
+                    architecture repeatedly reconstructs the observed universe: Lorentz geometry, the Einstein branch,
+                    quantum public records, the Standard Model quotient and hypercharges, three colors, three generations,
+                    and linked Higgs/cosmological capacity coordinates. The cumulative compression is the principal evidence;
+                    this page separates that structural achievement from the stronger standard of a frozen prospective test.
+                </p>
+            </div>
+
             <div className="card" style={{ marginBottom: '24px', borderLeft: '3px solid var(--accent-blue)' }}>
                 <h4 style={{ margin: '0 0 10px 0', fontSize: '0.9em', color: 'var(--accent-blue)' }}>
                     How to read this page
@@ -42,9 +55,9 @@ export function PredictionsPage() {
                 </div>
             </div>
 
-            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>1. Closed Public Quantitative Rows</h3>
+            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>1. Declared Quantitative Rows</h3>
             <p style={{ marginBottom: '16px' }}>
-                These are the public numeric rows the lab treats as live surfaces.
+                These rows include calibration coordinates and compare-only charts. Their tier labels control the claim.
             </p>
 
             <div style={{ display: 'grid', gap: '12px', marginBottom: '24px' }}>
@@ -77,7 +90,9 @@ export function PredictionsPage() {
                 </div>
                 <p style={{ marginBottom: '12px', color: 'var(--text-secondary)' }}>
                     In the declared stack this is a continuation-level horizon signature tied to the quantized
-                    area template. It sits outside the recovered-core theorem chain.
+                    area template. It sits outside the recovered-core theorem chain. A uniform-offset calculation
+                    associated with an alpha = 4 or one-nat headline failed on its own assumptions and lies outside
+                    the canonical forecast shown here.
                 </p>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: '8px', fontSize: '0.8em', textAlign: 'center' }}>
                     {[1, 2, 3, 4, 5, 6].map((k) => (
@@ -129,15 +144,27 @@ export function PredictionsPage() {
                 </ul>
             </div>
 
+            <div className="card" style={{ marginBottom: '24px', borderLeft: '3px solid var(--accent-rose)' }}>
+                <h4 style={{ margin: '0 0 10px 0', fontSize: '0.9em', color: 'var(--accent-rose)' }}>
+                    Prospective-evidence boundary
+                </h4>
+                <p style={{ margin: 0, color: 'var(--text-secondary)' }}>
+                    The current ledger has no landed result that simultaneously qualifies as discriminating, frozen in
+                    advance, and prospective. Existing quantitative packets are theorem, calibration, comparison, or
+                    continuation surfaces. This is the standard the public falsification program is designed to cross.
+                </p>
+            </div>
+
             <Explainer title="Why the page is structured this way">
                 <p>
                     A flat lab summary treats every eye-catching statement as if it sits on the same status tier. That
                     wording does not match the papers.
                 </p>
                 <p>
-                    The public rows for W, Z, Higgs, and top are outputs on declared calibration surfaces. The
-                    horizon-comb and discrete-Hawking stories sit on continuation lanes. The deep-IR galaxy-response
-                    story is an open lane. Mixing those together obscures the claim tiers.
+                    The exact displayed W/Z pair consumes the comparison target; the separate source values are
+                    incomplete running-chart coordinates until a physical scheme map is supplied. Higgs and top sit
+                    on declared calibration surfaces. The horizon-comb and discrete-Hawking stories belong to
+                    continuation lanes, and the deep-IR galaxy-response story is open.
                 </p>
             </Explainer>
 

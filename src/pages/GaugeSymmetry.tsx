@@ -98,55 +98,39 @@ export function GaugeSymmetryPage() {
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Why Product Groups?</h3>
             <p style={{ marginBottom: '16px' }}>
-                Grand Unified Theories (GUTs) assume the Standard Model gauge group SU(3) &times; SU(2) &times; U(1)
-                is the remnant of a simple group (like SU(5) or SO(10)) that was broken at high energy. This predicts
-                proton decay, which has never been observed.
-            </p>
-            <p style={{ marginBottom: '16px' }}>
-                In OPH, the gauge group is a <strong>product group</strong>. Different types of edge modes
-                (corresponding to different boundary structures) give rise to independent gauge factors. This
-                structure carries no simple-group proton-decay channel.
+                The conditional twelve-port screen theorem gives an A<sub>5</sub>-module
+                1&oplus;3&oplus;3&prime;&oplus;5 and an explicit coefficient bracket
+                u(3)&oplus;so(3) = u(1)&oplus;su(3)&oplus;su(2). Central record projectors commute;
+                the bracket acts on port fluctuations. A full-rank, compact skew-adjoint, refinement-natural current lift with inner
+                A<sub>5</sub> action is the separate receipt that makes this Lie type physical.
             </p>
 
             <div className="card" style={{ marginBottom: '24px' }}>
                 <h4 style={{ margin: '0 0 12px 0', fontSize: '0.9em', color: 'var(--accent-gold)' }}>
-                    Standard Model Gauge Group from Edge Sectors
+                    Finite Standard Model Lie-Type Theorem
                 </h4>
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '12px', fontSize: '0.85em' }}>
-                    <div style={{ padding: '12px', background: 'rgba(0,0,0,0.2)', border: '1px solid var(--border-color)', textAlign: 'center' }}>
-                        <div style={{ color: 'var(--accent-rose)', fontWeight: 600, marginBottom: '8px' }}>Color</div>
-                        <div className="math-block" style={{ margin: 0, fontSize: '1.1em' }}>SU(3)</div>
-                        <p style={{ margin: '8px 0 0', color: 'var(--text-muted)', fontSize: '0.85em' }}>
-                            From triple-overlap edge modes. N<sub>c</sub> = 3 from anomaly cancellation.
-                        </p>
-                    </div>
-                    <div style={{ padding: '12px', background: 'rgba(0,0,0,0.2)', border: '1px solid var(--border-color)', textAlign: 'center' }}>
-                        <div style={{ color: 'var(--accent-blue)', fontWeight: 600, marginBottom: '8px' }}>Weak</div>
-                        <div className="math-block" style={{ margin: 0, fontSize: '1.1em' }}>SU(2)</div>
-                        <p style={{ margin: '8px 0 0', color: 'var(--text-muted)', fontSize: '0.85em' }}>
-                            From double-overlap edge modes. The simplest non-abelian factor.
-                        </p>
-                    </div>
-                    <div style={{ padding: '12px', background: 'rgba(0,0,0,0.2)', border: '1px solid var(--border-color)', textAlign: 'center' }}>
-                        <div style={{ color: 'var(--accent-green)', fontWeight: 600, marginBottom: '8px' }}>Hypercharge</div>
-                        <div className="math-block" style={{ margin: 0, fontSize: '1.1em' }}>U(1)</div>
-                        <p style={{ margin: '8px 0 0', color: 'var(--text-muted)', fontSize: '0.85em' }}>
-                            From global phase redundancy on overlaps. Hypercharges fixed by anomaly cancellation.
-                        </p>
-                    </div>
+                <div className="math-block" style={{ margin: '0 0 10px', fontSize: '0.95em' }}>
+                    P<sub>12</sub> &cong; 1&oplus;3&oplus;3&prime;&oplus;5
+                    &rArr; u(3)&oplus;so(3)
                 </div>
+                <p style={{ margin: 0, fontSize: '0.85em', color: 'var(--text-secondary)' }}>
+                    Euler fixes total charge 12. Strict unit splitting and a source-derived D-optimal or
+                    completely-monotone selector give the regular icosahedral axes. Trace balance integrates the
+                    coefficient algebra to S(U(3)&times;U(2)) with a six-element cover kernel. Physical global-form
+                    identification uses the current, spin, determinant, tensor-kernel, and descent receipts.
+                </p>
             </div>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Gauge Bosons as Connection Fields</h3>
             <p style={{ marginBottom: '16px' }}>
-                Once the gauge group G is determined, the connection (gauge field) A<sub>&mu;</sub> is the object
-                that enables parallel transport between patches. The gauge bosons (photon, W&plusmn;, Z, gluons)
-                are the quanta of these connection fields.
+                On the physical current-and-connection branch, A<sub>&mu;</sub> enables
+                parallel transport between patches. Its components carry the photon, W&plusmn;, Z, and gluon labels.
+                A quantum-particle realization requires a separate pole and state-space construction.
             </p>
             <p style={{ marginBottom: '16px' }}>
-                The masslessness of the photon and gluons is <strong>symmetry-protected</strong>: a mass term
-                would break gauge invariance. The W and Z bosons acquire mass through electroweak symmetry breaking
-                (Higgs mechanism), which in OPH arises from the screen-sector dynamics.
+                On the declared Maxwell/Yang-Mills action branch, photon and gluon carrier masses are
+                <strong>symmetry-protected</strong>. The W/Z chart uses the ordinary Higgs mechanism but does not
+                supply physical pole masses or derive that mechanism from the finite screen alone.
             </p>
 
             <Explainer title="Analogy with fiber bundles">
@@ -165,33 +149,25 @@ export function GaugeSymmetryPage() {
 
             <Explainer title="Why This Gauge Group">
                 <p>
-                    The selection of SU(3) &times; SU(2) &times; U(1) comes from admissibility plus
-                    Minimal Admissible Realization (MAR):
+                    The finite screen result and the realized matter result have distinct premises:
                 </p>
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
-                    <li><strong>Admissibility:</strong> anomaly-free, chiral-stable, single-Higgs-completable, CP-capable, weak UV-completable, and loop-coherent (central or higher-associator strictification plus an allowed trivial-holonomy strict representative).</li>
-                    <li><strong>Complexity vector:</strong> C(&Sigma;) = (&chi;<sub>faith</sub>, N<sub>nonab</sub>, N<sub>c</sub>, N<sub>g</sub>).</li>
-                    <li><strong>Selection rule:</strong> lexicographically minimize C over admissible sectors only.</li>
+                    <li><strong>Finite coefficient layer:</strong> unit splitting, icosahedral selector, explicit A<sub>5</sub>-equivariant bracket, and trace balance.</li>
+                    <li><strong>Physical layer:</strong> full-rank compact skew-adjoint inner-current realization, spin lift, determinant balance, and refinement-natural loop descent.</li>
+                    <li><strong>Matter layer:</strong> anomaly-free one-Higgs admissibility plus MAR and the tensor kernel.</li>
                 </ul>
                 <p>
-                    This singles out [SU(3)&times;SU(2)&times;U(1)]/Z<sub>6</sub> with N<sub>c</sub>=3,
-                    N<sub>g</sub>=3. The Standard Model gauge structure is the unique admissible solution selected
-                    by Minimal Admissible Realization. In short: Nature's Occam's razor applies after admissibility.
+                    Within that declared branch, the result is
+                    [SU(3)&times;SU(2)&times;U(1)]/Z<sub>6</sub> with N<sub>c</sub>=3 and
+                    N<sub>g</sub>=3. Screen topology alone supplies neither the physical current lift nor the MAR matter selection.
                 </p>
             </Explainer>
 
             <Explainer title="Global vs. local symmetry">
                 <p>
-                    In OPH, <strong>all</strong> gauge symmetries are local (patch-dependent). There are no
-                    fundamental global symmetries. This has a deep consequence: global symmetries in physics
-                    (like baryon number or lepton number) are approximate, not exact. They arise from the
-                    low-energy limit where the patch structure looks like a smooth manifold.
-                </p>
-                <p>
-                    The absence of exact global symmetries is also a prediction of quantum gravity (the "no global
-                    symmetries" conjecture). In OPH, this follows directly from the patch structure: a global
-                    symmetry would have to act identically on all patches, but patches have only local overlap
-                    relations, not global ones.
+                    OPH constructs gauge symmetry from patch-dependent overlap maps. This local construction does
+                    not by itself prove that every effective global symmetry is approximate; that statement requires
+                    its own sector and refinement theorem.
                 </p>
             </Explainer>
         </div>

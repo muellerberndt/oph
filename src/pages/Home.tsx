@@ -42,11 +42,11 @@ const CANONICAL_GAUGE_OPTIONS = {
     alphaRange: { min: 0.015, max: 0.09, step: 0.0005 },
 } as const;
 
-// Interval-certified unique fixed point of the declared source map (CL-6, closed 2026-07-14).
-// The earlier printed tail 136.99483516462165 came from an unconverged run and is superseded beyond digit 9.
+// Interval-certified unique root of the declared incomplete source map.
+// A physical Thomson endpoint requires the missing same-scheme hadronic transport.
 const ALPHA_ROOT_INV = 136.994835177413;
-// Certified self-consistent gauge-width fixed point (CL-2, 2.5e-6 relative to measurement).
-// The previously displayed 137.0359595008... was a mixed-provenance display packet, not a fixed point of any single declared map.
+// Root of the declared gauge-width map. This is another incomplete-map diagnostic,
+// not a physical fine-structure prediction.
 const ALPHA_GAUGE_WIDTH_FP_INV = 137.035660136946577;
 
 function formatFixed(value: number, digits = 6): string {
@@ -89,9 +89,9 @@ function renderCompactSurfaceBoard(rows: SurfaceBoardRow[]) {
         <section className="card compact-live-board">
             <div className="metric-section-header">
                 <div>
-                    <h3 style={{ margin: 0, fontSize: '0.95em' }}>Fixed-point readouts</h3>
+                    <h3 style={{ margin: 0, fontSize: '0.95em' }}>Closure and comparison readouts</h3>
                     <p className="compact-live-board-copy">
-                        Each tile shows a public paper-surface readout tied to the locked OPH closure values.
+                        Each tile shows a paper-surface coordinate with its claim status.
                         Target-anchored quark diagnostics are excluded.
                     </p>
                 </div>
@@ -145,25 +145,25 @@ export function Home() {
             label: 'Local pixel fixed point P',
             value: formatPixelConstant(PIXEL_REFERENCE),
             equation: 'P* = phi + sqrt(pi) / A_T(P*)',
-            note: 'P links the simulator-side pixel area to electromagnetic observation in the simulated universe.',
+            note: 'This is a certified root of the declared local map. The map lacks the same-scheme hadronic transport needed for a physical electromagnetic endpoint.',
         },
         {
-            label: 'Cosmic record capacity N_CRC',
+            label: 'Global correctable-record capacity',
             value: SCREEN_CAPACITY_REFERENCE_DISPLAY,
-            equation: 'N_CRC = F(N_CRC)',
-            note: 'N_CRC is the unique capacity where the horizon capacity and observer-readable public record agree.',
+            equation: 'N = log M0(U_N); finite: M0(q) = alpha(Gq)',
+            note: 'N_CRC = log D*. On the exact reversible branch M0(q) = |X_reach(q)|; Lambda supplies an independent comparison through horizon saturation.',
         },
         {
-            label: 'Electroweak bridge capacity',
+            label: 'Conditional electroweak bridge capacity',
             value: ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY,
             equation: 'N_EW(P*) from the exact bridge condition',
-            note: 'This closes the global N-side tick factor for the local/global resonance continuation.',
+            note: 'This algebraic value is about 6.6% above the Lambda-located central capacity. COMMON-EW-LOAD-CARRIER tests whether the same global load controls the Higgs hierarchy.',
         },
         {
             label: 'Repair tick lock',
             value: '24',
             equation: 'm_rep = 2(8 + 3 + 1)',
-            note: 'The representation-to-spectrum count gives the synchronization depth used by the hierarchy bridge.',
+            note: 'This product-adjoint round count is independent of the screen register; its hierarchy use requires the separate screen-readout receipt.',
         },
         {
             label: 'Newton scale certificate',
@@ -187,16 +187,16 @@ export function Home() {
                 label: 'Cosmological constant',
                 family: 'GRAVITY',
                 familyClass: 'gr' as const,
-                primaryLabel: 'OPH',
+                primaryLabel: 'input-based display',
                 primaryValue: `${formatScientific(canonicalSurface.lambda, 3)} m^-2`,
                 secondaryLabel: 'source',
-                secondaryValue: 'N_CRC fixed point',
+                secondaryValue: 'Lambda-located capacity',
             },
             {
                 label: 'Hubble rate',
                 family: 'GRAVITY',
                 familyClass: 'gr' as const,
-                primaryLabel: 'OPH',
+                primaryLabel: 'input-based display',
                 primaryValue: `${formatScientific(canonicalSurface.hubble, 3)} s^-1`,
                 secondaryLabel: 'source',
                 secondaryValue: 'Lambda_CRC',
@@ -211,31 +211,31 @@ export function Home() {
                 secondaryValue: '24 ticks',
             },
             {
-                label: 'Fine-structure endpoint',
+                label: 'Fine-structure map roots',
                 family: 'COUPLINGS',
                 familyClass: 'qft' as const,
-                primaryLabel: 'gauge-width fixed point (CL-2)',
+                primaryLabel: 'incomplete gauge-width map',
                 primaryValue: formatFixed(ALPHA_GAUGE_WIDTH_FP_INV, 9),
-                secondaryLabel: 'source root (CL-1); QCD payload required',
+                secondaryLabel: 'incomplete source map; hadronic payload required',
                 secondaryValue: formatFixed(ALPHA_ROOT_INV, 9),
             },
             {
-                label: 'W boson mass',
+                label: 'W running-chart coordinate',
                 family: 'BOSONS',
                 familyClass: 'qft' as const,
-                primaryLabel: 'OPH',
+                primaryLabel: 'non-pole chart',
                 primaryValue: `${formatFixed(canonicalSurface.electroweakRepair.mWGeV, 9)} GeV`,
                 secondaryLabel: 'surface',
-                secondaryValue: 'EW repair',
+                secondaryValue: 'scheme map open',
             },
             {
-                label: 'Z boson mass',
+                label: 'Z running-chart coordinate',
                 family: 'BOSONS',
                 familyClass: 'qft' as const,
-                primaryLabel: 'OPH',
+                primaryLabel: 'non-pole chart',
                 primaryValue: `${formatFixed(canonicalSurface.electroweakRepair.mZGeV, 9)} GeV`,
                 secondaryLabel: 'surface',
-                secondaryValue: 'EW repair',
+                secondaryValue: 'scheme map open',
             },
             {
                 label: 'Higgs boson mass',
@@ -272,9 +272,9 @@ export function Home() {
                     </div>
                 </div>
                 <p className="landing-controls-intro">
-                    The OPH public surface is input-free. Its quantitative content is locked by two unique fixed points,
-                    P and N<sub>CRC</sub>, plus the selected no-G scale certificate used for SI units. Off-point controls
-                    in later demos are sensitivity probes; they are not alternate valid universes.
+                    OPH compresses an unusually broad reconstruction into one observer-consistency architecture with
+                    no fitted continuous input values at the theory layer. The lab exposes its local closure coordinate,
+                    exact finite correctable-record readback, Standard Model structure, gravity branch, and Higgs/cosmological bridges.
                 </p>
 
                 {renderCoreLocks(coreLocks)}
@@ -282,10 +282,10 @@ export function Home() {
 
             {renderCompactSurfaceBoard(surfaceBoardRows)}
             <p className="landing-surface-note">
-                The first screen is a readout of the certified branch. P fixes the local observation scale and the
-                electromagnetic lane. N<sub>CRC</sub> fixes the cosmic record capacity and the cosmological constant.
-                The Newton row comes from the scale certificate, and the hierarchy row uses the exact N-side bridge
-                with the 24-tick repair lock. Numeric quark rows are absent because the current source equations leave
+                The first screen separates algebraic roots from physical readouts. P belongs to an incomplete
+                electromagnetic map. The Lambda-located capacity is an input-based comparison coordinate, while the
+                conditional electroweak bridge lies about 6.6% higher at central value. The readback map, three physical
+                bridge premises, and the joint cosmological posterior remain open. Numeric quark rows are absent because the source equations leave
                 a free (R<sub>&gt;0</sub>)<sup>2</sup> spread fiber. The retained target audit also mixes mass schemes,
                 and its GeV-valued matrices are not physical dimensionless Yukawas.
             </p>

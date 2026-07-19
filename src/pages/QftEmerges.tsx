@@ -71,7 +71,7 @@ export function QftEmergesPage() {
                     {
                         step: '5',
                         title: 'Standard Model gauge group',
-                        detail: 'Admissibility filters plus Minimal Admissible Realization select [SU(3)\u00d7SU(2)\u00d7U(1)]/Z6 with three colors and three generations.',
+                        detail: 'The conditional A5 port theorem fixes the coefficient Lie type u(1)+su(3)+su(2); inner-current, trace/tensor, and MAR receipts give [SU(3)\u00d7SU(2)\u00d7U(1)]/Z6 with three colors and three generations.',
                         color: 'var(--accent-cyan)',
                     },
                     {
@@ -157,9 +157,12 @@ export function QftEmergesPage() {
                         <li>Finite tensor realizations and compatible objectwise finite-dimensional forgetful fibers, or an explicit super-Tannakian fork</li>
                     </ul>
                     <div style={{ marginTop: '12px', padding: '8px', background: 'rgba(0,0,0,0.2)', fontSize: '0.9em' }}>
-                        <strong>Quantitative fixed points on the public surface</strong>
+                        <strong>Quantitative closure coordinates</strong>
                         <div style={{ color: 'var(--text-muted)', marginTop: '4px' }}>
-                            P (pixel closure) and N<sub>CRC</sub> (cosmic record capacity); both are fixed-point values, with local and cosmological descendants downstream.
+                            P is a certified root of a declared incomplete local map. The official global equation is
+                            N = log M<sub>0</sub>(𝔘<sub>N</sub>). Its finite robust form is
+                            𝔉<sub>r,0</sub>(D<sub>*</sub>) = {'{'}D<sub>*</sub>{'}'}.
+                            The reversible branch reduces its evaluation to exact model counting.
                         </div>
                     </div>
                 </div>
@@ -170,7 +173,7 @@ export function QftEmergesPage() {
                 Quantum field theory is an <strong>effective continuum limit</strong> of the screen algebra when:
             </p>
             <ul style={{ paddingLeft: '20px', lineHeight: '1.8', marginBottom: '16px' }}>
-                <li>The number of pixels is large (N<sub>CRC</sub> &asymp; {SCREEN_CAPACITY_REFERENCE_DISPLAY})</li>
+                <li>The Lambda-located horizon count is large (N<sub>&Lambda;</sub> &asymp; {SCREEN_CAPACITY_REFERENCE_DISPLAY})</li>
                 <li>The curvature scale is much larger than the Planck length (L &gt;&gt; l<sub>P</sub>)</li>
                 <li>The observables are "coarse-grained" over many pixels</li>
             </ul>
@@ -228,7 +231,8 @@ export function QftEmergesPage() {
                 </ul>
                 <p>
                     The foundation (axioms &rarr; gauge branch &rarr; particle-structure ledger) is stronger than the
-                    detailed matter continuations. Some bosonic sectors are closed on their declared surfaces. The
+                    detailed matter continuations. W/Z carry incomplete running-chart status and no physical pole
+                    prediction status. The
                     weighted-cycle neutrino candidate is rejected, while the charged lane and the quark source-spread,
                     scheme-coordinate, and physical-Yukawa boundaries remain explicit.
                 </p>

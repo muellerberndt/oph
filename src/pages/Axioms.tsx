@@ -147,13 +147,13 @@ export function AxiomsPage() {
                     <li>From the null bridge, the separate bounded-interval projective branch, and fixed-cap stationarity, OPH states a conditional Jacobson-type Einstein branch with those added ingredients kept explicit.</li>
                     <li>Collar CMI controls recovery error on its exact or conditional branch. As a scalar, it is not a stress tensor or dark-sector source.</li>
                     <li>The half-line generator/null-stress charge identification is internal to the null bridge; UV/BW cap-pair extraction and ordered cut-pair rigidity remain explicit scaffold items.</li>
+                    <li>On the unit-split, source-selected twelve-port branch, the explicit A<sub>5</sub>-equivariant coefficient bracket has Lie type u(1)&oplus;su(3)&oplus;su(2); central records commute.</li>
                     <li>Massless photon and graviton remain symmetry-protected structural outputs.</li>
                 </ul>
                 <p>
-                    Adding the regulator, transport, compact-reconstruction, and Minimal Admissible Realization inputs yields the realized Standard Model gauge branch
+                    Adding the full-rank compact skew-adjoint inner-current, regulator, transport, compact-reconstruction, tensor-kernel, and Minimal Admissible Realization inputs yields the realized Standard Model gauge branch
                     ([SU(3)&times;SU(2)&times;U(1)]/Z<sub>6</sub>, N<sub>c</sub>=3, N<sub>g</sub>=3).
-                    Later particle lanes then split into closed calibration sectors, continuation surfaces, compare-only
-                    adapters, and open theorem objects depending on the sector.
+                    Particle claims retain their own structural, calibration, comparison, and work-in-progress status.
                 </p>
             </Explainer>
         </div>

@@ -213,7 +213,7 @@ export function TheScreenPage() {
                 <p>
                     This ladder names roles in the readback architecture. Particle identities stay on the Lorentz
                     and gauge branches: photon on the electromagnetic branch, gluons on color, graviton on geometry,
-                    W/Z/H on the electroweak and Higgs surfaces, and hadrons as QCD composites.
+                    W/Z as incomplete running-chart coordinates, H on its calibration surface, and hadrons as QCD composites.
                 </p>
             </Explainer>
 

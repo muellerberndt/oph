@@ -22,11 +22,12 @@ export function SynthesisPage() {
                 Lorentz, gauge, particle, or observer-level statements.
             </p>
 
-            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Two Fixed Points, All of Physics</h3>
+            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Local Closure And Global Readback</h3>
             <p style={{ marginBottom: '16px' }}>
                 OPH is formulated as a zero-dial closure theory: zero quantitative inputs at the theory layer,
-                with working borrows counted in the scorecard. Its two quantitative constants are
-                closure-selected fixed-point values:
+                with working borrows counted in the scorecard. The local constant is a certified root of a declared
+                incomplete map; global capacity is the exact correctable code of reachable public records, scalarized
+                across the entire terminal fiber:
             </p>
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '16px', marginBottom: '24px' }}>
@@ -53,15 +54,16 @@ export function SynthesisPage() {
             </div>
 
             <p style={{ marginBottom: '16px' }}>
-                With the screen-capacity fixed point, Lambda = 3pi / (G* N<sub>CRC</sub>), where G* is supplied by
-                the selected no-G scale certificate. The hierarchy bridge uses the exact electroweak capacity bridge
-                and the 24-tick repair lock. The OPH paper set separates recovered structural theorems, explicit
+                The conditional global relation is Lambda = 3pi / (G* N<sub>CRC</sub>), where G* is supplied by
+                the selected no-G scale certificate. The hierarchy equation gives an independent electroweak/Higgs bridge
+                once COMMON-EW-LOAD-CARRIER identifies the same load on both lanes. The OPH paper set separates recovered structural theorems, explicit
                 branch-conditional results, closed calibration sectors, and open continuation lanes.
             </p>
             <p style={{ marginBottom: '16px' }}>
                 The compact hierarchy readout is v/E<sub>cell</sub> = (N<sub>EW</sub>/pi)<sup>-P*/12</sup>,
-                with N<sub>EW</sub> = {ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY} on the public endpoint branch.
-                The 12-port icosahedral screen-sieve theorem gives the geometric origin of that exponent.
+                with N<sub>EW</sub> = {ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY} on that conditional branch. This is about
+                6.6% above the Lambda-located central capacity. The checkpoint packet, unique slack-zero theorem,
+                common carrier, and posterior propagation are the remaining registered tests.
             </p>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Six Surfaces, One Program</h3>

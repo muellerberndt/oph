@@ -85,9 +85,9 @@ export function GravityPage() {
         },
         {
             title: 'Step 6: Global completion',
-            equation: 'N_CRC = F(N_CRC), Lambda_CRC = 3pi / (G_* N_CRC)',
+            equation: 'N = log M0(U_N); finite: M0(q) = alpha(Gq); Lambda ell_*^2 = 3pi/N',
             value: `Lambda = ${formatNumber(derivation.lambda, 2)} m^-2`,
-            concept: 'Self-closure capacity fixed point closes the Lambda ambiguity',
+            concept: 'Global correctable-record closure plus the independent horizon-record saturation receipt',
         },
     ];
 
@@ -101,8 +101,9 @@ export function GravityPage() {
             <p style={{ marginBottom: '16px' }}>
                 This simulator visualizes the declared conditional gravity branch: local null-modular data and
                 generalized-entropy stationarity yield the rest-frame Einstein relation on the stated BW/null-stress
-                assumptions, and the global self-closure capacity fixed point fixes the separate Lambda term. The
-                stress slider represents the independently reconstructed null charge; it is not scalar collar CMI.
+                assumptions. The global branch reads capacity from correctable public records; its source checkpoint packet,
+                unique finite-size slack zero, and horizon bridge complete the separate Lambda term. The stress slider
+                represents the independently reconstructed null charge; it is not scalar collar CMI.
             </p>
 
             <div className="card" style={{ marginBottom: '20px', borderLeft: '3px solid var(--accent-cyan)' }}>
@@ -139,7 +140,7 @@ export function GravityPage() {
                     <h3 style={{ margin: '0 0 8px 0', fontSize: '0.9em' }}>Locked OPH scale inputs</h3>
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(190px, 1fr))', gap: '10px', fontSize: '0.8em', color: 'var(--text-secondary)' }}>
                         <div><strong>P*</strong>: {formatPixelConstant(PIXEL_REFERENCE)}</div>
-                        <div><strong>N<sub>CRC</sub></strong>: {SCREEN_CAPACITY_REFERENCE_DISPLAY}</div>
+                        <div><strong>N<sub>&Lambda;</sub></strong>: {SCREEN_CAPACITY_REFERENCE_DISPLAY} from measured Lambda</div>
                         <div><strong>G*</strong>: selected no-G scale certificate</div>
                     </div>
                 </div>
@@ -301,7 +302,7 @@ export function GravityPage() {
                     <div>Separate bounded-interval projective branch in the small-ball step</div>
                     <div>Fixed-cap generalized-entropy stationarity</div>
                     <div>Null ambiguity lemma: tensor reconstruction up to Lambda g_ab</div>
-                    <div>Global capacity closure for Lambda</div>
+                    <div>Global correctable-record closure; source packet, unique slack zero, and horizon receipt</div>
                 </div>
             </div>
 
@@ -318,11 +319,11 @@ export function GravityPage() {
                 </p>
             </Explainer>
 
-            <Explainer title="How P and N_CRC enter">
+            <Explainer title="How P And The Capacity Target Enter">
                 <p>
-                    P is the local pixel fixed point on the observation and particle side. In the Newton row its
-                    factor cancels, leaving the scale certificate to supply G. The N_CRC record-capacity fixed point
-                    fixes the global Lambda completion. This split matches the declared OPH paper surface.
+                    P is the certified root of a declared incomplete local map. In the Newton row its factor cancels,
+                    leaving the scale certificate to supply G. The displayed capacity is located from measured Lambda;
+                    it becomes an OPH global completion only if the physical record-capacity map is constructed and closes.
                 </p>
             </Explainer>
 

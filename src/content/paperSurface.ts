@@ -63,7 +63,7 @@ export const OPH_PAPERS: PaperSummary[] = [
         title: 'Deriving the Particle Zoo from Observer Consistency',
         href: `${GITHUB_PDF_BASE}/deriving_the_particle_zoo_from_observer_consistency.pdf`,
         surface: 'Particles',
-        summary: 'The particle-status paper. It separates structural outputs, public calibration rows, the capacity-electroweak bridge, exact sidecars, continuation lanes, and theorem surfaces.',
+        summary: 'The particle-status paper. It separates structural outputs, running-chart diagnostics, the conditional capacity-electroweak bridge, compare-only sidecars, continuation lanes, and theorem surfaces.',
     },
     {
         slug: 'consensus',
@@ -137,25 +137,25 @@ export const CORE_PARAMETERS = [
         note: 'Sets the local observation and particle-side calibration scale through the unique outer/inner pixel closure.',
     },
     {
-        label: 'Global capacity fixed point',
-        value: 'N_CRC ~ 3.31e122',
-        equation: 'N_CRC = F(N_CRC)',
-        note: 'Defines the input-free readback fixed point for the de Sitter cosmic record capacity. The electroweak bridge uses its own exact bridge capacity.',
+        label: 'Global correctable-record capacity',
+        value: 'N_Lambda ~ 3.31e122',
+        equation: 'N = log M0(U_N); finite: M0(q) = alpha(Gq)',
+        note: 'N_CRC = log D*. The reversible branch is exact finite model counting; horizon and EW/Higgs carrier receipts provide independent physical identifications.',
     },
 ];
 
 export const BOSON_PUBLIC_ROWS: PublicRow[] = [
     {
-        label: 'W',
+        label: 'W calibration coordinate',
         value: '80.377 GeV',
-        tier: 'calibration',
-        note: 'Closed on the public electroweak repair surface. The frozen exact pair is a validation sidecar.',
+        tier: 'compare-only',
+        note: 'The displayed calibration coordinate consumes the comparison pair. A separate source chart near 80.330 GeV lacks the complete vev, tadpole, threshold, matching, and complex-pole map required for a physical mass comparison.',
     },
     {
-        label: 'Z',
+        label: 'Z calibration coordinate',
         value: '91.1879781 GeV',
-        tier: 'calibration',
-        note: 'Closed on the same public electroweak repair surface. The frozen exact pair stays on the validation side.',
+        tier: 'compare-only',
+        note: 'The displayed calibration coordinate consumes the comparison pair. A separate source chart near 91.119 GeV is noncommensurate with a measured Breit-Wigner or complex-pole mass until the full scheme map is supplied.',
     },
     {
         label: 'H',
@@ -178,11 +178,11 @@ export const PARTICLE_LANE_STATUS = [
     },
     {
         label: 'Quarks',
-        summary: 'The current source equations leave a free (R>0)^2 spread fiber, so numeric quark rows remain withheld. The target audit mixes mass conventions, and its GeV-valued matrices are mass textures rather than physical dimensionless Yukawas.',
+        summary: 'The source equations leave a free (R>0)^2 spread fiber, so no numeric quark prediction is emitted. A physical flavor-orbit selector, quark-Higgs carrier, and common-scheme transport are work in progress.',
     },
     {
         label: 'Charged leptons',
-        summary: 'The icosahedral screen supplies an exact A5/C3 face-corner carrier. A target-informed continuation gives (0.510998950843, 105.658375501, 1776.930000014) MeV on one hybrid branch. Its declared affine map is conditionally contractive. An engineered digital CFQ model proves the stipulated schema is nonempty and supplies a central record dilation, but hard-codes its registers, automaton, signs, clock, and response; historical no-target ancestry fails audit. The 0.000300 ppm headline uses rounded fields, and the tau residual is -1.387289 ppm against the packet\'s higher-precision central value. Physical source selection, attachment, determinant, coherent branch, cofinal refinement, and pole scheme remain open.',
+        summary: 'The icosahedral screen supplies an exact A5/C3 face-corner carrier. The finite CFQ model proves its stipulated schema is nonempty but authors the registers, automaton, clock, and response. Physical source selection, family/Yukawa attachment, determinant descent, interacting refinement, and pole scheme are work in progress; no nonzero source-only mass is emitted.',
     },
     {
         label: 'Neutrinos',
@@ -194,7 +194,7 @@ export const PARTICLE_LANE_STATUS = [
     },
     {
         label: 'Capacity-electroweak bridge',
-        summary: 'The bridge uses the reference pixel constant in the capacity relation. The 12-port icosahedral screen-sieve theorem gives the geometric origin of the exponent.',
+        summary: 'The algebraic bridge gives 3.53235e122 under three open physical premises. It is 6.6% above the Lambda-located central capacity; the readback map and posterior propagation remain open.',
     },
 ];
 
@@ -204,13 +204,13 @@ export const GRAVITY_SURFACE = [
     'Collar recovery has two routes: exact zero CMI on the declared central-interface branch, or a conditional finite-range Gibbs theorem requiring uniform strong conditional matrix mixing.',
     'On the conditional route, I(A_delta:D_delta|B_delta) <= c |partial C|_UV exp(-delta/xi), and vanishing requires delta/xi - log|partial C|_UV -> +infinity. The ratio delta/l_UV -> infinity and ordinary two-point clustering are both insufficient.',
     'Finite CMI and matrix-defect receipts are finite proxies for the collar branch. Scalar CMI is not the rank-two stress tensor or a dark-sector source.',
-    'Null data fix the tensor only up to the null-invisible metric term. The global screen-capacity branch closes Lambda separately.',
+    'Null data fix the tensor only up to the null-invisible metric term. The global screen-capacity branch reads correctable public records and closes Lambda after the source checkpoint packet, unique finite-size slack zero, and horizon-record saturation.',
     'The UV/BW scaffold is the realized cap-pair extraction plus ordered cut-pair rigidity on the extracted prime geometric subnet.',
 ];
 
 export const STANDARD_MODEL_SURFACE = [
-    'The recovered gauge quotient is [SU(3) x SU(2) x U(1)] / Z6 with exact hypercharges, Ng = 3, and Nc = 3.',
-    'No gauge-mediated proton decay is the sharp product-group corollary on the recovered core.',
+    'On the declared nonempty one-Higgs chiral MAR class, the selected quotient is [SU(3) x SU(2) x U(1)] / Z6 with its hypercharges, Ng = 3, and Nc = 3.',
+    'The product adjoint excludes the ordinary simple-GUT X/Y channel, not every proton-decay mechanism.',
     'Coupling unification is geometric on the published edge-running surface. The published surface uses no simple-group GUT embedding or superpartners.',
 ];
 
@@ -220,7 +220,7 @@ export const CONSENSUS_HIGHLIGHTS = [
     'The fixed-cutoff union-collar gluing theorem makes overlapping accepted repairs quotient-locally compatible.',
     'Under repair completeness, each fixed initial quotient state has a unique schedule-independent normal form.',
     'Cross-source agreement for states with the same protected observation is a separate obligation: the observation map must identify the consistent quotient modulo the declared silent or gauge equivalence.',
-    'Weak normalization supplies endpoint existence; fairness, strong normalization, or another liveness argument is still needed to show that every allowed schedule settles.',
+    'Weak normalization supplies endpoint existence; settlement under every allowed schedule requires fairness, strong normalization, or another liveness argument.',
     'Global inconsistency is a holonomy problem. Pairwise agreement can leave a nontrivial cycle obstruction.',
     'Separated refinement systems carry normal-form and holonomy classes through coarse-graining when the square defects are controlled.',
     'Stable records live on the fixed-cutoff record algebra, with exact central projectors or explicitly controlled approximately commuting surrogates.',
@@ -240,7 +240,7 @@ export const PREDICTION_SURFACE = {
         {
             title: 'GW horizon spectroscopy comb',
             tier: 'continuation-only' as ClaimTier,
-            summary: 'A distinctive horizon-area template with line positions x_k = ln(k)/(8pi). The paper places it on a continuation-level signal surface outside the recovered core.',
+            summary: 'A continuation-level horizon-area template with line positions x_k = ln(k)/(8pi). The alpha = 4 or one-nat headline belongs to a rejected uniform-offset branch.',
         },
         {
             title: 'Discrete Hawking spectrum',
@@ -255,8 +255,8 @@ export const PREDICTION_SURFACE = {
     ],
     nullExpectations: [
         {
-            title: 'No gauge-mediated proton decay',
-            summary: 'This is the sharp recovered-core exclusion. Product-group gauge structure blocks the classic GUT leptoquark route.',
+            title: 'No ordinary simple-GUT X/Y channel',
+            summary: 'The product adjoint blocks the classic X/Y leptoquark route; other baryon-violating mechanisms remain separate.',
         },
         {
             title: 'No simple-group GUT is needed for the published unification surface',
@@ -272,8 +272,8 @@ export const PREDICTION_SURFACE = {
         },
     ],
     falsificationPressure: [
-        'Data that require gauge-mediated proton decay or a different realized gauge quotient would directly hit the recovered core.',
-        'A failure of the public W/Z/H/t rows after the declared calibration setup would pressure the quantitative bosonic surface.',
+        'Observation of the ordinary simple-GUT X/Y channel or a different realized gauge quotient would pressure the corresponding declared branch.',
+        'W/Z data become a physical pressure test only after OPH supplies a renormalized vev, tadpole convention, thresholds, matching, and complex-pole conversion with theory uncertainty.',
         'A fully derived dark-sector particle explanation would conflict with the gravity-side interpretation, and the galaxy-response story is an open lane.',
         'Ringdown data can test the horizon-comb template and pressure a continuation lane on that surface.',
     ],

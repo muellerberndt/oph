@@ -542,10 +542,12 @@ export function solveGaugeClosure(pixelConstant: number, options?: GaugeClosureO
 
 // Paper reference:
 // reverse-engineering-reality/paper/deriving_the_particle_zoo_from_observer_consistency.tex
-// Target-free source-only electroweak repair surface, including the transported
-// weak and hypercharge pair, the W/Z rows, and the electromagnetic source anchor.
+// Source-only electroweak chart, including the transported weak and hypercharge
+// pair and the electromagnetic source anchor.
 //
-// The public W/Z rows come from the transported pair (alpha_2', alpha_Y').
+// The W/Z chart coordinates come from the transported pair (alpha_2', alpha_Y').
+// They are not physical pole masses. The renormalized vev and tadpole scheme,
+// thresholds, matching, and complex-pole conversion are not implemented here.
 // The Thomson endpoint alpha^-1(0) row is intentionally not emitted here until
 // the zero-momentum source-transport factor is closed on the app surface.
 export function deriveTargetFreeElectroweakRepair(
@@ -646,7 +648,8 @@ export function newtonConstantFromPixel(_pixelConstant: number): number {
 // Paper reference:
 // reverse-engineering-reality/paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.tex
 // Corollary "Cosmological Constant from Capacity":
-// Lambda_CRC = 3 pi / (G N_CRC), with N_CRC the de Sitter record-capacity fixed point.
+// Conditional display Lambda_CRC = 3 pi / (G N_CRC). The physical record-capacity
+// map and fixed-point certificate are not implemented by this utility.
 // The SI G normalization is supplied separately by the selected no-G scale
 // certificate, so this lab readout depends on the capacity coordinate only.
 export function lambdaFromScreen(_pixelConstant: number, logCapacityBase10: number): number {

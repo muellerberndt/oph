@@ -164,12 +164,12 @@ oph-lab/
 | 19 | `/unification` | Coupling Unification | **DEMO: Running Couplings** -- 1/α vs log E plot, toggle SM (don't meet) / MSSM (meet with sparticles) / OPH (meet with edge modes, no new particles) | Peter-Weyl → β-shifts |
 | 20 | `/qft-emerges` | QFT Emerges | **DEMO: Derivation Chain Explorer** -- click any node in Chain 2. Shows how fields, Feynman diagrams, renormalization all emerge from the axioms | Synthesis for Chain 2 |
 
-### Part IV: Predictions & Synthesis (2 pages)
+### Part IV: Conditional Tests & Synthesis (2 pages)
 
 | # | Route | Title | Interactive Element |
 |---|-------|-------|-------------------|
-| 21 | `/predictions` | Testable Predictions | **DEMO: GW Horizon Spectroscopy** -- BH mass slider → frequency comb. Ratio E₃/E₂ = ln(3)/ln(2) always. Plus precision numerics table |
-| 22 | `/synthesis` | Two Parameters, All of Physics | **DEMO: Full Prediction Chain** -- interactive diagram of BOTH chains. Click any node for derivation + status (proven / conditional / open). Two input sliders: pixel area + screen capacity |
+| 21 | `/predictions` | Conditional Test Templates | **DEMO: GW Horizon Spectroscopy** -- continuation-level integer-`k` Kerr template. BH mass slider → conditional frequency comb; the log-integer ratio follows only after the discrete-horizon transition rule and physical radiative bridge are assumed. It is not a current OPH prediction. |
+| 22 | `/synthesis` | OPH Recovery Program | **DEMO: Full Claim Chain** -- interactive diagram of both chains. Click any node for derivation + status (proved / conditional / open / non-evaluable). Two working-coordinate sliders: pixel area + screen capacity; neither is presented as a completed physical two-parameter closure. |
 
 ### Reference (2 pages)
 
@@ -219,7 +219,7 @@ oph-lab/
 - **Key insight:** The "paradox" dissolves when you stop assuming a God's-eye view exists
 
 #### Demo 6: Gauge-as-Gluing (page `/gauge-symmetry`)
-- **What:** Reuse PatchSphere. Now patches have internal "frames" (colored arrows/vectors).
+- **What:** Reuse PatchSphere with internal patch "frames" (colored arrows/vectors).
 - **Interaction:** Drag patches to overlap. On overlaps, frames don't align → rotation needed. This rotation IS the gauge transformation. Make a loop of 3 patches → holonomy (net rotation) = curvature.
 - **Shows:** Gauge symmetry is not a mystery input but geometric redundancy from patch gluing.
 - **Math:** `core/gauge.ts` -- rotation matrices on overlaps, holonomy computation
@@ -274,13 +274,19 @@ oph-lab/
 #### Demo 14: GW Horizon Spectroscopy (page `/predictions`)
 - **What:** Black hole emission frequency spectrum
 - **Interaction:** BH mass slider. Toggle continuous thermal vs discrete comb.
-- **Shows:** Testable prediction: frequency ratios x_k = ln(k)/(8π)
+- **Shows:** Continuation-level conditional template: under an integer-`k`
+  transition rule and a completed Kerr radiative/readout bridge, line
+  coordinates obey `x_k = ln(k)/(8π)`. This is not a promoted physical OPH
+  prediction; `alpha=4` is not in the integer-`k` family because it implies
+  `k=e`.
 - **Math:** `core/cosmology.ts` -- Hawking temperature, comb frequencies
 
 #### Demo 15: Full Prediction Chain (page `/synthesis`)
 - **What:** Interactive diagram of BOTH derivation chains
 - **Interaction:** Click any node → expansion showing derivation, key equation, status (proven/conditional/open). Two master sliders: pixel area (a_cell) and screen capacity.
-- **Shows:** All of physics from 4 axioms + 2 parameters
+- **Shows:** Which parts of the recovery program are proved on declared
+  branches, conditional, open, diagnostic, or non-evaluable; it does not claim
+  that all physics follows from two completed physical parameters.
 
 ---
 
@@ -303,7 +309,7 @@ Each page follows the book's three-act structure:
 Every page in Parts II and III shows a mini version of the relevant derivation chain with the current node highlighted. This gives users constant orientation: "I'm HERE on the path from axioms to GR" or "I'm HERE on the path to QFT."
 
 ### Content Sources
-- Book chapters (prologue through ch-19 + epilogue): primary narrative source
+- Book chapters (prologue through ch-20 + epilogue): primary narrative source
 - PAPER.md: precision numerics and formal theorem statements
 - TECHNICAL_SUPPLEMENT.md: "10 hardest questions" framing
 - OPEN_PROBLEMS.md: clearly mark what is proven vs open
