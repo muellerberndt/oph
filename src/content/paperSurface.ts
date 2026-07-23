@@ -149,13 +149,13 @@ export const BOSON_PUBLIC_ROWS: PublicRow[] = [
         label: 'W calibration coordinate',
         value: '80.377 GeV',
         tier: 'compare-only',
-        note: 'The displayed calibration coordinate consumes the comparison pair. A separate source chart near 80.330 GeV lacks the complete vev, tadpole, threshold, matching, and complex-pole map required for a physical mass comparison.',
+        note: 'The displayed calibration coordinate consumes the comparison pair. The strict-one-loop map from complete renormalized inputs to a complex pole is checked, but the separate source chart near 80.330 GeV lacks the OPH/FJ identity, tadpole conversion, matching, independent gauge/BRST engine, covariance, amplitudes, and clock required for a physical comparison.',
     },
     {
         label: 'Z calibration coordinate',
         value: '91.1879781 GeV',
         tier: 'compare-only',
-        note: 'The displayed calibration coordinate consumes the comparison pair. A separate source chart near 91.119 GeV is noncommensurate with a measured Breit-Wigner or complex-pole mass until the full scheme map is supplied.',
+        note: 'The displayed calibration coordinate consumes the comparison pair. A separate source chart near 91.119 GeV is not a physical complex-pole mass: the strict map kernel is checked, but its OPH-native renormalized inputs and evidence receipts remain open.',
     },
     {
         label: 'H',
@@ -209,7 +209,8 @@ export const GRAVITY_SURFACE = [
 ];
 
 export const STANDARD_MODEL_SURFACE = [
-    'On the declared nonempty one-Higgs chiral MAR class, the selected quotient is [SU(3) x SU(2) x U(1)] / Z6 with its hypercharges, Ng = 3, and Nc = 3.',
+    'Q0 conditionally recognizes [SU(3) x SU(2) x U(1)] / Z6, its hypercharges, a one-generation rank-15 witness, Nc = 3, and a canonical rank-three candidate family band.',
+    'Inside the declared MAR economy class, 3 <= Ng <= 5 and the least value is Ng = 3. Physical three-family status requires the open rank-45 attachment and Q1-Q4 receipts.',
     'The product adjoint excludes the ordinary simple-GUT X/Y channel, not every proton-decay mechanism.',
     'Coupling unification is geometric on the published edge-running surface. The published surface uses no simple-group GUT embedding or superpartners.',
 ];
@@ -273,7 +274,7 @@ export const PREDICTION_SURFACE = {
     ],
     falsificationPressure: [
         'Observation of the ordinary simple-GUT X/Y channel or a different realized gauge quotient would pressure the corresponding declared branch.',
-        'W/Z data become a physical pressure test only after OPH supplies a renormalized vev, tadpole convention, thresholds, matching, and complex-pole conversion with theory uncertainty.',
+        'W/Z data become a physical pressure test only after OPH supplies the inputs to the checked strict-one-loop pole kernel: an FJ renormalized vev and tadpole conversion, thresholds and matching, independent gauge/BRST evidence, source covariance, amplitudes, and a clock.',
         'A fully derived dark-sector particle explanation would conflict with the gravity-side interpretation, and the galaxy-response story is an open lane.',
         'Ringdown data can test the horizon-comb template and pressure a continuation lane on that surface.',
     ],

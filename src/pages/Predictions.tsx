@@ -34,9 +34,10 @@ export function PredictionsPage() {
                 </h4>
                 <p style={{ margin: 0, color: 'var(--text-secondary)' }}>
                     OPH uses no fitted continuous values in its structural theory layer, yet the same observer-patch
-                    architecture repeatedly reconstructs the observed universe: Lorentz geometry, the Einstein branch,
-                    quantum public records, the Standard Model quotient and hypercharges, three colors, three generations,
-                    and linked Higgs/cosmological capacity coordinates. The cumulative compression is the principal evidence;
+                    architecture supports a common dependency map across Lorentz geometry, the conditional Einstein branch,
+                    quantum public records, a conditional Q0 Standard Model recognition packet, three colors, a rank-three
+                    candidate family band, and linked Higgs/cosmological capacity coordinates. Physical family attachment and
+                    Q1-Q4 remain open. The cumulative compression is the principal evidence;
                     this page separates that structural achievement from the stronger standard of a frozen prospective test.
                 </p>
             </div>
@@ -161,8 +162,9 @@ export function PredictionsPage() {
                     wording does not match the papers.
                 </p>
                 <p>
-                    The exact displayed W/Z pair consumes the comparison target; the separate source values are
-                    incomplete running-chart coordinates until a physical scheme map is supplied. Higgs and top sit
+                    The exact displayed W/Z pair consumes the comparison target. The strict-one-loop complex-pole
+                    map is checked for complete declared renormalized inputs, but the separate source values remain
+                    running-chart coordinates because OPH has not supplied those physical inputs and receipts. Higgs and top sit
                     on declared calibration surfaces. The horizon-comb and discrete-Hawking stories belong to
                     continuation lanes, and the deep-IR galaxy-response story is open.
                 </p>

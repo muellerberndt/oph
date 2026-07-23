@@ -19,7 +19,7 @@ export function QftEmergesPage() {
 
             <div className="math-block" style={{ fontSize: '0.95em', lineHeight: '2.2' }}>
                 quantum-algebraic screen plus the compact-gauge refinement receipt and Minimal Admissible Realization &rarr; Gauge-as-Gluing &rarr;
-                [SU(3)&times;SU(2)&times;U(1)]/Z6, N_c=3, N_g=3 &rarr; Structural SM + Continuation Lanes
+                conditional [SU(3)&times;SU(2)&times;U(1)]/Z6, N_c=3, MAR economy N_g=3 &rarr; Q0 Recognition + Open Physical Receipts
             </div>
 
             <div className="card" style={{ marginTop: '24px', marginBottom: '24px', borderLeft: '3px solid var(--accent-cyan)' }}>
@@ -71,7 +71,7 @@ export function QftEmergesPage() {
                     {
                         step: '5',
                         title: 'Standard Model gauge group',
-                        detail: 'The conditional A5 port theorem fixes the coefficient Lie type u(1)+su(3)+su(2); inner-current, trace/tensor, and MAR receipts give [SU(3)\u00d7SU(2)\u00d7U(1)]/Z6 with three colors and three generations.',
+                        detail: 'The finite A5 packet conditionally recognizes u(1)+su(3)+su(2), the quotient, and three colors. It supplies a rank-three candidate family band; N_g=3 is the MAR economy minimum, while the rank-45 physical attachment remains open.',
                         color: 'var(--accent-cyan)',
                     },
                     {
@@ -133,7 +133,7 @@ export function QftEmergesPage() {
                         <li>Tsirelson bound (2&radic;2)</li>
                         <li>Compact gauge groups</li>
                         <li>SU(3) &times; SU(2) &times; U(1)</li>
-                        <li>Three generations (N<sub>g</sub> = 3)</li>
+                        <li>Rank-three candidate family band; MAR economy minimum N<sub>g</sub> = 3</li>
                         <li>Three colors (N<sub>c</sub> = 3)</li>
                         <li>Hypercharge quantization</li>
                         <li>Gauge-calibration and unification surfaces</li>
@@ -178,9 +178,9 @@ export function QftEmergesPage() {
                 <li>The observables are "coarse-grained" over many pixels</li>
             </ul>
             <p style={{ marginBottom: '16px' }}>
-                In this limit, the screen algebra is modeled by a local quantum field theory on
-                the emergent 3+1D spacetime. The Wightman axioms (locality, Poincar&eacute; covariance, spectral
-                condition) are satisfied in this limit. OPH recovers QFT on this surface.
+                In this limit, the screen algebra is intended to be modeled by a local quantum field theory on
+                the emergent 3+1D spacetime. A nonperturbative OS/Wightman completion, including locality,
+                Poincar&eacute; covariance, positivity, and the spectral condition, remains an open Q4 receipt.
             </p>
 
             <Explainer title="Why QFT breaks down at the Planck scale">
@@ -231,8 +231,12 @@ export function QftEmergesPage() {
                 </ul>
                 <p>
                     The foundation (axioms &rarr; gauge branch &rarr; particle-structure ledger) is stronger than the
-                    detailed matter continuations. W/Z carry incomplete running-chart status and no physical pole
-                    prediction status. The
+                    detailed matter continuations. The QFT landing is a typed dependency graph: QFT-Q2 and QFT-Q3
+                    are parallel descendants of QFT-Q1, strict finite-order W/Z algebra belongs to QFT-Q3, and
+                    QFT-Q4 separately requires a nonperturbative observable tower and resonance continuation.
+                    These conditional implications are checked. W/Z carry no physical pole prediction status because
+                    the OPH-native action, quantum construction, matching and identity transcripts, physical-current
+                    amplitudes, numerical freeze, observable tower, analytic sheet, and clock remain open. The
                     weighted-cycle neutrino candidate is rejected, while the charged lane and the quark source-spread,
                     scheme-coordinate, and physical-Yukawa boundaries remain explicit.
                 </p>

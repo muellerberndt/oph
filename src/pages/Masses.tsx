@@ -167,8 +167,9 @@ export function MassesPage() {
                     under the unit-split and selector premises; physical current and global-form descent carry separate receipts.
                 </p>
                 <p style={{ margin: 0, color: 'var(--text-secondary)' }}>
-                    W/Z carry running-chart status and no physical pole-mass status. Their renormalized vev,
-                    tadpole convention, thresholds, matching, and complex-pole conversion are missing. Higgs/top sit
+                    W/Z carry running-chart status and no physical pole-mass status. Their strict-one-loop pole-map
+                    kernel is checked, while the OPH/FJ renormalized input, tadpole conversion, thresholds, matching,
+                    independent gauge/BRST evidence, covariance, amplitudes, and clock are missing. Higgs/top sit
                     on the source-only Higgs/top split surface, and the inverse pair is a check surface.
                     The canonical published bosonic surface uses P = {formatPixelConstant(PIXEL_REFERENCE)}. The
                     sensitivity panel below moves the source coordinate away from that certified fixed point and reports

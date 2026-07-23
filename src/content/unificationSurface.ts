@@ -29,7 +29,7 @@ export const EXACT_BUNDLE_SECTIONS: ExactBundleSection[] = [
         id: 'structural-bosonic',
         title: 'Structural Zeros And Bosonic Diagnostics',
         scope: 'Structural exactness + calibration / compare-only charts',
-        note: 'The massless rows are structural. The W/Z pair is compare-only, and its source chart has no physical mass status until the full renormalization and complex-pole map is supplied.',
+        note: 'The massless rows are structural. The W/Z pair is compare-only. The strict-one-loop pole-map algebra is now checked, but its complete OPH/FJ input packet and physical evidence receipts have not been supplied.',
         rows: [
             { label: 'Photon', value: '0 GeV', note: 'Structural zero.' },
             { label: 'Gluon', value: '0 GeV', note: 'Structural zero.' },
