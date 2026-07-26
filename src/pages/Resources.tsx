@@ -88,7 +88,7 @@ export function ResourcesPage() {
                 </div>
             </div>
 
-            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Six-Paper Public Stack</h3>
+            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Seven-Paper Release Stack</h3>
             <p style={{ marginBottom: '16px', fontSize: '0.85em', color: 'var(--text-muted)' }}>
                 The lab treats these six core papers as the public source of truth. Use the individual paper that
                 matches the surface you are discussing.

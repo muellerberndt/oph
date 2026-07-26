@@ -168,9 +168,9 @@ const routeMeta = {
       'Use the OPH Lab glossary for concise definitions of the core holography, gravity, and quantum-information terms.',
   },
   resources: {
-    title: 'Resources - OPH Six-Paper Stack and Study Surfaces | OPH Lab',
+    title: 'Resources - OPH Seven-Paper Release Stack and Study Surfaces | OPH Lab',
     description:
-      'Find the six-paper OPH stack, HTML paper summaries, book, blog, search-entry pages for Standard Model unified with gravity and cosmological constant derivation, coherence map, applications page, extra demos, challenge, and supporting reading for deeper study of Observer Patch Holography.',
+      'Find the seven-paper OPH release stack, HTML paper summaries, book, blog, search-entry pages for Standard Model unified with gravity and cosmological constant derivation, coherence map, applications page, extra demos, challenge, and supporting reading for deeper study of Observer Patch Holography.',
   },
 };
 

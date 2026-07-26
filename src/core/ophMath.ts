@@ -386,7 +386,7 @@ export function unificationScaleFromPixel(pixelConstant: number): number {
 }
 
 // Paper reference:
-// reverse-engineering-reality/paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.tex
+// reverse-engineering-reality/paper/deriving_standard_model_gauge_structure_from_observer_overlap_consistency.tex
 // Gauge reconstruction / local unification discussion and the README local unification summary.
 // This solver keeps the published OPH closure structure used across the lab:
 // unification scale M_U(P), local cell energy E_cell(P), one-loop edge running,
@@ -646,7 +646,7 @@ export function newtonConstantFromPixel(_pixelConstant: number): number {
 }
 
 // Paper reference:
-// reverse-engineering-reality/paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.tex
+// reverse-engineering-reality/paper/recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency.tex
 // Corollary "Cosmological Constant from Capacity":
 // Conditional display Lambda_CRC = 3 pi / (G N_CRC). The physical record-capacity
 // map and fixed-point certificate are not implemented by this utility.

@@ -10,7 +10,8 @@ The lab is a reader-facing guide to the OPH paper stack. Its job is to explain t
 
 Research status is controlled from the sibling `reverse-engineering-reality/` repo, especially:
 
-- `paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.tex`
+- `paper/recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency.tex`
+- `paper/deriving_standard_model_gauge_structure_from_observer_overlap_consistency.tex`
 - `paper/deriving_the_particle_zoo_from_observer_consistency.tex`
 - `paper/reality_as_consensus_protocol.tex`
 - `paper/screen_microphysics_and_observer_synchronization.tex`
