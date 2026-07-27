@@ -128,7 +128,8 @@ export function EntanglementPage() {
             <p style={{ marginBottom: '16px' }}>
                 where C is the concurrence (a measure of entanglement). This has deep implications for OPH:
                 the entanglement budget is finite. Entangling more with the "outside" of a patch means less
-                entanglement available "inside." This trade-off is what makes the area bound (Axiom A3) work.
+                entanglement available "inside." This trade-off constrains how correlations can be distributed,
+                but it does not derive a gravitational area bound.
             </p>
 
             <div className="demo-container">
@@ -243,8 +244,8 @@ export function EntanglementPage() {
                 <p>
                     These are two aspects of the same thing. The Tsirelson bound constrains how much entanglement
                     any two patches can share, which constrains the geometry they can build between them. The
-                    monogamy constraint ensures that entanglement is a finite resource, which is why the area bound
-                    (Axiom A3) holds. Quantum information and geometry are unified.
+                    monogamy constraint limits correlation sharing. Turning those limits into an area law or bulk
+                    geometry requires a separate holographic identification.
                 </p>
             </Explainer>
 

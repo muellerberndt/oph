@@ -17,7 +17,7 @@ export function SynthesisPage() {
                 cosmological-capacity consequences. Given the explicit compact-gauge refinement receipt, Chain 2
                 yields the receipt-conditional structural Standard Model branch together with several downstream
                 continuation lanes. The same paper surface includes a dedicated consensus
-                spine and a concrete screen-microphysics architecture. Both start from the same five-axiom basis on a
+                spine and a concrete screen-microphysics architecture. Both start from the same three-axiom basis on a
                 holographic screen S&sup2;, while specific pages add the theorem-local technical premises needed for
                 Lorentz, gauge, particle, or observer-level statements.
             </p>
@@ -118,7 +118,7 @@ export function SynthesisPage() {
                         <div style={{ padding: '8px 16px', background: 'rgba(122,184,212,0.15)', border: '1px solid var(--accent-blue)', color: 'var(--accent-blue)', fontSize: '0.8em', fontWeight: 600, textAlign: 'center', width: '100%' }}>
                             CHAIN 2: QFT
                         </div>
-                        {['Compact-gauge refinement receipt + Minimal Admissible Realization', 'QM from Overlap Consistency', 'Gauge-as-Gluing', '[SU(3)\u00d7SU(2)\u00d7U(1)]/Z6', 'Edge-Sector Dynamics', 'Structural SM + Continuations'].map((step, i) => (
+                        {['Compact-gauge refinement receipt + declared sector completions', 'QM from Overlap Consistency', 'Gauge-as-Gluing', '[SU(3)\u00d7SU(2)\u00d7U(1)]/Z6', 'Edge-Sector Dynamics', 'Structural SM + Continuations'].map((step, i) => (
                             <div key={i} style={{ width: '100%' }}>
                                 <div style={{ padding: '6px 12px', background: 'rgba(122,184,212,0.05)', border: '1px solid rgba(122,184,212,0.2)', fontSize: '0.75em', color: 'var(--text-secondary)', textAlign: 'center' }}>
                                     {step}
@@ -212,7 +212,7 @@ export function SynthesisPage() {
                 <span style={{ color: 'var(--accent-rose)', fontWeight: 600 }}>Standard:</span>
                 <span style={{ color: 'var(--text-secondary)' }}>Gravity and QM are separate</span>
                 <span style={{ color: 'var(--accent-green)', fontWeight: 600 }}>OPH:</span>
-                <span style={{ color: 'var(--text-secondary)' }}>Both share the core axioms; compact-gauge reconstruction uses the refinement receipt, and gauge uniqueness then uses Minimal Admissible Realization</span>
+                <span style={{ color: 'var(--text-secondary)' }}>Both share the three core axioms; compact-gauge reconstruction uses the refinement receipt, and the realized sector enters through the declared completions</span>
             </div>
 
             <Explainer title="Is this too good to be true?">
@@ -220,7 +220,7 @@ export function SynthesisPage() {
                     A healthy skepticism is warranted. Key questions to ask:
                 </p>
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
-                    <li><strong>Are the assumptions really as minimal as claimed?</strong> The five axioms are supplemented by theorem-local technical premises and branch-specific conditions. A full assessment must count all logical inputs.</li>
+                    <li><strong>Are the assumptions really as minimal as claimed?</strong> The three axioms are supplemented by theorem-local technical premises, the declared completions, and branch-specific conditions. A full assessment must count all logical inputs.</li>
                     <li><strong>Are the derivations rigorous?</strong> The recovered structural core is stronger than the downstream continuation lanes. BW internalization, some particle continuations, and several phenomenology surfaces remain conditional or open.</li>
                     <li><strong>Can it be falsified?</strong> Yes (see Predictions page). This is the most important test of any theory.</li>
                 </ul>

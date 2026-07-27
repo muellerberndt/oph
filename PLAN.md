@@ -136,14 +136,14 @@ oph-lab/
 | 1 | `/hints` | Five Hints That Broke Physics | Card-flip reveal: intuition vs experimental reality |
 | 2 | `/no-objective-reality` | No Objective Reality | Hidden Assumption Revealer: 10 physics problems, flip cards |
 | 3 | `/the-screen` | The Holographic Screen | **DEMO: Patch Sphere** -- draw patches on S², see overlaps |
-| 4 | `/axioms` | Core Axioms + MAR | Axiom cards with 3 detail levels (plain / physics / formal) |
+| 4 | `/axioms` | The Three Axioms | Axiom cards with 3 detail levels (plain / physics / formal) |
 
 ### Part II: Chain 1 -- Road to General Relativity (8 pages)
 
 | # | Route | Title | Interactive Element | Chain Node |
 |---|-------|-------|-------------------|------------|
 | 5 | `/entropy` | Entropy & the Area Bound | **DEMO: Entropy Calculator** -- drag probability bars, see H. Then: **Area-Entropy Explorer** -- adjust region size, see S = A/(4l_P²), compare area vs volume scaling | A3 → Bekenstein-Hawking |
-| 6 | `/entanglement-geometry` | Entanglement Creates Geometry | **DEMO: RT Toy Model** -- adjust entanglement between boundary regions, watch "depth" of bulk change. Cut bonds → geodesic moves | A4 → RT formula → 3D from 2D |
+| 6 | `/entanglement-geometry` | Entanglement Creates Geometry | **DEMO: RT Toy Model** -- adjust entanglement between boundary regions, watch "depth" of bulk change. Cut bonds → geodesic moves | Holographic area interface → RT formula → 3D from 2D |
 | 7 | `/lorentz` | Lorentz from the Screen | **DEMO: Möbius/Lorentz** -- drag on sphere to apply conformal transforms, see corresponding Lorentz boost in spacetime diagram | Conf⁺(S²) = SO⁺(3,1) |
 | 8 | `/modular-flow` | Time from Modular Flow | **DEMO: Modular Flow Animator** -- animated flow on a cap, slider for acceleration → Unruh temperature. Shows time = modular automorphism | BW theorem → thermal time |
 | 9 | `/gravity` | Gravity from Entanglement | **DEMO: Jacobson Mechanism** -- perturb entanglement on null surface, compute δS, see Einstein equations emerge as equilibrium condition. Adjustable perturbation → watch G_ab respond | MaxEnt → δS=0 → Einstein |

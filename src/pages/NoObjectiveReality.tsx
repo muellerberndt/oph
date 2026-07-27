@@ -56,7 +56,7 @@ const QUESTIONS: Question[] = [
         problem: 'Why three generations?',
         conventional: 'The Standard Model has 3 copies of each fermion type. No explanation why.',
         hiddenAssumption: 'Generation count is a free parameter.',
-        ophResolution: 'On the declared nonempty one-Higgs chiral MAR class, CP capability requires at least 3 and the weak-sector clause bounds the count; minimality selects 3.',
+        ophResolution: 'On the declared nonempty one-Higgs chiral class, CP capability requires at least 3 and the weak-sector clause bounds the count at 5; the count inside the window is open, and three enters as a declared completion.',
     },
     {
         problem: 'Proton stability',

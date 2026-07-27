@@ -63,9 +63,10 @@ This section is the lab-maintainer summary of the public paper surface.
 - A full-rank compact skew-adjoint inner-current lift is required to identify
   that coefficient algebra with a physical gauge-current algebra.
 - Trace balance integrates the coefficient algebra to `S(U(3) x U(2))` with
-  a six-element cover kernel. MAR, the tensor kernel, spin, determinant, and
-  descent receipts give the physical quotient `SU(3) x SU(2) x U(1) / Z_6`,
-  its hypercharge lattice, `N_c = 3`, and `N_g = 3`.
+  a six-element cover kernel. The tensor-kernel, spin, determinant, and
+  descent receipts give the conditional physical quotient
+  `SU(3) x SU(2) x U(1) / Z_6`, its hypercharge lattice, and `N_c = 3`.
+  The physical three-family attachment is open.
 - The sharp exclusion is the ordinary simple-GUT `X/Y` gauge channel, not every proton-decay mechanism.
 
 ### Particle branch

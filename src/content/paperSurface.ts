@@ -217,7 +217,7 @@ export const GRAVITY_SURFACE = [
 
 export const STANDARD_MODEL_SURFACE = [
     'Q0 conditionally recognizes [SU(3) x SU(2) x U(1)] / Z6, its hypercharges, a one-generation rank-15 witness, Nc = 3, and a canonical rank-three candidate family band.',
-    'Inside the declared MAR economy class, 3 <= Ng <= 5 and the least value is Ng = 3. Physical three-family status requires the open rank-45 attachment and Q1-Q4 receipts.',
+    'The CP-capability and weak-sector clauses give the window 3 <= Ng <= 5; the count inside it is open, and Ng = 3 enters as a declared completion. Physical three-family status requires the open rank-45 attachment and Q1-Q4 receipts.',
     'The product adjoint excludes the ordinary simple-GUT X/Y channel, not every proton-decay mechanism.',
     'Coupling unification is geometric on the published edge-running surface. The published surface uses no simple-group GUT embedding or superpartners.',
 ];

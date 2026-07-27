@@ -18,16 +18,16 @@ export function GaugeSymmetryPage() {
                 with trivial loop action under that same choice are tensor-generating seeds, not a finite list
                 closed under tensor product. Their replete rigid tensor category may have infinitely many simple objects. On a
                 cofinal tail carrying the compact-gauge refinement receipt, the construction reconstructs a compact
-                group and then selects the realized sector with the Minimal Admissible Realization rule.
+                group; the realized sector then enters through declared completions with open physical status.
             </p>
             <p style={{ marginBottom: '16px' }}>
-                The derivation adds the extended selection and premise package used by the compact-gauge proof:
+                The derivation adds the extended premise package used by the compact-gauge proof:
                 admissibility defines the candidate class, the transport premise removes the relevant obstruction
                 on the branch where global transportability is invoked, and the compact-gauge refinement receipt
                 supplies finite-state extendability, center-compatible block-multiplicity embeddings, coherent
                 surjective group pullbacks that intertwine the common stagewise representatives, finite tensor
-                realizations, and compatible forgetful fibers. Minimal
-                Admissible Realization then chooses the lexicographically minimal admissible sector.
+                realizations, and compatible forgetful fibers. The three-generation, one-Higgs, and
+                no-extra-light-sector statements enter as declared completions with open physical status.
             </p>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Gauge-as-Gluing Route</h3>
@@ -154,12 +154,12 @@ export function GaugeSymmetryPage() {
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
                     <li><strong>Finite coefficient layer:</strong> unit splitting, icosahedral selector, explicit A<sub>5</sub>-equivariant bracket, and trace balance.</li>
                     <li><strong>Physical layer:</strong> full-rank compact skew-adjoint inner-current realization, spin lift, determinant balance, and refinement-natural loop descent.</li>
-                    <li><strong>Matter layer:</strong> anomaly-free one-Higgs admissibility plus MAR and the tensor kernel.</li>
+                    <li><strong>Matter layer:</strong> anomaly-free one-Higgs admissibility plus the tensor kernel and the declared sector completions.</li>
                 </ul>
                 <p>
                     Within that declared branch, the result is
                     [SU(3)&times;SU(2)&times;U(1)]/Z<sub>6</sub> with N<sub>c</sub>=3 and
-                    N<sub>g</sub>=3. Screen topology alone supplies neither the physical current lift nor the MAR matter selection.
+                    N<sub>g</sub>=3. Screen topology alone supplies neither the physical current lift nor the declared matter completions.
                 </p>
             </Explainer>
 

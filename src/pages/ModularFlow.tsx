@@ -156,10 +156,10 @@ export function ModularFlowPage() {
                     In OPH, modular theory connects to the axioms as follows:
                 </p>
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
-                    <li><strong>A1 (Screen Net):</strong> Each patch P has a von Neumann algebra A(P) and a local state &rho;<sub>P</sub>. Modular theory applies to each (A(P), &rho;<sub>P</sub>) pair.</li>
-                    <li><strong>A2 (Overlap Consistency):</strong> Modular flows of overlapping patches must be compatible on the overlap. This constrains the geometry.</li>
-                    <li><strong>A3 (Local MaxEnt and Refinement Stability):</strong> The realized branch persists under refinement and supplies the local finite-constraint setting used in later null-modular arguments.</li>
-                    <li><strong>A4 (Recoverable Generalized Entropy):</strong> Collar recoverability and generalized entropy provide the entropy side of the gravity branch.</li>
+                    <li><strong>A1 (Observer Screen):</strong> Each accessible patch carries a local algebra, state, records, and typed interfaces. Modular theory applies after the required algebra-state representation is supplied.</li>
+                    <li><strong>A2 (Observer Agreement):</strong> Accepted operational meanings commute with visible overlap and refinement maps. Compatibility of modular flows is an additional branch condition.</li>
+                    <li><strong>A3 (Conditional Maximum Randomness):</strong> At one fixed regulator, the state is the information projection on the observer-visible feasible family. Cross-refinement optimizer compatibility is a separate theorem.</li>
+                    <li><strong>Gravity interfaces:</strong> Collar recovery, generalized entropy, stationarity, focusing, and the physical null-stress identification are named premises or theorem targets, not axioms.</li>
                     <li><strong>T2 + BW branch hypotheses:</strong> Geometric modular flow is stated on a scaling-limit branch. Fixed-cutoff matrix formulas belong to special representations only.</li>
                 </ul>
             </Explainer>

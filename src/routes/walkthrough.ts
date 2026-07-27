@@ -21,7 +21,7 @@ import {
     GitBranch,
     Cpu,
     Target,
-    Infinity,
+    Infinity as InfinityIcon,
     Search,
     Library,
     type LucideIcon,
@@ -61,7 +61,7 @@ export const WALKTHROUGH_STEPS: WalkthroughStep[] = [
     { to: '/hints/', icon: Lightbulb, label: 'Five Hints', part: 'foundation', seoTitle: 'Five Experimental Hints That Reality Is Not What It Seems' },
     { to: '/no-objective-reality/', icon: Eye, label: 'No Objective Reality', part: 'foundation', seoTitle: 'Why There Is No Objective Reality | The 10 Hardest Questions in Physics' },
     { to: '/the-screen/', icon: Globe, label: 'The Holographic Screen', part: 'foundation', seoTitle: 'The Holographic Screen | How a 2D Sphere Creates 3D Spacetime' },
-    { to: '/axioms/', icon: Shield, label: 'Core Axioms + Selector', part: 'foundation', seoTitle: 'Core Axioms and Minimal Admissible Realization in the OPH Ledger' },
+    { to: '/axioms/', icon: Shield, label: 'The Three Axioms', part: 'foundation', seoTitle: 'The Three OPH Axioms and Declared Completions in the OPH Ledger' },
 
     // Chain 1: Axioms -> General Relativity
     { to: '/entropy/', icon: Flame, label: 'Entropy & Area Bound', part: 'chain1-gr', seoTitle: 'Entropy & the Holographic Principle | From Bits to Black Holes' },
@@ -90,7 +90,7 @@ export const WALKTHROUGH_STEPS: WalkthroughStep[] = [
 
     // Predictions & Synthesis
     { to: '/predictions/', icon: Target, label: 'Testable Predictions', part: 'predictions', seoTitle: 'Testable Predictions of Quantum Gravity | Gravitational Wave Signatures' },
-    { to: '/synthesis/', icon: Infinity, label: 'OPH Synthesis', part: 'predictions', seoTitle: 'OPH Synthesis | Closure Targets, Branches, and Continuation Lanes' },
+    { to: '/synthesis/', icon: InfinityIcon, label: 'OPH Synthesis', part: 'predictions', seoTitle: 'OPH Synthesis | Closure Targets, Branches, and Continuation Lanes' },
 
     // Reference
     { to: '/glossary/', icon: Search, label: 'Glossary', part: 'reference', seoTitle: 'Quantum Gravity & Holography Glossary | Key Terms Explained' },

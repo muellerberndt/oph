@@ -105,9 +105,9 @@ export function ClassicalPhysicsPage() {
             <div className="card" style={{ marginBottom: '12px', borderLeft: '3px solid var(--accent-gold)' }}>
                 <h4 style={{ margin: '0 0 8px 0', fontSize: '0.9em' }}>Second Law (Entropy Increase)</h4>
                 <p style={{ margin: 0, fontSize: '0.85em' }}>
-                    Entropy never decreases: dS &ge; 0. In OPH: this is the generalized second law (GSL), a
-                    consequence of quantum focusing (Axiom A3). The area of horizons can only increase (classically),
-                    and the generalized entropy S<sub>gen</sub> = A/(4G) + S<sub>bulk</sub> is monotonic.
+                    Entropy never decreases: dS &ge; 0. In the OPH gravity lane, the generalized second law and
+                    quantum focusing are separate physical interfaces. They are not consequences of A3. On the
+                    branch where those interfaces hold, S<sub>gen</sub> = A/(4G) + S<sub>bulk</sub> is monotonic.
                 </p>
             </div>
             <div className="card" style={{ marginBottom: '12px', borderLeft: '3px solid var(--accent-gold)' }}>
@@ -142,10 +142,10 @@ export function ClassicalPhysicsPage() {
                 <div style={{ padding: '12px', background: 'rgba(201, 169, 110, 0.1)', border: '1px solid rgba(201, 169, 110, 0.3)', fontSize: '0.85em' }}>
                     <div style={{ color: 'var(--accent-gold)', fontWeight: 600, marginBottom: '4px' }}>Input Ledger</div>
                     <ul style={{ paddingLeft: '16px', margin: 0, lineHeight: '1.8' }}>
-                        <li>Screen net on local patches</li>
-                        <li>Overlap consistency</li>
-                        <li>Local MaxEnt and refinement stability</li>
-                        <li>Recoverable generalized entropy</li>
+                        <li>Oriented twelve-port observer screen</li>
+                        <li>Observer agreement</li>
+                        <li>Conditional maximum randomness</li>
+                        <li>Recovery and generalized-entropy interfaces (declared premises, not axioms)</li>
                         <li>Central-interface structure, or finite-range Gibbs plus strong conditional matrix mixing</li>
                         <li>Scaling, stationarity, and null-bridge premises where invoked</li>
                     </ul>
@@ -156,7 +156,7 @@ export function ClassicalPhysicsPage() {
                 <p>
                     Electromagnetism and the other gauge forces belong to <strong>Chain 2</strong> via the
                     gauge-as-gluing mechanism. Chain 1 gives gravity; Chain 2 gives the gauge forces. Both chains
-                    share the core screen axioms. Chain 2 also uses Minimal Admissible Realization with regulator,
+                    share the three core axioms. Chain 2 also uses the declared sector completions with regulator,
                     transport, compact-reconstruction, and branch-specific assumptions.
                 </p>
             </Explainer>

@@ -26,7 +26,7 @@ export function TheScreenPage() {
         const x = e.clientX - rect.left;
         const y = e.clientY - rect.top;
         setPatches(prev => prev.map((p, i) => i === dragging ? { ...p, cx: x, cy: y } : p));
-    }, [dragging]);
+    }, [dragging, setPatches]);
 
     const handleMouseUp = useCallback(() => {
         setDragging(null);

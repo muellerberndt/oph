@@ -293,7 +293,7 @@ export function GravityPage() {
             <div className="card" style={{ borderLeft: '3px solid var(--accent-gold)', marginBottom: '18px' }}>
                 <h4 style={{ marginTop: 0, fontSize: '0.86em' }}>Premise Stack Used Here</h4>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '8px', fontSize: '0.78em' }}>
-                    <div>Recoverable generalized entropy</div>
+                    <div>Recovery and generalized-entropy interfaces (declared premises, not axioms)</div>
                     <div>Local MaxEnt and refinement-stable branch</div>
                     <div>Exact central-interface collar branch, or finite-range Gibbs plus uniform strong conditional matrix mixing</div>
                     <div>Boundary-aware collar rate margin; finite receipts remain proxies</div>

@@ -18,8 +18,8 @@ export function QftEmergesPage() {
             </p>
 
             <div className="math-block" style={{ fontSize: '0.95em', lineHeight: '2.2' }}>
-                quantum-algebraic screen plus the compact-gauge refinement receipt and Minimal Admissible Realization &rarr; Gauge-as-Gluing &rarr;
-                conditional [SU(3)&times;SU(2)&times;U(1)]/Z6, N_c=3, MAR economy N_g=3 &rarr; Q0 Recognition + Open Physical Receipts
+                quantum-algebraic screen plus the compact-gauge refinement receipt and the declared sector completions &rarr; Gauge-as-Gluing &rarr;
+                conditional [SU(3)&times;SU(2)&times;U(1)]/Z6, N_c=3, declared N_g=3 &rarr; Q0 Recognition + Open Physical Receipts
             </div>
 
             <div className="card" style={{ marginTop: '24px', marginBottom: '24px', borderLeft: '3px solid var(--accent-cyan)' }}>
@@ -59,7 +59,7 @@ export function QftEmergesPage() {
                     {
                         step: '3',
                         title: 'Quantum error correction',
-                        detail: 'Bulk-boundary map = quantum error-correcting code. Axiom A4 supplies the recoverability side of that structure. Spacetime is a code.',
+                        detail: 'Bulk-boundary map = quantum error-correcting code. The recovery interface, a declared premise rather than an axiom, supplies the recoverability side of that structure. Spacetime is a code.',
                         color: 'var(--accent-blue)',
                     },
                     {
@@ -71,7 +71,7 @@ export function QftEmergesPage() {
                     {
                         step: '5',
                         title: 'Standard Model gauge group',
-                        detail: 'The finite A5 packet conditionally recognizes u(1)+su(3)+su(2), the quotient, and three colors. It supplies a rank-three candidate family band; N_g=3 is the MAR economy minimum, while the rank-45 physical attachment remains open.',
+                        detail: 'The finite A5 packet conditionally recognizes u(1)+su(3)+su(2), the quotient, and three colors. It supplies a rank-three candidate family band; N_g=3 enters as a declared completion inside the 3-to-5 window, while the rank-45 physical attachment remains open.',
                         color: 'var(--accent-cyan)',
                     },
                     {
@@ -133,7 +133,7 @@ export function QftEmergesPage() {
                         <li>Tsirelson bound (2&radic;2)</li>
                         <li>Compact gauge groups</li>
                         <li>SU(3) &times; SU(2) &times; U(1)</li>
-                        <li>Rank-three candidate family band; MAR economy minimum N<sub>g</sub> = 3</li>
+                        <li>Rank-three candidate family band; declared completion N<sub>g</sub> = 3</li>
                         <li>Three colors (N<sub>c</sub> = 3)</li>
                         <li>Hypercharge quantization</li>
                         <li>Gauge-calibration and unification surfaces</li>
@@ -144,14 +144,14 @@ export function QftEmergesPage() {
                 <div style={{ padding: '12px', background: 'rgba(201, 169, 110, 0.1)', border: '1px solid rgba(201, 169, 110, 0.3)', fontSize: '0.85em' }}>
                     <div style={{ color: 'var(--accent-gold)', fontWeight: 600, marginBottom: '4px' }}>Input Ledger</div>
                     <ul style={{ paddingLeft: '16px', margin: 0, lineHeight: '1.8' }}>
-                        <li>Screen-net finite access</li>
-                        <li>Overlap consistency</li>
-                        <li>Local MaxEnt and refinement stability</li>
-                        <li>Recoverable generalized entropy</li>
+                        <li>Oriented twelve-port observer screen</li>
+                        <li>Observer agreement</li>
+                        <li>Conditional maximum randomness</li>
+                        <li>Recovery and generalized-entropy interfaces (declared premises, not axioms)</li>
                         <li>Finite-dimensional regulator premise</li>
                         <li>Boundary gauge fixed-point premise</li>
                         <li>Central or higher-associator strictification plus at least one allowed strict representative with trivial represented loop holonomy where global transportability is invoked</li>
-                        <li>Minimal Admissible Realization selection axiom</li>
+                        <li>Declared sector completions (three generations, one Higgs, no extra light sectors) with open physical status</li>
                         <li>Symmetric braiding in the 3+1D EFT branch</li>
                         <li>Compact-gauge refinement receipt: finite extendability, explicit center-compatible block-multiplicity embeddings, common stagewise strict representatives, and coherent surjective boundary-group maps that intertwine them</li>
                         <li>Finite tensor realizations and compatible objectwise finite-dimensional forgetful fibers, or an explicit super-Tannakian fork</li>
@@ -190,7 +190,7 @@ export function QftEmergesPage() {
                 </p>
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
                     <li>Individual pixels become resolved (the "lattice spacing" of the screen)</li>
-                    <li>The area bound (Axiom A3) limits the number of degrees of freedom</li>
+                    <li>The finite carrier capacity of the screen (Axiom A1) limits the number of degrees of freedom</li>
                     <li>The emergent spacetime geometry fluctuates on this scale</li>
                 </ul>
                 <p>
@@ -202,16 +202,16 @@ export function QftEmergesPage() {
 
             <Explainer title="Chain 1 and Chain 2: same axioms, different paths">
                 <p>
-                    Both chains share the same core local axioms, and the extended theory adds Minimal Admissible
-                    Realization as an axiom-level selector:
+                    Both chains share the same three core axioms; the realized matter sector enters through the
+                    declared completions:
                 </p>
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
                     <li><strong>Chain 1 (GR):</strong> Emphasizes recoverability, generalized entropy, the explicit BW scaling branch, the null bridge, the separate bounded-interval projective branch, and fixed-cap stationarity. Result: a conditional Lorentz branch and a conditional Jacobson-type Einstein branch.</li>
-                    <li><strong>Chain 2 (QFT):</strong> Emphasizes overlap consistency, gauge-as-gluing, transportability, the explicit compact-gauge refinement receipt, and Minimal Admissible Realization. Result: receipt-conditional compact gauge reconstruction, the structural Standard Model branch, and downstream continuation lanes.</li>
+                    <li><strong>Chain 2 (QFT):</strong> Emphasizes observer agreement on overlaps, gauge-as-gluing, transportability, the explicit compact-gauge refinement receipt, and the declared sector completions. Result: receipt-conditional compact gauge reconstruction, the structural Standard Model branch, and downstream continuation lanes.</li>
                 </ul>
                 <p>
-                    The two chains share the same screen and foundational structure. Minimal Admissible Realization
-                    is the extended-theory selector that resolves admissible branches in Chain 2.
+                    The two chains share the same screen and foundational structure. In Chain 2 the admissibility
+                    filters cut the candidate class, and the realized sector enters through the declared completions.
                 </p>
                 <p>
                     Synthesis page shows how they combine into a unified picture.

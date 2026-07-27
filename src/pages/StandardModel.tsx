@@ -192,8 +192,9 @@ export function StandardModelPage() {
                 On a cofinal tail carrying the compact-gauge refinement receipt, the declared manuscript derivation
                 conditionally recognizes an admissible compact sector class and the global quotient
                 {' '}<strong>[SU(3) x SU(2) x U(1)] / Z6</strong> with <strong>three colors</strong>.
-                The rank-three band is a candidate family carrier, and <strong>N_g = 3</strong> is the
-                lexicographic MAR economy minimum inside the declared class. Physical three-family status
+                The rank-three band is a candidate family carrier; the CP-capability and weak-sector clauses
+                give the window 3 to 5, and <strong>N_g = 3</strong> enters as a declared completion with open
+                physical status. Physical three-family status
                 requires the open rank-45 attachment and Q1-Q4 receipts.
                 The fixed-stage tensor category first chooses one common strict transport representative and
                 retains only seeds with trivial loop action under that same choice; the receipt intertwines those
@@ -212,7 +213,7 @@ export function StandardModelPage() {
             </div>
 
             <div className="demo-container">
-                <div className="demo-label">Admissibility + Minimal Admissible Realization Eliminator</div>
+                <div className="demo-label">Admissibility Filters + Sector Comparison</div>
 
                 <div style={{ marginBottom: '14px' }}>
                     <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '8px' }}>
@@ -382,7 +383,7 @@ export function StandardModelPage() {
             </div>
 
             <div className="math-block">
-                Conditional Q0 packet: G = [SU(3) x SU(2) x U(1)] / Z6, N_c = 3; MAR economy N_g = 3; physical attachment open
+                Conditional Q0 packet: G = [SU(3) x SU(2) x U(1)] / Z6, N_c = 3; N_g = 3 by declared completion; physical attachment open
             </div>
 
             <Explainer title="Why a product group is selected">
@@ -393,11 +394,13 @@ export function StandardModelPage() {
                 </p>
             </Explainer>
 
-            <Explainer title="How Minimal Admissible Realization differs from plain minimality">
+            <Explainer title="How the declared completions relate to the admissibility filters">
                 <p>
-                    Minimal Admissible Realization minimizes only after admissibility filters are enforced. Trivial
-                    sectors such as pure U(1) fail the chiral, CP, or Yukawa criteria. Within the admissible class,
-                    this is <strong>Nature's Occam's razor</strong>.
+                    The admissibility filters cut the candidate class first: trivial sectors such as pure U(1)
+                    fail the chiral, CP, or Yukawa criteria. The minimization stages in the demo are a comparison
+                    device across the survivors. The realized sector statements (three generations inside the
+                    window 3 to 5, one Higgs, no extra light sectors) enter as declared completions with open
+                    physical status, not as an axiom.
                 </p>
             </Explainer>
 
@@ -405,12 +408,12 @@ export function StandardModelPage() {
                 <p>
                     On the cofinal branch carrying the compact-gauge refinement receipt, the page scope covers the
                     conditional gauge quotient, exact hypercharges on the declared packet, color triplet,
-                    and MAR generation-count window. Physical family attachment, full flavor closure, hadron phenomenology, and downstream
+                    and the generation-count window from the CP-capability and weak-sector clauses. Physical family attachment, full flavor closure, hadron phenomenology, and downstream
                     matter-sector theorem objects sit on separate pages; hadron backend work is out of scope until
                     production OPH backend output exists.
                 </p>
                 <p>
-                    On the declared nonempty one-Higgs chiral MAR class, the quotient and hypercharges are exact.
+                    On the declared nonempty one-Higgs chiral class, the quotient and hypercharges are exact.
                     The product adjoint excludes the ordinary simple-GUT X/Y channel only. The particle pages carry
                     the sharper continuation and compare-only bookkeeping.
                 </p>

@@ -18,7 +18,7 @@ export function Layout() {
     useEffect(() => {
         const title = getSeoMeta(normalizedPath).title;
         trackPageView(normalizedPath, title);
-    }, [location.pathname]);
+    }, [normalizedPath]);
 
     useEffect(() => installLinkTracking('oph_lab'), []);
 

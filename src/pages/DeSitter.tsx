@@ -226,9 +226,9 @@ export function DeSitterPage() {
                     consistent with the horizon area, the "heat death" of the universe.
                 </p>
                 <p>
-                    In OPH, this is the MaxEnt state on the A3 branch of the screen theory. The universe evolves
-                    toward the most typical state. The arrow of time is framed as evolution from a low-entropy
-                    initial state toward that MaxEnt branch.
+                    A3 can select the information projection for a fixed de Sitter-compatible feasible family.
+                    It does not supply cosmological dynamics or an arrow of time. Evolution toward equilibrium
+                    requires a separate dynamical law and initial-state condition.
                 </p>
             </Explainer>
         </div>

@@ -47,7 +47,7 @@ const CANONICAL_GAUGE_OPTIONS = {
 const ALPHA_ROOT_INV = 136.994835177413;
 // Root of the declared gauge-width map. This is another incomplete-map diagnostic,
 // not a physical fine-structure prediction.
-const ALPHA_GAUGE_WIDTH_FP_INV = 137.035660136946577;
+const ALPHA_GAUGE_WIDTH_FP_INV = 137.0356601369466;
 
 function formatFixed(value: number, digits = 6): string {
     if (!Number.isFinite(value)) {

@@ -14,31 +14,24 @@ interface Axiom {
 const AXIOMS: Axiom[] = [
     {
         id: 'A1',
-        name: 'Screen Net / Finite Access',
-        plain: 'Every observer sees only a limited patch of a cosmic screen. Different observers see different patches, but overlapping patches share some data.',
-        physics: 'Physical reality is encoded on a horizon screen S\u00b2. Each connected subregion P carries a von Neumann algebra A(P) of observables, with isotony: P \u2286 Q implies A(P) \u2286 A(Q).',
-        formal: 'A net of von Neumann algebras P \u2192 A(P) on S\u00b2, for connected P \u2286 S\u00b2. An observer is a tuple (P_O, A(P_O), \u03c1_O, R_O): patch, algebra, local state, records.',
+        name: 'Oriented Twelve-Port Observer Screen',
+        plain: 'Observers live on a spherical screen built from finite patches. Each local carrier exposes twelve ports on a boundary shaped like an icosahedron surface, and carriers join along typed seams, refine to a finer sphere, and keep records, readback, and repair moves.',
+        physics: 'For every regulator there is a typed observer-screen object: finite local carriers, each with twelve primitive central port projections and an oriented boundary complex with 12 vertices, 30 edges, and 20 faces; seam algebras with coherent triple overlaps forming a nerve; and an oriented spherical support with a degree-one bridge from the nerve, all commuting with refinement.',
+        formal: 'N_r = (P_r, A_r, R_r, I_r, U_r, C_r, N_r, S_r, b_r): a finite patch/overlap category with an isotone algebra net and central records; carriers with port projections e_p summing to 1 and boundary packet K = (P, E, F, o), |P| = 12, |E| = 30, |F| = 20, degree-five ports, five-cycle links, coherently oriented two-face edges; seam restriction cocycles; support S_r realized in S\u00b2 with mesh \u2192 0; bridge b_r with (b_r)_*[z_r] = [S_r].',
     },
     {
         id: 'A2',
-        name: 'Overlap Consistency',
-        plain: 'Where two observers\' patches overlap, their descriptions must agree. A global "view from nowhere" is absent. Reality IS the mutual consistency of perspectives.',
-        physics: 'For overlapping patches P\u2081 \u2229 P\u2082 \u2260 \u2205, the restrictions of local states must agree on shared observables: \u03c1\u2081|_{A(\u2229)} = \u03c1\u2082|_{A(\u2229)}.',
-        formal: '\u2200 P\u2081, P\u2082 with P\u2081 \u2229 P\u2082 \u2260 \u2205: \u03c1\u2081|_{A(P\u2081 \u2229 P\u2082)} = \u03c1\u2082|_{A(P\u2081 \u2229 P\u2082)}. No global state is assumed.',
+        name: 'Observer Agreement',
+        plain: 'Observers agree on what shared data means. Where patches overlap, their interpretations of accepted public data coincide. A global "view from nowhere" is absent; reality is the mutual consistency of perspectives.',
+        physics: 'The interpretation map from observer-accessible data to operational meanings (probabilities, update effects, public record values) is natural with respect to every visible overlap restriction, recharting, seam translation, higher-overlap map, and refinement map, on accepted public data.',
+        formal: 'J_r: Data_r \u2192 Meaning_r natural under all visible maps; J_O(res_{P\u2192O} d_P) = J_O(\u03c4_{Q\u2192P} res_{Q\u2192O} d_Q) on accepted data; J_r \u2218 c_{s\u2192r} = C_{s\u2192r} \u2218 J_s across resolutions. Raw mismatch and repair precede acceptance; no global state is assumed.',
     },
     {
         id: 'A3',
-        name: 'Local MaxEnt and Refinement Stability',
-        plain: 'At each regulator scale, the realized branch is selected by a finite family of local constraints, and the same branch persists under refinement.',
-        physics: 'The realized low-energy states lie in one common finite-dimensional MaxEnt family built from gauge-invariant local constraints of UV range O(l_UV). Refinement preserves that family, so one follows one refinement-stable branch across cutoffs.',
-        formal: 'At regulator scale l_UV, the realized branch maximizes entropy subject to a fixed finite family of local constraints C_lUV = {O_a(x)}. Under refinement, the same finite constraint family is preserved, so the realized low-energy branch is the refinement-stable branch of one common finite-dimensional MaxEnt family.',
-    },
-    {
-        id: 'A4',
-        name: 'Recoverable Generalized Entropy',
-        plain: 'Generalized entropy combines the area term with bulk entropy. Collar recovery is exact on the declared central-interface branch and conditional on a stronger mixing premise away from that branch.',
-        physics: 'A generalized entropy functional exists, S_gen(C) = Tr(\u03c1 \u00b7 L_C) + S_bulk(C). The central-interface branch has exact Markov recovery. A nonexact finite-range Gibbs family has a quantitative recovery bound only under uniform strong conditional matrix mixing; ordinary two-point clustering is insufficient.',
-        formal: 'S_gen(C) = Tr(\u03c1 \u00b7 L_C) + S_bulk(C). Exact route: I(A_delta:D_delta|B_delta)=0. Conditional route: I <= kappa |partial C|_UV exp(-(m-r0)/zeta) <= c |partial C|_UV exp(-delta/xi), with m=delta/l_UV, xi=zeta l_UV, c=kappa exp(r0/zeta), and delta/xi - log|partial C|_UV -> +infinity for vanishing CMI.',
+        name: 'Conditional Maximum Randomness',
+        plain: 'Everything that observer agreement leaves unconstrained is maximally random. The realized state is the least informative one compatible with what agreement fixes.',
+        physics: 'A state is a compatible family of local states on the accessible algebra net. Relative to an exact reference family, a state-determining observer cover, and positive exact weights supplied by the screen architecture, the realized family is the information projection onto the convex set fixed by the finite observer-visible constraints.',
+        formal: '\u03c1_r = argmin over K_r of \u03a3_P w_{r,P} D(\u03c1_{r,P} \u2016 \u03c4_{r,P}), where the A1-generated cover has an injective restriction map on K_r, every w_{r,P} is strictly positive and exact, and every A2-visible constraint factors through the A1 constraint grammar. This is weighted local entropy maximization when each reference density is identity-proportional. Optimizer compatibility across refinement is a separate theorem.',
     },
 ];
 
@@ -51,14 +44,16 @@ export function AxiomsPage() {
         <div>
             <div className="section-header">
                 <span className="section-tag foundation">Foundation</span>
-                <h1 style={{ fontSize: '1.5rem', margin: 0 }}>Core Axioms and Selection Layer</h1>
+                <h1 style={{ fontSize: '1.5rem', margin: 0 }}>The Three Axioms</h1>
             </div>
 
             <p style={{ marginBottom: '24px' }}>
-                The extended formulation presents OPH as five axioms: the four local screen axioms plus
-                <strong> Minimal Admissible Realization (MAR)</strong>. The paper surface also uses theorem-local
-                technical premises when specific Lorentz, Einstein, or gauge statements are invoked. MAR is a
-                selection axiom in the foundational ledger. It is distinct from a local dynamics equation.
+                OPH rests on three core axioms: the oriented twelve-port observer screen, observer
+                agreement, and conditional maximum randomness. Everything else is a theorem, an exact
+                result inside a named finite realization, a declared open interface, an independence
+                result with countermodels, a physical identification, or a withdrawn claim. The paper
+                surface names theorem-local premises where specific Lorentz, Einstein, or gauge
+                statements are invoked; none of those premises is an axiom.
             </p>
 
             <div style={{ display: 'flex', gap: '8px', marginBottom: '24px' }}>
@@ -107,29 +102,25 @@ export function AxiomsPage() {
             ))}
 
             <div className="card" style={{ marginBottom: '16px', borderLeft: '3px solid var(--accent-blue)' }}>
-                <h3 style={{ margin: '0 0 10px 0', fontSize: '0.95em' }}>Minimal Admissible Realization in Axiom 5</h3>
+                <h3 style={{ margin: '0 0 10px 0', fontSize: '0.95em' }}>Declared Completions (not axioms)</h3>
                 <div style={{ fontSize: '0.84em', color: 'var(--text-secondary)', marginBottom: '10px' }}>
-                    Gauge-reconstruction surface: regulator, boundary fixed point, transport, compact-reconstruction, and selection inputs
-                </div>
-                <div className="math-block" style={{ fontSize: '0.84em', marginTop: 0 }}>
-                    selector vector = faithful edge capacity, nonabelian factor count, color count, generation count
+                    Sector statements the finite results do not derive: each enters as an explicit declaration with open physical status
                 </div>
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8', margin: 0, fontSize: '0.84em' }}>
-                    <li><strong>Regulator premise:</strong> local factors are finite-dimensional at the regulated stage.</li>
-                    <li><strong>Boundary fixed point:</strong> region observables are fixed points of boundary gauge action.</li>
-                    <li><strong>Transport premise:</strong> the central triangle class vanishes or the noncentral higher associator strictifies, and at least one allowed strict edge 1-cocycle representative has trivial represented holonomy where global transportability is invoked.</li>
-                    <li><strong>Selection axiom:</strong> pick the lexicographically minimal admissible low-energy sector.</li>
+                    <li><strong>Generation count:</strong> the CP-capability and weak-sector clauses give the window 3 to 5; the count inside it is open, with three entering only as a declared completion.</li>
+                    <li><strong>One Higgs:</strong> the finite scan fixes compatible scalar charges and channels, not scalar existence or multiplicity.</li>
+                    <li><strong>No extra light sectors:</strong> a source-completeness theorem is open; arbitrary sterile extensions remain countermodels.</li>
                 </ul>
                 <p style={{ margin: '10px 0 0 0', fontSize: '0.82em', color: 'var(--text-muted)' }}>
-                    Minimal Admissible Realization fixes the realized admissible gauge branch. The downstream
-                    structural and continuation surfaces use the later theorem-local premises.
+                    The finite gauge chain (current algebra, hypercharge, color count, common kernel) uses
+                    the incidence, response, and matter premises alone and consumes none of these declarations.
                 </p>
             </div>
 
             <Explainer title="Extended Inputs Beyond Core Axioms">
-                <p>The papers distinguish the five axioms from theorem-local technical premises and branch conditions:</p>
+                <p>The papers distinguish the three axioms from theorem-local technical premises and branch conditions:</p>
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
-                    <li><strong>Minimal Admissible Realization:</strong> admissible-branch selector used in the gauge derivation</li>
+                    <li><strong>Declared completions:</strong> the generation, scalar, and sector declarations above, each with open physical status</li>
                     <li><strong>Transport premise:</strong> central or higher-associator strictification plus at least one allowed strict representative with trivial represented loop holonomy when global transportability is invoked</li>
                     <li><strong>Scaling premise:</strong> Lorentz/null-modular/Einstein statements are scaling-limit claims. Literal fixed-cutoff matrix identities appear only in special representations.</li>
                     <li><strong>Stationarity premise:</strong> fixed-cap generalized-entropy stationarity for the admissible first-variation class used in the Jacobson branch</li>
@@ -151,8 +142,8 @@ export function AxiomsPage() {
                     <li>Massless photon and graviton remain symmetry-protected structural outputs.</li>
                 </ul>
                 <p>
-                    Adding the full-rank compact skew-adjoint inner-current, regulator, transport, compact-reconstruction, tensor-kernel, and Minimal Admissible Realization inputs yields the realized Standard Model gauge branch
-                    ([SU(3)&times;SU(2)&times;U(1)]/Z<sub>6</sub>, N<sub>c</sub>=3, N<sub>g</sub>=3).
+                    Adding the full-rank compact skew-adjoint inner-current, regulator, transport, compact-reconstruction, and tensor-kernel inputs yields the conditional Standard Model gauge and one-generation matter-image branch
+                    ([SU(3)&times;SU(2)&times;U(1)]/Z<sub>6</sub>, N<sub>c</sub>=3). N<sub>g</sub>=3 is a declared model completion inside the conditional 3-to-5 window; its physical family attachment is open.
                     Particle claims retain their own structural, calibration, comparison, and work-in-progress status.
                 </p>
             </Explainer>

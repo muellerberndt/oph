@@ -52,7 +52,7 @@ export function DarkMatterPage() {
             });
         }
         return points;
-    }, [logMass, a0Multiplier, M, a0, G, M_sun]);
+    }, [M, a0]);
 
     // SVG dimensions
     const svgW = 500;

@@ -127,8 +127,8 @@ export function ErrorCorrectionPage() {
             <ul style={{ paddingLeft: '20px', lineHeight: '1.8', marginBottom: '16px' }}>
                 <li><strong>Exact central-interface route:</strong> the edge split agrees with the Markov split and I(A<sub>&delta;</sub>:D<sub>&delta;</sub>|B<sub>&delta;</sub>) = 0 exactly.</li>
                 <li><strong>Conditional Gibbs route:</strong> a faithful finite-range Gibbs family must also satisfy a uniform strong conditional matrix-mixing envelope. Ordinary two-point clustering does not supply that premise.</li>
-                <li><strong>Axiom A4 (Generalized entropy side):</strong> The area term limits the code rate: how much bulk data can be encoded per unit of boundary area.</li>
-                <li><strong>Axiom A1 (Screen Net):</strong> The isotony condition A(P) &sub; A(Q) for P &sub; Q ensures that the code is consistent across scales.</li>
+                <li><strong>Generalized-entropy interface (declared premise, not an axiom):</strong> The area term limits the code rate: how much bulk data can be encoded per unit of boundary area.</li>
+                <li><strong>Axiom A1 (Observer Screen):</strong> The isotony condition A(P) &sub; A(Q) for P &sub; Q ensures that the code is consistent across scales.</li>
             </ul>
 
             <div className="card" style={{ marginBottom: '20px', borderLeft: '3px solid var(--accent-cyan)' }}>

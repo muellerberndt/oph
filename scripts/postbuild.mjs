@@ -53,9 +53,9 @@ const routeMeta = {
       'Learn how OPH models reality as observer-based fixed-point consensus on a holographic screen and uses local patches to recover spacetime structure.',
   },
   axioms: {
-    title: 'Core Axioms and MAR (Axiom 5) for a Theory of Everything - Observer Patch Holography | OPH Lab',
+    title: 'The Three Axioms of Observer Patch Holography | OPH Lab',
     description:
-      'See the five core OPH axioms, including MAR, and how they anchor the derivation program.',
+      'See the three core OPH axioms and the named interfaces that support the conditional derivation program.',
   },
   entropy: {
     title: 'Entropy & the Holographic Principle - From Bits to Black Holes | OPH Lab',

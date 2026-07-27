@@ -18,7 +18,7 @@ export function EntropyPage() {
             next[idx] = Math.max(0.01, val);
             return normalize(next, idx);
         });
-    }, [normalize]);
+    }, [normalize, setProbs]);
 
     const entropy = probs.reduce((h, p) => {
         if (p <= 0) return h;
@@ -89,8 +89,9 @@ export function EntropyPage() {
                 is the Planck length. This says a black hole of area A can store at most A/(4l<sub>P</sub>&sup2;) nats of information.
             </p>
             <p style={{ marginBottom: '24px' }}>
-                In OPH, this is <strong>Axiom A3</strong>: the information capacity of any region is bounded by its
-                boundary area in Planck units. The universe is a hologram. Area sets the information budget.
+                In OPH, this formula motivates the finite screen architecture and enters the gravity lane through
+                a physical area-and-entropy identification. It is not Axiom A3. A3 selects a least-informative
+                state inside a fixed observer-visible feasible family.
             </p>
 
             <div className="demo-container">
@@ -197,7 +198,7 @@ export function EntropyPage() {
                 </p>
                 <p>
                     In OPH, the screen S&sup2; <em>is</em> the fundamental arena. Everything "inside" is emergent.
-                    Area scaling belongs to the starting axioms.
+                    Area scaling enters through the finite screen architecture and the generalized-entropy interface.
                 </p>
             </Explainer>
 
@@ -209,9 +210,9 @@ export function EntropyPage() {
                     state.
                 </p>
                 <p>
-                    In OPH, MaxEnt combined with recoverable generalized entropy is one engine that drives the
-                    the conditional gravity branch: the geometry of spacetime is tied to generalized-entropy
-                    stationarity together with the later BW and null-bridge premises.
+                    In OPH, conditional maximum randomness combined with the generalized-entropy interface is one
+                    engine that drives the conditional gravity branch: the geometry of spacetime is tied to
+                    generalized-entropy stationarity together with the later BW and null-bridge premises.
                 </p>
             </Explainer>
 

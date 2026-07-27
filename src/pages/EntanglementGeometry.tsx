@@ -41,11 +41,11 @@ export function EntanglementGeometryPage() {
             }
             setSelectedFrom(null);
         }
-    }, [selectedFrom, bonds]);
+    }, [selectedFrom, bonds, setBonds]);
 
     const updateStrength = useCallback((idx: number, val: number) => {
         setBonds(prev => prev.map((b, i) => i === idx ? { ...b, strength: val } : b));
-    }, []);
+    }, [setBonds]);
 
     return (
         <div>
@@ -74,9 +74,9 @@ export function EntanglementGeometryPage() {
                 IS geometry in the bulk. The boundary is the screen; the bulk is the emergent spacetime.
             </p>
             <p style={{ marginBottom: '16px' }}>
-                In OPH, the RT formula is a consequence of Axiom A3 (area bound) combined with the identification
-                of screen entanglement with bulk geometry. The "bulk" spacetime is not fundamental. It is
-                reconstructed from boundary entanglement data.
+                In OPH, the RT formula is a physical holographic identification, not a consequence of A3.
+                Conditional on the required area map and bulk reconstruction, boundary entanglement data can
+                encode bulk geometry.
             </p>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Tensor Networks and MERA</h3>
