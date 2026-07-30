@@ -118,7 +118,7 @@ export function SynthesisPage() {
                         <div style={{ padding: '8px 16px', background: 'rgba(122,184,212,0.15)', border: '1px solid var(--accent-blue)', color: 'var(--accent-blue)', fontSize: '0.8em', fontWeight: 600, textAlign: 'center', width: '100%' }}>
                             CHAIN 2: QFT
                         </div>
-                        {['Compact-gauge refinement receipt + declared sector completions', 'QM from Overlap Consistency', 'Gauge-as-Gluing', '[SU(3)\u00d7SU(2)\u00d7U(1)]/Z6', 'Edge-Sector Dynamics', 'Structural SM + Continuations'].map((step, i) => (
+                        {['Complete compact port response', 'Endogenous carrier transport', 'Forced u(1)+su(2)+su(3) Lie type', 'Declared matter fixture and Z6 kernel', 'Open source and global-form selection', 'Conditional particle continuations'].map((step, i) => (
                             <div key={i} style={{ width: '100%' }}>
                                 <div style={{ padding: '6px 12px', background: 'rgba(122,184,212,0.05)', border: '1px solid rgba(122,184,212,0.2)', fontSize: '0.75em', color: 'var(--text-secondary)', textAlign: 'center' }}>
                                     {step}

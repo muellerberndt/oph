@@ -18,8 +18,9 @@ export function QftEmergesPage() {
             </p>
 
             <div className="math-block" style={{ fontSize: '0.95em', lineHeight: '2.2' }}>
-                quantum-algebraic screen plus the compact-gauge refinement receipt and the declared sector completions &rarr; Gauge-as-Gluing &rarr;
-                conditional [SU(3)&times;SU(2)&times;U(1)]/Z6, N_c=3, declared N_g=3 &rarr; Q0 Recognition + Open Physical Receipts
+                complete compact port response plus endogenous carrier transport &rarr;
+                u(1)&oplus;su(2)&oplus;su(3) &rarr; declared fifteen-state fixture with
+                N_c=3 and a common Z6 kernel &rarr; open matter and global-form selection
             </div>
 
             <div className="card" style={{ marginTop: '24px', marginBottom: '24px', borderLeft: '3px solid var(--accent-cyan)' }}>
@@ -131,14 +132,14 @@ export function QftEmergesPage() {
                         <li>Measurement as local record updating</li>
                         <li>Bell inequality violation</li>
                         <li>Tsirelson bound (2&radic;2)</li>
-                        <li>Compact gauge groups</li>
-                        <li>SU(3) &times; SU(2) &times; U(1)</li>
+                        <li>Axiom-forced compact Lie type u(1) &oplus; su(2) &oplus; su(3)</li>
+                        <li>Source reconstruction of the complete current is open</li>
                         <li>Rank-three candidate family band; declared completion N<sub>g</sub> = 3</li>
-                        <li>Three colors (N<sub>c</sub> = 3)</li>
-                        <li>Hypercharge quantization</li>
+                        <li>Three colors and hypercharges inside the declared matter fixture</li>
+                        <li>Common Z6 kernel inside that fixture; physical global form open</li>
                         <li>Gauge-calibration and unification surfaces</li>
-                        <li>No proton decay</li>
-                        <li>Massless photon and graviton</li>
+                        <li>No minimal simple-GUT X/Y exchange channel in the product adjoint</li>
+                        <li>Conditional classical massless photon and graviton carrier modes</li>
                     </ul>
                 </div>
                 <div style={{ padding: '12px', background: 'rgba(201, 169, 110, 0.1)', border: '1px solid rgba(201, 169, 110, 0.3)', fontSize: '0.85em' }}>

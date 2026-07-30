@@ -352,7 +352,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     {
         term: 'Standard Model Quotient',
         symbol: '[SU(3)xSU(2)xU(1)]/Z6',
-        definition: 'Global gauge group after modding out the trivially acting shared center.',
+        definition: 'Maximal faithful image of the declared fifteen-state matter fixture after quotienting by its common Z6 kernel. Physical global-form selection requires a complete character lattice and a same-source loop-to-kernel identification.',
         category: 'gauge',
         usedIn: ['Standard Model'],
     },
@@ -422,7 +422,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     {
         term: 'Z6 Defect Suppression',
         symbol: 'epsilon = 1/6',
-        definition: 'Topological suppression factor from the order-six central quotient.',
+        definition: 'Conditional suppression factor attached to the declared order-six quotient. Its physical use depends on the open global-form selection.',
         category: 'spectrum',
         usedIn: ['Matter Continuations', 'Standard Model'],
     },

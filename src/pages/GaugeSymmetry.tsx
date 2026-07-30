@@ -92,17 +92,19 @@ export function GaugeSymmetryPage() {
                     lives in End(W<sub>1</sub>&otimes;W<sub>1</sub>), represented by a finite two-collar realization;
                     its projector need not belong to the original one-collar center. At the next refinement,
                     surjective group pullback preserves its one-dimensional carrier and the compatible forgetful
-                    fiber is still C, with the identity comparison map.
+                    fiber remains C, with the identity comparison map.
                 </p>
             </div>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Why Product Groups?</h3>
             <p style={{ marginBottom: '16px' }}>
-                The conditional twelve-port screen theorem gives an A<sub>5</sub>-module
-                1&oplus;3&oplus;3&prime;&oplus;5 and an explicit coefficient bracket
-                u(3)&oplus;so(3) = u(1)&oplus;su(3)&oplus;su(2). Central record projectors commute;
-                the bracket acts on port fluctuations. A full-rank, compact skew-adjoint, refinement-natural current lift with inner
-                A<sub>5</sub> action is the separate receipt that makes this Lie type physical.
+                The twelve-port module splits as 1&oplus;3&oplus;3&prime;&oplus;5.
+                The first axiom supplies a faithful compact commutator-closed response on this module,
+                and the second makes every proper carrier symmetry endogenous to that response.
+                Compact Lie classification forces the abstract type
+                u(1)&oplus;su(2)&oplus;su(3). The charged-double-triplet matrices give one exact
+                declared witness. Reconstructing the complete response map and bracket from source
+                histories is open.
             </p>
 
             <div className="card" style={{ marginBottom: '24px' }}>
@@ -110,14 +112,15 @@ export function GaugeSymmetryPage() {
                     Finite Standard Model Lie-Type Theorem
                 </h4>
                 <div className="math-block" style={{ margin: '0 0 10px', fontSize: '0.95em' }}>
-                    P<sub>12</sub> &cong; 1&oplus;3&oplus;3&prime;&oplus;5
-                    &rArr; u(3)&oplus;so(3)
+                    P<sub>12</sub> &cong; 1&oplus;3&oplus;3&prime;&oplus;5,
+                    complete compact response + endogenous A<sub>5</sub> transport
+                    &rArr; u(1)&oplus;su(2)&oplus;su(3)
                 </div>
                 <p style={{ margin: 0, fontSize: '0.85em', color: 'var(--text-secondary)' }}>
-                    Euler fixes total charge 12. Strict unit splitting and a source-derived D-optimal or
-                    completely-monotone selector give the regular icosahedral axes. Trace balance integrates the
-                    coefficient algebra to S(U(3)&times;U(2)) with a six-element cover kernel. Physical global-form
-                    identification uses the current, spin, determinant, tensor-kernel, and descent receipts.
+                    Target-blind readback derives R = -J. It does not reconstruct the complete current map. On the
+                    declared fifteen-state matter fixture, anomaly balance gives the hypercharges and a
+                    common six-element kernel. The global quotient additionally requires a complete
+                    matter character lattice and a same-source loop-to-kernel identification.
                 </p>
             </div>
 

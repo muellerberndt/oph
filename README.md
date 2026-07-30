@@ -57,16 +57,19 @@ This section is the lab-maintainer summary of the public paper surface.
 
 ### Gauge / Standard Model structural branch
 
-- On the strict unit-splitting and source-selected twelve-port branch, the
-  explicit `A5`-equivariant coefficient bracket has Lie type
-  `u(1) + su(3) + su(2)`. Central record projectors commute.
-- A full-rank compact skew-adjoint inner-current lift is required to identify
-  that coefficient algebra with a physical gauge-current algebra.
-- Trace balance integrates the coefficient algebra to `S(U(3) x U(2))` with
-  a six-element cover kernel. The tensor-kernel, spin, determinant, and
-  descent receipts give the conditional physical quotient
-  `SU(3) x SU(2) x U(1) / Z_6`, its hypercharge lattice, and `N_c = 3`.
-  The physical three-family attachment is open.
+- On the twelve-port branch, the first axiom supplies a faithful compact
+  commutator-closed port response. The second makes every proper carrier
+  symmetry endogenous to that response. Compact Lie classification forces
+  the abstract type `u(1) + su(2) + su(3)`.
+- Target-blind readback derives the inverse-port response `R = -J`.
+  Reconstructing the complete response map and bracket from source histories
+  is open. The charged-double-triplet matrices are a declared exact witness.
+- The declared fifteen-state representation fixture has exact hypercharges,
+  anomaly cancellation, `N_c = 3`, and a common `Z_6` kernel. This does not
+  select physical matter. The quotient
+  `SU(3) x SU(2) x U(1) / Z_6` additionally requires a complete matter
+  character lattice and a same-source loop-to-kernel identification.
+  Physical global-form and three-family attachment are open.
 - The sharp exclusion is the ordinary simple-GUT `X/Y` gauge channel, not every proton-decay mechanism.
 
 ### Particle branch

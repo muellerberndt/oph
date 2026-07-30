@@ -189,13 +189,17 @@ export function StandardModelPage() {
             </div>
 
             <p style={{ marginBottom: '16px' }}>
-                On a cofinal tail carrying the compact-gauge refinement receipt, the declared manuscript derivation
-                conditionally recognizes an admissible compact sector class and the global quotient
-                {' '}<strong>[SU(3) x SU(2) x U(1)] / Z6</strong> with <strong>three colors</strong>.
+                The first two axioms and compact Lie classification force the abstract type
+                {' '}<strong>u(1) + su(2) + su(3)</strong> on the twelve-port branch.
+                Source reconstruction of the complete current is open. Inside the declared fifteen-state
+                representation fixture, the hypercharges, anomaly cancellations, <strong>three colors</strong>,
+                and the common Z6 kernel are exact. The global quotient
+                {' '}<strong>[SU(3) x SU(2) x U(1)] / Z6</strong> additionally requires a complete
+                character lattice and a same-source loop-to-kernel identification.
                 The rank-three band is a candidate family carrier; the CP-capability and weak-sector clauses
                 give the window 3 to 5, and <strong>N_g = 3</strong> enters as a declared completion with open
                 physical status. Physical three-family status
-                requires the open rank-45 attachment and Q1-Q4 receipts.
+                requires the open rank-45 attachment, source-selected matter action, and quantum-field-theory construction.
                 The fixed-stage tensor category first chooses one common strict transport representative and
                 retains only seeds with trivial loop action under that same choice; the receipt intertwines those
                 choices across refinement.
@@ -378,19 +382,20 @@ export function StandardModelPage() {
                     <div><strong>N_c</strong>: color-fundamental dimension of complex nonabelian factor.</div>
                     <div><strong>N_g</strong>: number of chiral generations.</div>
                     <div><strong>[z]=0</strong>: the triangle defect can be strictified; transportability also requires an allowed strictification with trivial represented loop holonomy.</div>
-                    <div><strong>Z6 quotient</strong>: trivially acting center subgroup for realized matter reps.</div>
+                    <div><strong>Z6 kernel</strong>: center subgroup acting trivially on every state in the declared matter fixture.</div>
                 </div>
             </div>
 
             <div className="math-block">
-                Conditional Q0 packet: G = [SU(3) x SU(2) x U(1)] / Z6, N_c = 3; N_g = 3 by declared completion; physical attachment open
+                Axiom-forced Lie type: u(1) + su(2) + su(3). Declared fixture:
+                N_c = 3 with a common Z6 kernel. Matter, global-form, and family selection are open.
             </div>
 
-            <Explainer title="Why a product group is selected">
+            <Explainer title="Product structure inside the declared fixture">
                 <p>
-                    The minimal faithful carrier that simultaneously supports pseudoreal weak doublets and complex
-                    color triplets is C^3 tensor C^2. Commuting actions on this carrier yield product-group
-                    structure.
+                    The charged-double-triplet fixture carries commuting weak and color actions and gives an
+                    exact matrix witness for the forced Lie type. This fixture is a declared realization.
+                    The source reconstruction must produce its own complete response map and bracket.
                 </p>
             </Explainer>
 
@@ -406,14 +411,16 @@ export function StandardModelPage() {
 
             <Explainer title="Page Scope">
                 <p>
-                    On the cofinal branch carrying the compact-gauge refinement receipt, the page scope covers the
-                    conditional gauge quotient, exact hypercharges on the declared packet, color triplet,
-                    and the generation-count window from the CP-capability and weak-sector clauses. Physical family attachment, full flavor closure, hadron phenomenology, and downstream
-                    matter-sector theorem objects sit on separate pages; hadron backend work is out of scope until
-                    production OPH backend output exists.
+                    The page covers the axiom-forced compact Lie type, the exact hypercharges and common kernel
+                    inside the declared fifteen-state fixture, and the generation-count window from the
+                    CP-capability and weak-sector clauses. Physical matter selection, the global quotient,
+                    family attachment, full flavor closure, and hadron phenomenology are separate.
+                    A production OPH hadron backend is absent.
                 </p>
                 <p>
-                    On the declared nonempty one-Higgs chiral class, the quotient and hypercharges are exact.
+                    On the declared nonempty one-Higgs chiral class, the hypercharges and Z6 kernel are exact.
+                    Promotion of that kernel to the physical global quotient requires a complete character lattice
+                    and a same-source loop-to-kernel identification.
                     The product adjoint excludes the ordinary simple-GUT X/Y channel only. The particle pages carry
                     the sharper continuation and compare-only bookkeeping.
                 </p>

@@ -162,9 +162,11 @@ export function MassesPage() {
             <div className="card" style={{ marginBottom: '16px', borderLeft: '3px solid var(--accent-gold)' }}>
                 <h3 style={{ margin: '0 0 10px 0', fontSize: '0.95em' }}>Structural, calibration, and chart surfaces</h3>
                 <p style={{ margin: '0 0 10px 0' }}>
-                    The compact-gauge branch with the declared sector completions yields the Standard Model gauge quotient, exact hypercharges,
-                    N<sub>c</sub> = 3, and N<sub>g</sub> = 3. Its finite A<sub>5</sub> coefficient theorem is exact
-                    under the unit-split and selector premises; physical current and global-form descent carry separate receipts.
+                    The first two axioms force the abstract Standard Model compact Lie type on the
+                    twelve-port branch. The declared fifteen-state fixture gives exact hypercharges,
+                    N<sub>c</sub> = 3, and a common Z6 kernel. It does not select physical matter.
+                    Source reconstruction of the current, promotion to the global quotient, and
+                    N<sub>g</sub> = 3 as a physical family count are open.
                 </p>
                 <p style={{ margin: 0, color: 'var(--text-secondary)' }}>
                     W/Z carry running-chart status and no physical pole-mass status. Their strict-one-loop pole-map

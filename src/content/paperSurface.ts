@@ -216,8 +216,9 @@ export const GRAVITY_SURFACE = [
 ];
 
 export const STANDARD_MODEL_SURFACE = [
-    'Q0 conditionally recognizes [SU(3) x SU(2) x U(1)] / Z6, its hypercharges, a one-generation rank-15 witness, Nc = 3, and a canonical rank-three candidate family band.',
-    'The CP-capability and weak-sector clauses give the window 3 <= Ng <= 5; the count inside it is open, and Ng = 3 enters as a declared completion. Physical three-family status requires the open rank-45 attachment and Q1-Q4 receipts.',
+    'The complete compact response clause and endogenous carrier transport force the abstract Lie type u(1) + su(2) + su(3). Source reconstruction of the complete current is open.',
+    'Inside the declared fifteen-state representation fixture, the hypercharges, anomalies, Nc = 3, and common Z6 kernel are exact. Physical matter selection and the same-source global quotient are open.',
+    'The CP-capability and weak-sector clauses give the window 3 <= Ng <= 5; the count inside it is open, and Ng = 3 enters as a declared completion. Physical three-family status requires the rank-45 attachment, source-selected matter action, and quantum-field-theory construction.',
     'The product adjoint excludes the ordinary simple-GUT X/Y channel, not every proton-decay mechanism.',
     'Coupling unification is geometric on the published edge-running surface. The published surface uses no simple-group GUT embedding or superpartners.',
 ];
