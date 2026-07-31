@@ -160,10 +160,10 @@ export function QftEmergesPage() {
                     <div style={{ marginTop: '12px', padding: '8px', background: 'rgba(0,0,0,0.2)', fontSize: '0.9em' }}>
                         <strong>Quantitative closure coordinates</strong>
                         <div style={{ color: 'var(--text-muted)', marginTop: '4px' }}>
-                            P is a certified root of a declared incomplete local map. The official global equation is
-                            N = log M<sub>0</sub>(𝔘<sub>N</sub>). Its finite robust form is
-                            𝔉<sub>r,0</sub>(D<sub>*</sub>) = {'{'}D<sub>*</sub>{'}'}.
-                            The reversible branch reduces its evaluation to exact model counting.
+                            P is a certified root of a declared incomplete local map. The direct global proposal is
+                            N = log M<sub>0</sub>(𝔘<sub>N</sub>). Self-reference forces equality only after the
+                            supplied and read-back quantities are proved to describe the same invariant. The complete
+                            declared source class is non-identifying and supplies no unique cosmic N.
                         </div>
                     </div>
                 </div>

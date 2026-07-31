@@ -38,7 +38,7 @@ const QUESTIONS: Question[] = [
         problem: 'The cosmological constant problem',
         conventional: 'QFT predicts vacuum energy 10\u00b9\u00b2\u2070 times too large.',
         hiddenAssumption: 'Vacuum energy gravitates like other energy.',
-        ophResolution: 'The conditional null-surface branch leaves a metric term undetermined. OPH closes it globally through correctable public-record capacity, one physical zero of the finite-size slack, and horizon-record saturation.',
+        ophResolution: 'The conditional null-surface branch leaves a metric term undetermined. OPH assigns that term to a separate global capacity lane. The direct source family does not select a unique cosmic N; a physical closure still requires the same-invariant bridge, a source-selected capacity, and horizon-record saturation.',
     },
     {
         problem: 'The dark matter problem',

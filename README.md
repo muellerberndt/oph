@@ -29,12 +29,37 @@ This section is the lab-maintainer summary of the public paper surface.
 ### Fixed-point and scale surface
 
 - The landing page is a fixed-point dashboard, not a universe configurator.
-- The local pixel map has fixed point `P = 1.630968209403959`. Measured
-  `Lambda` locates the comparison coordinate `N_Lambda = 3.31e122`; the
-  physical capacity readback map is work in progress.
-- The conditional electroweak hierarchy bridge uses the algebraic capacity
-  `N_EW(P*) = 3.5323546226929907e122` and the representation-to-spectrum
-  repair count `2(8 + 3 + 1) = 24`.
+- The measured-endpoint comparison branch uses
+  `P_C = 1.630968209403959` and
+  `alpha_U(P_C) = 0.041124336195630495`. Measured `Lambda` locates
+  `N_Lambda = 3.31292709806038e122`.
+- The closure principle stands beside A1–A3. It forces equality when the
+  construction-side and readback-side quantities have been proved to be the
+  same typed invariant. It does not construct the readings, their physical
+  bridge, a return map, or proofs of existence, uniqueness, and stability.
+- The direct family `N = log M0(U_N)` is non-identifying on the complete
+  declared source class. It supplies no unique cosmic value.
+- The same algebraic bridge evaluated on the comparison endpoint gives
+  `N_EW(P_C) = 3.5323546226929907e122`. This is distinct from the
+  source-forward branch
+  `P_fwd = 1.630972095858897`,
+  `alpha_U(P_fwd) = 0.041124247441816685`, and
+  `N0(P_fwd) = 3.532131543418936e122`.
+- On the declared finite branch, total reserve expectation `P_fwd/4` and
+  six-class equidistribution give one-class presence probability `P_fwd/24`.
+  Physical selection of one blocked class, its scalar-weighted presence
+  receipt, and a reserve-to-global-capacity survival theorem would give
+  `N_presence = N0(1-P_fwd/24) = 3.292097877326465e122`.
+- `N_Poisson = N0 exp(-P_fwd/24) = 3.300072225377652e122` is a separate branch.
+  It requires a mean-count or projective-limit carrier that the finite theorem
+  does not provide.
+- Cosmic use of either reserve value additionally requires the inherited
+  electroweak bridge premises, common-load identity, physical `Z_6` seam
+  action, and horizon-record identity.
+- The finite-presence and Poisson values sit `-0.6287%` and `-0.3880%` below
+  the Planck base-`Lambda`CDM comparison coordinate. The target was exposed
+  and the tested formula menu was dense, so neither comparison is a
+  prediction or a source-selected cosmic capacity.
 - `G_SI` comes from the selected no-G scale certificate. The Newton row must
   stay separate from variable P-slider diagnostics.
 - Off-point controls in the app are formula-sensitivity diagnostics. They are

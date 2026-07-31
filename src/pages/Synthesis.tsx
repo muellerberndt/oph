@@ -1,6 +1,16 @@
 import { Explainer } from '../components/Explainer';
 import { CORE_PARAMETERS, OPH_PAPERS } from '../content/paperSurface';
-import { ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY } from '../core/ophMath';
+import {
+    ALPHA_U_COMPARISON_REFERENCE_DISPLAY,
+    ALPHA_U_FORWARD_REFERENCE_DISPLAY,
+    COMMON_LOAD_CAPACITY_DISPLAY,
+    ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY,
+    FINITE_PRESENCE_CAPACITY_DISPLAY,
+    PIXEL_COMPARISON_REFERENCE_DISPLAY,
+    PIXEL_FORWARD_REFERENCE_DISPLAY,
+    POISSON_CAPACITY_DISPLAY,
+    SCREEN_CAPACITY_REFERENCE_EXACT_DISPLAY,
+} from '../core/ophMath';
 
 export function SynthesisPage() {
     return (
@@ -26,8 +36,10 @@ export function SynthesisPage() {
             <p style={{ marginBottom: '16px' }}>
                 OPH is formulated as a zero-dial closure theory: zero quantitative inputs at the theory layer,
                 with working borrows counted in the scorecard. The local constant is a certified root of a declared
-                incomplete map; global capacity is the exact correctable code of reachable public records, scalarized
-                across the entire terminal fiber:
+                incomplete map. The global closure principle stands beside the three axioms. It forces equality
+                after the construction-side and readback-side quantities have been proved to denote the same typed
+                invariant. It does not build those quantities, their physical bridge, a return map, or the required
+                existence, uniqueness, and stability theorems:
             </p>
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '16px', marginBottom: '24px' }}>
@@ -55,15 +67,30 @@ export function SynthesisPage() {
 
             <p style={{ marginBottom: '16px' }}>
                 The conditional global relation is Lambda = 3pi / (G* N<sub>CRC</sub>), where G* is supplied by
-                the selected no-G scale certificate. The hierarchy equation gives an independent electroweak/Higgs bridge
-                once COMMON-EW-LOAD-CARRIER identifies the same load on both lanes. The OPH paper set separates recovered structural theorems, explicit
+                the selected no-G scale certificate. It becomes physical only after a source-selected capacity is
+                identified with the invariant counted by global readback and attached to the horizon. The hierarchy
+                equation gives a conditional common-load coordinate. The OPH paper set separates recovered structural theorems, explicit
                 branch-conditional results, closed calibration sectors, and open continuation lanes.
             </p>
             <p style={{ marginBottom: '16px' }}>
-                The compact hierarchy readout is v/E<sub>cell</sub> = (N<sub>EW</sub>/pi)<sup>-P*/12</sup>,
-                with N<sub>EW</sub> = {ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY} on that conditional branch. This is about
-                6.6% above the Lambda-located central capacity. The checkpoint packet, unique slack-zero theorem,
-                common carrier, and posterior propagation are the remaining registered tests.
+                The measured-endpoint pair P<sub>C</sub> = {PIXEL_COMPARISON_REFERENCE_DISPLAY} and
+                alpha<sub>U</sub>(P<sub>C</sub>) = {ALPHA_U_COMPARISON_REFERENCE_DISPLAY} gives
+                N<sub>EW</sub>(P<sub>C</sub>) = {ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY}. The source-forward pair
+                P<sub>fwd</sub> = {PIXEL_FORWARD_REFERENCE_DISPLAY} and alpha<sub>U</sub>(P<sub>fwd</sub>) =
+                {ALPHA_U_FORWARD_REFERENCE_DISPLAY} gives N<sub>0</sub>(P<sub>fwd</sub>) =
+                {COMMON_LOAD_CAPACITY_DISPLAY}. These coordinates belong to distinct branches.
+            </p>
+            <p style={{ marginBottom: '16px' }}>
+                On the finite branch, total reserve expectation P<sub>fwd</sub>/4 and six-class equidistribution
+                give one-class presence P<sub>fwd</sub>/24. Physical selection of one blocked class, its
+                scalar-weighted presence receipt, and a reserve-to-global-capacity survival theorem would give
+                N<sub>presence</sub> = N<sub>0</sub>(1-P<sub>fwd</sub>/24) =
+                {FINITE_PRESENCE_CAPACITY_DISPLAY}. A mean-count or projective-limit carrier would instead give
+                N<sub>Poisson</sub> = N<sub>0</sub>exp(-P<sub>fwd</sub>/24) = {POISSON_CAPACITY_DISPLAY}. Cosmic
+                use further requires the inherited electroweak premises, common-load identity, physical Z<sub>6</sub>
+                seam action, and horizon-record identity. The Planck base-LambdaCDM comparison coordinate is
+                {SCREEN_CAPACITY_REFERENCE_EXACT_DISPLAY}; the residuals are -0.6287% and -0.3880%. Both
+                comparisons are target-exposed and non-predictive.
             </p>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Six Surfaces, One Program</h3>
@@ -207,7 +234,7 @@ export function SynthesisPage() {
                 <span style={{ color: 'var(--accent-rose)', fontWeight: 600 }}>Standard:</span>
                 <span style={{ color: 'var(--text-secondary)' }}>Parameters are tuned</span>
                 <span style={{ color: 'var(--accent-green)', fontWeight: 600 }}>OPH:</span>
-                <span style={{ color: 'var(--text-secondary)' }}>The two quantitative constants are estimated from measured alpha and Lambda (inputs); exact loop closure on them is the open test, and the remaining program is finite: four named computations and one selector</span>
+                <span style={{ color: 'var(--text-secondary)' }}>P has a certified declared-map root; the direct N source family is non-identifying, and the reserve comparisons have no predictive status</span>
 
                 <span style={{ color: 'var(--accent-rose)', fontWeight: 600 }}>Standard:</span>
                 <span style={{ color: 'var(--text-secondary)' }}>Gravity and QM are separate</span>

@@ -1,4 +1,15 @@
 import { Explainer } from '../components/Explainer';
+import {
+    ALPHA_U_COMPARISON_REFERENCE_DISPLAY,
+    ALPHA_U_FORWARD_REFERENCE_DISPLAY,
+    COMMON_LOAD_CAPACITY_DISPLAY,
+    ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY,
+    FINITE_PRESENCE_CAPACITY_DISPLAY,
+    PIXEL_COMPARISON_REFERENCE_DISPLAY,
+    PIXEL_FORWARD_REFERENCE_DISPLAY,
+    POISSON_CAPACITY_DISPLAY,
+    SCREEN_CAPACITY_REFERENCE_EXACT_DISPLAY,
+} from '../core/ophMath';
 
 interface Axiom {
     id: string;
@@ -123,9 +134,12 @@ export function AxiomsPage() {
                 </p>
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8', margin: 0, fontSize: '0.84em' }}>
                     <li><strong>Screen-grain closure:</strong> P = &phi; + &radic;&pi;/A<sub>T</sub>(P), one interval-certified fixed point; the laboratory attachment runs through a same-scheme hadronic transport, which is work in progress; the source-map comparison with the measured fine-structure constant stands at the few-ppm level.</li>
-                    <li><strong>Capacity candidates:</strong> write N<sub>0</sub> = &pi;&middot;exp(6&pi;/(P&middot;&alpha;<sub>U</sub>)). On its declared finite branch, the collar theorem types P/24 as a normalized presence probability, giving N<sub>presence</sub> = N<sub>0</sub>(1 &minus; P/24) after a separate single-cut global attachment. The alternative N<sub>Poisson</sub> = N<sub>0</sub>exp(&minus;P/24) needs an additional mean-count or projective-limit carrier.</li>
-                    <li><strong>Physical boundary:</strong> neither reserve branch is source-selected, attached to a direct cosmic capacity, or predictive. Their comparison with the Planck base-&Lambda;CDM chain is target-exposed and retrospective.</li>
-                    <li><strong>Conditional falsifier:</strong> after the physical bridges are established, a capacity confidently above N<sub>0</sub> rejects this positive-reserve candidate class. It does not by itself reject the three axioms or every possible OPH closure.</li>
+                    <li><strong>Two bridge coordinates:</strong> P<sub>C</sub> = {PIXEL_COMPARISON_REFERENCE_DISPLAY} and &alpha;<sub>U</sub>(P<sub>C</sub>) = {ALPHA_U_COMPARISON_REFERENCE_DISPLAY} give the measured-endpoint coordinate N<sub>EW</sub>(P<sub>C</sub>) = {ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY}. The source-forward values P<sub>fwd</sub> = {PIXEL_FORWARD_REFERENCE_DISPLAY} and &alpha;<sub>U</sub>(P<sub>fwd</sub>) = {ALPHA_U_FORWARD_REFERENCE_DISPLAY} give N<sub>0</sub>(P<sub>fwd</sub>) = &pi;&middot;exp(6&pi;/(P<sub>fwd</sub>&middot;&alpha;<sub>U</sub>(P<sub>fwd</sub>))) = {COMMON_LOAD_CAPACITY_DISPLAY}. These branches are distinct.</li>
+                    <li><strong>Finite candidate:</strong> total reserve expectation P<sub>fwd</sub>/4 and six-class equidistribution give one-class presence P<sub>fwd</sub>/24. Physical selection of one blocked class, its scalar-weighted presence receipt, and a reserve-to-global-capacity survival theorem would give N<sub>presence</sub> = N<sub>0</sub>(1 &minus; P<sub>fwd</sub>/24) = {FINITE_PRESENCE_CAPACITY_DISPLAY}.</li>
+                    <li><strong>Poisson candidate:</strong> N<sub>Poisson</sub> = N<sub>0</sub>exp(&minus;P<sub>fwd</sub>/24) = {POISSON_CAPACITY_DISPLAY} needs an additional mean-count or projective-limit carrier.</li>
+                    <li><strong>Physical boundary:</strong> neither reserve branch is source-selected, attached to a direct cosmic capacity, or predictive. The Planck base-&Lambda;CDM comparison coordinate is {SCREEN_CAPACITY_REFERENCE_EXACT_DISPLAY}; the finite-presence and Poisson residuals are &minus;0.6287% and &minus;0.3880%. The target-exposed dense formula menu gives these landings no selective weight.</li>
+                    <li><strong>Open attachments:</strong> cosmic use also requires the inherited electroweak bridge premises, common-load identity, physical Z<sub>6</sub> seam action, and horizon-record identity.</li>
+                    <li><strong>Conditional falsifier:</strong> after those physical bridges are established, a capacity confidently above N<sub>0</sub> rejects this positive-reserve candidate class. It does not by itself reject the three axioms or every possible OPH closure.</li>
                 </ul>
             </div>
 

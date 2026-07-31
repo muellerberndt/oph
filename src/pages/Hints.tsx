@@ -38,7 +38,7 @@ const HINTS: Hint[] = [
         title: '5. The Universe Is Fine-Tuned',
         intuition: 'The laws of physics just are what they are. There\'s nothing to explain about the values of fundamental constants.',
         reality: 'The parameters of physics appear suspiciously tuned for complexity. Tiny changes to quark masses, coupling constants, or the cosmological constant would make atoms, stars, or chemistry impossible.',
-        detail: 'This is the fine-tuning problem. OPH replaces fitted continuous inputs with local closure and the official global equation N=log M0(U_N). Its rigorous finite form is Fr,0(D*)={D*}, with an exact reversible counting branch and a finite packet/slack proof frontier. Alpha and Lambda remain comparison coordinates for the completed physical bridges.',
+        detail: 'This is the fine-tuning problem. OPH uses a local P closure and a separate self-reference principle. Its direct cosmic proposal is N=log M0(U_N): supplied capacity must equal read-back capacity once both are proved to describe the same invariant. The complete declared source class does not select a unique N. Two reserve formulas give retrospective comparisons with measured cosmology, with no prediction status.',
     },
 ];
 

@@ -83,9 +83,9 @@ const routeMeta = {
       'Trace the OPH argument from entanglement and consistency constraints to emergent gravitational dynamics.',
   },
   'de-sitter': {
-    title: 'Solving the Cosmological Constant Problem - de Sitter Space from Holography | OPH Lab',
+    title: 'Cosmic Capacity Closure Boundary - de Sitter Space in OPH | OPH Lab',
     description:
-      'Explore the OPH treatment of de Sitter space, cosmological horizons, and the cosmological constant derivation as a screen-capacity branch.',
+      'Explore the OPH cosmic-capacity closure boundary, the non-identifying direct source family, two conditional reserve candidates, and their retrospective Planck comparison.',
   },
   'dark-matter': {
     title: 'Dark Matter & MOND Explained - Galaxy Rotation Curves from Holography | OPH Lab',

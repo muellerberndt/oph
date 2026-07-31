@@ -22,11 +22,20 @@ export const BOLTZMANN_CONSTANT_SI = 1.380649e-23;
 export const GRAVITATIONAL_CONSTANT_REFERENCE_SI = 6.674299995910528e-11;
 
 export const PIXEL_REFERENCE = 1.630968209403959;
+export const PIXEL_COMPARISON_REFERENCE_DISPLAY = '1.630968209403959';
+export const PIXEL_FORWARD_REFERENCE_DISPLAY = '1.630972095858897';
+export const ALPHA_U_COMPARISON_REFERENCE_DISPLAY = '0.041124336195630495';
+export const ALPHA_U_FORWARD_REFERENCE_DISPLAY = '0.041124247441816685';
 export const PIXEL_DISPLAY_DIGITS = 6;
-export const SCREEN_CAPACITY_REFERENCE_DISPLAY = '3.31e122';
-export const SCREEN_CAPACITY_REFERENCE_LOG10 = 122.51982799377572;
+export const SCREEN_CAPACITY_REFERENCE_DISPLAY = '3.313e122';
+export const SCREEN_CAPACITY_REFERENCE_EXACT_DISPLAY = '3.31292709806038e122';
+export const SCREEN_CAPACITY_REFERENCE_LOG10 = 122.52021187920872;
 export const ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY = '3.5323546226929907e122';
 export const ELECTROWEAK_BRIDGE_CAPACITY_LOG10 = 122.5480642970991;
+export const COMMON_LOAD_CAPACITY_DISPLAY = '3.532131543418936e122';
+export const COMMON_LOAD_CAPACITY_LOG10 = 122.54803686917427;
+export const FINITE_PRESENCE_CAPACITY_DISPLAY = '3.292097877326465e122';
+export const POISSON_CAPACITY_DISPLAY = '3.300072225377652e122';
 export const PIXEL_UI_MIN = 0.8;
 export const PIXEL_UI_MAX = 3.2;
 export const SCREEN_CAPACITY_UI_MIN = 120.5;
@@ -648,8 +657,9 @@ export function newtonConstantFromPixel(_pixelConstant: number): number {
 // Paper reference:
 // reverse-engineering-reality/paper/recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency.tex
 // Corollary "Cosmological Constant from Capacity":
-// Conditional display Lambda_CRC = 3 pi / (G N_CRC). The physical record-capacity
-// map and fixed-point certificate are not implemented by this utility.
+// Conditional display Lambda_CRC = 3 pi / (G N_CRC). The direct source family
+// does not select a unique cosmic N, and no physical record-capacity map is
+// implemented by this utility.
 // The SI G normalization is supplied separately by the selected no-G scale
 // certificate, so this lab readout depends on the capacity coordinate only.
 export function lambdaFromScreen(_pixelConstant: number, logCapacityBase10: number): number {

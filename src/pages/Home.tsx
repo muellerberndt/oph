@@ -3,11 +3,19 @@ import { ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { OPH_PAPERS } from '../content/paperSurface';
 import {
+    ALPHA_U_COMPARISON_REFERENCE_DISPLAY,
+    ALPHA_U_FORWARD_REFERENCE_DISPLAY,
     BETA_COEFFICIENTS_MSSM_LIKE,
+    COMMON_LOAD_CAPACITY_DISPLAY,
     ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY,
+    FINITE_PRESENCE_CAPACITY_DISPLAY,
     GRAVITATIONAL_CONSTANT_REFERENCE_SI,
+    PIXEL_COMPARISON_REFERENCE_DISPLAY,
+    PIXEL_FORWARD_REFERENCE_DISPLAY,
     PIXEL_REFERENCE,
+    POISSON_CAPACITY_DISPLAY,
     SCREEN_CAPACITY_REFERENCE_DISPLAY,
+    SCREEN_CAPACITY_REFERENCE_EXACT_DISPLAY,
     SCREEN_CAPACITY_REFERENCE_LOG10,
     deriveD11ForwardSeed,
     deriveTargetFreeElectroweakRepair,
@@ -142,22 +150,28 @@ export function Home() {
 
     const coreLocks = useMemo<CoreLockRow[]>(() => [
         {
-            label: 'Verified local pixel closure P',
+            label: 'Measured-endpoint comparison P_C',
             value: formatPixelConstant(PIXEL_REFERENCE),
-            equation: 'P* = phi + sqrt(pi) / A_T(P*)',
-            note: 'Lean checks the contraction-based fixed-point theorem. Exact interval certificates give one root for each declared map. The physical Thomson endpoint requires source-derived same-scheme hadronic transport.',
+            equation: 'P_C = phi + sqrt(pi) / A_T(P_C)',
+            note: `The comparison branch uses P_C=${PIXEL_COMPARISON_REFERENCE_DISPLAY} and alpha_U(P_C)=${ALPHA_U_COMPARISON_REFERENCE_DISPLAY}. The physical Thomson endpoint requires source-derived same-scheme hadronic transport.`,
         },
         {
             label: 'Global N closure boundary',
-            value: SCREEN_CAPACITY_REFERENCE_DISPLAY,
-            equation: 'N = log M0(U_N); finite: M0(q) = alpha(Gq)',
-            note: 'Self-reference forces equality after supplied and read-back values are typed as the same invariant. The completed declared direct source class selects no unique N. The finite-presence and Poisson reserve formulas are separate target-exposed candidates, not cosmic predictions.',
+            value: 'no source-selected N',
+            equation: 'N = log M0(U_N)',
+            note: `Self-reference forces equality after supplied and read-back values are typed as the same invariant. The complete direct source class is non-identifying. The finite-presence value ${FINITE_PRESENCE_CAPACITY_DISPLAY} and Poisson value ${POISSON_CAPACITY_DISPLAY} use P_fwd and are target-exposed retrospective comparisons.`,
         },
         {
-            label: 'Conditional electroweak bridge capacity',
+            label: 'Comparison-endpoint hierarchy coordinate',
             value: ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY,
-            equation: 'N_EW(P*) from the exact bridge condition',
-            note: 'This algebraic value is about 6.6% above the Lambda-located central capacity. A common screen and electroweak carrier must show that the same global load controls the Higgs hierarchy.',
+            equation: 'N_EW(P_C) = pi exp(6pi/(P_C alpha_U(P_C)))',
+            note: 'This measured-endpoint bridge coordinate is distinct from the source-forward common-load coordinate.',
+        },
+        {
+            label: 'Source-forward common-load coordinate',
+            value: COMMON_LOAD_CAPACITY_DISPLAY,
+            equation: 'N0(P_fwd) = pi exp(6pi/(P_fwd alpha_U(P_fwd)))',
+            note: `P_fwd=${PIXEL_FORWARD_REFERENCE_DISPLAY} and alpha_U(P_fwd)=${ALPHA_U_FORWARD_REFERENCE_DISPLAY}. This value is 6.6166% above the Planck base-LambdaCDM coordinate ${SCREEN_CAPACITY_REFERENCE_EXACT_DISPLAY}.`,
         },
         {
             label: 'Repair tick lock',
@@ -199,7 +213,7 @@ export function Home() {
                 primaryLabel: 'input-based display',
                 primaryValue: `${formatScientific(canonicalSurface.hubble, 3)} s^-1`,
                 secondaryLabel: 'source',
-                secondaryValue: 'Lambda_CRC',
+                secondaryValue: 'measured Lambda',
             },
             {
                 label: 'Hierarchy naturality',
@@ -274,7 +288,7 @@ export function Home() {
                 <p className="landing-controls-intro">
                     OPH compresses an unusually broad reconstruction into one observer-consistency architecture with
                     no fitted continuous input values at the theory layer. The lab exposes its local closure coordinate,
-                    exact finite correctable-record readback, Standard Model structure, gravity branch, and Higgs/cosmological bridges.
+                    audited global-capacity boundary, Standard Model structure, gravity branch, and Higgs/cosmological bridges.
                 </p>
 
                 {renderCoreLocks(coreLocks)}
@@ -282,10 +296,15 @@ export function Home() {
 
             {renderCompactSurfaceBoard(surfaceBoardRows)}
             <p className="landing-surface-note">
-                The first screen separates algebraic roots from physical readouts. P belongs to an incomplete
-                electromagnetic map. The Lambda-located capacity is an input-based comparison coordinate, while the
-                conditional electroweak bridge lies about 6.6% higher at central value. The readback map, three physical
-                bridge premises, and the joint cosmological posterior remain open. Numeric quark rows are absent because the source equations leave
+                The first screen separates algebraic roots from physical readouts. P<sub>C</sub> belongs to an incomplete
+                electromagnetic map. The Planck base-LambdaCDM chain supplies the retrospective coordinate
+                {SCREEN_CAPACITY_REFERENCE_DISPLAY}. The measured-endpoint P<sub>C</sub> bridge and source-forward
+                P<sub>fwd</sub> bridge are separate coordinates. The latter is 6.6166% higher than the Planck
+                comparison. Its finite-presence candidate is 0.6287% lower, and the extra-premise Poisson candidate is
+                0.3880% lower. The exposed target and dense formula menu remove predictive weight. Physical use requires
+                one-class selection, a scalar-weighted receipt, the reserve-to-capacity theorem, common-load and seam
+                identifications, and the horizon-record bridge.
+                Numeric quark rows are absent because the source equations leave
                 a free (R<sub>&gt;0</sub>)<sup>2</sup> spread fiber. The retained target audit also mixes mass schemes,
                 and its GeV-valued matrices are not physical dimensionless Yukawas.
             </p>

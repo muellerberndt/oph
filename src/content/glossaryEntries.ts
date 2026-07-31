@@ -229,14 +229,14 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     {
         term: 'Einstein Equation',
         symbol: 'G_ab + Lambda g_ab = 8pi G<T_ab>',
-        definition: 'Tensor completion of the conditional null branch. Global correctable-record closure and horizon saturation fix the remaining Lambda term.',
+        definition: 'Tensor completion of the conditional null branch. Fixing the remaining Lambda term requires a source-selected cosmic capacity, a same-invariant bridge, and horizon-record saturation.',
         category: 'gravity',
         usedIn: ['Gravity', 'De Sitter'],
     },
     {
         term: 'Cosmological Constant from Capacity',
         symbol: 'Lambda_CRC = 3pi/(G N_CRC)',
-        definition: 'After robust direct closure Fr,0(D*)={D*}, horizon-record saturation gives Lambda ell_*^2=3pi/N_CRC. Measured Lambda supplies an independent comparison coordinate.',
+        definition: 'Conditional horizon relation. It becomes physical only after a source-selected N is identified with the same invariant counted by the global readback. Measured Lambda supplies the retrospective Planck base-LambdaCDM comparison coordinate 3.31292709806038e122.',
         category: 'gravity',
         usedIn: ['De Sitter', 'Matter Continuations'],
     },
@@ -387,14 +387,14 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     {
         term: 'Cosmic Record Capacity',
         symbol: 'N = log M0(U_N)',
-        definition: 'Official global closure: a universe supplied with logarithmic capacity N reads back the logarithm of its correctable public-record count. The rigorous finite form is Fr,0(D*)={D*}; on the reversible branch M0(q)=|X_reach(q)|.',
+        definition: 'Direct closure proposal: a universe supplied with logarithmic capacity N reads back the logarithm of its correctable public-record count. Self-reference forces equality only after both readings are proved to denote the same typed invariant. The complete declared direct source class is non-identifying, so it supplies no unique cosmic N.',
         category: 'spectrum',
         usedIn: ['Matter Continuations', 'De Sitter', 'Synthesis'],
     },
     {
         term: 'Capacity-Electroweak Bridge',
         symbol: 'v/E_cell = (N_EW/pi)^(-P*/12)',
-        definition: 'COMMON-EW-LOAD-CARRIER identifies the same source load on the screen and electroweak lanes. Its 3.532e122 bridge coordinate is an independent Higgs-hierarchy test of direct N readback.',
+        definition: 'The measured-endpoint branch gives N_EW(P_C)=3.5323546226929907e122 at P_C=1.630968209403959. The distinct source-forward branch gives N0(P_fwd)=3.532131543418936e122 at P_fwd=1.630972095858897. Total reserve P_fwd/4 and six-class equidistribution give one-class presence P_fwd/24. Physical one-class selection, its scalar-weighted receipt, and a reserve-to-global-capacity survival theorem would give N_presence=N0(1-P_fwd/24)=3.292097877326465e122. The Poisson alternative requires extra mean-count structure. Common-load, physical seam, and horizon-record identities remain open. Neither candidate is source-selected or predictive.',
         category: 'spectrum',
         usedIn: ['Matter Continuations', 'Synthesis'],
     },

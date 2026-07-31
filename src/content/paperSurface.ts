@@ -144,10 +144,10 @@ export const CORE_PARAMETERS = [
         note: 'Sets the local observation and particle-side calibration scale through the unique outer/inner pixel closure.',
     },
     {
-        label: 'Global correctable-record capacity',
-        value: 'N_Lambda ~ 3.31e122',
-        equation: 'N = log M0(U_N); finite: M0(q) = alpha(Gq)',
-        note: 'N_CRC = log D*. The reversible branch is exact finite model counting; horizon and EW/Higgs carrier receipts provide independent physical identifications.',
+        label: 'Global capacity closure boundary',
+        value: 'no source-selected N',
+        equation: 'N = log M0(U_N)',
+        note: 'Self-reference forces equality after both sides are identified as the same typed invariant. The complete direct source class is non-identifying. Conditional finite-presence and Poisson reserve formulas remain target-exposed retrospective comparisons.',
     },
 ];
 
@@ -201,7 +201,7 @@ export const PARTICLE_LANE_STATUS = [
     },
     {
         label: 'Capacity-electroweak bridge',
-        summary: 'The algebraic bridge gives 3.53235e122 under three open physical premises. It is 6.6% above the Lambda-located central capacity; the readback map and posterior propagation remain open.',
+        summary: 'The measured-endpoint coordinate N_EW(P_C)=3.5323546226929907e122 and source-forward N0(P_fwd)=3.532131543418936e122 are distinct. Total reserve P_fwd/4 plus six-class equidistribution gives one-class presence P_fwd/24. Physical one-class selection, its scalar-weighted receipt, and a global-capacity survival theorem would give 3.292097877326465e122, 0.6287% below the Planck comparison. The Poisson alternative gives 3.300072225377652e122, 0.3880% below it, and needs extra mean-count structure. Common-load, physical seam, and horizon-record identities remain open. Neither value is predictive.',
     },
 ];
 
@@ -211,7 +211,7 @@ export const GRAVITY_SURFACE = [
     'Collar recovery has two routes: exact zero CMI on the declared central-interface branch, or a conditional finite-range Gibbs theorem requiring uniform strong conditional matrix mixing.',
     'On the conditional route, I(A_delta:D_delta|B_delta) <= c |partial C|_UV exp(-delta/xi), and vanishing requires delta/xi - log|partial C|_UV -> +infinity. The ratio delta/l_UV -> infinity and ordinary two-point clustering are both insufficient.',
     'Finite CMI and matrix-defect receipts are finite proxies for the collar branch. Scalar CMI is not the rank-two stress tensor or a dark-sector source.',
-    'Null data fix the tensor only up to the null-invisible metric term. The global screen-capacity branch reads correctable public records and closes Lambda after the source checkpoint packet, unique finite-size slack zero, and horizon-record saturation.',
+    'Null data fix the tensor only up to the null-invisible metric term. Closing that term requires a source-selected capacity, a same-invariant bridge, and horizon-record saturation. The complete declared direct source family supplies no unique N.',
     'The UV/BW scaffold is the realized cap-pair extraction plus ordered cut-pair rigidity on the extracted prime geometric subnet.',
 ];
 

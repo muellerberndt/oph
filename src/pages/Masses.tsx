@@ -2,11 +2,18 @@ import { useMemo } from 'react';
 import { Explainer } from '../components/Explainer';
 import { CLAIM_TIER_LEGEND, PARTICLE_LANE_STATUS } from '../content/paperSurface';
 import {
+    ALPHA_U_COMPARISON_REFERENCE_DISPLAY,
+    ALPHA_U_FORWARD_REFERENCE_DISPLAY,
     BETA_COEFFICIENTS_MSSM_LIKE,
+    COMMON_LOAD_CAPACITY_DISPLAY,
     ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY,
+    FINITE_PRESENCE_CAPACITY_DISPLAY,
+    PIXEL_COMPARISON_REFERENCE_DISPLAY,
+    PIXEL_FORWARD_REFERENCE_DISPLAY,
     PIXEL_REFERENCE,
     PIXEL_UI_MAX,
     PIXEL_UI_MIN,
+    POISSON_CAPACITY_DISPLAY,
     SCREEN_CAPACITY_REFERENCE_DISPLAY,
     deriveD11ForwardSeed,
     deriveTargetFreeElectroweakRepair,
@@ -193,14 +200,25 @@ export function MassesPage() {
                 <h3 style={{ margin: '0 0 10px 0', fontSize: '0.95em' }}>Capacity-electroweak bridge</h3>
                 <p style={{ margin: '0 0 10px 0' }}>
                     The hierarchy bridge reads the weak scale as
-                    v/E<sub>cell</sub> = (N<sub>EW</sub>/pi)<sup>-P*/12</sup>. On the conditional bridge branch,
-                    N<sub>EW</sub> = {ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY}.
+                    v/E<sub>cell</sub> = (N<sub>EW</sub>/pi)<sup>-P/12</sup>. The measured-endpoint pair
+                    P<sub>C</sub> = {PIXEL_COMPARISON_REFERENCE_DISPLAY},
+                    alpha<sub>U</sub>(P<sub>C</sub>) = {ALPHA_U_COMPARISON_REFERENCE_DISPLAY} gives
+                    N<sub>EW</sub>(P<sub>C</sub>) = {ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY}. The separate
+                    source-forward pair P<sub>fwd</sub> = {PIXEL_FORWARD_REFERENCE_DISPLAY},
+                    alpha<sub>U</sub>(P<sub>fwd</sub>) = {ALPHA_U_FORWARD_REFERENCE_DISPLAY} gives
+                    N<sub>0</sub>(P<sub>fwd</sub>) = {COMMON_LOAD_CAPACITY_DISPLAY}.
                 </p>
                 <p style={{ margin: 0, color: 'var(--text-secondary)' }}>
-                    The Lambda-located capacity is {SCREEN_CAPACITY_REFERENCE_DISPLAY}. The bridge value is about
-                    6.6% higher at central value. The common electroweak load carrier, source checkpoint packet,
-                    unique slack zero, and propagation of the joint cosmological posterior determine whether this is
-                    one common capacity; until then it is a conditional comparison rather than a contradiction.
+                    The Planck base-LambdaCDM comparison is {SCREEN_CAPACITY_REFERENCE_DISPLAY}. The common-load
+                    source-forward value is 6.6166% higher. Total reserve expectation P<sub>fwd</sub>/4 and six-class
+                    equidistribution give one-class presence P<sub>fwd</sub>/24. Physical one-class selection, its
+                    scalar-weighted receipt, and a reserve-to-global-capacity theorem would give
+                    N<sub>presence</sub> = N<sub>0</sub>(1-P<sub>fwd</sub>/24) =
+                    {FINITE_PRESENCE_CAPACITY_DISPLAY}, 0.6287% below the comparison. The Poisson alternative
+                    N<sub>0</sub>exp(-P<sub>fwd</sub>/24) = {POISSON_CAPACITY_DISPLAY} is 0.3880% below it and
+                    requires a mean-count or projective-limit carrier. Common-load, physical seam, and horizon-record
+                    identities remain open. The target was exposed and the menu was dense, so neither candidate has
+                    prediction status.
                 </p>
             </div>
 

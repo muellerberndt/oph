@@ -69,7 +69,7 @@ export const WALKTHROUGH_STEPS: WalkthroughStep[] = [
     { to: '/lorentz/', icon: Orbit, label: 'Lorentz from the Screen', part: 'chain1-gr', seoTitle: 'Lorentz Kinematics on the OPH Screen and BW Branch' },
     { to: '/modular-flow/', icon: Clock, label: 'Time from Modular Flow', part: 'chain1-gr', seoTitle: 'Modular Flow on the OPH BW Branch' },
     { to: '/gravity/', icon: Apple, label: 'Gravity from Entanglement', part: 'chain1-gr', seoTitle: 'Conditional Gravity Branch from Entanglement and Null-Modular Data' },
-    { to: '/de-sitter/', icon: Telescope, label: 'The de Sitter Universe', part: 'chain1-gr', seoTitle: 'Solving the Cosmological Constant Problem | de Sitter Space from Holography' },
+    { to: '/de-sitter/', icon: Telescope, label: 'The de Sitter Universe', part: 'chain1-gr', seoTitle: 'Cosmic Capacity Closure Boundary | de Sitter Space in OPH' },
     { to: '/dark-matter/', icon: Moon, label: 'Dark-Sector Benchmark', part: 'chain1-gr', seoTitle: 'Dark-Sector Continuation | MOND and Rotation-Curve Benchmark' },
     { to: '/classical-physics/', icon: Orbit, label: 'Classical Physics Emerges', part: 'chain1-gr', seoTitle: 'How Classical Physics Emerges from Quantum Gravity' },
 

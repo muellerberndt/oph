@@ -36,7 +36,8 @@ export function PredictionsPage() {
                     OPH uses no fitted continuous values in its structural theory layer, yet the same observer-patch
                     architecture supports a common dependency map across Lorentz geometry, the conditional Einstein branch,
                     quantum public records, a conditional Q0 Standard Model recognition packet, three colors, a rank-three
-                    candidate family band, and linked Higgs/cosmological capacity coordinates. Physical family attachment and
+                    candidate family band, and linked conditional Higgs/cosmological capacity coordinates. The capacity
+                    comparisons are target-exposed and carry no prediction status. Physical family attachment and
                     Q1-Q4 remain open. The cumulative compression is the principal evidence;
                     this page separates that structural achievement from the stronger standard of a frozen prospective test.
                 </p>

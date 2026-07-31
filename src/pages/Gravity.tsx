@@ -84,10 +84,10 @@ export function GravityPage() {
             concept: 'Null data fix the tensor only up to the null-invisible metric term',
         },
         {
-            title: 'Step 6: Global completion',
+            title: 'Step 6: Conditional global boundary',
             equation: 'N = log M0(U_N); finite: M0(q) = alpha(Gq); Lambda ell_*^2 = 3pi/N',
             value: `Lambda = ${formatNumber(derivation.lambda, 2)} m^-2`,
-            concept: 'Global correctable-record closure plus the independent horizon-record saturation receipt',
+            concept: 'The displayed Lambda uses the measured comparison coordinate; a source-selected N and horizon attachment remain open',
         },
     ];
 
@@ -101,8 +101,9 @@ export function GravityPage() {
             <p style={{ marginBottom: '16px' }}>
                 This simulator visualizes the declared conditional gravity branch: local null-modular data and
                 generalized-entropy stationarity yield the rest-frame Einstein relation on the stated BW/null-stress
-                assumptions. The global branch reads capacity from correctable public records; its source checkpoint packet,
-                unique finite-size slack zero, and horizon bridge complete the separate Lambda term. The stress slider
+                assumptions. The direct global source family reads correctable public records and does not select a
+                unique cosmic N. A same-invariant bridge, source-selected capacity, and horizon attachment are required
+                to determine the separate Lambda term. The stress slider
                 represents the independently reconstructed null charge; it is not scalar collar CMI.
             </p>
 
@@ -302,7 +303,7 @@ export function GravityPage() {
                     <div>Separate bounded-interval projective branch in the small-ball step</div>
                     <div>Fixed-cap generalized-entropy stationarity</div>
                     <div>Null ambiguity lemma: tensor reconstruction up to Lambda g_ab</div>
-                    <div>Global correctable-record closure; source packet, unique slack zero, and horizon receipt</div>
+                    <div>Global capacity lane: typed same-invariant bridge, source-selected N, and horizon attachment</div>
                 </div>
             </div>
 
@@ -323,7 +324,8 @@ export function GravityPage() {
                 <p>
                     P is the certified root of a declared incomplete local map. In the Newton row its factor cancels,
                     leaving the scale certificate to supply G. The displayed capacity is located from measured Lambda;
-                    it becomes an OPH global completion only if the physical record-capacity map is constructed and closes.
+                    it becomes a physical OPH output only if the source map selects the same typed capacity and the
+                    horizon relation is established. Self-reference forces equality after that identification.
                 </p>
             </Explainer>
 

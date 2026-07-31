@@ -1,8 +1,16 @@
 import { Explainer } from '../components/Explainer';
 import {
+    ALPHA_U_COMPARISON_REFERENCE_DISPLAY,
+    ALPHA_U_FORWARD_REFERENCE_DISPLAY,
+    COMMON_LOAD_CAPACITY_DISPLAY,
+    FINITE_PRESENCE_CAPACITY_DISPLAY,
     ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY,
+    PIXEL_COMPARISON_REFERENCE_DISPLAY,
+    PIXEL_FORWARD_REFERENCE_DISPLAY,
     PIXEL_REFERENCE,
+    POISSON_CAPACITY_DISPLAY,
     SCREEN_CAPACITY_REFERENCE_DISPLAY,
+    SCREEN_CAPACITY_REFERENCE_EXACT_DISPLAY,
     SCREEN_CAPACITY_REFERENCE_LOG10,
     SCREEN_CAPACITY_UI_MAX,
     SCREEN_CAPACITY_UI_MIN,
@@ -61,10 +69,11 @@ export function DeSitterPage() {
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Conditional &Lambda;-Capacity Relation</h3>
             <p style={{ marginBottom: '8px' }}>
                 The local gravity branch leaves a separate metric ambiguity. OPH determines it through global
-                correctable-record capacity only on a branch with a completed physical attachment. The lab holds
-                the reference pixel normalization at P = {formatPixelConstant(PIXEL_REFERENCE)} and displays the
+                correctable-record capacity only on a branch with a complete physical attachment. The lab holds
+                the measured-endpoint normalization at P<sub>C</sub> = {formatPixelConstant(PIXEL_REFERENCE)} and displays the
                 Lambda-located comparison coordinate:
             </p>
+            <div className="demo-label" style={{ marginBottom: '6px' }}>Conditional Closure Target</div>
             <div className="math-block" style={{ fontSize: '1.1em' }}>
                 N = log M<sub>0</sub>(𝔘<sub>N</sub>),
                 &nbsp;M<sub>0</sub>(q) = &alpha;(G<sub>q</sub>),
@@ -74,19 +83,32 @@ export function DeSitterPage() {
             <p style={{ marginBottom: '16px' }}>
                 On the exact reversible branch every authorized checkpoint is injective and
                 M<sub>0</sub>(q) = |X<sub>reach</sub>(q)|, turning the readback into exact CSP/model counting.
-                The completed declared source class does not select a unique N<sub>CRC</sub>. Self-reference forces
+                The complete declared source class does not select a unique N<sub>CRC</sub>. Self-reference forces
                 equality only after the supplied and read-back quantities are proved to be the same typed invariant.
                 Horizon-record saturation would then give &Lambda;&ell;<sub>*</sub><sup>2</sup> = 3&pi;/N<sub>CRC</sub>.
-                The Planck base-&Lambda;CDM chain locates a retrospective comparison coordinate near {SCREEN_CAPACITY_REFERENCE_DISPLAY}.
+                The Planck base-&Lambda;CDM chain locates the retrospective comparison coordinate
+                {SCREEN_CAPACITY_REFERENCE_EXACT_DISPLAY}.
             </p>
             <p style={{ marginBottom: '16px' }}>
-                The conditional electroweak hierarchy bridge gives N<sub>0</sub> = {ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY}.
-                On its declared finite branch, the Z<sub>6</sub> collar result types P/24 as a normalized presence probability. A separate
-                single-cut global attachment would therefore give N<sub>presence</sub> = N<sub>0</sub>(1 &minus; P/24),
-                about 3.292&times;10<sup>122</sup>. The alternative
-                N<sub>Poisson</sub> = N<sub>0</sub>exp(&minus;P/24), about 3.300&times;10<sup>122</sup>, requires
-                a source-derived mean-count or projective-limit carrier. Neither branch is selected as cosmic N.
-                Both comparisons with Planck base-&Lambda;CDM are target-exposed and retrospective.
+                The measured-endpoint bridge uses P<sub>C</sub> = {PIXEL_COMPARISON_REFERENCE_DISPLAY} and
+                alpha<sub>U</sub>(P<sub>C</sub>) = {ALPHA_U_COMPARISON_REFERENCE_DISPLAY}, giving
+                N<sub>EW</sub>(P<sub>C</sub>) = {ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY}. The separate source-forward
+                branch uses P<sub>fwd</sub> = {PIXEL_FORWARD_REFERENCE_DISPLAY} and
+                alpha<sub>U</sub>(P<sub>fwd</sub>) = {ALPHA_U_FORWARD_REFERENCE_DISPLAY}, giving
+                N<sub>0</sub>(P<sub>fwd</sub>) = {COMMON_LOAD_CAPACITY_DISPLAY}.
+            </p>
+            <p style={{ marginBottom: '16px' }}>
+                On the finite branch, total reserve expectation P<sub>fwd</sub>/4 and six-class equidistribution
+                give one-class presence P<sub>fwd</sub>/24. Physical selection of one blocked class, its
+                scalar-weighted presence receipt, and a reserve-to-global-capacity survival theorem would give
+                N<sub>presence</sub> = N<sub>0</sub>(1 &minus; P<sub>fwd</sub>/24) =
+                {FINITE_PRESENCE_CAPACITY_DISPLAY}, or 0.6287% below the comparison. The alternative
+                N<sub>Poisson</sub> = N<sub>0</sub>exp(&minus;P<sub>fwd</sub>/24) =
+                {POISSON_CAPACITY_DISPLAY} is 0.3880% below the comparison and requires a source-derived mean-count
+                or projective-limit carrier. Cosmic use also requires the inherited electroweak premises,
+                common-load identity, physical Z<sub>6</sub> seam action, and horizon-record identity. Neither branch
+                is selected as cosmic N. Both comparisons with Planck base-&Lambda;CDM are target-exposed and
+                retrospective.
             </p>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>The Proposed Cosmological-Constant Route</h3>
@@ -100,9 +122,9 @@ export function DeSitterPage() {
                 tensor satisfies T<sub>kk</sub> = T<sub>ab</sub>k<sup>a</sup>k<sup>b</sup> = 0 for null vectors k.
                 Since gravity is derived from null surface thermodynamics (&delta;Q = TdS on null horizons), vacuum
                 energy does not contribute to the null-projected local equation. OPH proposes that &Lambda; belongs to
-                a separate global screen-capacity branch. That branch would require a public checkpoint packet and one
-                physical zero of s(D) = log D - log M<sub>0</sub>(D). The completed declared direct source class
-                supplies neither a unique zero nor the horizon attachment.
+                a separate global screen-capacity branch. That branch requires a source-selected fixed point of
+                s(D) = log D - log M<sub>0</sub>(D), a proof that both sides describe the same typed capacity, and a
+                horizon attachment. The complete declared direct source class supplies none of those physical closures.
             </p>
 
             <div className="demo-container">
@@ -198,10 +220,10 @@ export function DeSitterPage() {
                 <p>
                     The de Sitter horizon entropy S<sub>dS</sub> = A<sub>H</sub>/(4l<sub>P</sub>&sup2;) is
                     {SCREEN_CAPACITY_REFERENCE_DISPLAY} on the observed branch. Measured Lambda supplies this entropy
-                    estimate. OPH's declared direct equation is N = log M<sub>0</sub>(𝔘<sub>N</sub>).
+                    estimate. OPH's direct global proposal is N = log M<sub>0</sub>(𝔘<sub>N</sub>).
                     It defines finite self-reading capacity through
                     M<sub>0</sub>(q) = &alpha;(G<sub>q</sub>) and robust whole-fiber saturation
-                    𝔉<sub>r,0</sub>(D<sub>*</sub>) = {'{'}D<sub>*</sub>{'}'}. The completed declared source
+                    𝔉<sub>r,0</sub>(D<sub>*</sub>) = {'{'}D<sub>*</sub>{'}'}. The complete declared source
                     class contains no unique slack zero, so this equation emits no cosmic value.
                 </p>
                 <p>
@@ -210,10 +232,14 @@ export function DeSitterPage() {
                     the de Sitter scale.
                 </p>
                 <p>
-                    Starting from the conditional electroweak coordinate {ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY},
-                    the finite presence branch gives about 3.292&times;10<sup>122</sup>. The exponential branch gives
-                    about 3.300&times;10<sup>122</sup> only with an extra mean-count carrier. Neither value is a
-                    prediction or a physical capacity. Their Planck base-&Lambda;CDM comparisons are retrospective.
+                    The comparison-endpoint bridge N<sub>EW</sub>(P<sub>C</sub>) is
+                    {ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY}. The reserve candidates start from the distinct
+                    source-forward N<sub>0</sub>(P<sub>fwd</sub>) = {COMMON_LOAD_CAPACITY_DISPLAY}. The finite branch
+                    gives {FINITE_PRESENCE_CAPACITY_DISPLAY} after the one-class selection, scalar-weighted receipt,
+                    and global survival attachment. The exponential branch gives {POISSON_CAPACITY_DISPLAY} only with
+                    an extra mean-count carrier. Common-load, physical seam, and horizon-record identities remain open.
+                    Neither value is a prediction or a physical capacity. Their residuals against the Planck
+                    base-&Lambda;CDM comparison are -0.6287% and -0.3880%, and both comparisons are retrospective.
                 </p>
             </Explainer>
 

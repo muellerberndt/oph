@@ -6,13 +6,13 @@ export type SeoMeta = {
 };
 
 const DEFAULT_DESCRIPTION =
-  'Interactive guide to the zero-parameter OPH reconstruction across quantum gravity, Standard Model structure, observation, correctable public-record capacity, the Higgs hierarchy, and screen microphysics.';
+  'Interactive guide to OPH across quantum gravity, Standard Model structure, observation, the audited cosmic-capacity closure boundary, the Higgs hierarchy, and screen microphysics.';
 
 const DEFAULT_TITLE = 'OPH Lab | Declared OPH Paper Surface';
 const SITE_SUFFIX = ' | OPH Lab';
 
 const ROUTE_DESCRIPTIONS: Record<string, string> = {
-  '/': 'Explore the OPH reconstruction: observer patches, relativity, gravity, Standard Model structure, exact finite correctable-record readback, de Sitter capacity, and the Higgs hierarchy bridge.',
+  '/': 'Explore the OPH reconstruction: observer patches, relativity, gravity, Standard Model structure, the non-identifying direct N family, conditional reserve candidates, and the Higgs hierarchy bridge.',
   '/hints': 'Review the experimental and conceptual clues that motivate Observer Patch Holography as a deeper account of physical reality.',
   '/no-objective-reality': 'Explore the argument that physics should be built from observer-local descriptions instead of a single objective frame.',
   '/the-screen': 'Learn how OPH models reality on a holographic screen, uses local patches to recover spacetime structure, and reads the S0 to S3 sphere ladder as a role map.',
@@ -22,7 +22,7 @@ const ROUTE_DESCRIPTIONS: Record<string, string> = {
   '/lorentz': 'Study the OPH route from screen-local consistency to Lorentz symmetry and relativistic structure.',
   '/modular-flow': 'See how modular flow enters the explicit BW branch of the declared OPH gravity route.',
   '/gravity': 'Trace the conditional OPH gravity branch from generalized entropy and null-modular data to the Jacobson-type Einstein relation.',
-  '/de-sitter': 'Explore OPH N readback through correctable public records, the exact reversible counting branch, the finite-size slack theorem, and the horizon/Higgs bridges.',
+  '/de-sitter': 'Explore the OPH cosmic-capacity closure boundary, the non-identifying direct source family, two conditional reserve candidates, and their retrospective Planck comparison.',
   '/dark-matter': 'Review the OPH discussion of dark-matter-style phenomena, galaxy rotation curves, and MOND-like behavior.',
   '/classical-physics': 'Follow how classical physics emerges as an effective description of deeper observer-patch dynamics.',
   '/quantum-mechanics': 'Inspect the OPH quantum-algebraic basis: quantum mechanics is the algebraic information language used by the reconstruction program.',
@@ -37,7 +37,7 @@ const ROUTE_DESCRIPTIONS: Record<string, string> = {
   '/consensus-protocol': 'Explore OPH as observer-based fixed-point consensus: overlap repair, Lyapunov descent, schedule-independent normal form, controlled coarse-graining, holonomy obstructions, and record stability.',
   '/screen-microphysics': 'Inspect the federated patch-carrier architecture used by OPH to model records, measurement, checkpoint/restoration, public hardware evidence, and observer synchronization.',
   '/predictions': 'Review the cumulative zero-parameter OPH reconstruction, quantitative rows, distinctive signal templates, sharp null expectations, and the prospective falsification boundary.',
-  '/synthesis': 'See how OPH ties the zero-parameter derivation together through local closure, global correctable-record readback, the Higgs/cosmological bridges, and the structural, particle, consensus, and observer surfaces.',
+  '/synthesis': 'See how OPH ties local closure to a separately stated self-reference principle, a non-identifying direct N family, conditional cosmological bridges, and the structural, particle, consensus, and observer surfaces.',
   '/glossary': 'Use the OPH Lab glossary for concise definitions of the core holography, gravity, and quantum-information terms.',
   '/resources': 'Find the OPH paper stack, HTML summaries, book, blog, Standard Model and conditional cosmological-capacity pages, coherence map, applications, demos, challenge, and supporting reading.',
 };
