@@ -1,6 +1,7 @@
 export type ClaimTier =
     | 'structural'
     | 'branch-conditional'
+    | 'frozen-prospective'
     | 'calibration'
     | 'continuation-only'
     | 'compare-only'
@@ -100,7 +101,7 @@ export const MATH_FOUNDATIONS_PAPER: PaperSummary = {
     title: 'Observation-Determined Normal Forms',
     href: `${GITHUB_EXTRA_PDF_BASE}/observable_normal_forms.pdf`,
     surface: 'Mathematical Foundations',
-    summary: 'A standalone, application-neutral companion separating same-source confluence, cross-source observation-based identification, liveness, and local repairability. It also develops robust stability and refinement receipts, with a machine-checked finite core.',
+    summary: 'A standalone, application-neutral companion separating same-source confluence, cross-source observation-based identification, liveness, and local repairability. It also develops quantitative stability and refinement receipts, with a machine-checked finite core.',
 };
 
 export const CLAIM_TIER_LEGEND: Array<{ tier: ClaimTier; label: string; description: string }> = [
@@ -113,6 +114,11 @@ export const CLAIM_TIER_LEGEND: Array<{ tier: ClaimTier; label: string; descript
         tier: 'branch-conditional',
         label: 'Branch-Conditional',
         description: 'Recovered only on a stated theorem-local premise stack such as the BW or null-stress branch.',
+    },
+    {
+        tier: 'frozen-prospective',
+        label: 'Frozen Prospective',
+        description: 'Registered before eligible comparison with a fixed source snapshot, public commit custody, a named physical branch, and a fixed decision rule.',
     },
     {
         tier: 'calibration',
@@ -245,6 +251,13 @@ export const MICROPHYSICS_HIGHLIGHTS = [
 ];
 
 export const PREDICTION_SURFACE = {
+    primitivePortPrediction: {
+        title: 'Primitive twelve-port degree-six propagation test',
+        tier: 'frozen-prospective' as ClaimTier,
+        summary: 'The named physical branch uses a real, reciprocal, finite-range cosine kinetic operator whose complete primitive twelve-port orbit is the sole hop support, with no independent kinetic term through the displayed order. Proper-carrier covariance fixes equal weights. Intrinsic anisotropic ranks j = 1 through 5 vanish. Rank j = 6 has the unique icosahedral shape up to SO(3)/A5 orientation, where A5 is the sixty-element proper icosahedral rotation group.',
+        coefficients: 'C4 = -a^2/20, B0 = a^4/840, B6 = 2a^4/7875; B6/C4^2 = 32/315, B0/C4^2 = 10/21, B6/B0 = 16/75.',
+        boundary: 'The scalar or polarization-independent sector bridge, coherent frame transport, and exclusivity are work in progress. A photon test also requires equal action on both transverse polarizations. The excluded exposure class is the 17 July 2026 WMAP ILC template campaign, its CMB likelihood class, and every inspected data product; its template-only null has no role in this comparison. The linked coefficient relation has no qualifying physical comparison. The comparison is unarmed until its own versioned eligible contract fixes the frame, covariance, nuisance model, sensitivity, and thresholds. Failure rejects this branch and reaches the full framework only if the open bridge derivation proves the branch forced and exclusive.',
+    },
     distinctiveTemplates: [
         {
             title: 'GW horizon spectroscopy comb',
@@ -264,6 +277,10 @@ export const PREDICTION_SURFACE = {
     ],
     nullExpectations: [
         {
+            title: 'No primitive-port anisotropy at angular ranks one through five',
+            summary: 'The named equal-weight physical propagation branch puts its first intrinsic directional term at rank six. Spin six is angular rank, unrelated to particle spin.',
+        },
+        {
             title: 'No ordinary simple-GUT X/Y channel',
             summary: 'The product adjoint blocks the classic X/Y leptoquark route; other baryon-violating mechanisms remain separate.',
         },
@@ -281,6 +298,8 @@ export const PREDICTION_SURFACE = {
         },
     ],
     falsificationPressure: [
+        'Under an eligible contract, a positive intrinsic C4, a nonzero intrinsic coefficient at angular rank one through five, or exclusion of the linked B0/B6 ratios or rigid rotated degree-six shape at five or more standard deviations, after the fixed SO(3)/A5 orientation profile and with calibrated joint coverage, rejects the primitive-port physical propagation branch. Null and underpowered outcomes are inconclusive.',
+        'Support requires exclusion of the zero-coefficient minimal Standard Model plus General Relativity baseline at five or more standard deviations, agreement with the linked branch within two standard deviations, rejection of named systematic alternatives, and replication in an independent eligible release.',
         'Observation of the ordinary simple-GUT X/Y channel or a different realized gauge quotient would pressure the corresponding declared branch.',
         'W/Z data become a physical pressure test only after OPH supplies the inputs to the checked strict-one-loop pole kernel: an FJ renormalized vev and tadpole conversion, thresholds and matching, independent gauge/BRST evidence, source covariance, amplitudes, and a clock.',
         'A fully derived dark-sector particle explanation would conflict with the gravity-side interpretation, and the galaxy-response story is an open lane.',

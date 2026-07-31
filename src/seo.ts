@@ -36,7 +36,7 @@ const ROUTE_DESCRIPTIONS: Record<string, string> = {
   '/qft-emerges': 'Follow the argument that quantum field theory is an effective layer emerging from deeper screen dynamics.',
   '/consensus-protocol': 'Explore OPH as observer-based fixed-point consensus: overlap repair, Lyapunov descent, schedule-independent normal form, controlled coarse-graining, holonomy obstructions, and record stability.',
   '/screen-microphysics': 'Inspect the federated patch-carrier architecture used by OPH to model records, measurement, checkpoint/restoration, public hardware evidence, and observer synchronization.',
-  '/predictions': 'Review the cumulative zero-parameter OPH reconstruction, quantitative rows, distinctive signal templates, sharp null expectations, and the prospective falsification boundary.',
+  '/predictions': 'Inspect the frozen primitive twelve-port degree-six propagation prediction, its exact coefficient ratios, branch boundary, quantitative rows, and other OPH pressure tests.',
   '/synthesis': 'See how OPH ties local closure to a separately stated self-reference principle, a non-identifying direct N family, conditional cosmological bridges, and the structural, particle, consensus, and observer surfaces.',
   '/glossary': 'Use the OPH Lab glossary for concise definitions of the core holography, gravity, and quantum-information terms.',
   '/resources': 'Find the OPH paper stack, HTML summaries, book, blog, Standard Model and conditional cosmological-capacity pages, coherence map, applications, demos, challenge, and supporting reading.',

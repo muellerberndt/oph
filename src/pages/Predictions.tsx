@@ -1,8 +1,10 @@
 import { Explainer } from '../components/Explainer';
-import { BOSON_PUBLIC_ROWS, CLAIM_TIER_LEGEND, PREDICTION_SURFACE } from '../content/paperSurface';
+import { BOSON_PUBLIC_ROWS, CLAIM_TIER_LEGEND, PREDICTION_SURFACE, RESEARCH_REPO_URL } from '../content/paperSurface';
 
 function tierColor(tier: string) {
     switch (tier) {
+        case 'frozen-prospective':
+            return 'var(--accent-green)';
         case 'calibration':
             return 'var(--accent-green)';
         case 'continuation-only':
@@ -35,10 +37,10 @@ export function PredictionsPage() {
                 <p style={{ margin: 0, color: 'var(--text-secondary)' }}>
                     OPH uses no fitted continuous values in its structural theory layer, yet the same observer-patch
                     architecture supports a common dependency map across Lorentz geometry, the conditional Einstein branch,
-                    quantum public records, a conditional Q0 Standard Model recognition packet, three colors, a rank-three
+                    quantum public records, a conditional Standard Model recognition packet, three colors, a rank-three
                     candidate family band, and linked conditional Higgs/cosmological capacity coordinates. The capacity
                     comparisons are target-exposed and carry no prediction status. Physical family attachment and
-                    Q1-Q4 remain open. The cumulative compression is the principal evidence;
+                    the finite and perturbative quantum-field constructions remain open. The cumulative compression is the principal evidence;
                     this page separates that structural achievement from the stronger standard of a frozen prospective test.
                 </p>
             </div>
@@ -48,7 +50,7 @@ export function PredictionsPage() {
                     How to read this page
                 </h4>
                 <div style={{ display: 'grid', gap: '8px' }}>
-                    {CLAIM_TIER_LEGEND.filter((item) => ['calibration', 'continuation-only', 'open'].includes(item.tier)).map((item) => (
+                    {CLAIM_TIER_LEGEND.filter((item) => ['frozen-prospective', 'calibration', 'continuation-only', 'open'].includes(item.tier)).map((item) => (
                         <div key={item.tier} style={{ fontSize: '0.82em' }}>
                             <strong>{item.label}:</strong>{' '}
                             <span style={{ color: 'var(--text-secondary)' }}>{item.description}</span>
@@ -57,7 +59,47 @@ export function PredictionsPage() {
                 </div>
             </div>
 
-            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>1. Declared Quantitative Rows</h3>
+            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>1. Frozen Prospective Branch Prediction</h3>
+            <div className="card" style={{ marginBottom: '24px', borderLeft: '3px solid var(--accent-green)' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', gap: '12px', marginBottom: '8px' }}>
+                    <strong>{PREDICTION_SURFACE.primitivePortPrediction.title}</strong>
+                    <span style={{ color: 'var(--accent-green)', fontSize: '0.78em' }}>
+                        {PREDICTION_SURFACE.primitivePortPrediction.tier}
+                    </span>
+                </div>
+                <p style={{ color: 'var(--text-secondary)' }}>
+                    {PREDICTION_SURFACE.primitivePortPrediction.summary}
+                </p>
+                <p style={{ color: 'var(--text-secondary)' }}>
+                    C<sub>4</sub> is the isotropic fourth-order coefficient, B<sub>0</sub> the isotropic
+                    sixth-order coefficient, and B<sub>6</sub> the degree-six directional coefficient.
+                </p>
+                <div className="math-block" style={{ fontSize: '0.95em' }}>
+                    C<sub>4</sub> = &minus;a<sup>2</sup>/20,&nbsp;
+                    B<sub>0</sub> = a<sup>4</sup>/840,&nbsp;
+                    B<sub>6</sub> = 2a<sup>4</sup>/7875
+                    <br />
+                    B<sub>6</sub>/C<sub>4</sub><sup>2</sup> = 32/315,&nbsp;
+                    B<sub>0</sub>/C<sub>4</sub><sup>2</sup> = 10/21,&nbsp;
+                    B<sub>6</sub>/B<sub>0</sub> = 16/75
+                </div>
+                <p style={{ marginTop: '12px', color: 'var(--text-secondary)' }}>
+                    Minimal locally Lorentz-invariant Standard Model physics with General Relativity gives zero intrinsic
+                    vacuum coefficients on this surface. Nonminimal Lorentz-violating physics and environmental anisotropy
+                    can imitate a signal, so they belong in the comparison model.
+                </p>
+                <p style={{ marginBottom: '10px', color: 'var(--text-secondary)' }}>
+                    {PREDICTION_SURFACE.primitivePortPrediction.boundary}
+                </p>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', fontSize: '0.82em' }}>
+                    <a href={`${RESEARCH_REPO_URL}/blob/main/docs/FROZEN_PREDICTION_LADDER.md`}>Frozen contract and custody</a>
+                    <a href={`${RESEARCH_REPO_URL}/blob/main/code/a5_fingerprint/runtime/spin_six_primitive_port_prediction_receipt.json`}>Exact coefficient receipt</a>
+                    <a href={`${RESEARCH_REPO_URL}/blob/main/Lean/Screen/A5PrimitivePortPrediction.lean`}>Lean proof</a>
+                    <a href={`${RESEARCH_REPO_URL}/issues/655`}>Open physical bridge</a>
+                </div>
+            </div>
+
+            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>2. Declared Quantitative Rows</h3>
             <p style={{ marginBottom: '16px' }}>
                 These rows include calibration coordinates and compare-only charts. Their tier labels control the claim.
             </p>
@@ -74,7 +116,7 @@ export function PredictionsPage() {
                 ))}
             </div>
 
-            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>2. Distinctive Signal Templates</h3>
+            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>3. Distinctive Signal Templates</h3>
             <p style={{ marginBottom: '16px' }}>
                 These are the more distinctive phenomenology surfaces. They are interesting, but the papers do not put
                 all of them on the same footing.
@@ -120,10 +162,9 @@ export function PredictionsPage() {
                 ))}
             </div>
 
-            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>3. Sharp Null Expectations</h3>
+            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>4. Sharp Null Expectations</h3>
             <p style={{ marginBottom: '16px' }}>
-                The public surface makes some clean exclusions. These are sharper than blanket
-                wording the lab used before.
+                The public surface makes some clean exclusions with their branch boundaries attached.
             </p>
 
             <div style={{ display: 'grid', gap: '12px', marginBottom: '24px' }}>
@@ -137,7 +178,7 @@ export function PredictionsPage() {
                 ))}
             </div>
 
-            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>4. What Would Put Real Pressure On OPH?</h3>
+            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>5. What Would Put Real Pressure On OPH?</h3>
             <div className="card" style={{ marginBottom: '24px' }}>
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8', margin: 0 }}>
                     {PREDICTION_SURFACE.falsificationPressure.map((item) => (
@@ -151,9 +192,10 @@ export function PredictionsPage() {
                     Prospective-evidence boundary
                 </h4>
                 <p style={{ margin: 0, color: 'var(--text-secondary)' }}>
-                    The current ledger has no landed result that simultaneously qualifies as discriminating, frozen in
-                    advance, and prospective. Existing quantitative packets are theorem, calibration, comparison, or
-                    continuation surfaces. This is the standard the public falsification program is designed to cross.
+                    The primitive-port coefficient relation is a frozen prospective prediction of its named physical
+                    branch. The comparison is unarmed while the physical sector bridge, coherent frame transport, and an
+                    eligible dataset contract are open. A failed comparison rejects that branch. It rejects the full
+                    framework only if the bridge derivation proves the branch forced and exclusive.
                 </p>
             </div>
 
