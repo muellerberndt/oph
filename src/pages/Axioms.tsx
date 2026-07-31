@@ -114,16 +114,18 @@ export function AxiomsPage() {
                 <h3 style={{ margin: '0 0 10px 0', fontSize: '0.95em' }}>The Closure Principle (not an axiom)</h3>
                 <p style={{ margin: '0 0 10px', fontSize: '0.9em' }}>
                     The universe is modeled as a self-referential fixed point: the simulating and the
-                    simulated description are one system. Every quantity with a construction-side
-                    reading and a readback-side reading then satisfies consistency (its return map
-                    closes on a unique fixed point on the declared domain) and identity (the two
-                    readings name one invariant, with each identity a separately typed physical
-                    attachment). The principle sits beside the axioms; every axiom count stays three.
+                    simulated description are one system. Once a construction-side reading and a
+                    readback-side reading have been shown to be readings of the same typed invariant,
+                    self-reference forces their equality. It does not construct those readings, prove
+                    their physical identity, select a branch, or guarantee existence, uniqueness, and
+                    stability. Those obligations apply to every closure law. The principle
+                    sits beside the axioms; every axiom count stays three.
                 </p>
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8', margin: 0, fontSize: '0.84em' }}>
                     <li><strong>Screen-grain closure:</strong> P = &phi; + &radic;&pi;/A<sub>T</sub>(P), one interval-certified fixed point; the laboratory attachment runs through a same-scheme hadronic transport, which is work in progress; the source-map comparison with the measured fine-structure constant stands at the few-ppm level.</li>
-                    <li><strong>Capacity closure:</strong> ln(N/&pi;) = 6&pi;/(P&middot;&alpha;<sub>U</sub>) &minus; P/24, an additional named source law (the axioms alone provably force no capacity law); the P/24 overhead is the shared-cut Z<sub>6</sub> protected-reserve mean, four named premises and a horizon-record attachment stay open, and the agreement with the measured cosmological constant is retrospective.</li>
-                    <li><strong>Class falsifier:</strong> a measured capacity above the uncorrected bridge value &pi;&middot;exp(6&pi;/(P&alpha;<sub>U</sub>)) rejects every positive-overhead completion.</li>
+                    <li><strong>Capacity candidates:</strong> write N<sub>0</sub> = &pi;&middot;exp(6&pi;/(P&middot;&alpha;<sub>U</sub>)). On its declared finite branch, the collar theorem types P/24 as a normalized presence probability, giving N<sub>presence</sub> = N<sub>0</sub>(1 &minus; P/24) after a separate single-cut global attachment. The alternative N<sub>Poisson</sub> = N<sub>0</sub>exp(&minus;P/24) needs an additional mean-count or projective-limit carrier.</li>
+                    <li><strong>Physical boundary:</strong> neither reserve branch is source-selected, attached to a direct cosmic capacity, or predictive. Their comparison with the Planck base-&Lambda;CDM chain is target-exposed and retrospective.</li>
+                    <li><strong>Conditional falsifier:</strong> after the physical bridges are established, a capacity confidently above N<sub>0</sub> rejects this positive-reserve candidate class. It does not by itself reject the three axioms or every possible OPH closure.</li>
                 </ul>
             </div>
 

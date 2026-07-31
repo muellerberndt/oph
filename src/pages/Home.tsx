@@ -145,13 +145,13 @@ export function Home() {
             label: 'Verified local pixel closure P',
             value: formatPixelConstant(PIXEL_REFERENCE),
             equation: 'P* = phi + sqrt(pi) / A_T(P*)',
-            note: 'Lean checks the contraction-based fixed-point theorem. Exact interval certificates give one root for each declared map. The physical Thomson endpoint still requires source-derived same-scheme hadronic transport.',
+            note: 'Lean checks the contraction-based fixed-point theorem. Exact interval certificates give one root for each declared map. The physical Thomson endpoint requires source-derived same-scheme hadronic transport.',
         },
         {
-            label: 'Conditional global N extension',
+            label: 'Global N closure boundary',
             value: SCREEN_CAPACITY_REFERENCE_DISPLAY,
             equation: 'N = log M0(U_N); finite: M0(q) = alpha(Gq)',
-            note: 'This is the conditional global companion to P. On the exact reversible branch M0(q) = |X_reach(q)|. The physical checkpoint packet, unique slack zero, and horizon identification are work in progress.',
+            note: 'Self-reference forces equality after supplied and read-back values are typed as the same invariant. The completed declared direct source class selects no unique N. The finite-presence and Poisson reserve formulas are separate target-exposed candidates, not cosmic predictions.',
         },
         {
             label: 'Conditional electroweak bridge capacity',

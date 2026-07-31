@@ -39,8 +39,9 @@ export function DeSitterPage() {
                 events can never reach them. This horizon has thermodynamic properties, just like a black hole horizon.
             </p>
             <p style={{ marginBottom: '16px' }}>
-                In OPH, the de Sitter horizon IS the holographic screen. The cosmological constant &Lambda; measures
-                the screen's <strong>finite information capacity</strong>.
+                On the conditional OPH cosmology branch, the de Sitter horizon supplies the holographic screen.
+                Identifying &Lambda; with its <strong>finite information capacity</strong> requires the separate
+                horizon-record attachment described below.
             </p>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>The Gibbons-Hawking Temperature</h3>
@@ -60,8 +61,9 @@ export function DeSitterPage() {
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Conditional &Lambda;-Capacity Relation</h3>
             <p style={{ marginBottom: '8px' }}>
                 The local gravity branch leaves a separate metric ambiguity. OPH determines it through global
-                correctable-record capacity. The lab holds the reference pixel normalization at
-                P = {formatPixelConstant(PIXEL_REFERENCE)} and displays the Lambda-located comparison coordinate:
+                correctable-record capacity only on a branch with a completed physical attachment. The lab holds
+                the reference pixel normalization at P = {formatPixelConstant(PIXEL_REFERENCE)} and displays the
+                Lambda-located comparison coordinate:
             </p>
             <div className="math-block" style={{ fontSize: '1.1em' }}>
                 N = log M<sub>0</sub>(𝔘<sub>N</sub>),
@@ -72,17 +74,19 @@ export function DeSitterPage() {
             <p style={{ marginBottom: '16px' }}>
                 On the exact reversible branch every authorized checkpoint is injective and
                 M<sub>0</sub>(q) = |X<sub>reach</sub>(q)|, turning the readback into exact CSP/model counting.
-                Horizon-record saturation then gives &Lambda;&ell;<sub>*</sub><sup>2</sup> = 3&pi;/N<sub>CRC</sub>.
-                The measured &Lambda; comparison locates N<sub>&Lambda;</sub> near {SCREEN_CAPACITY_REFERENCE_DISPLAY}.
+                The completed declared source class does not select a unique N<sub>CRC</sub>. Self-reference forces
+                equality only after the supplied and read-back quantities are proved to be the same typed invariant.
+                Horizon-record saturation would then give &Lambda;&ell;<sub>*</sub><sup>2</sup> = 3&pi;/N<sub>CRC</sub>.
+                The Planck base-&Lambda;CDM chain locates a retrospective comparison coordinate near {SCREEN_CAPACITY_REFERENCE_DISPLAY}.
             </p>
             <p style={{ marginBottom: '16px' }}>
-                The conditional electroweak hierarchy bridge gives {ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY}, about 6.6%
-                above the Lambda-located central value. The closure-principle candidate equation
-                ln(N/&pi;) = 6&pi;/(P&middot;&alpha;<sub>U</sub>) &minus; P/24 reads that gap as the withheld
-                Z<sub>6</sub> closure reserve and lands at 3.30&times;10<sup>122</sup>, inside the measurement
-                band; the agreement is retrospective and its seam premises are open. COMMON-EW-LOAD-CARRIER asks
-                whether the same capacity load controls the Higgs hierarchy; the joint cosmological posterior is a
-                separate registered comparison.
+                The conditional electroweak hierarchy bridge gives N<sub>0</sub> = {ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY}.
+                On its declared finite branch, the Z<sub>6</sub> collar result types P/24 as a normalized presence probability. A separate
+                single-cut global attachment would therefore give N<sub>presence</sub> = N<sub>0</sub>(1 &minus; P/24),
+                about 3.292&times;10<sup>122</sup>. The alternative
+                N<sub>Poisson</sub> = N<sub>0</sub>exp(&minus;P/24), about 3.300&times;10<sup>122</sup>, requires
+                a source-derived mean-count or projective-limit carrier. Neither branch is selected as cosmic N.
+                Both comparisons with Planck base-&Lambda;CDM are target-exposed and retrospective.
             </p>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>The Proposed Cosmological-Constant Route</h3>
@@ -96,8 +100,9 @@ export function DeSitterPage() {
                 tensor satisfies T<sub>kk</sub> = T<sub>ab</sub>k<sup>a</sup>k<sup>b</sup> = 0 for null vectors k.
                 Since gravity is derived from null surface thermodynamics (&delta;Q = TdS on null horizons), vacuum
                 energy does not contribute to the null-projected local equation. OPH proposes that &Lambda; belongs to
-                a separate global screen-capacity branch, closed by the public checkpoint packet and one physical zero
-                of s(D) = log D - log M<sub>0</sub>(D).
+                a separate global screen-capacity branch. That branch would require a public checkpoint packet and one
+                physical zero of s(D) = log D - log M<sub>0</sub>(D). The completed declared direct source class
+                supplies neither a unique zero nor the horizon attachment.
             </p>
 
             <div className="demo-container">
@@ -193,22 +198,22 @@ export function DeSitterPage() {
                 <p>
                     The de Sitter horizon entropy S<sub>dS</sub> = A<sub>H</sub>/(4l<sub>P</sub>&sup2;) is
                     {SCREEN_CAPACITY_REFERENCE_DISPLAY} on the observed branch. Measured Lambda supplies this entropy
-                    estimate. OPH's official equation is N = log M<sub>0</sub>(𝔘<sub>N</sub>).
-                    It identifies finite self-reading capacity directly through
+                    estimate. OPH's declared direct equation is N = log M<sub>0</sub>(𝔘<sub>N</sub>).
+                    It defines finite self-reading capacity through
                     M<sub>0</sub>(q) = &alpha;(G<sub>q</sub>) and robust whole-fiber saturation
-                    𝔉<sub>r,0</sub>(D<sub>*</sub>) = {'{'}D<sub>*</sub>{'}'}.
+                    𝔉<sub>r,0</sub>(D<sub>*</sub>) = {'{'}D<sub>*</sub>{'}'}. The completed declared source
+                    class contains no unique slack zero, so this equation emits no cosmic value.
                 </p>
                 <p>
-                    This gives an entirely different perspective on the "largeness" of the universe. The universe
-                    is large because the screen has &sim;{SCREEN_CAPACITY_REFERENCE_DISPLAY} Planck-area pixels. This is one large
-                    number that sets the scale.
+                    On an attached horizon branch, the screen would have
+                    &sim;{SCREEN_CAPACITY_REFERENCE_DISPLAY} Planck-area entropy units. That one global number would set
+                    the de Sitter scale.
                 </p>
                 <p>
-                    The conditional electroweak bridge capacity is {ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY}. Its 6.6%
-                    central gap from the Lambda-located estimate is what the closure-principle reserve correction
-                    P/24 accounts for; the corrected candidate lands inside the measurement band, the agreement is
-                    retrospective, and adjudication waits on the seam premises and the propagated cosmological
-                    posterior.
+                    Starting from the conditional electroweak coordinate {ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY},
+                    the finite presence branch gives about 3.292&times;10<sup>122</sup>. The exponential branch gives
+                    about 3.300&times;10<sup>122</sup> only with an extra mean-count carrier. Neither value is a
+                    prediction or a physical capacity. Their Planck base-&Lambda;CDM comparisons are retrospective.
                 </p>
             </Explainer>
 
