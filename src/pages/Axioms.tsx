@@ -110,6 +110,23 @@ export function AxiomsPage() {
                 </div>
             ))}
 
+            <div className="card" style={{ marginBottom: '16px', borderLeft: '3px solid var(--accent-gold)' }}>
+                <h3 style={{ margin: '0 0 10px 0', fontSize: '0.95em' }}>The Closure Principle (not an axiom)</h3>
+                <p style={{ margin: '0 0 10px', fontSize: '0.9em' }}>
+                    The universe is modeled as a self-referential fixed point: the simulating and the
+                    simulated description are one system. Every quantity with a construction-side
+                    reading and a readback-side reading then satisfies consistency (its return map
+                    closes on a unique fixed point on the declared domain) and identity (the two
+                    readings name one invariant, with each identity a separately typed physical
+                    attachment). The principle sits beside the axioms; every axiom count stays three.
+                </p>
+                <ul style={{ paddingLeft: '20px', lineHeight: '1.8', margin: 0, fontSize: '0.84em' }}>
+                    <li><strong>Screen-grain closure:</strong> P = &phi; + &radic;&pi;/A<sub>T</sub>(P), one interval-certified fixed point; the laboratory attachment runs through a same-scheme hadronic transport, which is work in progress; the source-map comparison with the measured fine-structure constant stands at the few-ppm level.</li>
+                    <li><strong>Capacity closure:</strong> ln(N/&pi;) = 6&pi;/(P&middot;&alpha;<sub>U</sub>) &minus; P/24, an additional named source law (the axioms alone provably force no capacity law); the P/24 overhead is the shared-cut Z<sub>6</sub> protected-reserve mean, four named premises and a horizon-record attachment stay open, and the agreement with the measured cosmological constant is retrospective.</li>
+                    <li><strong>Class falsifier:</strong> a measured capacity above the uncorrected bridge value &pi;&middot;exp(6&pi;/(P&alpha;<sub>U</sub>)) rejects every positive-overhead completion.</li>
+                </ul>
+            </div>
+
             <div className="card" style={{ marginBottom: '16px', borderLeft: '3px solid var(--accent-blue)' }}>
                 <h3 style={{ margin: '0 0 10px 0', fontSize: '0.95em' }}>Declared Completions (not axioms)</h3>
                 <div style={{ fontSize: '0.84em', color: 'var(--text-secondary)', marginBottom: '10px' }}>

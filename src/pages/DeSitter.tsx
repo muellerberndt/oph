@@ -77,8 +77,12 @@ export function DeSitterPage() {
             </p>
             <p style={{ marginBottom: '16px' }}>
                 The conditional electroweak hierarchy bridge gives {ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY}, about 6.6%
-                above the Lambda-located central value. COMMON-EW-LOAD-CARRIER asks whether the same capacity load
-                controls the Higgs hierarchy; the joint cosmological posterior is a separate registered comparison.
+                above the Lambda-located central value. The closure-principle candidate equation
+                ln(N/&pi;) = 6&pi;/(P&middot;&alpha;<sub>U</sub>) &minus; P/24 reads that gap as the withheld
+                Z<sub>6</sub> closure reserve and lands at 3.30&times;10<sup>122</sup>, inside the measurement
+                band; the agreement is retrospective and its seam premises are open. COMMON-EW-LOAD-CARRIER asks
+                whether the same capacity load controls the Higgs hierarchy; the joint cosmological posterior is a
+                separate registered comparison.
             </p>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>The Proposed Cosmological-Constant Route</h3>
@@ -201,8 +205,10 @@ export function DeSitterPage() {
                 </p>
                 <p>
                     The conditional electroweak bridge capacity is {ELECTROWEAK_BRIDGE_CAPACITY_DISPLAY}. Its 6.6%
-                    central gap from the Lambda-located estimate cannot be adjudicated until the bridge premises close
-                    and the cosmological posterior is propagated.
+                    central gap from the Lambda-located estimate is what the closure-principle reserve correction
+                    P/24 accounts for; the corrected candidate lands inside the measurement band, the agreement is
+                    retrospective, and adjudication waits on the seam premises and the propagated cosmological
+                    posterior.
                 </p>
             </Explainer>
 
