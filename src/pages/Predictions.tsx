@@ -95,6 +95,7 @@ export function PredictionsPage() {
                     <a href={`${RESEARCH_REPO_URL}/blob/main/docs/FROZEN_PREDICTION_LADDER.md`}>Frozen contract and custody</a>
                     <a href={`${RESEARCH_REPO_URL}/blob/main/code/a5_fingerprint/runtime/spin_six_primitive_port_prediction_receipt.json`}>Exact coefficient receipt</a>
                     <a href={`${RESEARCH_REPO_URL}/blob/main/Lean/Screen/A5PrimitivePortPrediction.lean`}>Lean proof</a>
+                    <a href={`${RESEARCH_REPO_URL}/blob/main/Lean/Screen/A5OrbitRaySeparation.lean`}>Orbit-ray separation proof</a>
                     <a href={`${RESEARCH_REPO_URL}/issues/655`}>Open physical bridge</a>
                 </div>
             </div>
@@ -193,9 +194,11 @@ export function PredictionsPage() {
                 </h4>
                 <p style={{ margin: 0, color: 'var(--text-secondary)' }}>
                     The primitive-port coefficient relation is a frozen prospective prediction of its named physical
-                    branch. The comparison is unarmed while the physical sector bridge, coherent frame transport, and an
-                    eligible dataset contract are open. A failed comparison rejects that branch. It rejects the full
-                    framework only if the bridge derivation proves the branch forced and exclusive.
+                    branch. The certified repair operator acts on internal seams and supplies neither spatial hops nor a
+                    physical readout. Vertex, face, and edge orbit rays remain mathematically distinct. The comparison is
+                    unarmed while source selection, the physical sector bridge, coherent frame transport, and an eligible
+                    dataset contract are open. A failed comparison rejects that branch. It rejects the full framework only
+                    if the bridge derivation proves the branch forced and exclusive.
                 </p>
             </div>
 

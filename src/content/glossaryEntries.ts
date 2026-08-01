@@ -387,14 +387,14 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     {
         term: 'Cosmic Record Capacity',
         symbol: 'N = log M0(U_N)',
-        definition: 'Direct closure proposal: a universe supplied with logarithmic capacity N reads back the logarithm of its correctable public-record count. Self-reference forces equality only after both readings are proved to denote the same typed invariant. The complete declared direct source class is non-identifying, so it supplies no unique cosmic N.',
+        definition: 'Direct closure proposal: a universe supplied with logarithmic capacity N reads back the logarithm of its correctable public-record count. Self-reference forces equality only after both readings are proved to denote the same typed invariant. An exact bounded all-rung generation-register counterfamily is non-identifying. Universal membership in the complete A1–A3 source contract is unproved, so direct N is not evaluable and emits no cosmic value.',
         category: 'spectrum',
         usedIn: ['Matter Continuations', 'De Sitter', 'Synthesis'],
     },
     {
         term: 'Capacity-Electroweak Bridge',
         symbol: 'v/E_cell = (N_EW/pi)^(-P*/12)',
-        definition: 'The measured-endpoint branch gives N_EW(P_C)=3.5323546226929907e122 at P_C=1.630968209403959. The distinct source-forward branch gives N0(P_fwd)=3.532131543418936e122 at P_fwd=1.630972095858897. Total reserve P_fwd/4 and six-class equidistribution give one-class presence P_fwd/24. Physical one-class selection, its scalar-weighted receipt, and a reserve-to-global-capacity survival theorem would give N_presence=N0(1-P_fwd/24)=3.292097877326465e122. The Poisson alternative requires extra mean-count structure. Common-load, physical seam, and horizon-record identities remain open. Neither candidate is source-selected or predictive.',
+        definition: 'The measured-endpoint branch gives N_EW(P_C)=3.5323546226929907e122 at P_C=1.630968209403959. The distinct source-forward branch gives N0(P_fwd)=3.532131543418936e122 at P_fwd=1.630972095858897. Total reserve P_fwd/4 and six-class equidistribution give one-class presence P_fwd/24. Physical one-class selection and a global survival action would give N_presence=N0(1-P_fwd/24)=3.292097877326465e122; the Poisson alternative needs extra mean-count structure. Exact positive composition countermodels select neither global action nor a blocked-event semantics from the declared finite-cut attachment class. The named-law branch is not evaluable on that class, its horizon branch has no source-selected positive capacity carrier, and neither numerical row is predictive. A positive branch requires a stronger target-independent source law.',
         category: 'spectrum',
         usedIn: ['Matter Continuations', 'Synthesis'],
     },

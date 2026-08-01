@@ -14,8 +14,8 @@ export type ExactBundleSection = {
 
 export const LANDING_AUDIT_NOTES = [
     'The landing page exposes a certified root of the declared incomplete P map, the Lambda-located capacity comparison coordinate, and the selected no-G scale certificate.',
-    'The measured-endpoint hierarchy coordinate and source-forward common-load coordinate are distinct. The source-forward value is 6.6166% above the Planck base-LambdaCDM comparison. A conditional finite-presence factor moves it to 0.6287% below that comparison; a separate Poisson branch lands 0.3880% below it.',
-    'The target was exposed and the tested formula menu was dense. Neither reserve comparison is a prediction or a source-selected cosmic capacity.',
+    'The measured-endpoint hierarchy coordinate and source-forward common-load coordinate are distinct. The source-forward value is 6.6166% above the Planck base-LambdaCDM comparison. Conditional finite-presence and Poisson expressions sit 0.6287% and 0.3880% below that comparison.',
+    'Exact neutral, one-class, and six-class compositional completions share the declared local datum and disagree globally. The declared finite-cut attachment class selects none of them. The exposed reserve comparisons are retrospective arithmetic and carry no prediction status.',
     'The particle surface includes a two-modulus quark source-spread obstruction, an exact same-family charged witness, the source-only Higgs/top split theorem, and a neutrino audit that rejects the target-informed weighted-cycle candidate.',
     'The gravity-side bundle uses the scale-certificate Newton readout with Lambda, de Sitter, and a0 displays evaluated at the Lambda-located capacity coordinate.',
 ];

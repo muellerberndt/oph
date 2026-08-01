@@ -101,8 +101,9 @@ export function GravityPage() {
             <p style={{ marginBottom: '16px' }}>
                 This simulator visualizes the declared conditional gravity branch: local null-modular data and
                 generalized-entropy stationarity yield the rest-frame Einstein relation on the stated BW/null-stress
-                assumptions. The direct global source family reads correctable public records and does not select a
-                unique cosmic N. A same-invariant bridge, source-selected capacity, and horizon attachment are required
+                assumptions. An exact bounded generation-register counterfamily is non-identifying, while universal
+                A1–A3 membership is unproved. Direct N is not evaluable and emits no cosmic value. A same-invariant
+                bridge, source-selected positive capacity carrier, and horizon attachment are required
                 to determine the separate Lambda term. The stress slider
                 represents the independently reconstructed null charge; it is not scalar collar CMI.
             </p>

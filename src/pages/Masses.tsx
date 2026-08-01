@@ -216,9 +216,10 @@ export function MassesPage() {
                     N<sub>presence</sub> = N<sub>0</sub>(1-P<sub>fwd</sub>/24) =
                     {FINITE_PRESENCE_CAPACITY_DISPLAY}, 0.6287% below the comparison. The Poisson alternative
                     N<sub>0</sub>exp(-P<sub>fwd</sub>/24) = {POISSON_CAPACITY_DISPLAY} is 0.3880% below it and
-                    requires a mean-count or projective-limit carrier. Common-load, physical seam, and horizon-record
-                    identities remain open. The target was exposed and the menu was dense, so neither candidate has
-                    prediction status.
+                    requires a mean-count or projective-limit carrier. Exact compositional completions with the same
+                    local datum select different global actions, so the declared finite-cut attachment class selects
+                    neither row. No source-selected positive capacity carrier is available for the horizon map. A positive branch requires a stronger
+                    target-independent source law. The target was exposed, so neither candidate has prediction status.
                 </p>
             </div>
 

@@ -657,9 +657,9 @@ export function newtonConstantFromPixel(_pixelConstant: number): number {
 // Paper reference:
 // reverse-engineering-reality/paper/recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency.tex
 // Corollary "Cosmological Constant from Capacity":
-// Conditional display Lambda_CRC = 3 pi / (G N_CRC). The direct source family
-// does not select a unique cosmic N, and no physical record-capacity map is
-// implemented by this utility.
+// Conditional display Lambda_CRC = 3 pi / (G N_CRC). Direct N is not evaluable:
+// the bounded generation-register counterfamily lacks a universal A1-A3
+// membership theorem, and no physical record-capacity map is implemented here.
 // The SI G normalization is supplied separately by the selected no-G scale
 // certificate, so this lab readout depends on the capacity coordinate only.
 export function lambdaFromScreen(_pixelConstant: number, logCapacityBase10: number): number {

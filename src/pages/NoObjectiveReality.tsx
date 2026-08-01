@@ -20,7 +20,7 @@ const QUESTIONS: Question[] = [
         problem: 'The measurement problem',
         conventional: 'Wave function collapses upon observation. Nobody agrees on what triggers collapse.',
         hiddenAssumption: 'A God\'s-eye view exists where the wave function is "really" in superposition.',
-        ophResolution: 'There is no God\'s-eye view. "Collapse" is just belief-updating within a patch. Born probabilities enter as the consistency-selected assignment under the stated axioms (Gleason-type input conditions), not as a free postulate.',
+        ophResolution: 'There is no God\'s-eye view. "Collapse" is belief-updating within a patch. On the declared quantum algebra-state surface, Gleason-type conditions fix the Born assignment for public record projectors.',
     },
     {
         problem: 'Why is the universe so uniform?',
@@ -38,7 +38,7 @@ const QUESTIONS: Question[] = [
         problem: 'The cosmological constant problem',
         conventional: 'QFT predicts vacuum energy 10\u00b9\u00b2\u2070 times too large.',
         hiddenAssumption: 'Vacuum energy gravitates like other energy.',
-        ophResolution: 'The conditional null-surface branch leaves a metric term undetermined. OPH assigns that term to a separate global capacity lane. The direct source family does not select a unique cosmic N; a physical closure still requires the same-invariant bridge, a source-selected capacity, and horizon-record saturation.',
+        ophResolution: 'The conditional null-surface branch leaves a metric term undetermined. OPH assigns that term to a separate global capacity lane. An exact bounded generation-register counterfamily is non-identifying, while universal A1–A3 membership is unproved. Direct N is not evaluable and emits no cosmic value. A physical closure requires the same-invariant bridge, a source-selected positive capacity carrier, and horizon-record saturation.',
     },
     {
         problem: 'The dark matter problem',

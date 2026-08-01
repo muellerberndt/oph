@@ -34,7 +34,7 @@
   </text>
   <text x="110" y="256" fill="#d0d0d0" font-family="JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" font-size="24">
     <tspan x="110" dy="0">Self-reference forces same-invariant equality.</tspan>
-    <tspan x="110" dy="34">The direct N source family remains non-identifying.</tspan>
+    <tspan x="110" dy="34">Direct N is not evaluable; no cosmic value is emitted.</tspan>
   </text>
 
   <rect x="110" y="346" width="450" height="134" rx="18" fill="#101010" stroke="#c9a96e" stroke-opacity="0.35"/>

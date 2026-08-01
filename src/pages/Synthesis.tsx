@@ -87,10 +87,12 @@ export function SynthesisPage() {
                 N<sub>presence</sub> = N<sub>0</sub>(1-P<sub>fwd</sub>/24) =
                 {FINITE_PRESENCE_CAPACITY_DISPLAY}. A mean-count or projective-limit carrier would instead give
                 N<sub>Poisson</sub> = N<sub>0</sub>exp(-P<sub>fwd</sub>/24) = {POISSON_CAPACITY_DISPLAY}. Cosmic
-                use further requires the inherited electroweak premises, common-load identity, physical Z<sub>6</sub>
-                seam action, and horizon-record identity. The Planck base-LambdaCDM comparison coordinate is
-                {SCREEN_CAPACITY_REFERENCE_EXACT_DISPLAY}; the residuals are -0.6287% and -0.3880%. Both
-                comparisons are target-exposed and non-predictive.
+                use would further require the inherited electroweak premises, common-load identity, physical
+                Z<sub>6</sub> seam action, and horizon-record identity. Exact neutral, one-class, and six-class
+                compositional completions share the declared local survival datum and disagree globally. The declared
+                finite-cut attachment class therefore selects no reserve action, and its horizon lane has no
+                source-selected positive capacity carrier. The Planck base-LambdaCDM comparison coordinate is {SCREEN_CAPACITY_REFERENCE_EXACT_DISPLAY};
+                the residuals are -0.6287% and -0.3880%. Both comparisons are target-exposed and non-predictive.
             </p>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Six Surfaces, One Program</h3>
@@ -234,7 +236,7 @@ export function SynthesisPage() {
                 <span style={{ color: 'var(--accent-rose)', fontWeight: 600 }}>Standard:</span>
                 <span style={{ color: 'var(--text-secondary)' }}>Parameters are tuned</span>
                 <span style={{ color: 'var(--accent-green)', fontWeight: 600 }}>OPH:</span>
-                <span style={{ color: 'var(--text-secondary)' }}>P has a certified declared-map root; the direct N source family is non-identifying, and the reserve comparisons have no predictive status</span>
+                <span style={{ color: 'var(--text-secondary)' }}>P has a certified declared-map root; direct N is not evaluable and emits no cosmic value, while the reserve comparisons have no predictive status</span>
 
                 <span style={{ color: 'var(--accent-rose)', fontWeight: 600 }}>Standard:</span>
                 <span style={{ color: 'var(--text-secondary)' }}>Gravity and QM are separate</span>

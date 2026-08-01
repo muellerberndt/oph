@@ -159,7 +159,7 @@ export function Home() {
             label: 'Global N closure boundary',
             value: 'no source-selected N',
             equation: 'N = log M0(U_N)',
-            note: `Self-reference forces equality after supplied and read-back values are typed as the same invariant. The complete direct source class is non-identifying. The finite-presence value ${FINITE_PRESENCE_CAPACITY_DISPLAY} and Poisson value ${POISSON_CAPACITY_DISPLAY} use P_fwd and are target-exposed retrospective comparisons.`,
+            note: `Self-reference forces equality after supplied and read-back values are typed as the same invariant. An exact bounded generation-register counterfamily is non-identifying, while universal A1–A3 membership is unproved. Direct N is not evaluable and emits no cosmic value. Exact compositional completions select neither the finite-presence value ${FINITE_PRESENCE_CAPACITY_DISPLAY} nor the Poisson value ${POISSON_CAPACITY_DISPLAY}; both are target-exposed retrospective comparisons.`,
         },
         {
             label: 'Comparison-endpoint hierarchy coordinate',
@@ -301,9 +301,9 @@ export function Home() {
                 {SCREEN_CAPACITY_REFERENCE_DISPLAY}. The measured-endpoint P<sub>C</sub> bridge and source-forward
                 P<sub>fwd</sub> bridge are separate coordinates. The latter is 6.6166% higher than the Planck
                 comparison. Its finite-presence candidate is 0.6287% lower, and the extra-premise Poisson candidate is
-                0.3880% lower. The exposed target and dense formula menu remove predictive weight. Physical use requires
-                one-class selection, a scalar-weighted receipt, the reserve-to-capacity theorem, common-load and seam
-                identifications, and the horizon-record bridge.
+                0.3880% lower. Exact same-source compositional completions disagree on the global action, so neither
+                row is selected and the exposed comparison has no predictive weight. Physical use requires a stronger
+                source law, common-load and seam identifications, and the horizon-record bridge.
                 Numeric quark rows are absent because the source equations leave
                 a free (R<sub>&gt;0</sub>)<sup>2</sup> spread fiber. The retained target audit also mixes mass schemes,
                 and its GeV-valued matrices are not physical dimensionless Yukawas.

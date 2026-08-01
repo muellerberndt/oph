@@ -37,8 +37,11 @@ This section is the lab-maintainer summary of the public paper surface.
   construction-side and readback-side quantities have been proved to be the
   same typed invariant. It does not construct the readings, their physical
   bridge, a return map, or proofs of existence, uniqueness, and stability.
-- The direct family `N = log M0(U_N)` is non-identifying on the complete
-  declared source class. It supplies no unique cosmic value.
+- An exact bounded all-rung generation-register counterfamily has incompatible
+  slack zero sets. Its source-contract checks cover declared finite audit
+  rungs. Universal all-rung membership in the complete A1–A3 source contract
+  and the executable-to-Lean membership bridge are unproved. Direct `N` is not
+  evaluable and emits no cosmic value.
 - The same algebraic bridge evaluated on the comparison endpoint gives
   `N_EW(P_C) = 3.5323546226929907e122`. This is distinct from the
   source-forward branch
@@ -53,9 +56,13 @@ This section is the lab-maintainer summary of the public paper surface.
 - `N_Poisson = N0 exp(-P_fwd/24) = 3.300072225377652e122` is a separate branch.
   It requires a mean-count or projective-limit carrier that the finite theorem
   does not provide.
-- Cosmic use of either reserve value additionally requires the inherited
-  electroweak bridge premises, common-load identity, physical `Z_6` seam
-  action, and horizon-record identity.
+- Exact neutral and multiplicative global-capacity completions share the same
+  local survival datum, stay positive, compose across disconnected cuts and
+  finite cut-count regrouping, and disagree after one cut. The finite source
+  also selects no blocked-event semantics. The named-law branch is therefore
+  not evaluable on the declared finite-cut attachment class. Its horizon branch
+  has no source-selected positive capacity carrier. A positive branch requires
+  a stronger target-independent source law.
 - The finite-presence and Poisson values sit `-0.6287%` and `-0.3880%` below
   the Planck base-`Lambda`CDM comparison coordinate. The target was exposed
   and the tested formula menu was dense, so neither comparison is a

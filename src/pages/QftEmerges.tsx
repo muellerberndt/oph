@@ -162,8 +162,9 @@ export function QftEmergesPage() {
                         <div style={{ color: 'var(--text-muted)', marginTop: '4px' }}>
                             P is a certified root of a declared incomplete local map. The direct global proposal is
                             N = log M<sub>0</sub>(𝔘<sub>N</sub>). Self-reference forces equality only after the
-                            supplied and read-back quantities are proved to describe the same invariant. The complete
-                            declared source class is non-identifying and supplies no unique cosmic N.
+                            supplied and read-back quantities are proved to describe the same invariant. An exact bounded
+                            all-rung generation-register counterfamily is non-identifying. Universal membership in the
+                            complete A1–A3 source contract is unproved, so direct N is not evaluable and emits no cosmic value.
                         </div>
                     </div>
                 </div>

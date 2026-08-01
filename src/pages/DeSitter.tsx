@@ -83,9 +83,11 @@ export function DeSitterPage() {
             <p style={{ marginBottom: '16px' }}>
                 On the exact reversible branch every authorized checkpoint is injective and
                 M<sub>0</sub>(q) = |X<sub>reach</sub>(q)|, turning the readback into exact CSP/model counting.
-                The complete declared source class does not select a unique N<sub>CRC</sub>. Self-reference forces
-                equality only after the supplied and read-back quantities are proved to be the same typed invariant.
-                Horizon-record saturation would then give &Lambda;&ell;<sub>*</sub><sup>2</sup> = 3&pi;/N<sub>CRC</sub>.
+                An exact bounded all-rung generation-register counterfamily has incompatible slack zero sets. Universal
+                membership in the complete A1–A3 source contract is unproved, so direct N is not evaluable and emits no
+                cosmic value. Self-reference forces equality only after the supplied and read-back quantities are proved
+                to be the same typed invariant. Horizon-record saturation would then give
+                &Lambda;&ell;<sub>*</sub><sup>2</sup> = 3&pi;/N<sub>CRC</sub>.
                 The Planck base-&Lambda;CDM chain locates the retrospective comparison coordinate
                 {SCREEN_CAPACITY_REFERENCE_EXACT_DISPLAY}.
             </p>
@@ -105,10 +107,12 @@ export function DeSitterPage() {
                 {FINITE_PRESENCE_CAPACITY_DISPLAY}, or 0.6287% below the comparison. The alternative
                 N<sub>Poisson</sub> = N<sub>0</sub>exp(&minus;P<sub>fwd</sub>/24) =
                 {POISSON_CAPACITY_DISPLAY} is 0.3880% below the comparison and requires a source-derived mean-count
-                or projective-limit carrier. Cosmic use also requires the inherited electroweak premises,
-                common-load identity, physical Z<sub>6</sub> seam action, and horizon-record identity. Neither branch
-                is selected as cosmic N. Both comparisons with Planck base-&Lambda;CDM are target-exposed and
-                retrospective.
+                or projective-limit carrier. Exact compositional completions with the same local datum disagree on
+                the global action, so the declared finite-cut attachment class selects neither branch. No source-selected
+                positive capacity carrier is available for the horizon map. A stronger target-independent source law,
+                the inherited electroweak premises,
+                common-load identity, physical Z<sub>6</sub> seam action, and horizon-record identity are required for
+                cosmic use. Both Planck base-&Lambda;CDM comparisons are target-exposed and retrospective.
             </p>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>The Proposed Cosmological-Constant Route</h3>
@@ -124,7 +128,9 @@ export function DeSitterPage() {
                 energy does not contribute to the null-projected local equation. OPH proposes that &Lambda; belongs to
                 a separate global screen-capacity branch. That branch requires a source-selected fixed point of
                 s(D) = log D - log M<sub>0</sub>(D), a proof that both sides describe the same typed capacity, and a
-                horizon attachment. The complete declared direct source class supplies none of those physical closures.
+                horizon attachment. Universal membership of the bounded generation-register construction in the complete
+                A1–A3 source contract is unproved. Direct N is not evaluable, emits no cosmic value, and supplies no
+                source-selected positive capacity carrier for the horizon attachment.
             </p>
 
             <div className="demo-container">
@@ -223,8 +229,9 @@ export function DeSitterPage() {
                     estimate. OPH's direct global proposal is N = log M<sub>0</sub>(𝔘<sub>N</sub>).
                     It defines finite self-reading capacity through
                     M<sub>0</sub>(q) = &alpha;(G<sub>q</sub>) and robust whole-fiber saturation
-                    𝔉<sub>r,0</sub>(D<sub>*</sub>) = {'{'}D<sub>*</sub>{'}'}. The complete declared source
-                    class contains no unique slack zero, so this equation emits no cosmic value.
+                    𝔉<sub>r,0</sub>(D<sub>*</sub>) = {'{'}D<sub>*</sub>{'}'}. An exact bounded all-rung
+                    generation-register counterfamily has incompatible slack zero sets. Universal membership in the
+                    complete A1–A3 source contract is unproved. Direct N is therefore not evaluable and emits no cosmic value.
                 </p>
                 <p>
                     On an attached horizon branch, the screen would have
@@ -237,8 +244,10 @@ export function DeSitterPage() {
                     source-forward N<sub>0</sub>(P<sub>fwd</sub>) = {COMMON_LOAD_CAPACITY_DISPLAY}. The finite branch
                     gives {FINITE_PRESENCE_CAPACITY_DISPLAY} after the one-class selection, scalar-weighted receipt,
                     and global survival attachment. The exponential branch gives {POISSON_CAPACITY_DISPLAY} only with
-                    an extra mean-count carrier. Common-load, physical seam, and horizon-record identities remain open.
-                    Neither value is a prediction or a physical capacity. Their residuals against the Planck
+                    an extra mean-count carrier. Exact neutral and multiplicative completions show that the declared
+                    finite-cut attachment class selects no global action. The horizon branch therefore has no
+                    source-selected positive capacity carrier unless a stronger source law is supplied. Neither value is
+                    a prediction or a physical capacity. Their residuals against the Planck
                     base-&Lambda;CDM comparison are -0.6287% and -0.3880%, and both comparisons are retrospective.
                 </p>
             </Explainer>

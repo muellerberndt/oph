@@ -12,7 +12,7 @@ const DEFAULT_TITLE = 'OPH Lab | Declared OPH Paper Surface';
 const SITE_SUFFIX = ' | OPH Lab';
 
 const ROUTE_DESCRIPTIONS: Record<string, string> = {
-  '/': 'Explore the OPH reconstruction: observer patches, relativity, gravity, Standard Model structure, the non-identifying direct N family, conditional reserve candidates, and the Higgs hierarchy bridge.',
+  '/': 'Explore the OPH reconstruction: observer patches, relativity, gravity, Standard Model structure, the non-evaluable direct N closure, conditional reserve candidates, and the Higgs hierarchy bridge.',
   '/hints': 'Review the experimental and conceptual clues that motivate Observer Patch Holography as a deeper account of physical reality.',
   '/no-objective-reality': 'Explore the argument that physics should be built from observer-local descriptions instead of a single objective frame.',
   '/the-screen': 'Learn how OPH models reality on a holographic screen, uses local patches to recover spacetime structure, and reads the S0 to S3 sphere ladder as a role map.',
@@ -22,7 +22,7 @@ const ROUTE_DESCRIPTIONS: Record<string, string> = {
   '/lorentz': 'Study the OPH route from screen-local consistency to Lorentz symmetry and relativistic structure.',
   '/modular-flow': 'See how modular flow enters the explicit BW branch of the declared OPH gravity route.',
   '/gravity': 'Trace the conditional OPH gravity branch from generalized entropy and null-modular data to the Jacobson-type Einstein relation.',
-  '/de-sitter': 'Explore the OPH cosmic-capacity closure boundary, the non-identifying direct source family, two conditional reserve candidates, and their retrospective Planck comparison.',
+  '/de-sitter': 'Explore the OPH cosmic-capacity closure boundary, the bounded generation-register counterfamily, the non-evaluable direct N closure, and two conditional reserve candidates.',
   '/dark-matter': 'Review the OPH discussion of dark-matter-style phenomena, galaxy rotation curves, and MOND-like behavior.',
   '/classical-physics': 'Follow how classical physics emerges as an effective description of deeper observer-patch dynamics.',
   '/quantum-mechanics': 'Inspect the OPH quantum-algebraic basis: quantum mechanics is the algebraic information language used by the reconstruction program.',
@@ -37,7 +37,7 @@ const ROUTE_DESCRIPTIONS: Record<string, string> = {
   '/consensus-protocol': 'Explore OPH as observer-based fixed-point consensus: overlap repair, Lyapunov descent, schedule-independent normal form, controlled coarse-graining, holonomy obstructions, and record stability.',
   '/screen-microphysics': 'Inspect the federated patch-carrier architecture used by OPH to model records, measurement, checkpoint/restoration, public hardware evidence, and observer synchronization.',
   '/predictions': 'Inspect the frozen primitive twelve-port degree-six propagation prediction, its exact coefficient ratios, branch boundary, quantitative rows, and other OPH pressure tests.',
-  '/synthesis': 'See how OPH ties local closure to a separately stated self-reference principle, a non-identifying direct N family, conditional cosmological bridges, and the structural, particle, consensus, and observer surfaces.',
+  '/synthesis': 'See how OPH ties local closure to a separately stated self-reference principle, a non-evaluable direct N closure, conditional cosmological bridges, and the structural, particle, consensus, and observer surfaces.',
   '/glossary': 'Use the OPH Lab glossary for concise definitions of the core holography, gravity, and quantum-information terms.',
   '/resources': 'Find the OPH paper stack, HTML summaries, book, blog, Standard Model and conditional cosmological-capacity pages, coherence map, applications, demos, challenge, and supporting reading.',
 };

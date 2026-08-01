@@ -154,7 +154,7 @@ export const CORE_PARAMETERS = [
         label: 'Global capacity closure boundary',
         value: 'no source-selected N',
         equation: 'N = log M0(U_N)',
-        note: 'Self-reference forces equality after both sides are identified as the same typed invariant. The complete direct source class is non-identifying. Conditional finite-presence and Poisson reserve formulas remain target-exposed retrospective comparisons.',
+        note: 'Self-reference forces equality after both sides are identified as the same typed invariant. An exact bounded generation-register counterfamily is non-identifying, while universal A1–A3 membership is unproved. Direct N is not evaluable and emits no cosmic value. Conditional finite-presence and Poisson reserve formulas remain target-exposed retrospective comparisons.',
     },
 ];
 
@@ -208,7 +208,7 @@ export const PARTICLE_LANE_STATUS = [
     },
     {
         label: 'Capacity-electroweak bridge',
-        summary: 'The measured-endpoint coordinate N_EW(P_C)=3.5323546226929907e122 and source-forward N0(P_fwd)=3.532131543418936e122 are distinct. Total reserve P_fwd/4 plus six-class equidistribution gives one-class presence P_fwd/24. Physical one-class selection, its scalar-weighted receipt, and a global-capacity survival theorem would give 3.292097877326465e122, 0.6287% below the Planck comparison. The Poisson alternative gives 3.300072225377652e122, 0.3880% below it, and needs extra mean-count structure. Common-load, physical seam, and horizon-record identities remain open. Neither value is predictive.',
+        summary: 'The measured-endpoint coordinate N_EW(P_C)=3.5323546226929907e122 and source-forward N0(P_fwd)=3.532131543418936e122 are distinct. The finite-presence and Poisson rows give 3.292097877326465e122 and 3.300072225377652e122, with retrospective residuals of -0.6287% and -0.3880%. Exact neutral and multiplicative completions share the local survival datum and the declared positive composition rules but have different global effects. The declared finite-cut attachment class selects neither action nor a blocked-event semantics. The named-law branch is not evaluable on this class, its horizon branch has no source-selected positive capacity carrier, and neither value is predictive. A positive branch requires a stronger target-independent source law.',
     },
 ];
 
@@ -218,7 +218,7 @@ export const GRAVITY_SURFACE = [
     'Collar recovery has two routes: exact zero CMI on the declared central-interface branch, or a conditional finite-range Gibbs theorem requiring uniform strong conditional matrix mixing.',
     'On the conditional route, I(A_delta:D_delta|B_delta) <= c |partial C|_UV exp(-delta/xi), and vanishing requires delta/xi - log|partial C|_UV -> +infinity. The ratio delta/l_UV -> infinity and ordinary two-point clustering are both insufficient.',
     'Finite CMI and matrix-defect receipts are finite proxies for the collar branch. Scalar CMI is not the rank-two stress tensor or a dark-sector source.',
-    'Null data fix the tensor only up to the null-invisible metric term. Closing that term requires a source-selected capacity, a same-invariant bridge, and horizon-record saturation. The complete declared direct source family supplies no unique N.',
+    'Null data fix the tensor only up to the null-invisible metric term. An exact bounded generation-register counterfamily is non-identifying, while universal A1–A3 membership is unproved. Direct N is not evaluable and emits no cosmic value. Closing the metric term requires a source-selected positive capacity carrier, a same-invariant bridge, and horizon-record saturation.',
     'The UV/BW scaffold is the realized cap-pair extraction plus ordered cut-pair rigidity on the extracted prime geometric subnet.',
 ];
 
@@ -257,7 +257,7 @@ export const PREDICTION_SURFACE = {
         tier: 'frozen-prospective' as ClaimTier,
         summary: 'The named physical branch uses a real, reciprocal, finite-range cosine kinetic operator whose complete primitive twelve-port orbit is the sole hop support, with no independent kinetic term through the displayed order. Proper-carrier covariance fixes equal weights. Intrinsic anisotropic ranks j = 1 through 5 vanish. Rank j = 6 has the unique icosahedral shape up to SO(3)/A5 orientation, where A5 is the sixty-element proper icosahedral rotation group.',
         coefficients: 'C4 = -a^2/20, B0 = a^4/840, B6 = 2a^4/7875; B6/C4^2 = 32/315, B0/C4^2 = 10/21, B6/B0 = 16/75.',
-        boundary: 'The scalar or polarization-independent sector bridge, coherent frame transport, and exclusivity are work in progress. A photon test also requires equal action on both transverse polarizations. The excluded exposure class is the 17 July 2026 WMAP ILC template campaign, its CMB likelihood class, and every inspected data product; its template-only null has no role in this comparison. The linked coefficient relation has no qualifying physical comparison. The comparison is unarmed until its own versioned eligible contract fixes the frame, covariance, nuisance model, sensitivity, and thresholds. Failure rejects this branch and reaches the full framework only if the open bridge derivation proves the branch forced and exclusive.',
+        boundary: 'The certified repair operator acts on internal seams. It does not define spatial hops, a physical readout, or a laboratory frame. Exact propagation calculations also admit distinct vertex, face, and edge orbit rays, so symmetry equalizes weights inside each orbit without selecting the primitive-port ray. The scalar or polarization-independent sector bridge, coherent frame transport, and exclusivity are work in progress. A photon test also requires equal action on both transverse polarizations. The excluded exposure class is the 17 July 2026 WMAP ILC template campaign, its CMB likelihood class, and every inspected data product; its template-only null has no role in this comparison. The linked coefficient relation has no qualifying physical comparison. The comparison is unarmed until its own versioned eligible contract fixes the source operator, readout, frame, covariance, nuisance model, sensitivity, and thresholds. Failure rejects this branch and reaches the full framework only if the bridge derivation proves the branch forced and exclusive.',
     },
     distinctiveTemplates: [
         {

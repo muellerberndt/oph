@@ -85,7 +85,7 @@ const routeMeta = {
   'de-sitter': {
     title: 'Cosmic Capacity Closure Boundary - de Sitter Space in OPH | OPH Lab',
     description:
-      'Explore the OPH cosmic-capacity closure boundary, the non-identifying direct source family, two conditional reserve candidates, and their retrospective Planck comparison.',
+      'Explore the OPH cosmic-capacity closure boundary, the bounded generation-register counterfamily, the non-evaluable direct N closure, and two conditional reserve candidates.',
   },
   'dark-matter': {
     title: 'Dark Matter & MOND Explained - Galaxy Rotation Curves from Holography | OPH Lab',
