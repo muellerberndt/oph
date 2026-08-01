@@ -43,14 +43,15 @@ export const OMEGA_URL = APPLICATIONS_URL;
 
 const GITHUB_PDF_BASE = `${RESEARCH_REPO_URL}/blob/main/paper`;
 const GITHUB_EXTRA_PDF_BASE = `${RESEARCH_REPO_URL}/blob/main/extra`;
+const FLAGSHIP_PDF_URL = 'https://wkaxfdgxoqmghwgshymt.supabase.co/storage/v1/object/public/papers/from_observer_consensus_to_standard_physics.pdf';
 
 export const OPH_PAPERS: PaperSummary[] = [
     {
-        slug: 'observers',
-        title: 'Observers Are All You Need',
-        href: `${GITHUB_PDF_BASE}/observers_are_all_you_need.pdf`,
-        surface: 'Synthesis',
-        summary: 'The paper-stack overview. It ties the recovered core, particles, consensus, observer machinery, and meaning layer into one public stack.',
+        slug: 'flagship',
+        title: 'From Observer Consensus to Standard Physics',
+        href: FLAGSHIP_PDF_URL,
+        surface: 'Flagship synthesis',
+        summary: 'The primary OPH paper: finite self-reading patches, public quantum records, Lorentzian geometry, Einstein dynamics, and Standard Model structure.',
     },
     {
         slug: 'einstein',
