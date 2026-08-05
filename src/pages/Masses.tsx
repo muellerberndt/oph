@@ -180,8 +180,8 @@ export function MassesPage() {
                     kernel is checked, while the OPH/FJ renormalized input, tadpole conversion, thresholds, matching,
                     independent gauge/BRST evidence, covariance, amplitudes, and clock are missing. Higgs/top sit
                     on the source-only Higgs/top split surface, and the inverse pair is a check surface.
-                    The canonical published bosonic surface uses P = {formatPixelConstant(PIXEL_REFERENCE)}. The
-                    sensitivity panel below moves the source coordinate away from that certified fixed point and reports
+                    The displayed bosonic comparison surface uses P<sub>C</sub> = {formatPixelConstant(PIXEL_REFERENCE)}, derived from the measured endpoint. The
+                    sensitivity panel below moves the input away from that comparison coordinate and reports
                     the formula response as a diagnostic.
                 </p>
             </div>
@@ -224,7 +224,7 @@ export function MassesPage() {
             </div>
 
             <div className="demo-container">
-                <div className="demo-label">Diagnostic Bosonic Surface Around P*</div>
+                <div className="demo-label">Diagnostic Bosonic Surface Around P<sub>C</sub></div>
 
                 <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '14px' }}>
                     <button
@@ -237,7 +237,7 @@ export function MassesPage() {
                 </div>
 
                 <p style={{ marginTop: 0, marginBottom: '14px' }}>
-                    P* = <strong>{formatPixelConstant(PIXEL_REFERENCE)}</strong> is the published fixed point. Moving
+                    P<sub>C</sub> = <strong>{formatPixelConstant(PIXEL_REFERENCE)}</strong> is the measured-endpoint comparison coordinate. Moving
                     the slider evaluates the same bosonic formulas off that point. Treat the result as sensitivity data,
                     not as a generated branch of OPH.
                 </p>
@@ -305,7 +305,7 @@ export function MassesPage() {
                             <div style={{ fontSize: '0.76em', color: 'var(--text-muted)', marginBottom: '6px' }}>
                                 {row.tier === 'structural'
                                     ? 'Invariant under P on the structural lane.'
-                                    : `Delta from fixed P* = ${formatPixelConstant(PIXEL_REFERENCE)}: ${formatSignedMass(row.deltaGeV)} (${row.tier})`}
+                                    : `Delta from comparison P_C = ${formatPixelConstant(PIXEL_REFERENCE)}: ${formatSignedMass(row.deltaGeV)} (${row.tier})`}
                             </div>
                             <div style={{ fontSize: '0.8em', color: 'var(--text-secondary)' }}>{row.note}</div>
                         </div>
@@ -352,14 +352,15 @@ export function MassesPage() {
 
             <Explainer title="Why the diagnostic moves some rows">
                 <p>
-                    The particle paper makes a sharp split. Photon, gluons, and graviton are structural zeros on the
-                    realized gauge/gravity branch, so their masses stay exactly zero. W and Z sit on an incomplete
+                    The particle paper makes a sharp split. The conditional classical Maxwell, Yang–Mills, and gravity
+                    actions have no mass term for their transverse modes; quantum photon, gluon, and graviton particle
+                    claims need separate receipts. W and Z sit on an incomplete
                     running chart with no physical pole comparison, while Higgs/top sit on the downstream source-only
                     split surface fed by the same gauge core.
                 </p>
                 <p>
                     The diagnostic changes the source coordinate used by those formulas, so the bosonic rows move while
-                    the massless structural rows stay fixed. The certified branch remains the fixed-point value P*.
+                    the classical structural rows stay fixed. The displayed reference is the measured-endpoint comparison value P<sub>C</sub>.
                     Charged leptons remain on a separate source-landing surface. The quark runtime is a target-anchored
                     diagnostic behind the two-modulus spread obstruction and the common-scale physical-Yukawa blocker;
                     hadrons require an OPH hadron backend.

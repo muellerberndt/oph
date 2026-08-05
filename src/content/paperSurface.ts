@@ -145,10 +145,10 @@ export const CLAIM_TIER_LEGEND: Array<{ tier: ClaimTier; label: string; descript
 
 export const CORE_PARAMETERS = [
     {
-        label: 'Local pixel fixed point',
+        label: 'Local pixel-map closure',
         value: 'a_cell ~ 1.63 l_P^2',
         equation: 'P* = phi + sqrt(pi) / A_T(P*)',
-        note: 'Sets the local observation and particle-side calibration scale through the unique outer/inner pixel closure.',
+        note: 'Each declared map has one certified root. Physical calibration also requires target-independent map selection, a same-quantity bridge, and endpoint transport.',
     },
     {
         label: 'Global capacity closure boundary',

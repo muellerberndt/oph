@@ -51,7 +51,8 @@ const CANONICAL_GAUGE_OPTIONS = {
 } as const;
 
 // Interval-certified unique root of the declared incomplete source map.
-// A physical Thomson endpoint requires the missing same-scheme hadronic transport.
+// Physical promotion also requires target-independent map selection,
+// a same-quantity bridge, and same-scheme endpoint transport.
 const ALPHA_ROOT_INV = 136.994835177413;
 // Root of the declared gauge-width map. This is another incomplete-map diagnostic,
 // not a physical fine-structure prediction.
@@ -153,7 +154,7 @@ export function Home() {
             label: 'Measured-endpoint comparison P_C',
             value: formatPixelConstant(PIXEL_REFERENCE),
             equation: 'P_C = phi + sqrt(pi) / A_T(P_C)',
-            note: `The comparison branch uses P_C=${PIXEL_COMPARISON_REFERENCE_DISPLAY} and alpha_U(P_C)=${ALPHA_U_COMPARISON_REFERENCE_DISPLAY}. The physical Thomson endpoint requires source-derived same-scheme hadronic transport.`,
+            note: `The comparison branch uses P_C=${PIXEL_COMPARISON_REFERENCE_DISPLAY} and alpha_U(P_C)=${ALPHA_U_COMPARISON_REFERENCE_DISPLAY}. A physical Thomson value requires target-independent map selection, a same-quantity bridge, and source-derived same-scheme transport.`,
         },
         {
             label: 'Global N closure boundary',

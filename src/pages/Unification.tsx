@@ -105,8 +105,8 @@ export function UnificationPage() {
 
             <p style={{ marginBottom: '16px' }}>
                 The supplement derivation chooses an edge-running model, solves the pixel closure for the finite-screen
-                unified gauge-width coupling, then inspects one-loop running at any scale. The certified OPH branch
-                uses the reference pixel constant {formatPixelConstant(PIXEL_REFERENCE)}; the slider is a sensitivity coordinate.
+                unified gauge-width coupling, then inspects one-loop running at any scale. This page
+                uses the measured-endpoint comparison coordinate {formatPixelConstant(PIXEL_REFERENCE)}; the slider is a sensitivity coordinate.
             </p>
 
             <div className="card" style={{ marginBottom: '20px', borderLeft: '3px solid var(--accent-cyan)' }}>
@@ -196,7 +196,7 @@ export function UnificationPage() {
                             <span style={{ color: 'var(--accent-gold)' }}>diagnostic P coordinate</span>
                             <span style={{ color: 'var(--accent-cyan)' }}>
                                 {formatPixelConstant(pixelConstant)}
-                                {Math.abs(pixelConstant - PIXEL_REFERENCE) < 0.0005 ? ' fixed point' : ' off-closure'}
+                                {Math.abs(pixelConstant - PIXEL_REFERENCE) < 0.0005 ? ' comparison coordinate' : ' sensitivity point'}
                             </span>
                         </div>
                         <input
@@ -375,7 +375,7 @@ export function UnificationPage() {
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '8px', fontSize: '0.78em' }}>
                     <div><strong>b_i</strong>: one-loop beta coefficients for U(1), SU(2), SU(3).</div>
                     <div><strong>Delta b_i</strong>: edge-sector shift relative to SM one-loop running.</div>
-                    <div><strong>P</strong>: unique pixel fixed point; this page uses a diagnostic coordinate around P*.</div>
+                    <div><strong>P</strong>: pixel-map coordinate; this page varies the measured-endpoint comparison value P<sub>C</sub>.</div>
                     <div><strong>lbar_SU2/lbar_SU3</strong>: edge entropy means from heat-kernel sums.</div>
                     <div><strong>alpha_U</strong>: unified coupling solved by entropy closure, not fit directly.</div>
                     <div><strong>mu</strong>: probe scale where running couplings are evaluated.</div>

@@ -380,7 +380,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     {
         term: 'Pixel Constant',
         symbol: 'P = a_cell/l_P^2',
-        definition: 'Certified root of the declared incomplete local map. The same-scheme hadronic endpoint required for a physical alpha prediction is open.',
+        definition: 'A declared local map can have a certified root. A physical pixel value additionally needs target-independent map selection, proof that both sides read the same quantity, and same-scheme endpoint transport.',
         category: 'spectrum',
         usedIn: ['Matter Continuations', 'Synthesis'],
     },

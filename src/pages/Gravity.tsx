@@ -141,7 +141,7 @@ export function GravityPage() {
                 <div className="card" style={{ padding: '14px', marginBottom: '18px', background: 'rgba(0,0,0,0.18)', borderLeft: '3px solid var(--accent-gold)' }}>
                     <h3 style={{ margin: '0 0 8px 0', fontSize: '0.9em' }}>Locked OPH scale inputs</h3>
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(190px, 1fr))', gap: '10px', fontSize: '0.8em', color: 'var(--text-secondary)' }}>
-                        <div><strong>P*</strong>: {formatPixelConstant(PIXEL_REFERENCE)}</div>
+                        <div><strong>P<sub>C</sub></strong>: {formatPixelConstant(PIXEL_REFERENCE)} from the measured endpoint</div>
                         <div><strong>N<sub>&Lambda;</sub></strong>: {SCREEN_CAPACITY_REFERENCE_DISPLAY} from measured Lambda</div>
                         <div><strong>G*</strong>: selected no-G scale certificate</div>
                     </div>
