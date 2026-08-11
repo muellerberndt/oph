@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
 import { NavLink, Outlet, useLocation } from 'react-router-dom';
-import { Atom, BookOpen, Cpu, GraduationCap, Menu, Network, Newspaper, Orbit, X } from 'lucide-react';
+import { Atom, Cpu, FileText, GraduationCap, Menu, Network, Newspaper, Orbit, X } from 'lucide-react';
 import './Layout.css';
 import { WALKTHROUGH_STEPS, PART_LABELS, PART_COLORS, type PartId } from '../routes/walkthrough';
 import { WalkthroughNav } from './WalkthroughNav';
 import { installLinkTracking, trackPageView } from '../lib/analytics';
 import { SeoManager } from './SeoManager';
 import { getSeoMeta } from '../seo';
-import { APPLICATIONS_URL, BLOG_URL, BOOK_URL, CHALLENGE_URL, COHERENCE_URL, MINI_UNIVERSE_SIMULATION_URL, OVERVIEW_URL, PHYSICS_UNIFICATION_URL, RESEARCH_LICENSE_URL, RESEARCH_PATENT_POLICY_URL, RESEARCH_REPO_URL, SIMULATION_URL, TEXTBOOKS_URL, THEORY_URL, THREE_BODY_DEMO_URL } from '../content/paperSurface';
+import { APPLICATIONS_URL, BLOG_URL, CHALLENGE_URL, COHERENCE_URL, FLAGSHIP_PAPER_URL, MINI_UNIVERSE_SIMULATION_URL, OVERVIEW_URL, PHYSICS_UNIFICATION_URL, RESEARCH_LICENSE_URL, RESEARCH_PATENT_POLICY_URL, RESEARCH_REPO_URL, SIMULATION_URL, TEXTBOOKS_URL, THEORY_URL, THREE_BODY_DEMO_URL } from '../content/paperSurface';
 
 export function Layout() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -92,11 +92,11 @@ export function Layout() {
                                 <small>Guided study path through the derivations.</small>
                             </span>
                         </a>
-                        <a className="global-resource-link" href={BOOK_URL}>
-                            <BookOpen size={18} />
+                        <a className="global-resource-link" href={FLAGSHIP_PAPER_URL}>
+                            <FileText size={18} />
                             <span>
-                                <strong>Reverse Engineering Reality</strong>
-                                <small>The book-length route into the framework.</small>
+                                <strong>Flagship Paper</strong>
+                                <small>Primary technical account of the observer-first reconstruction.</small>
                             </span>
                         </a>
                         <a className="global-resource-link" href={BLOG_URL}>
@@ -169,8 +169,6 @@ export function Layout() {
                                 <a href={SIMULATION_URL} style={{ color: 'var(--accent-gold)', textDecoration: 'none' }}>Simulation Theory</a>
                                 {' \u2022 '}
                                 <a href={MINI_UNIVERSE_SIMULATION_URL} style={{ color: 'var(--accent-gold)', textDecoration: 'none' }}>Mini-Universe Simulation</a>
-                                {' \u2022 '}
-                                <a href={BOOK_URL} style={{ color: 'var(--accent-gold)', textDecoration: 'none' }}>Book</a>
                                 {' \u2022 '}
                                 <a href={TEXTBOOKS_URL} style={{ color: 'var(--accent-gold)', textDecoration: 'none' }}>Textbooks</a>
                                 {' \u2022 '}

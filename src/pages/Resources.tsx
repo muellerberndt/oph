@@ -1,10 +1,10 @@
 import { Explainer } from '../components/Explainer';
 import {
     BLOG_URL,
-    BOOK_URL,
     CHALLENGE_URL,
     CLAIM_TIER_LEGEND,
     COHERENCE_URL,
+    FLAGSHIP_PAPER_URL,
     LAB_REPO_URL,
     APPLICATIONS_URL,
     MINI_UNIVERSE_SIMULATION_URL,
@@ -174,13 +174,13 @@ export function ResourcesPage() {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '12px', marginBottom: '24px' }}>
                 <div className="card" style={{ borderLeft: '3px solid var(--accent-blue)' }}>
                     <h4 style={{ margin: '0 0 8px 0', fontSize: '0.9em', color: 'var(--accent-blue)' }}>
-                        OPH Book
+                        Flagship Paper
                     </h4>
                     <p style={{ margin: '0 0 8px 0', fontSize: '0.85em' }}>
-                        Book-length exposition of the OPH story, aimed at readers who want a slower derivation path.
+                        Primary technical account of the observer-first reconstruction and its stated boundaries.
                     </p>
-                    <a href={BOOK_URL} target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.85em' }}>
-                        oph-book.floatingpragma.io &rarr;
+                    <a href={FLAGSHIP_PAPER_URL} target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.85em' }}>
+                        floatingpragma.io/oph/papers/ &rarr;
                     </a>
                 </div>
 

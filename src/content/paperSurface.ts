@@ -32,7 +32,6 @@ export const THEORY_URL = 'https://floatingpragma.io/oph/theory-of-everything/';
 export const SIMULATION_URL = 'https://floatingpragma.io/oph/simulation-theory/';
 export const PHYSICS_UNIFICATION_URL = 'https://floatingpragma.io/oph/physics-unification/';
 export const BLOG_URL = 'https://blog.floatingpragma.io/';
-export const BOOK_URL = 'https://oph-book.floatingpragma.io/';
 export const TEXTBOOKS_URL = 'https://learn.floatingpragma.io/';
 export const MINI_UNIVERSE_SIMULATION_URL = 'https://simulation.floatingpragma.io/';
 export const THREE_BODY_DEMO_URL = 'https://3body.floatingpragma.io/';
@@ -43,13 +42,13 @@ export const OMEGA_URL = APPLICATIONS_URL;
 
 const GITHUB_PDF_BASE = `${RESEARCH_REPO_URL}/blob/main/paper`;
 const GITHUB_EXTRA_PDF_BASE = `${RESEARCH_REPO_URL}/blob/main/extra`;
-const FLAGSHIP_PDF_URL = 'https://wkaxfdgxoqmghwgshymt.supabase.co/storage/v1/object/public/papers/from_observer_consensus_to_standard_physics.pdf';
+export const FLAGSHIP_PAPER_URL = 'https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/';
 
 export const OPH_PAPERS: PaperSummary[] = [
     {
         slug: 'flagship',
         title: 'From Observer Consensus to Standard Physics',
-        href: FLAGSHIP_PDF_URL,
+        href: FLAGSHIP_PAPER_URL,
         surface: 'Flagship synthesis',
         summary: 'The primary OPH paper: finite self-reading patches, public quantum records, Lorentzian geometry, Einstein dynamics, and Standard Model structure.',
     },
