@@ -95,7 +95,7 @@ export function Layout() {
                         <a className="global-resource-link" href={FLAGSHIP_PAPER_URL}>
                             <FileText size={18} />
                             <span>
-                                <strong>Flagship Paper</strong>
+                                <strong>Technical paper</strong>
                                 <small>Primary technical account of the observer-first reconstruction.</small>
                             </span>
                         </a>

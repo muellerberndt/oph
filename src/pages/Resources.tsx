@@ -174,7 +174,7 @@ export function ResourcesPage() {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '12px', marginBottom: '24px' }}>
                 <div className="card" style={{ borderLeft: '3px solid var(--accent-blue)' }}>
                     <h4 style={{ margin: '0 0 8px 0', fontSize: '0.9em', color: 'var(--accent-blue)' }}>
-                        Flagship Paper
+                        Technical paper
                     </h4>
                     <p style={{ margin: '0 0 8px 0', fontSize: '0.85em' }}>
                         Primary technical account of the observer-first reconstruction and its stated boundaries.
