@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { Explainer } from '../components/Explainer';
-import { STANDARD_MODEL_SURFACE } from '../content/paperSurface';
+import { MINI_UNIVERSE_SIMULATION_URL, STANDARD_MODEL_SURFACE } from '../content/paperSurface';
 import { useLabSetting, useLabState } from '../state/labState';
 
 type AdmissibilityChecks = {
@@ -214,6 +214,16 @@ export function StandardModelPage() {
                         </div>
                     ))}
                 </div>
+            </div>
+
+            <div className="card" style={{ marginBottom: '20px', borderLeft: '3px solid var(--accent-gold)' }}>
+                <h3 style={{ margin: '0 0 10px', fontSize: '0.95em' }}>Finite carrier readout — exploratory</h3>
+                <p style={{ margin: '0 0 10px', fontSize: '0.84em' }}>
+                    The latest OPH-FPE Z<sub>6</sub> census and v2 family readout make charge, triality, and weak-duality
+                    grammar checks live on committed carrier structures. The package is explicitly non-evidential:
+                    its labels do not establish a physical generation count, matter family, Yukawa sector, or particle.
+                </p>
+                <a href={MINI_UNIVERSE_SIMULATION_URL}>Inspect the simulation surface &rarr;</a>
             </div>
 
             <div className="demo-container">

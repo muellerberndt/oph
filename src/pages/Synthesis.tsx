@@ -34,8 +34,8 @@ export function SynthesisPage() {
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Local Closure And Global Readback</h3>
             <p style={{ marginBottom: '16px' }}>
-                OPH is formulated as a zero-dial closure theory: zero quantitative inputs at the theory layer,
-                with working borrows counted in the scorecard. The local constant is a certified root of a declared
+                OPH is formulated as a closure program that aims to minimize unexplained quantitative inputs, while
+                counting working borrows and theorem-local premises explicitly. The local constant is a certified root of a declared
                 incomplete map. The global closure principle stands beside the three axioms. It forces equality
                 after the construction-side and readback-side quantities have been proved to denote the same typed
                 invariant. It does not build those quantities, their physical bridge, a return map, or the required
@@ -95,7 +95,7 @@ export function SynthesisPage() {
                 the residuals are -0.6287% and -0.3880%. Both comparisons are target-exposed and non-predictive.
             </p>
 
-            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Six Surfaces, One Program</h3>
+            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Seven Paper Surfaces, One Program</h3>
             <div style={{ display: 'grid', gap: '12px', marginBottom: '24px' }}>
                 {OPH_PAPERS.map((paper) => (
                     <div key={paper.slug} className="card" style={{ borderLeft: '3px solid var(--accent-purple)' }}>
@@ -204,10 +204,10 @@ export function SynthesisPage() {
                     <div style={{ padding: '12px', background: 'rgba(0,0,0,0.2)', border: '1px solid var(--border-color)' }}>
                         <div style={{ color: 'var(--accent-green)', fontWeight: 600, marginBottom: '4px' }}>OPH</div>
                         <ul style={{ paddingLeft: '16px', margin: 0, lineHeight: '1.8', color: 'var(--text-secondary)' }}>
-                            <li>2D screen &rarr; 3+1D spacetime</li>
+                            <li>2D carrier plus conditional 3+1D spacetime attachment</li>
                             <li>Shared observer-patch basis for gravity and gauge structure</li>
                             <li>Explicit branch and continuation ledger</li>
-                            <li>2 closure-defined quantitative constants</li>
+                            <li>Certified local map roots; direct global N closure remains non-evaluable</li>
                         </ul>
                     </div>
                 </div>
@@ -251,14 +251,15 @@ export function SynthesisPage() {
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
                     <li><strong>Are the assumptions really as minimal as claimed?</strong> The three axioms are supplemented by theorem-local technical premises, the declared completions, and branch-specific conditions. A full assessment must count all logical inputs.</li>
                     <li><strong>Are the derivations rigorous?</strong> The recovered structural core is stronger than the downstream continuation lanes. BW internalization, some particle continuations, and several phenomenology surfaces remain conditional or open.</li>
-                    <li><strong>Can it be falsified?</strong> Yes (see Predictions page). This is the most important test of any theory.</li>
+                    <li><strong>Can it be falsified?</strong> Named branches have explicit pressure tests; the current frozen propagation comparison remains unarmed until its eligible physical contract exists.</li>
                 </ul>
                 <p>
                     OPH should be evaluated by the same standards as any physical theory: internal consistency,
                     agreement with existing data, and testable predictions. The paper stack carries a
                     mixed ledger of structural theorems, branch conditions, closed calibration sectors, and open
-                    scaffold items. The open set is finite and enumerated: four generator computations and one
-                    flavor-orbit selector stand between the current standing and full closure.
+                    scaffold items. The remaining physical-identification, continuum, instrument, source-action,
+                    clock, and comparison obligations are registered individually; the Lab does not compress them
+                    into a claim that only a handful of computations remain.
                 </p>
             </Explainer>
 
@@ -275,7 +276,8 @@ export function SynthesisPage() {
                     <li><strong>Consensus and distributed systems:</strong> fixed points, repair schedules, holonomy obstructions, and stable records as physics-facing objects</li>
                 </ul>
                 <p>
-                    OPH unifies these insights into a single coherent framework with a common axiomatic foundation.
+                    OPH organizes these insights in a single observer-patch framework with a common axiomatic
+                    foundation and an explicit boundary between structural results and physical attachments.
                 </p>
             </Explainer>
         </div>

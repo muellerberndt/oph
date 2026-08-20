@@ -5,7 +5,8 @@ export type ClaimTier =
     | 'calibration'
     | 'continuation-only'
     | 'compare-only'
-    | 'open';
+    | 'open'
+    | 'exploratory';
 
 export type PaperSummary = {
     slug: string;
@@ -27,18 +28,23 @@ export const RESEARCH_PAPER_DIR_URL = `${RESEARCH_REPO_URL}/tree/main/paper`;
 export const RESEARCH_LICENSE_URL = `${RESEARCH_REPO_URL}/blob/main/LICENSE`;
 export const RESEARCH_PATENT_POLICY_URL = `${RESEARCH_REPO_URL}/blob/main/PATENTS.md`;
 export const LAB_REPO_URL = 'https://github.com/muellerberndt/oph-lab';
+export const SIMULATOR_REPO_URL = 'https://github.com/muellerberndt/oph-physics-sim';
 export const OVERVIEW_URL = 'https://floatingpragma.io/oph/';
 export const THEORY_URL = 'https://floatingpragma.io/oph/theory-of-everything/';
 export const SIMULATION_URL = 'https://floatingpragma.io/oph/simulation-theory/';
 export const PHYSICS_UNIFICATION_URL = 'https://floatingpragma.io/oph/physics-unification/';
 export const BLOG_URL = 'https://blog.floatingpragma.io/';
 export const TEXTBOOKS_URL = 'https://learn.floatingpragma.io/';
+export const TEXTBOOK_MACHINE_URL = 'https://learn.floatingpragma.io/book/machine/chapter/0';
+export const TEXTBOOK_OUTPUTS_URL = 'https://learn.floatingpragma.io/book/outputs/chapter/0';
 export const MINI_UNIVERSE_SIMULATION_URL = 'https://simulation.floatingpragma.io/';
 export const THREE_BODY_DEMO_URL = 'https://3body.floatingpragma.io/';
 export const CHALLENGE_URL = 'https://challenge.floatingpragma.io/';
 export const COHERENCE_URL = 'https://coherence.floatingpragma.io/';
 export const APPLICATIONS_URL = 'https://omega.floatingpragma.io/';
 export const OMEGA_URL = APPLICATIONS_URL;
+export const RESEARCH_RELEASE_ID = 'r2021';
+export const RESEARCH_RELEASE_DATE = '19 August 2026';
 
 const GITHUB_PDF_BASE = `${RESEARCH_REPO_URL}/blob/main/paper`;
 const GITHUB_EXTRA_PDF_BASE = `${RESEARCH_REPO_URL}/blob/main/extra`;
@@ -140,6 +146,52 @@ export const CLAIM_TIER_LEGEND: Array<{ tier: ClaimTier; label: string; descript
         label: 'Open',
         description: 'A theorem object, bridge, or simulator burden is open on the declared corpus.',
     },
+    {
+        tier: 'exploratory',
+        label: 'Exploratory',
+        description: 'A simulator or diagnostic result that is reproducible but explicitly non-evidential and does not promote a physical claim.',
+    },
+];
+
+export const CURRENT_RESEARCH_STATUS = [
+    {
+        tier: 'structural',
+        label: 'Exact finite structure',
+        summary: 'The current corpus includes more than 6,600 machine-checked theorem and lemma declarations, including positive results, countermodels, and premise boundaries.',
+    },
+    {
+        tier: 'branch-conditional',
+        label: 'Physical bridges remain typed',
+        summary: 'Lorentz, Einstein, gauge-current, matter, clock, and continuum statements retain their named branch premises and physical-identification obligations.',
+    },
+    {
+        tier: 'exploratory',
+        label: 'Simulator evidence stays gated',
+        summary: 'The latest finite carrier, observer-statistics, defect, and dimension probes emit auditable receipts; they do not by themselves establish physical particles, three-dimensional space, or a Born-rule derivation.',
+    },
+];
+
+export const SIMULATION_FRONTIER = [
+    {
+        label: 'Observer-frame quantum statistics',
+        status: 'exploratory / non-evidential',
+        summary: 'Exact enumeration reproduces the committed Born weights and Lüders-conditioned repeatability for the declared finite contexts. The operation and weights are inputs, so this is a readback/conditioning receipt, not a Born-rule derivation.',
+    },
+    {
+        label: 'Z6 defect and family readout',
+        status: 'exploratory / non-evidential',
+        summary: 'The v2 census makes triality and duality grammar checks live on carrier structures. It is a finite label/readout study, not a physical generation or particle claim.',
+    },
+    {
+        label: 'Refinement-depth dimension probe',
+        status: 'exploratory / non-evidential',
+        summary: 'Calibrated spectral and Weyl statistics test declared coupled tower operators. Their measured dimensions are operator diagnostics, not measurements of physical spatial dimension.',
+    },
+    {
+        label: 'Evidence handoffs',
+        status: 'display-only packages',
+        summary: 'Fourteen hashed visualizer handoffs separate carrier repair, records, observer conditioning, refinement, defects, finite EM, cosmology diagnostics, and the theorem/paper/simulator evidence atlas.',
+    },
 ];
 
 export const CORE_PARAMETERS = [
@@ -227,6 +279,8 @@ export const STANDARD_MODEL_SURFACE = [
     'The CP-capability and weak-sector clauses give the window 3 <= Ng <= 5; the count inside it is open, and Ng = 3 enters as a declared completion. Physical three-family status requires the rank-45 attachment, source-selected matter action, and quantum-field-theory construction.',
     'The product adjoint excludes the ordinary simple-GUT X/Y channel, not every proton-decay mechanism.',
     'Coupling unification is geometric on the published edge-running surface. The published surface uses no simple-group GUT embedding or superpartners.',
+    'The committed charged-current dictionary now derives the W-direction shift algebra and g/sqrt(2) normalization inside the declared carrier. It supplies no physical current operator, W propagator, decay amplitude, Fermi limit, flavor, or mixing matrix.',
+    'The gauge kinetic sector extends exactly from the diagonal pairing to a committed invariant-form completion. A carrier gauge-group action and a source-produced spacetime action remain open.',
 ];
 
 export const CONSENSUS_HIGHLIGHTS = [
@@ -240,6 +294,8 @@ export const CONSENSUS_HIGHLIGHTS = [
     'Separated refinement systems carry normal-form and holonomy classes through coarse-graining when the square defects are controlled.',
     'Stable records live on the fixed-cutoff record algebra, with exact central projectors or explicitly controlled approximately commuting surrogates.',
     'Law-space selection is presented as a meta-model over reconciliation laws. The stated claim is narrower than a literal cosmological evolution story.',
+    'At the committed operator/record interface, diagonal records embed by a star homomorphism, while the declared projection is a positive unital trace-preserving expectation and is not multiplicative. Stronger categorical grades are not classified.',
+    'Exact finite universality precursors exist, but no fixed-federation, all-schedule repair-universality theorem with immutable inputs and overhead/stability bounds is claimed.',
 ];
 
 export const MICROPHYSICS_HIGHLIGHTS = [
@@ -248,6 +304,7 @@ export const MICROPHYSICS_HIGHLIGHTS = [
     'Measurement, stable records, checkpoint/restoration, and observer synchronization live inside one shared microscopic model.',
     'Toroidal subchannels supply local recurrence and winding-sensitive dynamics inside bounded patches.',
     'Hardware evidence counts only through public bundles with stable hashes, calibration records, controls, and verifier receipts.',
+    'The committed finite Maxwell update proves conditional identities, continuity, and a conserved staggered quadratic form, but the form is not proved positive and exact modes exceed the unit-step stability threshold. Stable calibrated propagation remains open.',
 ];
 
 export const PREDICTION_SURFACE = {

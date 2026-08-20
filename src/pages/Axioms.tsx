@@ -80,7 +80,9 @@ export function AxiomsPage() {
                 result inside a named finite realization, a declared open interface, an independence
                 result with countermodels, a physical identification, or a withdrawn claim. The paper
                 surface names theorem-local premises where specific Lorentz, Einstein, or gauge
-                statements are invoked; none of those premises is an axiom.
+                statements are invoked; none of those premises is an axiom. The current formal corpus contains
+                more than 6,600 theorem and lemma declarations, and that count includes boundaries and
+                countermodels as well as positive results.
             </p>
 
             {AXIOMS.map((ax) => (

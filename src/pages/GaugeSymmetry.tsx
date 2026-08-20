@@ -42,13 +42,15 @@ export function GaugeSymmetryPage() {
             <p style={{ marginBottom: '16px' }}>
                 But the algebras A(P<sub>1</sub>) and A(P<sub>2</sub>) may describe the same observables in
                 different "frames." The transformation relating these frames on the overlap is a <strong>gauge
-                transformation</strong>. The group of all such transformations is the gauge group.
+                transformation</strong>. On the receipt-certified transport and tensor branch, the compatible
+                transformations reconstruct the compact gauge group.
             </p>
             <p style={{ marginBottom: '16px' }}>
                 This is exactly analogous to how coordinate transformations arise in differential geometry: each
                 chart (patch) has its own coordinates, and the transition functions on overlaps form the structure
                 group. In OPH, the "coordinates" are algebraic (operator orderings, basis choices), and the
-                transition functions form gauge groups.
+                transition functions motivate the gauge reconstruction problem; they do not select the physical
+                global group without the transport, refinement, and matter attachments.
             </p>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Edge Sectors and Compact Groups</h3>
@@ -81,6 +83,16 @@ export function GaugeSymmetryPage() {
                 Compactness follows from reconstruction on the receipt-certified tensor/fiber package, not from a
                 finite fusion table or from a finite-state coarse-graining map alone.
             </p>
+
+            <div className="card" style={{ marginBottom: '24px', borderLeft: '3px solid var(--accent-cyan)' }}>
+                <h4 style={{ margin: '0 0 8px', fontSize: '0.9em', color: 'var(--accent-cyan)' }}>Current invariant-form completion</h4>
+                <p style={{ margin: 0, fontSize: '0.84em' }}>
+                    The committed gauge kinetic functional now extends exactly beyond its diagonal axis slice to a
+                    weighted invariant-form carrier. Exact infinitesimal invariance pins the declared one-ray mirror
+                    family and a control weight breaks it. This is finite structural algebra: no gauge-group action on
+                    the carrier, source-produced spacetime action, or laboratory current is claimed.
+                </p>
+            </div>
 
             <div className="card" style={{ marginBottom: '24px', borderLeft: '3px solid var(--accent-green)' }}>
                 <h4 style={{ margin: '0 0 8px 0', fontSize: '0.9em', color: 'var(--accent-green)' }}>
@@ -144,9 +156,10 @@ export function GaugeSymmetryPage() {
                 </p>
                 <p>
                     In OPH, the "base manifold" is the screen S&sup2; with its patch cover. The "fibers" are the
-                    edge-mode Hilbert spaces at patch boundaries. The gauge connection is the transition map
-                    between overlapping patches. The entire fiber bundle structure emerges from the patch
-                    overlap conditions together with the gauge-as-gluing route.
+                    edge-mode Hilbert spaces at patch boundaries. The gauge connection is modeled by the transition
+                    map between overlapping patches. The declared route supplies the corresponding reconstruction
+                    structure under explicit transport and refinement premises; a physical spacetime bundle and
+                    current attachment remain separate.
                 </p>
             </Explainer>
 
@@ -160,9 +173,11 @@ export function GaugeSymmetryPage() {
                     <li><strong>Matter layer:</strong> anomaly-free one-Higgs admissibility plus the tensor kernel and the declared sector completions.</li>
                 </ul>
                 <p>
-                    Within that declared branch, the result is
-                    [SU(3)&times;SU(2)&times;U(1)]/Z<sub>6</sub> with N<sub>c</sub>=3 and
-                    N<sub>g</sub>=3. Screen topology alone supplies neither the physical current lift nor the declared matter completions.
+                    Inside the declared matter fixture the result has N<sub>c</sub>=3 and a common Z<sub>6</sub>
+                    kernel. Promoting that kernel to the physical global quotient requires the complete character
+                    lattice and same-source loop attachment; N<sub>g</sub>=3 is a declared completion inside the
+                    proved 3-to-5 window. Screen topology alone supplies neither the physical current lift nor those
+                    matter completions.
                 </p>
             </Explainer>
 

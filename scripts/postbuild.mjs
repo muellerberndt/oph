@@ -43,14 +43,14 @@ const routeMeta = {
       'Review the experimental and conceptual clues that motivate Observer Patch Holography as a deeper account of physical reality.',
   },
   'no-objective-reality': {
-    title: 'Why There Is No Objective Reality - The 10 Hardest Questions in Physics | OPH Lab',
+    title: 'Observer-Local Reality | An Operational OPH Starting Point | OPH Lab',
     description:
-      'Explore the argument that physics should be built from observer-local descriptions instead of a single objective frame.',
+      'Explore the operational OPH starting point: physical descriptions are observer-local records, without treating that modeling choice as a proof of a final ontology.',
   },
   'the-screen': {
-    title: 'The Holographic Screen - How a 2D Sphere Creates 3D Spacetime | OPH Lab',
+    title: 'The Holographic Screen | OPH Carrier and Spacetime Boundary | OPH Lab',
     description:
-      'Learn how OPH models reality as observer-based fixed-point consensus on a holographic screen and uses local patches to recover spacetime structure.',
+      'Learn how OPH models bounded self-reading patches on a holographic carrier and separates exact finite structure from the open spacetime attachment.',
   },
   axioms: {
     title: 'The Three Axioms of Observer Patch Holography | OPH Lab',
@@ -63,24 +63,24 @@ const routeMeta = {
       'Follow the entropy and area-bound intuition that connects finite information capacity to holographic physics.',
   },
   'entanglement-geometry': {
-    title: 'How Entanglement Creates Geometry - The Ryu-Takayanagi Formula | OPH Lab',
+    title: 'Entanglement and the Geometry Reconstruction Branch | OPH Lab',
     description:
-      'Understand how entanglement structure gives rise to geometry in the OPH reconstruction program.',
+      'Understand how entanglement structure enters the conditional OPH geometry-reconstruction branch and where physical attachment remains open.',
   },
   lorentz: {
-    title: 'Deriving Special Relativity from the Holographic Screen | OPH Lab',
+    title: 'Lorentz Kinematics on the OPH Screen and BW Branch | OPH Lab',
     description:
       'Study the OPH route from screen-local consistency to Lorentz symmetry and relativistic structure.',
   },
   'modular-flow': {
-    title: 'The Origin of Time - Modular Flow and the Unruh Effect | OPH Lab',
+    title: 'Modular Flow on the OPH BW Branch | OPH Lab',
     description:
-      'See how modular flow contributes an emergent account of time in the OPH framework.',
+      'See how modular flow enters the explicit Bisognano-Wichmann branch without promoting the branch assumptions into unconditional results.',
   },
   gravity: {
-    title: 'Deriving Einstein\'s Equations from Entanglement - Emergent Gravity | OPH Lab',
+    title: 'Conditional Gravity Branch from Entanglement and Null-Modular Data | OPH Lab',
     description:
-      'Trace the OPH argument from entanglement and consistency constraints to emergent gravitational dynamics.',
+      'Trace the conditional OPH gravity branch from generalized entropy and null-modular data to the Jacobson-type Einstein relation.',
   },
   'de-sitter': {
     title: 'Cosmic Capacity Closure Boundary - de Sitter Space in OPH | OPH Lab',
@@ -88,14 +88,14 @@ const routeMeta = {
       'Explore the OPH cosmic-capacity closure boundary, the bounded generation-register counterfamily, the non-evaluable direct N closure, and two conditional reserve candidates.',
   },
   'dark-matter': {
-    title: 'Dark Matter & MOND Explained - Galaxy Rotation Curves from Holography | OPH Lab',
+    title: 'Dark-Sector Continuation | MOND and Rotation-Curve Benchmark | OPH Lab',
     description:
       'Review the OPH discussion of dark-matter-style phenomena, galaxy rotation curves, and MOND-like behavior.',
   },
   'classical-physics': {
-    title: 'How Classical Physics Emerges from Quantum Gravity | OPH Lab',
+    title: 'Classical Limits of the Conditional OPH Gravity Branch | OPH Lab',
     description:
-      'Follow how classical physics emerges as an effective description of deeper observer-patch dynamics.',
+      'Follow the classical limits of the conditional OPH gravity branch and the open thermodynamic, dimension, clock, and cosmological attachments.',
   },
   'quantum-mechanics': {
     title: 'Quantum Mechanics in OPH | Algebraic Boundary and Record Probabilities | OPH Lab',
@@ -103,22 +103,22 @@ const routeMeta = {
       'Inspect the OPH quantum-algebraic basis: quantum mechanics is the algebraic information language used by the reconstruction program.',
   },
   entanglement: {
-    title: 'Bell\'s Theorem & Quantum Entanglement - Interactive Simulator | OPH Lab',
+    title: 'Bell\'s Theorem and Quantum Entanglement | Interactive Lesson | OPH Lab',
     description:
       'Use the entanglement lesson to connect Bell-style correlations and the OPH observer-consistency story.',
   },
   'error-correction': {
-    title: 'Spacetime as Quantum Error Correcting Code - HaPPY Code Explained | OPH Lab',
+    title: 'Quantum Error Correction on the OPH Recovery Branch | OPH Lab',
     description:
       'Learn how quantum error correction ideas fit into the OPH account of spacetime and holography.',
   },
   'gauge-symmetry': {
-    title: 'Origin of Gauge Symmetry - Why SU(3)xSU(2)xU(1)? | OPH Lab',
+    title: 'Gauge Reconstruction from Patch Gluing | OPH Lab',
     description:
       'See how gauge symmetry is framed as a gluing phenomenon in the OPH reconstruction.',
   },
   'standard-model': {
-    title: 'Deriving the Standard Model - Particle Physics from Holography | OPH Lab',
+    title: 'Standard Model Structure | Exact Results and Open Physical Attachments | OPH Lab',
     description:
       'Review the OPH route toward Standard Model structure as emergent effective physics and its connection to the Standard Model unified with gravity search route.',
   },
@@ -133,14 +133,14 @@ const routeMeta = {
       'Audit the rejected target-informed OPH weighted-cycle neutrino candidate, its NuFIT 6.1 correlated-profile failure, and the source, basis, Takagi, and ordering gates required before any physical prediction.',
   },
   unification: {
-    title: 'Grand Unification Without GUTs - Coupling Constant Convergence | OPH Lab',
+    title: 'Coupling-Unification Continuation | OPH | OPH Lab',
     description:
       'Inspect the coupling-unification lesson and the OPH account of apparent grand-unification patterns, Standard Model plus gravity, and broader physics unification.',
   },
   'qft-emerges': {
-    title: 'How Quantum Field Theory Emerges from a Holographic Screen | OPH Lab',
+    title: 'QFT Reconstruction Boundary | OPH Lab',
     description:
-      'Follow the argument that quantum field theory is an effective layer emerging from deeper screen dynamics.',
+      'Inspect the structural QFT precursors and the open nonperturbative observable, locality, positivity, continuum, and physical-field receipts.',
   },
   'consensus-protocol': {
     title: 'Reality as a Consensus Protocol - Overlap Repair, Normal Form, and Records | OPH Lab',
@@ -158,9 +158,9 @@ const routeMeta = {
       'Review the OPH pressure-test surface, separating public quantitative rows from continuation-level signatures and open phenomenology.',
   },
   synthesis: {
-    title: 'OPH Synthesis - Recovered Core, Particles, Consensus, and Observer Machinery | OPH Lab',
+    title: 'OPH Synthesis | Closure Targets, Branches, and Continuation Lanes | OPH Lab',
     description:
-      'See how OPH ties the derivation chain together across structural theorems, branch-conditional gravity results, particles, consensus, and observer machinery.',
+      'See how OPH connects exact finite results, declared branch conditions, exploratory receipts, and open physical attachments without collapsing their status.',
   },
   glossary: {
     title: 'Quantum Gravity & Holography Glossary - Key Terms Explained | OPH Lab',
@@ -168,9 +168,9 @@ const routeMeta = {
       'Use the OPH Lab glossary for concise definitions of the core holography, gravity, and quantum-information terms.',
   },
   resources: {
-    title: 'Resources - OPH Seven-Paper Release Stack and Study Surfaces | OPH Lab',
+    title: 'Further Reading | OPH Papers, Book, Challenge, and Study Resources | OPH Lab',
     description:
-      'Find the seven-paper OPH release stack, HTML paper summaries, book, blog, search-entry pages for Standard Model unified with gravity and cosmological constant derivation, coherence map, applications page, extra demos, challenge, and supporting reading for deeper study of Observer Patch Holography.',
+      'Find the current OPH paper stack, guided Learn chapters, book, simulator receipts, challenge, and supporting technical resources.',
   },
 };
 

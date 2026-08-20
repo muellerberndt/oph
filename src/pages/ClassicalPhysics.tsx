@@ -1,11 +1,12 @@
 import { Explainer } from '../components/Explainer';
+import { MINI_UNIVERSE_SIMULATION_URL } from '../content/paperSurface';
 
 export function ClassicalPhysicsPage() {
     return (
         <div>
             <div className="section-header">
                 <span className="section-tag gr">Chain 1: GR</span>
-                <h1 style={{ fontSize: '1.5rem', margin: 0 }}>Classical Physics Emerges</h1>
+                <h1 style={{ fontSize: '1.5rem', margin: 0 }}>Classical Limits</h1>
             </div>
 
             <p style={{ marginBottom: '16px' }}>
@@ -84,22 +85,23 @@ export function ClassicalPhysicsPage() {
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Thermodynamics</h3>
             <p style={{ marginBottom: '16px' }}>
-                The laws of thermodynamics appear here as consequences of the OPH framework:
+                This page separates standard consequences of the conditional Einstein branch from thermodynamic
+                interfaces that OPH still takes as branch inputs:
             </p>
             <div className="card" style={{ marginBottom: '12px', borderLeft: '3px solid var(--accent-gold)' }}>
                 <h4 style={{ margin: '0 0 8px 0', fontSize: '0.9em' }}>Zeroth Law (Thermal Equilibrium)</h4>
                 <p style={{ margin: 0, fontSize: '0.85em' }}>
-                    If A is in equilibrium with B, and B with C, then A with C. In OPH: this is overlap consistency
-                    (Axiom A2). If patches A-B and B-C agree on B, then A and C have a consistent description on
-                    any shared data.
+                    If A is in equilibrium with B, and B with C, then A with C. Observer agreement supplies an
+                    analogy on shared records, but thermodynamic transitivity requires its own temperature and
+                    equilibrium construction.
                 </p>
             </div>
             <div className="card" style={{ marginBottom: '12px', borderLeft: '3px solid var(--accent-gold)' }}>
                 <h4 style={{ margin: '0 0 8px 0', fontSize: '0.9em' }}>First Law (Energy Conservation)</h4>
                 <p style={{ margin: 0, fontSize: '0.85em' }}>
-                    Energy is conserved: dU = &delta;Q &minus; &delta;W. In OPH: follows from the stress-energy
-                    conservation &nabla;<sub>a</sub>T<sup>ab</sup> = 0, which is built into Einstein's equations
-                    via the Bianchi identity.
+                    Energy is conserved: dU = &delta;Q &minus; &delta;W. On the Einstein branch, covariant
+                    stress-energy conservation follows from the Bianchi identity. Identifying that statement with a
+                    complete thermodynamic first law requires the matter, heat, work, and clock interfaces.
                 </p>
             </div>
             <div className="card" style={{ marginBottom: '12px', borderLeft: '3px solid var(--accent-gold)' }}>
@@ -113,9 +115,9 @@ export function ClassicalPhysicsPage() {
             <div className="card" style={{ marginBottom: '12px', borderLeft: '3px solid var(--accent-gold)' }}>
                 <h4 style={{ margin: '0 0 8px 0', fontSize: '0.9em' }}>Third Law (Absolute Zero)</h4>
                 <p style={{ margin: 0, fontSize: '0.85em' }}>
-                    Entropy approaches zero as temperature approaches zero. In OPH: at T = 0, the modular
-                    Hamiltonian has a unique ground state, and the entanglement entropy is minimized. Perfect
-                    purity is the limit of maximum information.
+                    The Nernst or ground-state form of the third law is not derived from the three axioms. Any OPH
+                    application needs a specified Hamiltonian, ground-state structure, temperature map, and limiting
+                    control.
                 </p>
             </div>
 
@@ -128,13 +130,13 @@ export function ClassicalPhysicsPage() {
                 <div style={{ padding: '12px', background: 'rgba(201, 112, 112, 0.1)', border: '1px solid rgba(201, 112, 112, 0.3)', fontSize: '0.85em' }}>
                     <div style={{ color: 'var(--accent-rose)', fontWeight: 600, marginBottom: '4px' }}>Declared branch outputs</div>
                     <ul style={{ paddingLeft: '16px', margin: 0, lineHeight: '1.8' }}>
-                        <li>3+1 spacetime dimensions</li>
-                        <li>Lorentz invariance</li>
+                        <li>Candidate 3+1 spacetime attachment; physical dimension bridge open</li>
+                        <li>Lorentz kinematics on the explicit BW branch</li>
                         <li>Conditional Einstein branch</li>
-                        <li>Cosmological constant &Lambda;</li>
+                        <li>Cosmic-capacity closure boundary; no source-selected N</li>
                         <li>Newton's laws of motion</li>
                         <li>Newtonian gravity</li>
-                        <li>Laws of thermodynamics</li>
+                        <li>Thermodynamic consequences only after the named entropy, matter, and equilibrium interfaces</li>
                         <li>Exact or conditional collar recovery on its declared premises</li>
                         <li>De Sitter cosmology</li>
                     </ul>
@@ -152,6 +154,19 @@ export function ClassicalPhysicsPage() {
                 </div>
             </div>
 
+            <div className="card" style={{ marginBottom: '24px', borderLeft: '3px solid var(--accent-cyan)' }}>
+                <h4 style={{ margin: '0 0 8px', fontSize: '0.9em', color: 'var(--accent-cyan)' }}>
+                    Simulator check: refinement depth is not yet physical dimension
+                </h4>
+                <p style={{ margin: '0 0 10px', fontSize: '0.84em' }}>
+                    The latest OPH-FPE probe calibrates heat-kernel spectral and Weyl estimators, then applies them
+                    to declared coupled refinement-tower operators. The resulting dimensions are exploratory
+                    operator statistics. They do not discharge overlap gluing, scale, spacetime attachment, or the
+                    physical three-dimensionality premise.
+                </p>
+                <a href={MINI_UNIVERSE_SIMULATION_URL}>Open the simulation surface &rarr;</a>
+            </div>
+
             <Explainer title="What about electromagnetism?">
                 <p>
                     Electromagnetism and the other gauge forces belong to <strong>Chain 2</strong> via the
@@ -167,10 +182,10 @@ export function ClassicalPhysicsPage() {
                     But the microscopic laws are time-reversal invariant. Where does the arrow come from?
                 </p>
                 <p>
-                    In OPH, the answer is straightforward: the universe started with a small screen area
-                    (low entropy = few active pixels) and is evolving toward the MaxEnt state (de Sitter, maximum
-                    area). The arrow of time is the direction of increasing screen area. There is no mystery:
-                    the initial state was atypical (low area), and typical evolution increases area.
+                    OPH contains finite record-ordering and conditional entropy-production lanes, but the current
+                    corpus does not derive the observed cosmological arrow from a source-selected initial condition.
+                    A small-area beginning and monotonic approach to a de Sitter maximum remain a physical history
+                    proposal requiring dynamics, clock, and cosmological attachment.
                 </p>
             </Explainer>
 

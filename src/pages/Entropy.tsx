@@ -43,9 +43,9 @@ export function EntropyPage() {
                 observer-relative character is exactly what OPH elevates to a foundational principle.
             </p>
             <p style={{ marginBottom: '16px' }}>
-                Three notions of entropy converge in OPH: Shannon entropy (information theory), von Neumann entropy
-                (quantum mechanics), and Bekenstein-Hawking entropy (black holes). Their unity follows from a
-                fundamentally informational description of reality.
+                The OPH program relates three entropy notions: Shannon entropy, von Neumann entropy, and
+                Bekenstein-Hawking/generalized entropy. The identifications are typed interfaces with their own
+                hypotheses; an informational vocabulary alone does not make the three quantities identical.
             </p>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Shannon Entropy</h3>

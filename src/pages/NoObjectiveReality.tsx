@@ -14,25 +14,25 @@ const QUESTIONS: Question[] = [
         problem: 'How do gravity and QM fit together?',
         conventional: 'Try to quantize the gravitational field. Leads to non-renormalizable infinities.',
         hiddenAssumption: 'Spacetime is fundamental and must be quantized.',
-        ophResolution: 'Spacetime is emergent from information. Gravity = consistency condition on entanglement. Einstein\'s equations are recovered on the declared branch (generalized entropy stationarity plus the stated bridge conditions), not quantized.',
+        ophResolution: 'OPH explores spacetime as a recovered observer-facing structure. A Jacobson-type Einstein relation is obtained on the declared generalized-entropy, null-bridge, projective, and stationarity branch; the physical attachment remains conditional.',
     },
     {
         problem: 'The measurement problem',
         conventional: 'Wave function collapses upon observation. Nobody agrees on what triggers collapse.',
         hiddenAssumption: 'A God\'s-eye view exists where the wave function is "really" in superposition.',
-        ophResolution: 'There is no God\'s-eye view. "Collapse" is belief-updating within a patch. On the declared quantum algebra-state surface, Gleason-type conditions fix the Born assignment for public record projectors.',
+        ophResolution: 'The formalism uses patch-relative states and local record conditioning instead of a privileged global readout. Born trace weights and Lüders updates live on declared algebra/instrument surfaces; source production of the full physical instrument remains open.',
     },
     {
         problem: 'Why is the universe so uniform?',
         conventional: 'Distant regions had no causal contact but have the same temperature. Invoke inflation.',
         hiddenAssumption: 'Non-uniformity is the default; uniformity needs explaining.',
-        ophResolution: 'Uniformity IS the default (MaxEnt). Non-uniformity needs explaining, not the other way around.',
+        ophResolution: 'A3 selects the least-informative state inside a fixed compatible constraint family. Turning that local principle into observed cosmological uniformity still requires dynamics, initial-state, clock, and cosmological attachment.',
     },
     {
         problem: 'Where is all the supersymmetry?',
         conventional: 'MSSM predicts superpartner particles. None found at the LHC.',
         hiddenAssumption: 'MSSM-like beta functions require superpartner particles.',
-        ophResolution: 'Edge modes at patch boundaries produce the same beta-function shifts. Same math, no particles.',
+        ophResolution: 'The published edge-running surface reproduces MSSM-like beta-shift behavior without introducing a superpartner sector. Physical running, thresholds, and endpoint matching retain their stated premises.',
     },
     {
         problem: 'The cosmological constant problem',
@@ -50,7 +50,7 @@ const QUESTIONS: Question[] = [
         problem: 'Black hole information paradox',
         conventional: 'Information seems to be destroyed when it falls into a black hole.',
         hiddenAssumption: 'Inside and outside the black hole are independent subsystems.',
-        ophResolution: 'They\'re not independent. The interior is encoded in boundary data. Information comes out because finite capacity leaves nowhere else for it to go.',
+        ophResolution: 'OPH treats inside/outside records through a shared boundary and finite-capacity ledger. A complete evaporation, interior reconstruction, and information-release theorem requires the relevant dynamics and readout bridges.',
     },
     {
         problem: 'Why three generations?',
@@ -68,7 +68,7 @@ const QUESTIONS: Question[] = [
         problem: 'The hard problem of consciousness',
         conventional: 'How does subjective experience arise from objective physical processes?',
         hiddenAssumption: 'Objective reality is primary; subjectivity must be derived from it.',
-        ophResolution: 'Subjectivity is the starting point. Every description is a view from somewhere. The "hard problem" dissolves because experience does not emerge from an objective physical substrate.',
+        ophResolution: 'Observer-local description is the starting point: every physical statement is tied to a bounded record-holding patch. This reframes the hard problem, but the physics corpus does not claim a theorem deriving or dissolving consciousness.',
     },
 ];
 
@@ -100,13 +100,13 @@ export function NoObjectiveRealityPage() {
             </div>
 
             <p style={{ marginBottom: '16px' }}>
-                The deepest insight of OPH is also the simplest: <strong>there is no God's-eye view</strong>.
-                Every piece of evidence you have for an "objective world" is itself a subjective experience.
-                You've never stepped outside your perspective to verify that reality exists independently.
+                OPH begins without a privileged God's-eye description. Every physical assertion is represented through
+                bounded observers, their records, and the maps that compare overlapping views.
             </p>
             <p style={{ marginBottom: '16px' }}>
-                What you call "objective" is actually <em>intersubjective</em>: the consistent overlap of many viewpoints.
-                OPH takes this seriously. Reality IS the process of making observations between observers consistent.
+                On the formal surface, objectivity is reconstructed as agreement of public records modulo declared
+                silent or gauge equivalence. That operational claim is narrower than proving that no observer-independent
+                ontology can exist.
             </p>
             <p style={{ marginBottom: '32px', color: 'var(--text-muted)', fontSize: '0.9em' }}>
                 Every major puzzle in physics contains a hidden assumption. Use <strong>Reveal OPH Resolution</strong> on each card.

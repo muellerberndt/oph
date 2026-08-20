@@ -15,8 +15,13 @@ import {
     RESEARCH_LICENSE_URL,
     RESEARCH_PAPER_DIR_URL,
     RESEARCH_PATENT_POLICY_URL,
+    RESEARCH_RELEASE_DATE,
+    RESEARCH_RELEASE_ID,
     RESEARCH_REPO_URL,
+    SIMULATOR_REPO_URL,
     SIMULATION_URL,
+    TEXTBOOK_MACHINE_URL,
+    TEXTBOOK_OUTPUTS_URL,
     TEXTBOOKS_URL,
     THREE_BODY_DEMO_URL,
     THEORY_URL,
@@ -58,8 +63,20 @@ export function ResourcesPage() {
             </div>
 
             <p style={{ marginBottom: '24px' }}>
-                Primary sources, mirrors, and entry points for the OPH public stack.
+                Primary sources, mirrors, and entry points for the OPH public stack. This Lab is aligned to paper
+                snapshot <strong>{RESEARCH_RELEASE_ID}</strong> ({RESEARCH_RELEASE_DATE}) and the current finite
+                simulator boundary.
             </p>
+
+            <div className="card" style={{ marginBottom: '24px', borderLeft: '3px solid var(--accent-gold)' }}>
+                <h4 style={{ margin: '0 0 8px', fontSize: '0.9em', color: 'var(--accent-gold)' }}>How the public surfaces fit together</h4>
+                <p style={{ margin: 0, fontSize: '0.84em' }}>
+                    Use the textbooks for guided exposition, this Lab for interactive status-aware exploration, the
+                    papers and Lean/code for technical claims, and simulator receipts for finite computational tests.
+                    If explanatory wording conflicts with a current paper or receipt, the paper plus its formal or
+                    executable evidence controls the research status.
+                </p>
+            </div>
 
             <div className="card" style={{ marginBottom: '24px', borderLeft: '3px solid var(--accent-cyan)' }}>
                 <h4 style={{ margin: '0 0 8px 0', fontSize: '0.9em', color: 'var(--accent-cyan)' }}>
@@ -90,8 +107,8 @@ export function ResourcesPage() {
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Seven-Paper Release Stack</h3>
             <p style={{ marginBottom: '16px', fontSize: '0.85em', color: 'var(--text-muted)' }}>
-                The lab treats these six core papers as the public source of truth. Use the individual paper that
-                matches the surface you are discussing.
+                The Lab lists the flagship synthesis plus six focused papers. Use the individual paper that matches
+                the surface you are discussing.
             </p>
 
             <div style={{ display: 'grid', gap: '12px', marginBottom: '24px' }}>
@@ -201,11 +218,14 @@ export function ResourcesPage() {
                         OPH Textbooks
                     </h4>
                     <p style={{ margin: '0 0 8px 0', fontSize: '0.85em' }}>
-                        Guided study surface for readers who want a more structured walk through the material.
+                        Guided study surface for readers who want a structured path. The newer Machine and Outputs
+                        books use the same observer, record, repair, and readback vocabulary as this Lab.
                     </p>
-                    <a href={TEXTBOOKS_URL} target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.85em' }}>
-                        learn.floatingpragma.io &rarr;
-                    </a>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+                        <a href={TEXTBOOKS_URL} target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.85em' }}>Textbooks &rarr;</a>
+                        <a href={TEXTBOOK_MACHINE_URL} target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.85em' }}>The OPH Machine &rarr;</a>
+                        <a href={TEXTBOOK_OUTPUTS_URL} target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.85em' }}>The Outputs &rarr;</a>
+                    </div>
                 </div>
 
                 <div className="card" style={{ borderLeft: '3px solid var(--accent-gold)' }}>
@@ -217,6 +237,10 @@ export function ResourcesPage() {
                     </p>
                     <a href={MINI_UNIVERSE_SIMULATION_URL} target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.85em' }}>
                         simulation.floatingpragma.io &rarr;
+                    </a>
+                    {' · '}
+                    <a href={SIMULATOR_REPO_URL} target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.85em' }}>
+                        receipt source &rarr;
                     </a>
                 </div>
 
@@ -317,7 +341,7 @@ export function ResourcesPage() {
             <Explainer title="How to cite OPH material">
                 <p>
                     Cite the specific paper that matches the claim you are discussing. The public OPH surface spans
-                    six core papers plus maintained extra papers.
+                    the flagship synthesis, six focused papers, and maintained extra papers.
                 </p>
                 <p>
                     For technical statements, it is better to cite the exact paper and visible release line than to

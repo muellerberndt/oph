@@ -6,25 +6,25 @@ export type SeoMeta = {
 };
 
 const DEFAULT_DESCRIPTION =
-  'Interactive guide to OPH across quantum gravity, Standard Model structure, observation, the audited cosmic-capacity closure boundary, the Higgs hierarchy, and screen microphysics.';
+  'Interactive research-status guide to OPH: exact finite results, branch conditions, exploratory simulator receipts, open physical attachments, and current paper links.';
 
-const DEFAULT_TITLE = 'OPH Lab | Declared OPH Paper Surface';
+const DEFAULT_TITLE = 'OPH Lab | Research Status and Interactive Derivations';
 const SITE_SUFFIX = ' | OPH Lab';
 
 const ROUTE_DESCRIPTIONS: Record<string, string> = {
-  '/': 'Explore the OPH reconstruction: observer patches, relativity, gravity, Standard Model structure, the non-evaluable direct N closure, conditional reserve candidates, and the Higgs hierarchy bridge.',
+  '/': 'Explore the current OPH research surface: self-reading observer patches, exact finite results, conditional gravity and gauge branches, open physical bridges, and exploratory simulator receipts.',
   '/hints': 'Review the experimental and conceptual clues that motivate Observer Patch Holography as a deeper account of physical reality.',
-  '/no-objective-reality': 'Explore the argument that physics should be built from observer-local descriptions instead of a single objective frame.',
+  '/no-objective-reality': 'Explore the operational OPH starting point: physical descriptions are observer-local records, without treating that modeling choice as a proof of a final ontology.',
   '/the-screen': 'Learn how OPH models reality on a holographic screen, uses local patches to recover spacetime structure, and reads the S0 to S3 sphere ladder as a role map.',
   '/axioms': 'See the three OPH axioms, the declared sector completions with open physical status, and the technical-premise ledger used by the declared papers.',
   '/entropy': 'Follow the entropy and area-bound intuition that connects finite information capacity to holographic physics.',
-  '/entanglement-geometry': 'Understand how entanglement structure gives rise to geometry in the OPH reconstruction program.',
+  '/entanglement-geometry': 'Understand how entanglement structure enters the conditional OPH geometry-reconstruction branch and where physical attachment remains open.',
   '/lorentz': 'Study the OPH route from screen-local consistency to Lorentz symmetry and relativistic structure.',
-  '/modular-flow': 'See how modular flow enters the explicit BW branch of the declared OPH gravity route.',
+  '/modular-flow': 'See how modular flow enters the explicit Bisognano-Wichmann branch without promoting the branch assumptions into unconditional results.',
   '/gravity': 'Trace the conditional OPH gravity branch from generalized entropy and null-modular data to the Jacobson-type Einstein relation.',
   '/de-sitter': 'Explore the OPH cosmic-capacity closure boundary, the bounded generation-register counterfamily, the non-evaluable direct N closure, and two conditional reserve candidates.',
   '/dark-matter': 'Review the OPH discussion of dark-matter-style phenomena, galaxy rotation curves, and MOND-like behavior.',
-  '/classical-physics': 'Follow how classical physics emerges as an effective description of deeper observer-patch dynamics.',
+  '/classical-physics': 'Follow the classical limits of the conditional OPH gravity branch and the open thermodynamic, dimension, clock, and cosmological attachments.',
   '/quantum-mechanics': 'Inspect the OPH quantum-algebraic basis: quantum mechanics is the algebraic information language used by the reconstruction program.',
   '/entanglement': 'Use the entanglement lesson to connect Bell-style correlations and the OPH observer-consistency story.',
   '/error-correction': 'Learn how quantum error correction ideas fit into the OPH account of spacetime and holography.',
@@ -33,13 +33,13 @@ const ROUTE_DESCRIPTIONS: Record<string, string> = {
   '/masses': 'Review the OPH matter-sector surface, including the capacity-electroweak hierarchy bridge, Higgs/top split, and downstream continuation lanes.',
   '/neutrinos': 'Audit the rejected target-informed OPH weighted-cycle neutrino candidate, its NuFIT 6.1 correlated-profile failure, basis and Takagi defects, and the source-closure gates required before any physical neutrino prediction.',
   '/unification': 'Inspect the coupling-unification lesson and the OPH account of apparent grand-unification patterns, Standard Model plus gravity, and broader physics unification.',
-  '/qft-emerges': 'Follow the argument that quantum field theory is an effective layer emerging from deeper screen dynamics.',
+  '/qft-emerges': 'Inspect the structural QFT precursors and the open nonperturbative observable, locality, positivity, continuum, and physical-field receipts.',
   '/consensus-protocol': 'Explore OPH as observer-based fixed-point consensus: overlap repair, Lyapunov descent, schedule-independent normal form, controlled coarse-graining, holonomy obstructions, and record stability.',
   '/screen-microphysics': 'Inspect the federated patch-carrier architecture used by OPH to model records, measurement, checkpoint/restoration, public hardware evidence, and observer synchronization.',
-  '/predictions': 'Inspect the frozen primitive twelve-port degree-six propagation prediction, its exact coefficient ratios, branch boundary, quantitative rows, and other OPH pressure tests.',
-  '/synthesis': 'See how OPH ties local closure to a separately stated self-reference principle, a non-evaluable direct N closure, conditional cosmological bridges, and the structural, particle, consensus, and observer surfaces.',
+  '/predictions': 'Inspect the frozen primitive twelve-port degree-six branch, its exact coefficient ratios, unarmed comparison boundary, and other OPH pressure tests.',
+  '/synthesis': 'See how OPH connects exact finite results, declared branch conditions, exploratory receipts, and open physical attachments without collapsing their status.',
   '/glossary': 'Use the OPH Lab glossary for concise definitions of the core holography, gravity, and quantum-information terms.',
-  '/resources': 'Find the OPH paper stack, HTML summaries, book, blog, Standard Model and conditional cosmological-capacity pages, coherence map, applications, demos, challenge, and supporting reading.',
+  '/resources': 'Find the current OPH paper stack, guided Learn chapters, book, simulator receipts, challenge, and supporting technical resources.',
 };
 
 function normalizePathname(pathname: string): string {

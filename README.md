@@ -16,11 +16,17 @@ Research status is controlled from the sibling `reverse-engineering-reality/` re
 - `paper/reality_as_consensus_protocol.tex`
 - `paper/screen_microphysics_and_observer_synchronization.tex`
 - `paper/tex_fragments/PAPER.tex`
-- `paper/tex_fragments/TECHNICAL_SUPPLEMENT.tex`
+- `paper/tex_fragments/THREE_AXIOM_BASIS.tex`
+- `paper/tex_fragments/UNIFIED_OBSERVER_PHYSICS_SPINE.tex`
 - `code/particles/RESULTS_STATUS.md`
+- `claims/claim_registry.yaml`
+- `tracking/premise_register.json`
 - `README.md`
 
-When the paper status changes, update those sources first, then sync the OPH Lab copy.
+The finite-simulation boundary is controlled by the sibling `oph-physics-sim/` repo, especially its `README.md`,
+lane design documents, receipts, and `docs/RUN_OUTPUTS_AND_VISUALIZATION.md`. The Learn site is a guided
+exposition surface; when its prose differs from a current paper or receipt, the research artifact controls claim
+status. When the paper or simulator status changes, update those sources first, then sync the OPH Lab copy.
 
 ## Paper Surface Summary
 

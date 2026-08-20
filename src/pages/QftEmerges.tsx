@@ -7,14 +7,15 @@ export function QftEmergesPage() {
         <div>
             <div className="section-header">
                 <span className="section-tag qft">Chain 2: QFT</span>
-                <h1 style={{ fontSize: '1.5rem', margin: 0 }}>QFT Emerges</h1>
+                <h1 style={{ fontSize: '1.5rem', margin: 0 }}>QFT Reconstruction Boundary</h1>
             </div>
 
             <p style={{ marginBottom: '16px' }}>
                 The <strong>Chain 2 synthesis page</strong> traces the reconstruction from the quantum-algebraic OPH
                 ledger plus theorem-local technical premises to the structural Standard Model branch and several
-                downstream matter-sector continuations. Quantum field theory appears here as an
-                <strong>emergent effective description</strong> that arises from the screen algebra in the appropriate limits.
+                downstream matter-sector continuations. A local relativistic quantum field theory is the intended
+                effective endpoint; the nonperturbative observable tower, locality, positivity, spectral condition,
+                continuum transport, and physical field attachment are still explicit open receipts.
             </p>
 
             <div className="math-block" style={{ fontSize: '0.95em', lineHeight: '2.2' }}>
@@ -54,13 +55,13 @@ export function QftEmergesPage() {
                     {
                         step: '2',
                         title: 'Entanglement structure',
-                        detail: 'Bell inequality violation, Tsirelson bound 2\u221a2, and monogamy of entanglement hold within the supplied complex Hilbert-space setting.',
+                        detail: 'The Tsirelson upper bound 2\u221a2 and a declared Bell-state witness live in the supplied complex Hilbert-space setting. Current source counts do not produce a Bell violation; contextual readout routes remain separate.',
                         color: 'var(--accent-blue)',
                     },
                     {
                         step: '3',
                         title: 'Quantum error correction',
-                        detail: 'Bulk-boundary map = quantum error-correcting code. The recovery interface, a declared premise rather than an axiom, supplies the recoverability side of that structure. Spacetime is a code.',
+                        detail: 'The declared recovery interface is code-like and supplies recoverability under named hypotheses. It is not a theorem that physical spacetime is literally a quantum code on every branch.',
                         color: 'var(--accent-blue)',
                     },
                     {
@@ -72,7 +73,7 @@ export function QftEmergesPage() {
                     {
                         step: '5',
                         title: 'Standard Model gauge group',
-                        detail: 'The finite A5 packet conditionally recognizes u(1)+su(3)+su(2), the quotient, and three colors. It supplies a rank-three candidate family band; N_g=3 enters as a declared completion inside the 3-to-5 window, while the rank-45 physical attachment remains open.',
+                        detail: 'The finite A5 packet forces the abstract Lie type and the declared fixture carries three colors plus a common Z6 kernel. Physical global form and matter selection are open; N_g=3 is a declared completion inside the 3-to-5 window.',
                         color: 'var(--accent-cyan)',
                     },
                     {
@@ -90,7 +91,7 @@ export function QftEmergesPage() {
                     {
                         step: '8',
                         title: 'Quantum field theory as effective description',
-                        detail: 'In the continuum limit (many pixels, low curvature), the screen algebra reduces to a local QFT on the emergent spacetime.',
+                        detail: 'The intended endpoint is a local relativistic QFT. A nonperturbative OS/Wightman-quality construction and physical field/readout attachment remain open.',
                         color: 'var(--accent-green)',
                     },
                 ].map((item) => (
@@ -130,8 +131,7 @@ export function QftEmergesPage() {
                         <li>Patch operator algebras and states as the starting language</li>
                         <li>Born/trace event probabilities on declared record algebras</li>
                         <li>Measurement as local record updating</li>
-                        <li>Bell inequality violation</li>
-                        <li>Tsirelson bound (2&radic;2)</li>
+                        <li>Tsirelson bound (2&radic;2) in the supplied operator setting; no source-derived Bell violation</li>
                         <li>Axiom-forced compact Lie type u(1) &oplus; su(2) &oplus; su(3)</li>
                         <li>Source reconstruction of the complete current is open</li>
                         <li>Rank-three candidate family band; declared completion N<sub>g</sub> = 3</li>
@@ -172,7 +172,7 @@ export function QftEmergesPage() {
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>QFT as Continuum Limit</h3>
             <p style={{ marginBottom: '16px' }}>
-                Quantum field theory is an <strong>effective continuum limit</strong> of the screen algebra when:
+                The proposed QFT endpoint is sought in a continuum/scaling regime where:
             </p>
             <ul style={{ paddingLeft: '20px', lineHeight: '1.8', marginBottom: '16px' }}>
                 <li>The Lambda-located horizon count is large (N<sub>&Lambda;</sub> &asymp; {SCREEN_CAPACITY_REFERENCE_DISPLAY})</li>
@@ -187,8 +187,9 @@ export function QftEmergesPage() {
 
             <Explainer title="Why QFT breaks down at the Planck scale">
                 <p>
-                    QFT is an effective description valid at energies E &lt;&lt; M<sub>P</sub> (distances L &gt;&gt; l<sub>P</sub>).
-                    At the Planck scale, the continuum approximation breaks down because:
+                    In the intended physical interpretation, QFT is an effective description at energies
+                    E &lt;&lt; M<sub>P</sub>. OPH motivates a finite-carrier completion, but has not yet proved that the
+                    continuum approximation fails by exactly this mechanism. The candidate picture is:
                 </p>
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
                     <li>Individual pixels become resolved (the "lattice spacing" of the screen)</li>
@@ -196,9 +197,8 @@ export function QftEmergesPage() {
                     <li>The emergent spacetime geometry fluctuates on this scale</li>
                 </ul>
                 <p>
-                    This explains why quantizing gravity as a QFT fails: GR + QFT is non-renormalizable because
-                    QFT assumes a smooth background, but at the Planck scale the background IS the dynamical
-                    variable (the screen). OPH uses the screen algebra at the fundamental level.
+                    This is the programmatic reason OPH uses a finite screen algebra at the fundamental level. It is
+                    not a completed theorem that this mechanism alone explains perturbative non-renormalizability.
                 </p>
             </Explainer>
 

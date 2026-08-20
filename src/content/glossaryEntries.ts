@@ -156,7 +156,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
         term: 'Compact-Gauge Refinement Receipt',
         definition: 'Explicit refinement data supplying finite-state extendability, center-compatible block-multiplicity embeddings, common stagewise strict representatives with coherent surjective boundary-group maps that intertwine them, finite tensor realizations, and compatible forgetful fibers. Compact-gauge colimit reconstruction is conditional on this receipt.',
         category: 'gauge',
-        usedIn: ['Axioms', 'Gauge Symmetry', 'Standard Model', 'QFT Emerges', 'Synthesis'],
+        usedIn: ['Axioms', 'Gauge Symmetry', 'Standard Model', 'QFT Boundary', 'Synthesis'],
     },
     {
         term: 'Axiom MX',
@@ -329,14 +329,14 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
         term: 'Admissibility Conditions',
         definition: 'Sector filters: transportable, anomaly-free, chiral-stable, single-Higgs, CP-capable, weak UV-completable.',
         category: 'gauge',
-        usedIn: ['Gauge Symmetry', 'Standard Model', 'QFT Emerges'],
+        usedIn: ['Gauge Symmetry', 'Standard Model', 'QFT Boundary'],
         links: [{ label: 'Admissibility simulator', url: '/standard-model' }],
     },
     {
         term: 'Declared Sector Completions',
         definition: 'The three-generation, one-Higgs, and no-extra-light-sector statements enter as declarations with open physical status after the admissibility filters; they are classifications of the realized sector, not a dynamics law and not an axiom.',
         category: 'gauge',
-        usedIn: ['Axioms', 'Gauge Symmetry', 'Standard Model', 'QFT Emerges', 'Synthesis'],
+        usedIn: ['Axioms', 'Gauge Symmetry', 'Standard Model', 'QFT Boundary', 'Synthesis'],
         links: [
             { label: 'Gauge derivation walkthrough', url: '/standard-model' },
             { label: 'Paper (Zenodo)', url: 'https://doi.org/10.5281/zenodo.18288114' },

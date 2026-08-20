@@ -57,39 +57,39 @@ export const PART_COLORS: Record<PartId, string> = {
 
 export const WALKTHROUGH_STEPS: WalkthroughStep[] = [
     // Foundation
-    { to: '/', icon: BookOpen, label: 'Fixed-Point Lab', part: 'foundation', seoTitle: 'OPH Fixed-Point Lab | Zero-Input Closure Surface' },
+    { to: '/', icon: BookOpen, label: 'Research Status', part: 'foundation', seoTitle: 'OPH Lab | Research Status and Interactive Derivations' },
     { to: '/hints/', icon: Lightbulb, label: 'Five Hints', part: 'foundation', seoTitle: 'Five Experimental Hints That Reality Is Not What It Seems' },
-    { to: '/no-objective-reality/', icon: Eye, label: 'No Objective Reality', part: 'foundation', seoTitle: 'Why There Is No Objective Reality | The 10 Hardest Questions in Physics' },
-    { to: '/the-screen/', icon: Globe, label: 'The Holographic Screen', part: 'foundation', seoTitle: 'The Holographic Screen | How a 2D Sphere Creates 3D Spacetime' },
+    { to: '/no-objective-reality/', icon: Eye, label: 'Observer-Local Reality', part: 'foundation', seoTitle: 'Observer-Local Reality | An Operational OPH Starting Point' },
+    { to: '/the-screen/', icon: Globe, label: 'The Holographic Screen', part: 'foundation', seoTitle: 'The Holographic Screen | OPH Carrier and Spacetime Boundary' },
     { to: '/axioms/', icon: Shield, label: 'The Three Axioms', part: 'foundation', seoTitle: 'The Three OPH Axioms and Declared Completions in the OPH Ledger' },
 
     // Chain 1: Axioms -> General Relativity
     { to: '/entropy/', icon: Flame, label: 'Entropy & Area Bound', part: 'chain1-gr', seoTitle: 'Entropy & the Holographic Principle | From Bits to Black Holes' },
-    { to: '/entanglement-geometry/', icon: Link, label: 'Entanglement \u2192 Geometry', part: 'chain1-gr', seoTitle: 'How Entanglement Creates Geometry | The Ryu-Takayanagi Formula' },
+    { to: '/entanglement-geometry/', icon: Link, label: 'Entanglement \u2192 Geometry', part: 'chain1-gr', seoTitle: 'Entanglement and the Geometry Reconstruction Branch' },
     { to: '/lorentz/', icon: Orbit, label: 'Lorentz from the Screen', part: 'chain1-gr', seoTitle: 'Lorentz Kinematics on the OPH Screen and BW Branch' },
     { to: '/modular-flow/', icon: Clock, label: 'Time from Modular Flow', part: 'chain1-gr', seoTitle: 'Modular Flow on the OPH BW Branch' },
     { to: '/gravity/', icon: Apple, label: 'Gravity from Entanglement', part: 'chain1-gr', seoTitle: 'Conditional Gravity Branch from Entanglement and Null-Modular Data' },
     { to: '/de-sitter/', icon: Telescope, label: 'The de Sitter Universe', part: 'chain1-gr', seoTitle: 'Cosmic Capacity Closure Boundary | de Sitter Space in OPH' },
     { to: '/dark-matter/', icon: Moon, label: 'Dark-Sector Benchmark', part: 'chain1-gr', seoTitle: 'Dark-Sector Continuation | MOND and Rotation-Curve Benchmark' },
-    { to: '/classical-physics/', icon: Orbit, label: 'Classical Physics Emerges', part: 'chain1-gr', seoTitle: 'How Classical Physics Emerges from Quantum Gravity' },
+    { to: '/classical-physics/', icon: Orbit, label: 'Classical Limits', part: 'chain1-gr', seoTitle: 'Classical Limits of the Conditional OPH Gravity Branch' },
 
     // Chain 2: Axioms -> QFT
     { to: '/quantum-mechanics/', icon: Atom, label: 'QM in OPH', part: 'chain2-qft', seoTitle: 'Quantum Mechanics in OPH | Algebraic Boundary and Record Probabilities' },
     { to: '/entanglement/', icon: Zap, label: 'Bell & Entanglement', part: 'chain2-qft', seoTitle: 'Bell\u2019s Theorem & Quantum Entanglement | Interactive Simulator' },
-    { to: '/error-correction/', icon: Lock, label: 'Quantum Error Correction', part: 'chain2-qft', seoTitle: 'Spacetime as Quantum Error Correcting Code | HaPPY Code Explained' },
-    { to: '/gauge-symmetry/', icon: Layers, label: 'Gauge from Gluing', part: 'chain2-qft', seoTitle: 'Origin of Gauge Symmetry | Why SU(3)\u00d7SU(2)\u00d7U(1)?' },
-    { to: '/standard-model/', icon: Box, label: 'The Standard Model', part: 'chain2-qft', seoTitle: 'Deriving the Standard Model | Particle Physics from Holography' },
+    { to: '/error-correction/', icon: Lock, label: 'Quantum Error Correction', part: 'chain2-qft', seoTitle: 'Quantum Error Correction on the OPH Recovery Branch' },
+    { to: '/gauge-symmetry/', icon: Layers, label: 'Gauge from Gluing', part: 'chain2-qft', seoTitle: 'Gauge Reconstruction from Patch Gluing | OPH' },
+    { to: '/standard-model/', icon: Box, label: 'Standard Model Structure', part: 'chain2-qft', seoTitle: 'Standard Model Structure | Exact Results and Open Physical Attachments' },
     { to: '/masses/', icon: Scale, label: 'Matter Continuations', part: 'chain2-qft', seoTitle: 'Matter Continuations | OPH Sector Status' },
     { to: '/neutrinos/', icon: Atom, label: 'Neutrino Audit', part: 'chain2-qft', seoTitle: 'Neutrino Audit | Rejected Weighted-Cycle Candidate and Open Source Gates' },
-    { to: '/unification/', icon: Merge, label: 'Coupling Unification', part: 'chain2-qft', seoTitle: 'Grand Unification Without GUTs | Coupling Constant Convergence' },
-    { to: '/qft-emerges/', icon: Atom, label: 'QFT Emerges', part: 'chain2-qft', seoTitle: 'How Quantum Field Theory Emerges from a Holographic Screen' },
+    { to: '/unification/', icon: Merge, label: 'Coupling Unification', part: 'chain2-qft', seoTitle: 'Coupling-Unification Continuation | OPH' },
+    { to: '/qft-emerges/', icon: Atom, label: 'QFT Boundary', part: 'chain2-qft', seoTitle: 'QFT Reconstruction Boundary | OPH' },
 
     // Consensus & observer machinery
     { to: '/consensus-protocol/', icon: GitBranch, label: 'Consensus Protocol', part: 'observer-machinery', seoTitle: 'Reality as a Consensus Protocol | Overlap Repair, Normal Form, and Records' },
     { to: '/screen-microphysics/', icon: Cpu, label: 'Screen Microphysics', part: 'observer-machinery', seoTitle: 'Federated Echosahedral Screen Microphysics in OPH' },
 
     // Predictions & Synthesis
-    { to: '/predictions/', icon: Target, label: 'Testable Predictions', part: 'predictions', seoTitle: 'Testable Predictions of Quantum Gravity | Gravitational Wave Signatures' },
+    { to: '/predictions/', icon: Target, label: 'Prediction Registry', part: 'predictions', seoTitle: 'OPH Prediction Registry | Frozen Branches and Pressure Tests' },
     { to: '/synthesis/', icon: InfinityIcon, label: 'OPH Synthesis', part: 'predictions', seoTitle: 'OPH Synthesis | Closure Targets, Branches, and Continuation Lanes' },
 
     // Reference

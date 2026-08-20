@@ -1,7 +1,16 @@
 import { useMemo } from 'react';
 import { ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { OPH_PAPERS } from '../content/paperSurface';
+import {
+    CURRENT_RESEARCH_STATUS,
+    FLAGSHIP_PAPER_URL,
+    MINI_UNIVERSE_SIMULATION_URL,
+    OPH_PAPERS,
+    RESEARCH_RELEASE_DATE,
+    RESEARCH_RELEASE_ID,
+    SIMULATION_FRONTIER,
+    TEXTBOOKS_URL,
+} from '../content/paperSurface';
 import {
     ALPHA_U_COMPARISON_REFERENCE_DISPLAY,
     ALPHA_U_FORWARD_REFERENCE_DISPLAY,
@@ -274,9 +283,36 @@ export function Home() {
 
     return (
         <div className="landing-surface-page">
+            <section className="research-hero">
+                <p className="research-hero-kicker">Research-status companion · {RESEARCH_RELEASE_ID} · {RESEARCH_RELEASE_DATE}</p>
+                <h1>See what OPH proves, assumes, tests, and leaves open.</h1>
+                <p className="research-hero-copy">
+                    Observer Patch Holography studies bounded, self-reading systems with local state, ports,
+                    records, readback, and repair. This Lab connects the formal paper stack to finite simulator
+                    receipts without flattening branch conditions or exploratory diagnostics into physical claims.
+                </p>
+                <div className="research-hero-actions">
+                    <a className="btn btn-primary" href={TEXTBOOKS_URL}>Start with the textbooks</a>
+                    <a className="btn btn-ghost" href={FLAGSHIP_PAPER_URL}>Read the technical paper</a>
+                    <a className="btn btn-ghost" href={MINI_UNIVERSE_SIMULATION_URL}>Open the simulation</a>
+                </div>
+            </section>
+
+            <section className="status-grid" aria-label="Current research status">
+                {CURRENT_RESEARCH_STATUS.map((item) => (
+                    <article key={item.label} className="status-card">
+                        <span className="status-card-kicker" style={{ color: item.tier === 'structural' ? 'var(--accent-green)' : item.tier === 'branch-conditional' ? 'var(--accent-gold)' : 'var(--accent-cyan)' }}>
+                            {item.tier}
+                        </span>
+                        <h3>{item.label}</h3>
+                        <p>{item.summary}</p>
+                    </article>
+                ))}
+            </section>
+
             <div className="demo-container landing-controls-shell" style={{ marginTop: 0 }}>
                 <div className="landing-controls-header">
-                    <h1 className="landing-controls-title">OPH Fixed-Point Lab</h1>
+                    <h2 className="landing-controls-title">Closure and comparison surface</h2>
                     <div className="landing-actions landing-actions-top">
                         <Link className="btn btn-ghost" to="/de-sitter">
                             Capacity sensitivity
@@ -287,9 +323,8 @@ export function Home() {
                     </div>
                 </div>
                 <p className="landing-controls-intro">
-                    OPH compresses an unusually broad reconstruction into one observer-consistency architecture with
-                    no fitted continuous input values at the theory layer. The lab exposes its local closure coordinate,
-                    audited global-capacity boundary, Standard Model structure, gravity branch, and Higgs/cosmological bridges.
+                    These coordinates are kept beside their epistemic status. Algebraic roots, calibration rows,
+                    target-exposed comparisons, and physical readouts are not interchangeable.
                 </p>
 
                 {renderCoreLocks(coreLocks)}
@@ -347,6 +382,29 @@ export function Home() {
                         </span>
                     </a>
                 </div>
+            </section>
+
+            <section className="card landing-links-card">
+                <div className="landing-links-header">
+                    <h3 style={{ margin: 0, fontSize: '0.95em' }}>Latest finite-simulator frontier</h3>
+                    <p className="landing-links-copy">
+                        Current OPH-FPE packages instantiate observer-like self-reading systems and emit receipts.
+                        Every lane below is deliberately bounded by what it actually computes.
+                    </p>
+                </div>
+                <div className="landing-links-grid">
+                    {SIMULATION_FRONTIER.map((item) => (
+                        <article key={item.label} className="landing-link-tile">
+                            <span className="landing-link-kicker">{item.status}</span>
+                            <strong className="landing-link-title">{item.label}</strong>
+                            <span className="landing-link-body">{item.summary}</span>
+                        </article>
+                    ))}
+                </div>
+                <a className="landing-link-cta" href={MINI_UNIVERSE_SIMULATION_URL}>
+                    <ExternalLink size={14} />
+                    Explore the visual simulator
+                </a>
             </section>
 
             <div className="card" style={{ marginBottom: '24px' }}>

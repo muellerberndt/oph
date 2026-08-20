@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
 import { NavLink, Outlet, useLocation } from 'react-router-dom';
-import { Atom, Cpu, FileText, GraduationCap, Menu, Network, Newspaper, Orbit, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import './Layout.css';
 import { WALKTHROUGH_STEPS, PART_LABELS, PART_COLORS, type PartId } from '../routes/walkthrough';
 import { WalkthroughNav } from './WalkthroughNav';
 import { installLinkTracking, trackPageView } from '../lib/analytics';
 import { SeoManager } from './SeoManager';
 import { getSeoMeta } from '../seo';
-import { APPLICATIONS_URL, BLOG_URL, CHALLENGE_URL, COHERENCE_URL, FLAGSHIP_PAPER_URL, MINI_UNIVERSE_SIMULATION_URL, OVERVIEW_URL, PHYSICS_UNIFICATION_URL, RESEARCH_LICENSE_URL, RESEARCH_PATENT_POLICY_URL, RESEARCH_REPO_URL, SIMULATION_URL, TEXTBOOKS_URL, THEORY_URL, THREE_BODY_DEMO_URL } from '../content/paperSurface';
+import { APPLICATIONS_URL, BLOG_URL, CHALLENGE_URL, COHERENCE_URL, MINI_UNIVERSE_SIMULATION_URL, OVERVIEW_URL, PHYSICS_UNIFICATION_URL, RESEARCH_LICENSE_URL, RESEARCH_PATENT_POLICY_URL, RESEARCH_RELEASE_DATE, RESEARCH_RELEASE_ID, RESEARCH_REPO_URL, SIMULATION_URL, TEXTBOOKS_URL, THEORY_URL, THREE_BODY_DEMO_URL } from '../content/paperSurface';
 
 export function Layout() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -69,6 +69,12 @@ export function Layout() {
                         </div>
                     ))}
                 </nav>
+
+                <div className="sidebar-snapshot">
+                    <span>Research snapshot</span>
+                    <strong>{RESEARCH_RELEASE_ID}</strong>
+                    <small>{RESEARCH_RELEASE_DATE}</small>
+                </div>
             </aside>
 
             <div className="main-content">
@@ -83,66 +89,6 @@ export function Layout() {
                 </header>
 
                 <main className="content-scroll">
-                    <div className="global-resource-bar" aria-label="Best OPH starting points">
-                        <span className="global-resource-label">Best starting points</span>
-                        <a className="global-resource-link" href={TEXTBOOKS_URL}>
-                            <GraduationCap size={18} />
-                            <span>
-                                <strong>OPH Textbooks</strong>
-                                <small>Guided study path through the derivations.</small>
-                            </span>
-                        </a>
-                        <a className="global-resource-link" href={FLAGSHIP_PAPER_URL}>
-                            <FileText size={18} />
-                            <span>
-                                <strong>Technical paper</strong>
-                                <small>Primary technical account of the observer-first reconstruction.</small>
-                            </span>
-                        </a>
-                        <a className="global-resource-link" href={BLOG_URL}>
-                            <Newspaper size={18} />
-                            <span>
-                                <strong>Floating Pragma Blog</strong>
-                                <small>Public essays linking OPH to meaning and computation.</small>
-                            </span>
-                        </a>
-                        <a className="global-resource-link" href={COHERENCE_URL}>
-                            <Network size={18} />
-                            <span>
-                                <strong>Coherence Map</strong>
-                                <small>Concept graph for OPH overlaps and public routes.</small>
-                            </span>
-                        </a>
-                        <a className="global-resource-link" href={PHYSICS_UNIFICATION_URL}>
-                            <Atom size={18} />
-                            <span>
-                                <strong>Physics Unification</strong>
-                                <small>Search entry page for the unification claim.</small>
-                            </span>
-                        </a>
-                        <a className="global-resource-link" href={MINI_UNIVERSE_SIMULATION_URL}>
-                            <Orbit size={18} />
-                            <span>
-                                <strong>Mini-Universe Simulation</strong>
-                                <small>Observer patches, overlap readback, records, and repair in motion.</small>
-                            </span>
-                        </a>
-                        <a className="global-resource-link" href={APPLICATIONS_URL}>
-                            <Cpu size={18} />
-                            <span>
-                                <strong>Applications</strong>
-                                <small>Use cases across hardware, compute, energy, AGI, and lift.</small>
-                            </span>
-                        </a>
-                        <a className="global-resource-link" href={THREE_BODY_DEMO_URL}>
-                            <Orbit size={18} />
-                            <span>
-                                <strong>Three-Body Demo</strong>
-                                <small>Finite patch-net simulator and proof walk-through.</small>
-                            </span>
-                        </a>
-                    </div>
-
                     <div className={`content-container ${isLandingSurface ? 'content-container-wide' : ''}`}>
                         <Outlet />
                         <WalkthroughNav />

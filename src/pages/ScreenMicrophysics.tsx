@@ -1,5 +1,5 @@
 import { Explainer } from '../components/Explainer';
-import { MICROPHYSICS_HIGHLIGHTS } from '../content/paperSurface';
+import { MICROPHYSICS_HIGHLIGHTS, MINI_UNIVERSE_SIMULATION_URL } from '../content/paperSurface';
 
 export function ScreenMicrophysicsPage() {
     return (
@@ -25,6 +25,19 @@ export function ScreenMicrophysicsPage() {
                         <div style={{ fontSize: '0.82em', color: 'var(--text-secondary)' }}>{item}</div>
                     </div>
                 ))}
+            </div>
+
+            <div className="card" style={{ marginBottom: '24px', borderLeft: '3px solid var(--accent-gold)' }}>
+                <h4 style={{ margin: '0 0 8px', fontSize: '0.9em', color: 'var(--accent-gold)' }}>
+                    Current simulator handoff
+                </h4>
+                <p style={{ margin: '0 0 10px', fontSize: '0.84em' }}>
+                    OPH-FPE now exports fourteen hashed display packages covering carrier repair, public records,
+                    observer conditioning, refinement depth, confluence, modular time, defects, finite electromagnetic
+                    response, cosmology diagnostics, and a theorem/paper/simulator evidence atlas. They preserve the
+                    boundary between display data, finite receipts, and physical claims.
+                </p>
+                <a href={MINI_UNIVERSE_SIMULATION_URL}>Open the public visualization &rarr;</a>
             </div>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Reference Architecture</h3>

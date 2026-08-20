@@ -1,4 +1,5 @@
 import { Explainer } from '../components/Explainer';
+import { MINI_UNIVERSE_SIMULATION_URL } from '../content/paperSurface';
 
 export function QuantumMechanicsPage() {
     return (
@@ -16,7 +17,8 @@ export function QuantumMechanicsPage() {
             </p>
             <p style={{ marginBottom: '24px' }}>
                 The punchline: <strong>quantum mechanics is the algebraic information language carried by
-                the observer-patch architecture</strong>.
+                the observer-patch architecture</strong>. The present corpus does not claim to derive the full
+                quantum formalism from classical records alone.
             </p>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Step 1: The Quantum-Algebraic Starting Point</h3>
@@ -61,7 +63,21 @@ export function QuantumMechanicsPage() {
                 reconstruction.
             </p>
 
-            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Step 3: "Collapse" = Belief Updating</h3>
+            <div className="card" style={{ marginBottom: '24px', borderLeft: '3px solid var(--accent-cyan)' }}>
+                <h4 style={{ margin: '0 0 8px', fontSize: '0.9em', color: 'var(--accent-cyan)' }}>Current exact boundary</h4>
+                <p style={{ margin: '0 0 10px', fontSize: '0.84em' }}>
+                    On the produced finite instrument set, normalized context weights force additivity for the
+                    coexistent sums that the instrument actually contains. An exact cubic countermodel reproduces
+                    every produced frequency and complement rule while failing additivity on an effect pair outside
+                    that set. Full cross-context additivity is therefore a separate premise; frequencies alone do
+                    not prove a universal Born valuation law.
+                </p>
+                <p style={{ margin: 0, fontSize: '0.8em', color: 'var(--text-muted)' }}>
+                    This distinction is part of the current paper surface.
+                </p>
+            </div>
+
+            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Step 3: Local Record Conditioning</h3>
             <p style={{ marginBottom: '16px' }}>
                 The measurement problem is the deepest puzzle in quantum foundations: what happens when you measure
                 a quantum system? In Copenhagen, the wave function "collapses." In many-worlds, the universe
@@ -79,10 +95,9 @@ export function QuantumMechanicsPage() {
                 &rho; &rarr; &rho;' = P<sub>k</sub> &rho; P<sub>k</sub> / Tr(P<sub>k</sub> &rho;)
             </div>
             <p style={{ marginBottom: '16px' }}>
-                This update records a change in the observer's information. The lab treats it as
-                <strong> belief updating</strong>: the observer has gained information and revises their
-                description accordingly. The "collapse" is as mundane as updating a probability when you open an
-                envelope.
+                This is the declared conditioning rule on the local record surface. It updates the state assigned
+                after an outcome; it does not, by itself, settle every ontological interpretation of collapse or
+                produce the measurement interaction from the three axioms.
             </p>
 
             <div className="card" style={{ marginBottom: '24px', borderLeft: '3px solid var(--accent-blue)' }}>
@@ -103,16 +118,29 @@ export function QuantumMechanicsPage() {
                     </div>
                     <div>
                         <div style={{ color: 'var(--accent-green)', fontWeight: 600, marginBottom: '4px' }}>
-                            OPH answers:
+                            Current OPH surface:
                         </div>
                         <ul style={{ paddingLeft: '16px', margin: 0, lineHeight: '1.8', color: 'var(--text-secondary)' }}>
-                            <li>When the observer updates</li>
-                            <li>Nothing "triggers" it. It is belief updating</li>
-                            <li>Epistemic (no physical collapse)</li>
-                            <li>The cat has a local state; you have yours. No paradox.</li>
+                            <li>Condition on a recorded local outcome</li>
+                            <li>Use the declared Lüders map on the instrument branch</li>
+                            <li>Keep physical instrument production as a separate obligation</li>
+                            <li>Compare observer records without a God's-eye readout</li>
                         </ul>
                     </div>
                 </div>
+            </div>
+
+            <div className="card" style={{ marginBottom: '24px', borderLeft: '3px solid var(--accent-gold)' }}>
+                <h4 style={{ margin: '0 0 8px', fontSize: '0.9em', color: 'var(--accent-gold)' }}>
+                    Simulator receipt: observer-frame statistics
+                </h4>
+                <p style={{ margin: '0 0 10px', fontSize: '0.84em' }}>
+                    The latest finite simulator exactly enumerates the committed Born fractions and reproduces
+                    Lüders-conditioned repeatability and cross-context weights. It is explicitly exploratory and
+                    non-evidential: the operation, contexts, and rational weights are declared inputs, so the run is
+                    a conditioning/readback receipt rather than a derivation of quantum theory.
+                </p>
+                <a href={MINI_UNIVERSE_SIMULATION_URL}>Open the finite simulation surface &rarr;</a>
             </div>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>No God's-Eye View Needed</h3>
@@ -132,8 +160,8 @@ export function QuantumMechanicsPage() {
                 </p>
                 <p>
                     The difference: QBism takes the Born rule as a normative constraint on rational agents.
-                    OPH places the Born/L&uuml;ders law on a physical patch-record surface inside a broader
-                    reconstruction program with testable predictions.
+                    OPH places the Born/L&uuml;ders law on a declared patch-record surface inside a broader
+                    reconstruction program. Source-production of the complete physical instrument remains open.
                 </p>
             </Explainer>
 
@@ -155,13 +183,14 @@ export function QuantumMechanicsPage() {
             <Explainer title="Decoherence as information leakage">
                 <p>
                     In standard QM, decoherence explains the transition from quantum to classical behavior: the
-                    environment entangles with the system, suppressing interference. In OPH, decoherence is
-                    <strong> information leaking out of the observer's patch</strong>.
+                    environment entangles with the system, suppressing interference. On an OPH patch description,
+                    this can be modeled as <strong>information leaving the retained local algebra</strong>.
                 </p>
                 <p>
                     When degrees of freedom leave the observer's patch (become entangled with the complement),
                     the observer's reduced state becomes more mixed, and off-diagonal terms in the density matrix
-                    decay. Decoherence follows from the observer's finite patch.
+                    decay. Finiteness alone does not derive a quantitative decoherence law; the environment coupling,
+                    dynamics, and readout have to be supplied or constructed.
                 </p>
             </Explainer>
 
@@ -173,8 +202,9 @@ export function QuantumMechanicsPage() {
                 <p>
                     In OPH, this theorem is understood naturally: observables are properties of the patch algebra,
                     not of the system "in itself." Different measurement contexts correspond to different sub-algebras
-                    of A(P), and there is no requirement that values be consistent across incompatible contexts.
-                    The system does not have properties until an observer's measurement context selects a sub-algebra.
+                    of A(P), and there is no requirement that one noncontextual assignment extend across incompatible
+                    contexts. This is a statement about the representation and valuation surface, not a standalone
+                    metaphysical proof that properties do not exist.
                 </p>
             </Explainer>
         </div>
