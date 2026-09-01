@@ -56,14 +56,14 @@ export const OPH_PAPERS: PaperSummary[] = [
         title: 'From Observer Consensus to Standard Physics',
         href: FLAGSHIP_PAPER_URL,
         surface: 'Flagship synthesis',
-        summary: 'The primary OPH paper: finite self-reading patches, public quantum records, Lorentzian geometry, Einstein dynamics, and Standard Model structure.',
+        summary: 'The primary OPH paper: finite self-reading patches, public quantum records, Lorentz-frame algebra, and conditional geometry, Einstein, and Standard Model branches.',
     },
     {
         slug: 'einstein',
         title: 'Recovering Observer Spacetime and Einstein Dynamics from Overlap Consistency',
         href: `${GITHUB_PDF_BASE}/recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency.pdf`,
         surface: 'Spacetime and Gravity',
-        summary: 'The complete celestial-screen, modular, event-manifold, stress, generalized-entropy, and conditional Einstein chain.',
+        summary: 'The detailed celestial-screen, modular, event-manifold, stress, generalized-entropy, and conditional Einstein implication chain, with its physical inputs stated.',
     },
     {
         slug: 'gauge',
@@ -350,8 +350,8 @@ export const PREDICTION_SURFACE = {
             summary: 'The published beta-shift surface reproduces MSSM-like running behavior without introducing a superpartner sector.',
         },
         {
-            title: 'No extra spatial dimensions on the recovered Lorentz branch',
-            summary: 'The route is screen-based 3+1 dimensional kinematics from Conf+(S^2).',
+            title: '3+1 Lorentz-frame algebra on the declared celestial branch',
+            summary: 'The screen route supplies 3+1 Lorentz-frame kinematics from Conf+(S^2). It neither derives the event-manifold dimension nor excludes extra dimensions in a physical realization.',
         },
     ],
     falsificationPressure: [
@@ -359,7 +359,7 @@ export const PREDICTION_SURFACE = {
         'Support requires exclusion of the zero-coefficient minimal Standard Model plus General Relativity baseline at five or more standard deviations, agreement with the linked branch within two standard deviations, rejection of named systematic alternatives, and replication in an independent eligible release.',
         'Observation of the ordinary simple-GUT X/Y channel or a different realized gauge quotient would pressure the corresponding declared branch.',
         'W/Z data become a physical pressure test only after OPH supplies the inputs to the checked strict-one-loop pole kernel: an FJ renormalized vev and tadpole conversion, thresholds and matching, independent gauge/BRST evidence, source covariance, amplitudes, and a clock.',
-        'A fully derived dark-sector particle explanation would conflict with the gravity-side interpretation, and the galaxy-response story is an open lane.',
-        'Ringdown data can test the horizon-comb template and pressure a continuation lane on that surface.',
+        'A fully derived dark-sector particle explanation would conflict with the gravity-side interpretation; the galaxy-response hypothesis requires its physical source and attachment.',
+        'Ringdown data can test and pressure the conditional horizon-comb template.',
     ],
 };

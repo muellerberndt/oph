@@ -9,10 +9,11 @@ export function ErrorCorrectionPage() {
             </div>
 
             <p style={{ marginBottom: '16px' }}>
-                One of the most surprising discoveries in theoretical physics: the holographic correspondence
-                between boundary and bulk has the structure of a <strong>quantum error-correcting code</strong>.
-                Spacetime is built from entanglement and <em>protected</em> by error correction. The bulk
-                (spacetime) is a logical code space encoded redundantly in the boundary (screen).
+                In AdS/CFT and related holographic models, the correspondence between boundary and bulk has the
+                structure of a <strong>quantum error-correcting code</strong>. Semiclassical bulk degrees of freedom
+                act as logical data redundantly represented on the boundary. This standard holographic analogy does
+                not by itself construct an OPH event manifold or identify the source-derived informational order
+                with physical causality.
             </p>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Classical Error Correction</h3>
@@ -58,7 +59,7 @@ export function ErrorCorrectionPage() {
                 corrected by applying the appropriate recovery operation.
             </p>
 
-            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Spacetime as a Quantum Error-Correcting Code</h3>
+            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Holographic Spacetime as a Quantum Error-Correcting Code</h3>
             <p style={{ marginBottom: '16px' }}>
                 Almheiri, Dong, and Harlow (2014) showed that the holographic map from bulk to boundary has
                 exactly the structure of a quantum error-correcting code:

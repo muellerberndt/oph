@@ -95,7 +95,7 @@ export function GravityPage() {
         <div>
             <div className="section-header">
                 <span className="section-tag gr">Chain 1: GR</span>
-                <h1 style={{ fontSize: '1.5rem', margin: 0 }}>Gravity from Entanglement</h1>
+                <h1 style={{ fontSize: '1.5rem', margin: 0 }}>Conditional Gravity from Entanglement</h1>
             </div>
 
             <p style={{ marginBottom: '16px' }}>
@@ -106,6 +106,14 @@ export function GravityPage() {
                 bridge, source-selected positive capacity carrier, and horizon attachment are required
                 to determine the separate Lambda term. The stress slider
                 represents the independently reconstructed null charge; it is not scalar collar CMI.
+            </p>
+            <p style={{ marginBottom: '16px' }}>
+                The source-derived informational order is a separate exact result on the same finite event type. A
+                newer theorem works inside a supplied 3+1 tensor algebra and reduces nine supplied fixed-frame
+                directional balances to all-null balance and an Einstein-form identity. The order does not select
+                those directions, tensors, or balances, and the theorem does not derive event dimension, smooth
+                curvature, or physical stress-energy. Those identifications still require the event-manifold,
+                causal-faithfulness, volume, refinement, and continuum receipts.
             </p>
 
             <div className="card" style={{ marginBottom: '20px', borderLeft: '3px solid var(--accent-cyan)' }}>
@@ -136,14 +144,14 @@ export function GravityPage() {
             </div>
 
             <div className="demo-container">
-                <div className="demo-label">Interactive Einstein Derivation (Expanded)</div>
+                <div className="demo-label">Interactive Conditional Einstein-Branch Algebra</div>
 
                 <div className="card" style={{ padding: '14px', marginBottom: '18px', background: 'rgba(0,0,0,0.18)', borderLeft: '3px solid var(--accent-gold)' }}>
-                    <h3 style={{ margin: '0 0 8px 0', fontSize: '0.9em' }}>Locked OPH scale inputs</h3>
+                    <h3 style={{ margin: '0 0 8px 0', fontSize: '0.9em' }}>Declared comparison inputs</h3>
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(190px, 1fr))', gap: '10px', fontSize: '0.8em', color: 'var(--text-secondary)' }}>
-                        <div><strong>P<sub>C</sub></strong>: {formatPixelConstant(PIXEL_REFERENCE)} from the measured endpoint</div>
-                        <div><strong>N<sub>&Lambda;</sub></strong>: {SCREEN_CAPACITY_REFERENCE_DISPLAY} from measured Lambda</div>
-                        <div><strong>G*</strong>: selected no-G scale certificate</div>
+                        <div><strong>P<sub>C</sub></strong>: {formatPixelConstant(PIXEL_REFERENCE)} retrospective comparison coordinate</div>
+                        <div><strong>N<sub>&Lambda;</sub></strong>: {SCREEN_CAPACITY_REFERENCE_DISPLAY} inferred from measured Lambda</div>
+                        <div><strong>G*</strong>: declared scale selection on this branch</div>
                     </div>
                 </div>
 

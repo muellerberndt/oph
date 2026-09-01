@@ -191,14 +191,15 @@ export function EntropyPage() {
                     its boundary <em>area</em>. This is deeply counterintuitive.
                 </p>
                 <p>
-                    It means that the number of fundamental degrees of freedom in a region of space is not
-                    proportional to the volume but to the surface area. The "bulk", the interior spacetime,
-                    is an effective description, not fundamental. The fundamental description lives on the
-                    boundary.
+                    In holographic programs this motivates a boundary description whose degrees of freedom scale
+                    with area, with the bulk treated as an effective reconstruction. The entropy formula alone does
+                    not prove that a particular finite screen supplies that boundary theory or its spacetime interior.
                 </p>
                 <p>
-                    In OPH, the screen S&sup2; <em>is</em> the fundamental arena. Everything "inside" is emergent.
-                    Area scaling enters through the finite screen architecture and the generalized-entropy interface.
+                    In OPH, the screen S&sup2; is a declared support and regulator. Treating it as a physical
+                    boundary, or its interior as emergent spacetime, requires the separate holographic,
+                    event-manifold, and scale attachments. Area scaling enters only on the corresponding
+                    generalized-entropy branch.
                 </p>
             </Explainer>
 
@@ -218,10 +219,10 @@ export function EntropyPage() {
 
             <Explainer title="From bits to geometry">
                 <p>
-                    The Bekenstein-Hawking formula can be inverted: if entropy <em>is</em> area (in Planck units),
-                    then area <em>is</em> entropy. Geometry is counting. The area of a surface is proportional to
-                    the number of bits that can be stored on it. This is the seed of the Ryu-Takayanagi formula
-                    and the entire program of "entanglement builds geometry."
+                    On a branch where the Bekenstein-Hawking relation and a physical area map both apply, the
+                    formula can be read in reverse: area is encoded by entropy in Planck units. That conditional
+                    dictionary is the seed of Ryu-Takayanagi and of the programme called "entanglement builds
+                    geometry"; counting alone does not construct an OPH spacetime or volume measure.
                 </p>
             </Explainer>
         </div>

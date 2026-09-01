@@ -9,10 +9,10 @@ export function ModularFlowPage() {
             </div>
 
             <p style={{ marginBottom: '16px' }}>
-                Modular flow is the mathematical engine that connects quantum information to spacetime geometry.
-                In the OPH gravity chain, geometric modular flow is fixed on an explicit BW branch of the
-                scaling-limit cap theory. The "time" experienced by an observer near their horizon is modeled by the
-                modular automorphism of their local algebra.
+                Modular flow can connect quantum information to geometry when an explicit geometric representation
+                is available. In the OPH gravity chain, that identification is fixed only on the BW branch of the
+                scaling-limit cap theory. The modular automorphism models the local observer flow on that branch;
+                modular theory alone does not construct a physical event spacetime.
             </p>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Tomita-Takesaki Modular Theory</h3>

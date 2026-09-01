@@ -183,10 +183,11 @@ export function NoObjectiveRealityPage() {
 
             <Explainer title="The ether move">
                 <p>
-                    Each resolution follows the same pattern: what Bernhard Mueller calls "the ether move."
-                    In 1905, Einstein didn't solve the ether problem; he dissolved it by removing a false assumption
-                    (absolute space). OPH applies the same move to a dozen problems simultaneously: remove the
-                    assumption of objective reality, and the puzzles evaporate.
+                    These proposed resolutions follow what Bernhard Mueller calls "the ether move."
+                    In 1905, Einstein replaced the unnecessary assumption of an ether with a different kinematic
+                    framework. OPH asks whether replacing a privileged observer-independent description with
+                    compatible bounded records can similarly reformulate several problems. The finite theorems do
+                    not establish that every listed physical puzzle thereby disappears.
                 </p>
             </Explainer>
         </div>

@@ -26,7 +26,7 @@ const HINTS: Hint[] = [
         title: '3. Information Lives on Surfaces',
         intuition: 'Information fills volume. A bigger box holds more stuff. A bigger hard drive stores more data.',
         reality: 'Bekenstein and Hawking showed that a black hole\'s entropy (information content) scales with its surface area, not its volume: S = A/(4l\u209a\u00b2).',
-        detail: 'The holographic principle generalizes this: the maximum information in any region is bounded by its boundary area in Planck units. The universe is, in a deep sense, two-dimensional.',
+        detail: 'The holographic principle generalizes this into a boundary-information bound. It motivates lower-dimensional encodings of bulk physics; it does not by itself prove that the physical universe is literally two-dimensional.',
     },
     {
         title: '4. Entanglement Is Real',
@@ -70,8 +70,9 @@ export function HintsPage() {
             </div>
 
             <p style={{ marginBottom: '24px' }}>
-                Over the past century, five experimental discoveries shattered our intuitive picture of reality.
-                Each one is a hint that the conventional framework, objective reality existing in a spacetime container, is wrong.
+                Over the past century, several discoveries challenged familiar intuitions about reality.
+                OPH treats them as motivation to test an observer-first framework, not as experiments that already
+                prove spacetime or observer-independent descriptions wrong.
             </p>
 
             <p style={{ marginBottom: '32px', color: 'var(--text-muted)', fontSize: '0.9em' }}>
