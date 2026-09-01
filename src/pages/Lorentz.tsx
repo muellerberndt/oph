@@ -22,8 +22,9 @@ export function LorentzPage() {
 
             <p style={{ marginBottom: '16px' }}>
                 The group of orientation-preserving conformal transformations of the 2-sphere is isomorphic to the
-                proper orthochronous Lorentz group in 3+1 dimensions. In OPH, this is the ambient kinematic group
-                available on the screen and the group recovered on the explicit BW branch.
+                proper orthochronous Lorentz group in 3+1 dimensions. This is imported classical mathematics. In
+                OPH it supplies the ambient kinematic group available on the screen; the explicit BW branch realizes
+                the corresponding action but does not derive the group identity.
             </p>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>M&ouml;bius Transformations</h3>
@@ -85,11 +86,11 @@ export function LorentzPage() {
                 </div>
             </div>
 
-            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>3+1 Dimensions from 2D</h3>
+            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Lorentz Frames from S&sup2;</h3>
             <p style={{ marginBottom: '16px' }}>
-                In OPH, the screen S&sup2; is the fundamental arena (Axiom A1). The conformal group of that
-                2-sphere is the connected Lorentz group of 3+1 dimensions, so the Lorentz branch is read directly
-                from screen geometry. The correspondence is:
+                On the selected OPH support branch, the screen is S&sup2;. Its conformal group is the connected
+                Lorentz group SO&#8314;(3,1), so this branch supplies the corresponding ambient frame kinematics.
+                The event-base dimension is a separate question. The group correspondence is:
             </p>
 
             <div className="card" style={{ marginBottom: '24px' }}>
@@ -98,17 +99,19 @@ export function LorentzPage() {
                     <span style={{ color: 'var(--text-secondary)' }}>2 (the sphere S&sup2;)</span>
                     <span style={{ color: 'var(--accent-cyan)' }}>Conformal group:</span>
                     <span style={{ color: 'var(--text-secondary)' }}>PSL(2,ℂ) ≅ SO&#8314;(3,1)</span>
-                    <span style={{ color: 'var(--accent-cyan)' }}>Spacetime dimension:</span>
-                    <span style={{ color: 'var(--text-secondary)' }}>3+1 (Lorentz signature)</span>
-                    <span style={{ color: 'var(--accent-cyan)' }}>Why 3+1?</span>
-                    <span style={{ color: 'var(--text-secondary)' }}>Because the screen is S&sup2;, and Conf&#8314;(S&sup2;) = SO&#8314;(3,1)</span>
+                    <span style={{ color: 'var(--accent-cyan)' }}>Lorentz module:</span>
+                    <span style={{ color: 'var(--text-secondary)' }}>Signature (1,3) on the declared frame module</span>
+                    <span style={{ color: 'var(--accent-cyan)' }}>Why SO&#8314;(3,1)?</span>
+                    <span style={{ color: 'var(--text-secondary)' }}>Because the support is S&sup2;, and Conf&#8314;(S&sup2;) ≅ SO&#8314;(3,1)</span>
                 </div>
             </div>
 
             <p style={{ marginBottom: '16px' }}>
-                If the screen were S&sup1; (a circle), the conformal group would be SL(2,ℝ) ≅ SO&#8314;(2,1),
-                giving 2+1D spacetime. If it were S&sup3;, the conformal group would be SO&#8314;(4,1), giving 4+1D.
-                In the OPH setup the screen is S&sup2;, so the recovered Lorentz/conformal kinematics is 3+1D.
+                If the support were S&sup1; (a circle), its corresponding conformal group would be SL(2,ℝ) ≅
+                SO&#8314;(2,1). For S&sup3; it would be SO&#8314;(4,1). These identities select ambient Lorentz
+                modules and frame kinematics. They do not by themselves populate an event manifold or determine
+                its dimension. In the OPH setup, S&sup2; therefore supplies SO&#8314;(3,1) kinematics rather than an
+                unconditional 3+1-dimensional spacetime.
             </p>
 
             <div className="card" style={{ marginBottom: '24px', borderLeft: '3px solid var(--accent-gold)' }}>
@@ -122,7 +125,32 @@ export function LorentzPage() {
                 </p>
                 <p style={{ margin: 0, fontSize: '0.85em', color: 'var(--text-secondary)' }}>
                     The UV/BW scaffold is the realized scaling-limit cap-pair extraction plus ordered cut-pair
-                    rigidity on that realized limit.
+                    rigidity on that realized limit. A four-dimensional event manifold additionally needs the
+                    E1–E6 population, separation, chart, tetrad, cone, and physical-causality receipts. The
+                    source-derived read-from poset is informational; a physical causal-set reading also needs a
+                    faithful embedding, manifoldlikeness, dimension, and volume correspondence. The exact
+                    rank-three source-unit directions are algebraically equivalent to S&sup2; and future-null-ray
+                    labels, but the d = 4 reading requires the physically faithful images of authenticated local
+                    read-from links to cover those directions densely and isotropically. Count calibration separately
+                    needs #I / &rho; &rarr; Vol(I), with refinement preserving
+                    order, directions, and density. The same refinement must glue rank-three neighborhoods globally
+                    with ~r³ carrier-ball growth; the seeded matching federation is expander-like. This soldering
+                    condition belongs to the four-way join rather than adding a fifth input. Here #I is the populated
+                    event count, not public-record capacity N. An imposed FCC/O<sub>h</sub> twelve-port fixture has
+                    cubic carrier-ball counts matching the checked radii 0–20 and quartic fine-carrier counts matching the checked indices 1–10, with external depth supplied.
+                    Its depth-20 ordering fraction near 0.10 gives a Myrheim–Meyer inversion near four, not an
+                    independent dimension result. Its post-hoc profile trend reverses in an additional out-of-family
+                    depth-24 extrapolation, and its depth-20 profile remains about 37 times farther from matched
+                    Minkowski controls than two controls are from each other. Held-out confirmation has not been run.
+                    The current federation selects neither the gluing nor the thinning, and fixed O<sub>h</sub> ports
+                    are not an A<sub>5</sub>-compatible refinement family becoming dense and isotropic on S&sup2;.
+                    This is no finite causet similarity and does not close the physical or continuum conditions.
+                </p>
+                <p style={{ margin: '12px 0 0 0', fontSize: '0.85em', color: 'var(--text-secondary)' }}>
+                    The same-carrier finite Einstein-form theorem works inside a supplied 3+1 tensor interface and
+                    pulls back a pre-existing coordinate-fixed nine-vector tomography frame. The informational order
+                    selects neither that distinguished nine-set nor the tensor data; the nine-set is not Lorentz- or
+                    SO(3)-invariant as a set; and the theorem does not infer event dimension from the poset.
                 </p>
             </div>
 
@@ -151,11 +179,12 @@ export function LorentzPage() {
                 </p>
             </Explainer>
 
-            <Explainer title="Why 3+1 Dimensions">
+            <Explainer title="Why a 3+1 Lorentz Module?">
                 <p>
-                    The OPH screen is S&sup2;, the conformal group is SO&#8314;(3,1), and spacetime is 3+1D. The
-                    question "why 3+1?" is answered by the screen geometry: a 2-sphere with complex structure carries
-                    the Lorentz group of 3+1 dimensions.
+                    The OPH support is S&sup2;, whose orientation-preserving conformal group is SO&#8314;(3,1).
+                    This fixes the Lorentz group acting on the declared four-coordinate module and the H&sup3;
+                    observer-frame fiber. It does not prove that the event base is a four-dimensional spacetime;
+                    that conclusion is conditional on the separate event-manifold and physical-causality receipts.
                 </p>
             </Explainer>
         </div>

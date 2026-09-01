@@ -124,8 +124,9 @@ export function DeSitterPage() {
             <p style={{ marginBottom: '16px' }}>
                 In OPH, this comparison is meaningless. Vacuum energy is "null-blind": the vacuum stress-energy
                 tensor satisfies T<sub>kk</sub> = T<sub>ab</sub>k<sup>a</sup>k<sup>b</sup> = 0 for null vectors k.
-                Since gravity is derived from null surface thermodynamics (&delta;Q = TdS on null horizons), vacuum
-                energy does not contribute to the null-projected local equation. OPH proposes that &Lambda; belongs to
+                On the declared Jacobson-type branch, the local Einstein relation follows from null-surface
+                thermodynamics only with the event, stress, Ward, stationarity, coupling, vacuum, and scale receipts.
+                Vacuum energy does not contribute to that branch's null-projected local equation. OPH proposes that &Lambda; belongs to
                 a separate global screen-capacity branch. That branch requires a source-selected fixed point of
                 s(D) = log D - log M<sub>0</sub>(D), a proof that both sides describe the same typed capacity, and a
                 horizon attachment. Universal membership of the bounded generation-register construction in the complete

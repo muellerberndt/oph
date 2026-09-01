@@ -235,17 +235,18 @@ export function EntanglementPage() {
                 </p>
             </Explainer>
 
-            <Explainer title="Entanglement as the fabric of spacetime">
+            <Explainer title="Entanglement and spacetime proposals">
                 <p>
-                    In Chain 1, we saw that entanglement builds geometry (Ryu-Takayanagi, ER=EPR). Here in Chain 2,
-                    we see entanglement as a quantum information resource with specific mathematical properties
-                    (monogamy, CHSH violation, Tsirelson bound).
+                    In the holographic models discussed in Chain 1, entanglement constrains a supplied bulk geometry
+                    through relations such as Ryu-Takayanagi, while ER=EPR is a conjectural connectivity picture.
+                    Here in Chain 2, entanglement is a quantum information resource with specific mathematical
+                    properties (monogamy, CHSH violation, Tsirelson bound).
                 </p>
                 <p>
                     These are two aspects of the same thing. The Tsirelson bound constrains how much entanglement
-                    any two patches can share, which constrains the geometry they can build between them. The
-                    monogamy constraint limits correlation sharing. Turning those limits into an area law or bulk
-                    geometry requires a separate holographic identification.
+                    any two patches can share, which can constrain candidate holographic geometric reconstructions.
+                    The monogamy constraint limits correlation sharing. Turning those limits into an area law or
+                    bulk geometry requires a separate holographic identification.
                 </p>
             </Explainer>
 

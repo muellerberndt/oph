@@ -233,7 +233,7 @@ export function ResourcesPage() {
                         Mini-Universe Simulation
                     </h4>
                     <p style={{ margin: '0 0 8px 0', fontSize: '0.85em' }}>
-                        Visual explorer for observer patches, overlap readback, repair pressure, records, and emergent geometry.
+                        Visual explorer for observer patches, overlap readback, repair pressure, records, and the conditional geometry branch.
                     </p>
                     <a href={MINI_UNIVERSE_SIMULATION_URL} target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.85em' }}>
                         simulation.floatingpragma.io &rarr;

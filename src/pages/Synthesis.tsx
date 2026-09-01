@@ -26,10 +26,24 @@ export function SynthesisPage() {
                 the separate bounded-interval projective branch, and fixed-cap stationarity, and separate
                 cosmological-capacity consequences. Given the explicit compact-gauge refinement receipt, Chain 2
                 yields the receipt-conditional structural Standard Model branch together with several downstream
-                continuation lanes. The same paper surface includes a dedicated consensus
+                conditional extensions. The same paper surface includes a dedicated consensus
                 spine and a concrete screen-microphysics architecture. Both start from the same three-axiom basis on a
                 holographic screen S&sup2;, while specific pages add the theorem-local technical premises needed for
-                Lorentz, gauge, particle, or observer-level statements.
+                Lorentz, gauge, particle, or observer-level statements. The consensus spine produces an authenticated
+                finite informational poset. Its interpretation as physical causality, and its attachment to a
+                four-dimensional event manifold, require separate faithful-embedding, manifoldlikeness, dimension,
+                volume, cone, and E1–E6 receipts. Refinement must also solder the local rank-three neighborhoods into
+                global ~r³ carrier-ball growth; the seeded matching federation is expander-like and does not do so.
+                A same-carrier finite theorem separately works inside a supplied 3+1 tensor algebra: nine balances
+                on fixed algebraic inverse images of its coordinate tomography frame imply all-null balance and an
+                Einstein-form identity. The records do not select that distinguished nine-set or the tensors, the
+                nine-set is not invariant as a set under every rotation or Lorentz transformation, and the result
+                does not derive event dimension or smooth physical curvature.
+                A separate imposed FCC/O<sub>h</sub> fixture matches the cubic carrier-ball formula on checked radii 0–20 and the quartic fine-carrier formula on checked indices 1–10
+                against an external depth. Its depth-20 ordering fraction near 0.10 gives a Myrheim–Meyer inversion
+                near four, not independent dimension evidence. Its depth-24 extrapolation reverses the post-hoc
+                profile trend, its matched-profile comparison fails, and it is neither the current source architecture
+                nor finite causet similarity or a spacetime result.
             </p>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Local Closure And Global Readback</h3>
@@ -70,7 +84,7 @@ export function SynthesisPage() {
                 the selected no-G scale certificate. It becomes physical only after a source-selected capacity is
                 identified with the invariant counted by global readback and attached to the horizon. The hierarchy
                 equation gives a conditional common-load coordinate. The OPH paper set separates recovered structural theorems, explicit
-                branch-conditional results, closed calibration sectors, and open continuation lanes.
+                branch-conditional results, calibration results, and constructions that require further premises.
             </p>
             <p style={{ marginBottom: '16px' }}>
                 The measured-endpoint pair P<sub>C</sub> = {PIXEL_COMPARISON_REFERENCE_DISPLAY} and
@@ -132,12 +146,12 @@ export function SynthesisPage() {
                         <div style={{ padding: '8px 16px', background: 'rgba(201,112,112,0.15)', border: '1px solid var(--accent-rose)', color: 'var(--accent-rose)', fontSize: '0.8em', fontWeight: 600, textAlign: 'center', width: '100%' }}>
                             CHAIN 1: GR
                         </div>
-                        {['Entropy + Recoverability', 'Conditional Lorentz Branch', 'Geometric Modular Flow (BW branch)', 'Null Bridge + Projective Branch + Fixed-cap Stationarity', 'Conditional Einstein Branch', 'Classical Limits'].map((step, i) => (
+                        {['Entropy + Recoverability', 'Conditional Lorentz Branch', 'Geometric Modular Flow (BW branch)', 'Null Bridge + Projective Branch + Fixed-cap Stationarity', 'Supplied 3+1 tensors + nine fixed balances → exact finite Einstein-form reduction', 'Conditional Physical Einstein Branch', 'Classical Limits'].map((step, i) => (
                             <div key={i} style={{ width: '100%' }}>
                                 <div style={{ padding: '6px 12px', background: 'rgba(201,112,112,0.05)', border: '1px solid rgba(201,112,112,0.2)', fontSize: '0.75em', color: 'var(--text-secondary)', textAlign: 'center' }}>
                                     {step}
                                 </div>
-                                {i < 5 && <div style={{ textAlign: 'center', color: 'rgba(201,112,112,0.4)', fontSize: '0.8em' }}>&darr;</div>}
+                                {i < 6 && <div style={{ textAlign: 'center', color: 'rgba(201,112,112,0.4)', fontSize: '0.8em' }}>&darr;</div>}
                             </div>
                         ))}
                     </div>
@@ -147,7 +161,7 @@ export function SynthesisPage() {
                         <div style={{ padding: '8px 16px', background: 'rgba(122,184,212,0.15)', border: '1px solid var(--accent-blue)', color: 'var(--accent-blue)', fontSize: '0.8em', fontWeight: 600, textAlign: 'center', width: '100%' }}>
                             CHAIN 2: QFT
                         </div>
-                        {['Complete compact port response', 'Endogenous carrier transport', 'Forced u(1)+su(2)+su(3) Lie type', 'Declared matter fixture and Z6 kernel', 'Open source and global-form selection', 'Conditional particle continuations'].map((step, i) => (
+                        {['Complete compact port response', 'Endogenous carrier transport', 'Forced u(1)+su(2)+su(3) Lie type', 'Declared matter fixture and Z6 kernel', 'Required source and global-form attachment', 'Conditional particle extensions'].map((step, i) => (
                             <div key={i} style={{ width: '100%' }}>
                                 <div style={{ padding: '6px 12px', background: 'rgba(122,184,212,0.05)', border: '1px solid rgba(122,184,212,0.2)', fontSize: '0.75em', color: 'var(--text-secondary)', textAlign: 'center' }}>
                                     {step}
@@ -204,9 +218,9 @@ export function SynthesisPage() {
                     <div style={{ padding: '12px', background: 'rgba(0,0,0,0.2)', border: '1px solid var(--border-color)' }}>
                         <div style={{ color: 'var(--accent-green)', fontWeight: 600, marginBottom: '4px' }}>OPH</div>
                         <ul style={{ paddingLeft: '16px', margin: 0, lineHeight: '1.8', color: 'var(--text-secondary)' }}>
-                            <li>2D carrier plus conditional 3+1D spacetime attachment</li>
+                            <li>2D support plus exact rank-3 local carrier and conditional 3+1D event-spacetime attachment</li>
                             <li>Shared observer-patch basis for gravity and gauge structure</li>
-                            <li>Explicit branch and continuation ledger</li>
+                            <li>Explicit branch assumptions and continuation conditions</li>
                             <li>Certified local map roots; direct global N closure remains non-evaluable</li>
                         </ul>
                     </div>
@@ -221,7 +235,7 @@ export function SynthesisPage() {
                 <span style={{ color: 'var(--accent-rose)', fontWeight: 600 }}>Standard:</span>
                 <span style={{ color: 'var(--text-secondary)' }}>Spacetime is fundamental</span>
                 <span style={{ color: 'var(--accent-green)', fontWeight: 600 }}>OPH:</span>
-                <span style={{ color: 'var(--text-secondary)' }}>Spacetime is emergent from information</span>
+                <span style={{ color: 'var(--text-secondary)' }}>Spacetime is a conditional reconstruction from information plus physical continuum receipts</span>
 
                 <span style={{ color: 'var(--accent-rose)', fontWeight: 600 }}>Standard:</span>
                 <span style={{ color: 'var(--text-secondary)' }}>Objective reality exists independently</span>
@@ -250,16 +264,15 @@ export function SynthesisPage() {
                 </p>
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
                     <li><strong>Are the assumptions really as minimal as claimed?</strong> The three axioms are supplemented by theorem-local technical premises, the declared completions, and branch-specific conditions. A full assessment must count all logical inputs.</li>
-                    <li><strong>Are the derivations rigorous?</strong> The recovered structural core is stronger than the downstream continuation lanes. BW internalization, some particle continuations, and several phenomenology surfaces remain conditional or open.</li>
-                    <li><strong>Can it be falsified?</strong> Named branches have explicit pressure tests; the current frozen propagation comparison remains unarmed until its eligible physical contract exists.</li>
+                    <li><strong>Are the derivations rigorous?</strong> The recovered structural core is stronger than the downstream conditional constructions. BW internalization, some particle continuations, and several phenomenology surfaces require explicitly stated additional premises.</li>
+                    <li><strong>Can it be falsified?</strong> Named branches have explicit pressure tests; a comparison counts as falsifying only when its eligible physical contract is fixed before the data are examined.</li>
                 </ul>
                 <p>
                     OPH should be evaluated by the same standards as any physical theory: internal consistency,
-                    agreement with existing data, and testable predictions. The paper stack carries a
-                    mixed ledger of structural theorems, branch conditions, closed calibration sectors, and open
-                    scaffold items. The remaining physical-identification, continuum, instrument, source-action,
-                    clock, and comparison obligations are registered individually; the Lab does not compress them
-                    into a claim that only a handful of computations remain.
+                    agreement with existing data, and testable predictions. The paper stack separates structural
+                    theorems, branch conditions, calibration results, and additional-premise constructions.
+                    Physical identification, continuum, instrument, source-action, clock, and comparison remain
+                    distinct scientific requirements; the Lab does not compress them into one generic claim.
                 </p>
             </Explainer>
 
@@ -268,7 +281,7 @@ export function SynthesisPage() {
                     OPH draws on and synthesizes ideas from multiple research programs:
                 </p>
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
-                    <li><strong>AdS/CFT:</strong> The holographic principle and bulk reconstruction, but extended beyond AdS to cosmological spacetimes</li>
+                    <li><strong>AdS/CFT:</strong> The holographic principle and bulk reconstruction, with OPH asking for a separately tested analogue in cosmological settings</li>
                     <li><strong>Jacobson&apos;s thermodynamic gravity:</strong> Einstein-equilibrium logic used in the conditional gravity branch</li>
                     <li><strong>It from bit (Wheeler):</strong> Information as the foundation of physics, made precise through von Neumann algebras</li>
                     <li><strong>QBism:</strong> Observer-relative quantum states, grounded in patch structure</li>

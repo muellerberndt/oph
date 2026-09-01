@@ -55,10 +55,10 @@ export function EntanglementGeometryPage() {
             </div>
 
             <p style={{ marginBottom: '16px' }}>
-                One of the deepest insights of modern theoretical physics: <strong>entanglement creates geometry</strong>.
-                The spatial distance between two regions is encoded by how much quantum entanglement they share.
-                More entanglement means closer. Less entanglement means farther apart. No entanglement means
-                disconnected.
+                A central insight of holographic duality is that <strong>entanglement data can encode bulk
+                geometry</strong> once a boundary-to-bulk dictionary is supplied. The relationship between
+                entanglement and distance belongs to that geometric dictionary; it is not by itself a construction
+                of an OPH event manifold.
             </p>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>The Ryu-Takayanagi Formula</h3>
@@ -70,8 +70,9 @@ export function EntanglementGeometryPage() {
                 S(A) = Area(&gamma;<sub>A</sub>) / (4 G<sub>N</sub>)
             </div>
             <p style={{ marginBottom: '16px' }}>
-                This is the Ryu-Takayanagi (RT) formula. It says that entanglement entropy on the boundary
-                IS geometry in the bulk. The boundary is the screen; the bulk is the emergent spacetime.
+                This is the Ryu-Takayanagi (RT) formula. Within its holographic setting, it relates boundary
+                entanglement entropy to the area of a bulk extremal surface. Applying it to an OPH screen requires
+                the physical area map and a bulk spacetime to be supplied or independently reconstructed.
             </p>
             <p style={{ marginBottom: '16px' }}>
                 In OPH, the RT formula is a physical holographic identification, not a consequence of A3.
@@ -97,7 +98,7 @@ export function EntanglementGeometryPage() {
                 <div className="demo-label">Interactive: Entanglement Bonds on a Boundary Circle</div>
                 <p style={{ fontSize: '0.85em', color: 'var(--text-muted)', marginBottom: '16px' }}>
                     Click pairs of boundary points to toggle entanglement bonds between them. Use sliders to adjust bond
-                    strength. More and stronger bonds create deeper bulk geometry.
+                    strength. More and stronger bonds deepen the network interior in this visualization.
                 </p>
                 <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '10px' }}>
                     <button
@@ -255,9 +256,10 @@ export function EntanglementGeometryPage() {
                     are connected by a wormhole. Remove the entanglement and the wormhole pinches off.
                 </p>
                 <p>
-                    In OPH, the screen patches are connected by entanglement (Axiom A2: overlap consistency). The
-                    emergent bulk geometry is stitched together by this entanglement. Spatial connectivity just IS
-                    entanglement connectivity.
+                    OPH Axiom A2 imposes overlap consistency; it is not by itself an identification of overlap with
+                    entanglement or of entanglement with physical connectivity. On a separately supplied holographic
+                    branch, entanglement may diagnose a candidate bulk connectivity. It does not construct the OPH
+                    event manifold.
                 </p>
             </Explainer>
 
@@ -269,8 +271,10 @@ export function EntanglementGeometryPage() {
                     degrees of freedom, protected against erasure of boundary subregions.
                 </p>
                 <p>
-                    This is the bridge to the Error Correction page: spacetime itself is a quantum error-correcting code,
-                    and the RT formula tells you which bulk data is recoverable from which boundary subregion.
+                    This is the bridge to the Error Correction page: in these holographic models, the bulk-to-boundary
+                    map behaves as a quantum error-correcting code, and the RT formula tells you which bulk data is
+                    recoverable from which boundary subregion. Promoting that analogy to OPH spacetime requires the
+                    separate event-manifold and physical-attachment receipts.
                 </p>
             </Explainer>
 

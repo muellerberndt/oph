@@ -11,21 +11,47 @@ export function ClassicalPhysicsPage() {
 
             <p style={{ marginBottom: '16px' }}>
                 The <strong>Chain 1 synthesis page</strong> treats the gravity route as a conditional branch on the
-                declared paper surface. Lorentz kinematics sits on the explicit BW branch, and the Einstein step sits
-                on a Jacobson-type entanglement-equilibrium branch with the null bridge, the separate bounded-interval
+                declared paper surface. Authenticated read-from provenance supplies a finite informational poset,
+                while physical causal faithfulness and the continuum receipts supply a separate bridge to an event
+                manifold. Lorentz-frame kinematics sits on the explicit BW branch, and the Einstein step sits on a
+                Jacobson-type entanglement-equilibrium branch with the null bridge, the separate bounded-interval
                 projective branch, and fixed-cap stationarity kept explicit. Classical physics is the effective
                 limiting behavior of that branch.
+            </p>
+            <p style={{ marginBottom: '16px' }}>
+                A separate exact finite theorem works inside a supplied 3+1 tensor interface on the same event type.
+                Nine balances on fixed algebraic inverse images of its coordinate tomography frame imply all-null
+                balance and an Einstein-form identity. The informational order does not select those directions,
+                tensors, steps, or balances; the distinguished nine-set is not invariant as a set under every
+                rotation or Lorentz transformation; and the theorem does not derive event dimension or smooth
+                physical curvature.
             </p>
             <p style={{ marginBottom: '24px' }}>
                 The derivation chain is:
             </p>
 
             <div className="math-block" style={{ fontSize: '1em', lineHeight: '2.2' }}>
-                Core screen axioms &rarr; Recoverability + Generalized Entropy &rarr; Conditional Lorentz Branch &rarr;
-                Geometric Modular Flow (BW branch) &rarr; Null Bridge + Bounded-Interval Projective Branch +
-                Fixed-cap Stationarity &rarr;
-                Conditional Einstein Branch &rarr; Classical Limits
+                Core screen axioms &rarr; Recoverability + Generalized Entropy &rarr; Authenticated Informational
+                Poset + Exact Rank-3 Carrier + Supplied S&sup2;/Lorentz Frame-Cone Branch + Supplied Event-Population/Count Calibration
+                (distinct from public capacity N) &rarr;
+                Conditional compatibility condition (dense/isotropic link-direction coverage,
+                #I / &rho; &rarr; Vol(I), rank-3-compatible global gluing with ~r³ carrier-ball growth, and
+                refinement preserving order/directions/density) &rarr; Faithful Embedding /
+                Manifoldlikeness &rarr; Conditional Event Manifold + Lorentz-Frame Branch &rarr; Geometric Modular Flow (BW
+                branch) &rarr; Null Bridge + Bounded-Interval Projective Branch + Fixed-cap Stationarity &rarr;
+                Supplied 3+1 Tensor Interface + Nine Fixed Algebraic Balance Representatives &rarr;
+                Exact Finite All-Null / Einstein-Form Premise Reduction &rarr;
+                Conditional Physical Einstein Branch &rarr; Classical Limits
             </div>
+
+            <p style={{ marginBottom: '24px', color: 'var(--text-secondary)' }}>
+                An imposed FCC/O<sub>h</sub> twelve-port fixture matches cubic carrier-ball counts on checked radii 0–20 and quartic fine-carrier counts on checked indices 1–10
+                against an external depth. Its depth-20 ordering fraction near 0.10 gives a Myrheim–Meyer
+                inversion near four, not independent dimension evidence. Its depth-24 extrapolation reverses the
+                post-hoc profile trend and its matched-profile comparison fails. The current federation selects
+                neither the gluing nor the thinning, and fixed O<sub>h</sub> ports are not an A<sub>5</sub>-compatible
+                refinement family densifying on S&sup2;. It establishes neither finite causet similarity nor spacetime.
+            </p>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>From GR to Newton</h3>
             <p style={{ marginBottom: '16px' }}>
@@ -130,7 +156,7 @@ export function ClassicalPhysicsPage() {
                 <div style={{ padding: '12px', background: 'rgba(201, 112, 112, 0.1)', border: '1px solid rgba(201, 112, 112, 0.3)', fontSize: '0.85em' }}>
                     <div style={{ color: 'var(--accent-rose)', fontWeight: 600, marginBottom: '4px' }}>Declared branch outputs</div>
                     <ul style={{ paddingLeft: '16px', margin: 0, lineHeight: '1.8' }}>
-                        <li>Candidate 3+1 spacetime attachment; physical dimension bridge open</li>
+                        <li>Conditional four-dimensional event manifold after E1–E6 and physical causal attachment</li>
                         <li>Lorentz kinematics on the explicit BW branch</li>
                         <li>Conditional Einstein branch</li>
                         <li>Cosmic-capacity closure boundary; no source-selected N</li>

@@ -15,7 +15,7 @@ const ROUTE_DESCRIPTIONS: Record<string, string> = {
   '/': 'Explore the current OPH research surface: self-reading observer patches, exact finite results, conditional gravity and gauge branches, open physical bridges, and exploratory simulator receipts.',
   '/hints': 'Review the experimental and conceptual clues that motivate Observer Patch Holography as a deeper account of physical reality.',
   '/no-objective-reality': 'Explore the operational OPH starting point: physical descriptions are observer-local records, without treating that modeling choice as a proof of a final ontology.',
-  '/the-screen': 'Learn how OPH models reality on a holographic screen, uses local patches to recover spacetime structure, and reads the S0 to S3 sphere ladder as a role map.',
+  '/the-screen': 'Learn how OPH models a holographic screen, uses local patches to test a conditional route to spacetime structure, and reads the S0 to S3 sphere ladder as a role map.',
   '/axioms': 'See the three OPH axioms, the declared sector completions with open physical status, and the technical-premise ledger used by the declared papers.',
   '/entropy': 'Follow the entropy and area-bound intuition that connects finite information capacity to holographic physics.',
   '/entanglement-geometry': 'Understand how entanglement structure enters the conditional OPH geometry-reconstruction branch and where physical attachment remains open.',

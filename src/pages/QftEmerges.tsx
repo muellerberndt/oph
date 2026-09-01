@@ -180,21 +180,21 @@ export function QftEmergesPage() {
                 <li>The observables are "coarse-grained" over many pixels</li>
             </ul>
             <p style={{ marginBottom: '16px' }}>
-                In this limit, the screen algebra is intended to be modeled by a local quantum field theory on
-                the emergent 3+1D spacetime. A nonperturbative OS/Wightman completion, including locality,
+                In this proposed limit, the screen algebra would be modeled by a local quantum field theory on
+                the conditional four-dimensional event manifold. A nonperturbative OS/Wightman completion, including locality,
                 Poincar&eacute; covariance, positivity, and the spectral condition, remains an open Q4 receipt.
             </p>
 
             <Explainer title="Why QFT breaks down at the Planck scale">
                 <p>
                     In the intended physical interpretation, QFT is an effective description at energies
-                    E &lt;&lt; M<sub>P</sub>. OPH motivates a finite-carrier completion, but has not yet proved that the
+                    E &lt;&lt; M<sub>P</sub>. OPH motivates a finite-carrier completion, but does not prove that the
                     continuum approximation fails by exactly this mechanism. The candidate picture is:
                 </p>
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
                     <li>Individual pixels become resolved (the "lattice spacing" of the screen)</li>
                     <li>The finite carrier capacity of the screen (Axiom A1) limits the number of degrees of freedom</li>
-                    <li>The emergent spacetime geometry fluctuates on this scale</li>
+                    <li>A physical event geometry, if constructed, may require a finite-scale correction model</li>
                 </ul>
                 <p>
                     This is the programmatic reason OPH uses a finite screen algebra at the fundamental level. It is
@@ -209,7 +209,7 @@ export function QftEmergesPage() {
                 </p>
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
                     <li><strong>Chain 1 (GR):</strong> Emphasizes recoverability, generalized entropy, the explicit BW scaling branch, the null bridge, the separate bounded-interval projective branch, and fixed-cap stationarity. Result: a conditional Lorentz branch and a conditional Jacobson-type Einstein branch.</li>
-                    <li><strong>Chain 2 (QFT):</strong> Emphasizes observer agreement on overlaps, gauge-as-gluing, transportability, the explicit compact-gauge refinement receipt, and the declared sector completions. Result: receipt-conditional compact gauge reconstruction, the structural Standard Model branch, and downstream continuation lanes.</li>
+                    <li><strong>Chain 2 (QFT):</strong> Emphasizes observer agreement on overlaps, gauge-as-gluing, transportability, the explicit compact-gauge refinement receipt, and the declared sector completions. Result: receipt-conditional compact gauge reconstruction, the structural Standard Model branch, and downstream conditional extensions.</li>
                 </ul>
                 <p>
                     The two chains share the same screen and foundational structure. In Chain 2 the admissibility

@@ -65,8 +65,23 @@ export function TheScreenPage() {
             </div>
 
             <p style={{ marginBottom: '16px' }}>
-                In OPH, the fundamental arena is a <strong>two-dimensional sphere S&sup2;</strong>, the holographic
-                screen. The emergent 3+1D spacetime is reconstructed from this surface.
+                On the OPH geometric-support branch, the screen is a <strong>two-dimensional sphere S&sup2;</strong>.
+                It supplies Lorentz-frame kinematics, while authenticated read-from records supply a finite
+                informational order. The exact rank-three carrier&apos;s unit directions are algebraically equivalent
+                to S&sup2;/future-null-ray labels, but that is not a physical-sky or signal theorem. A four-dimensional
+                event manifold also requires the physically faithful images of authenticated local read-from links
+                to cover those directions densely and isotropically,
+                count-to-volume calibration, rank-three-compatible global gluing with ~r³ carrier-ball growth, and
+                the separate E1–E6 physical receipts. The seeded matching federation is expander-like, so the local
+                rank-three result does not supply that global gluing.
+            </p>
+            <p style={{ marginBottom: '16px' }}>
+                An exact finite tensor theorem uses this algebraic direction sphere only inside a separately supplied
+                3+1 tensor interface. Balance on nine fixed inverse images of a coordinate tomography frame implies
+                all-null balance and an Einstein-form identity on the same finite event type. The records do not
+                select those directions or fields, the distinguished nine-set is not invariant as a set under every
+                rotation or Lorentz transformation, and this does not derive four-dimensional event geometry or
+                smooth physical curvature.
             </p>
             <p style={{ marginBottom: '24px' }}>
                 Each observer has access to a <strong>patch</strong> of the screen, a connected region carrying
@@ -195,20 +210,24 @@ export function TheScreenPage() {
 
             <Explainer title="Why a sphere?">
                 <p>
-                    The S&sup2; screen is motivated by the holographic principle: the maximum information in any region
-                    is bounded by its boundary area. A cosmological observer's information boundary is their cosmic
-                    horizon, a sphere. Black hole horizons are also spheres. The sphere is where information lives.
+                    The S&sup2; screen is motivated by holographic entropy bounds, in the regimes where their
+                    geometric and gravitational hypotheses apply. Cosmological and black-hole horizons provide
+                    spherical comparison surfaces. Identifying the declared OPH support with such a physical
+                    horizon requires the separate area, scale, and event-manifold bridges.
                 </p>
                 <p>
-                    Crucially, the conformal group of S&sup2; turns out to be the Lorentz group:
-                    Conf&sup;(S&sup2;) = PSL(2,ℂ) = SO&sup;(3,1). Special relativity is a screen symmetry.
+                    Imported classical mathematics identifies the orientation-preserving conformal group of S&sup2;
+                    with the proper Lorentz group: Conf<sup>+</sup>(S&sup2;) = PSL(2,ℂ) = SO<sup>+</sup>(3,1). This
+                    supplies Lorentz-frame kinematics on the geometric branch; it does not by itself construct
+                    physical spacetime.
                 </p>
             </Explainer>
 
             <Explainer title="Sphere ladder">
                 <p>
                     The reader-facing ladder is S<sup>0</sup> &rarr; S<sup>1</sup> &rarr; S<sup>2</sup> &rarr; S<sup>3</sup>:
-                    seed/readout, recurrence loop, horizon screen or public archive, and reconstructed bulk geometry.
+                    seed/readout, recurrence loop, horizon-screen or public-archive candidate, and a bulk-geometry
+                    candidate conditional on the physical reconstruction receipts.
                 </p>
                 <p>
                     This ladder names roles in the readback architecture. Particle identities stay on the Lorentz
