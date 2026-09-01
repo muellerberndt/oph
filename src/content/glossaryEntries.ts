@@ -130,7 +130,7 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     },
     {
         term: 'Technical Premise T2',
-        definition: 'Controlled refinement/scaling-limit scope clause for Lorentz, null-modular, and Einstein statements.',
+        definition: 'Controlled refinement/scaling-limit scope clause for the BW/null-modular and smooth physical Einstein branches. It does not govern the exact finite source-poset theorem, the constructed ambient 1+3 Lorentz carrier, or the typed finite Einstein-shape implication; connecting those finite results to a physical manifold and smooth curvature requires the full continuum certificate.',
         category: 'axioms',
         usedIn: ['Axioms', 'Gravity'],
     },

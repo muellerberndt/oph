@@ -198,7 +198,7 @@ export function EntropyPage() {
                 <p>
                     In OPH, the screen S&sup2; is a declared support and regulator. Treating it as a physical
                     boundary, or its interior as emergent spacetime, requires the separate holographic,
-                    event-manifold, and scale attachments. Area scaling enters only on the corresponding
+                    causal-refinement, physical-manifold, and scale attachments. Area scaling enters only on the corresponding
                     generalized-entropy branch.
                 </p>
             </Explainer>

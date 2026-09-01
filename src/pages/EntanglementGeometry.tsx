@@ -57,8 +57,8 @@ export function EntanglementGeometryPage() {
             <p style={{ marginBottom: '16px' }}>
                 A central insight of holographic duality is that <strong>entanglement data can encode bulk
                 geometry</strong> once a boundary-to-bulk dictionary is supplied. The relationship between
-                entanglement and distance belongs to that geometric dictionary; it is not by itself a construction
-                of an OPH event manifold.
+                entanglement and distance belongs to that geometric dictionary; it is not by itself a completion of
+                the OPH source-poset-to-effective-manifold limit.
             </p>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>The Ryu-Takayanagi Formula</h3>
@@ -258,8 +258,8 @@ export function EntanglementGeometryPage() {
                 <p>
                     OPH Axiom A2 imposes overlap consistency; it is not by itself an identification of overlap with
                     entanglement or of entanglement with physical connectivity. On a separately supplied holographic
-                    branch, entanglement may diagnose a candidate bulk connectivity. It does not construct the OPH
-                    event manifold.
+                    branch, entanglement may diagnose a candidate bulk connectivity. It does not complete the OPH
+                    causal-refinement limit.
                 </p>
             </Explainer>
 
@@ -274,7 +274,7 @@ export function EntanglementGeometryPage() {
                     This is the bridge to the Error Correction page: in these holographic models, the bulk-to-boundary
                     map behaves as a quantum error-correcting code, and the RT formula tells you which bulk data is
                     recoverable from which boundary subregion. Promoting that analogy to OPH spacetime requires the
-                    separate event-manifold and physical-attachment receipts.
+                    separate causal-refinement, physical-manifold, and attachment certificates.
                 </p>
             </Explainer>
 

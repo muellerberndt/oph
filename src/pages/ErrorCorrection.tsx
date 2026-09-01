@@ -12,8 +12,8 @@ export function ErrorCorrectionPage() {
                 In AdS/CFT and related holographic models, the correspondence between boundary and bulk has the
                 structure of a <strong>quantum error-correcting code</strong>. Semiclassical bulk degrees of freedom
                 act as logical data redundantly represented on the boundary. This standard holographic analogy does
-                not by itself construct an OPH event manifold or identify the source-derived informational order
-                with physical causality.
+                not by itself complete the OPH causal-refinement limit or identify the source-derived finite order
+                with physical signal causality.
             </p>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Classical Error Correction</h3>

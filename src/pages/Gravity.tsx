@@ -108,12 +108,19 @@ export function GravityPage() {
                 represents the independently reconstructed null charge; it is not scalar collar CMI.
             </p>
             <p style={{ marginBottom: '16px' }}>
-                The source-derived informational order is a separate exact result on the same finite event type. A
-                newer theorem works inside a supplied 3+1 tensor algebra and reduces nine supplied fixed-frame
-                directional balances to all-null balance and an Einstein-form identity. The order does not select
-                those directions, tensors, or balances, and the theorem does not derive event dimension, smooth
-                curvature, or physical stress-energy. Those identifications still require the event-manifold,
-                causal-faithfulness, volume, refinement, and continuum receipts.
+                Authenticated provenance supplies a finite poset and its canonical longest-parent-chain height; that
+                height is only an ordinal on events. Independently, the exact rank-three
+                source quotient defines W<sub>src</sub> = R &oplus; V<sub>src</sub>, a four-dimensional ambient target
+                carrier with Lorentz signature (+---) and exact source-unit null directions. Event placement then uses
+                F(e) = (&tau;h(e), x(e)). The target-carrier dimension is not an intrinsic dimension estimate for the
+                finite poset. Under explicit spatial-readback, edge-speed, and
+                converse-support certificates, the generated order is faithfully represented by its cone and every
+                source interval is exactly the corresponding cone interval on the placed event image. A separate
+                minimal theorem in a supplied 3+1 tensor interface reduces nine supplied source-direction balances to
+                all-null balance and a finite Einstein-form identity after Ward/Bianchi conservation and connectedness.
+                It does not identify tensor-coordinate differences with the constructed carrier. The order does not
+                construct the tensor fields, discrete step, or balances. Physical signal causality, count-volume,
+                manifoldlike refinement, smooth curvature and stress, vacuum, coupling, and scale remain required.
             </p>
 
             <div className="card" style={{ marginBottom: '20px', borderLeft: '3px solid var(--accent-cyan)' }}>

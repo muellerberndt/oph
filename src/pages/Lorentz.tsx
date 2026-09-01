@@ -90,7 +90,9 @@ export function LorentzPage() {
             <p style={{ marginBottom: '16px' }}>
                 On the selected OPH support branch, the screen is S&sup2;. Its conformal group is the connected
                 Lorentz group SO&#8314;(3,1), so this branch supplies the corresponding ambient frame kinematics.
-                The event-base dimension is a separate question. The group correspondence is:
+                Independently of event height, the exact rank-three source Gram quotient defines
+                W<sub>src</sub> = R &oplus; V<sub>src</sub>, the finite ambient carrier. Canonical height is used later
+                only to place events in that carrier. The group correspondence is:
             </p>
 
             <div className="card" style={{ marginBottom: '24px' }}>
@@ -99,8 +101,10 @@ export function LorentzPage() {
                     <span style={{ color: 'var(--text-secondary)' }}>2 (the sphere S&sup2;)</span>
                     <span style={{ color: 'var(--accent-cyan)' }}>Conformal group:</span>
                     <span style={{ color: 'var(--text-secondary)' }}>PSL(2,ℂ) ≅ SO&#8314;(3,1)</span>
-                    <span style={{ color: 'var(--accent-cyan)' }}>Lorentz module:</span>
-                    <span style={{ color: 'var(--text-secondary)' }}>Signature (1,3) on the declared frame module</span>
+                    <span style={{ color: 'var(--accent-cyan)' }}>Finite source carrier:</span>
+                    <span style={{ color: 'var(--text-secondary)' }}>R &oplus; rank-3 source quotient, with proved (+---) signature</span>
+                    <span style={{ color: 'var(--accent-cyan)' }}>Event placement:</span>
+                    <span style={{ color: 'var(--text-secondary)' }}>F(e) = (&tau;h(e), x(e)), using canonical height and supplied spatial readback</span>
                     <span style={{ color: 'var(--accent-cyan)' }}>Why SO&#8314;(3,1)?</span>
                     <span style={{ color: 'var(--text-secondary)' }}>Because the support is S&sup2;, and Conf&#8314;(S&sup2;) ≅ SO&#8314;(3,1)</span>
                 </div>
@@ -108,10 +112,12 @@ export function LorentzPage() {
 
             <p style={{ marginBottom: '16px' }}>
                 If the support were S&sup1; (a circle), its corresponding conformal group would be SL(2,ℝ) ≅
-                SO&#8314;(2,1). For S&sup3; it would be SO&#8314;(4,1). These identities select ambient Lorentz
-                modules and frame kinematics. They do not by themselves populate an event manifold or determine
-                its dimension. In the OPH setup, S&sup2; therefore supplies SO&#8314;(3,1) kinematics rather than an
-                unconditional 3+1-dimensional spacetime.
+                SO&#8314;(2,1). For S&sup3; it would be SO&#8314;(4,1). These group identities alone select only frame
+                kinematics. OPH&apos;s four-dimensional ambient target is instead the independent direct sum of R and
+                the exact rank-three source quotient. Canonical longest-parent-chain height is not part of the carrier;
+                it supplies the first coordinate only when events are placed by F(e) = (&tau;h(e), x(e)). That height
+                is not a physical clock, and the carrier is not an intrinsic dimension estimate for the finite poset
+                or an unconditional smooth spacetime.
             </p>
 
             <div className="card" style={{ marginBottom: '24px', borderLeft: '3px solid var(--accent-gold)' }}>
@@ -125,32 +131,29 @@ export function LorentzPage() {
                 </p>
                 <p style={{ margin: 0, fontSize: '0.85em', color: 'var(--text-secondary)' }}>
                     The UV/BW scaffold is the realized scaling-limit cap-pair extraction plus ordered cut-pair
-                    rigidity on that realized limit. A four-dimensional event manifold additionally needs the
-                    E1–E6 population, separation, chart, tetrad, cone, and physical-causality receipts. The
-                    source-derived read-from poset is informational; a physical causal-set reading also needs a
-                    faithful embedding, manifoldlikeness, dimension, and volume correspondence. The exact
-                    rank-three source-unit directions are algebraically equivalent to S&sup2; and future-null-ray
-                    labels, but the d = 4 reading requires the physically faithful images of authenticated local
-                    read-from links to cover those directions densely and isotropically. Count calibration separately
-                    needs #I / &rho; &rarr; Vol(I), with refinement preserving
-                    order, directions, and density. The same refinement must glue rank-three neighborhoods globally
-                    with ~r³ carrier-ball growth; the seeded matching federation is expander-like. This soldering
-                    condition belongs to the four-way join rather than adding a fifth input. Here #I is the populated
-                    event count, not public-record capacity N. An imposed FCC/O<sub>h</sub> twelve-port fixture has
-                    cubic carrier-ball counts matching the checked radii 0–20 and quartic fine-carrier counts matching the checked indices 1–10, with external depth supplied.
-                    Its depth-20 ordering fraction near 0.10 gives a Myrheim–Meyer inversion near four, not an
-                    independent dimension result. Its post-hoc profile trend reverses in an additional out-of-family
-                    depth-24 extrapolation, and its depth-20 profile remains about 37 times farther from matched
-                    Minkowski controls than two controls are from each other. Held-out confirmation has not been run.
-                    The current federation selects neither the gluing nor the thinning, and fixed O<sub>h</sub> ports
-                    are not an A<sub>5</sub>-compatible refinement family becoming dense and isotropic on S&sup2;.
-                    This is no finite causet similarity and does not close the physical or continuum conditions.
+                    rigidity on that realized limit. Separately, authenticated read-from provenance supplies a finite
+                    poset and its canonical longest-parent-chain height. Independently, the exact rank-three source
+                    quotient defines the ambient carrier R &oplus; V<sub>3</sub>, with dimension four and signature
+                    (+---), and each unit source direction gives a future-null vector. Height and a supplied spatial
+                    readback enter only through F(e) = (&tau;h(e), x(e)). The height is an ordinal coordinate, not
+                    physical event time.
+                    An edge-speed bound maps generated precedence into the cone, while a converse-support certificate
+                    is required for a faithful order/cone embedding.
                 </p>
                 <p style={{ margin: '12px 0 0 0', fontSize: '0.85em', color: 'var(--text-secondary)' }}>
-                    The same-carrier finite Einstein-form theorem works inside a supplied 3+1 tensor interface and
-                    pulls back a pre-existing coordinate-fixed nine-vector tomography frame. The informational order
-                    selects neither that distinguished nine-set nor the tensor data; the nine-set is not Lorentz- or
-                    SO(3)-invariant as a set; and the theorem does not infer event dimension from the poset.
+                    The effective-manifold claim remains a refinement-limit statement. It needs source-selected
+                    spatial placement, physical signal-cone agreement, #I / &rho; &rarr; Vol(I) calibration (where
+                    #I is event count, not public capacity N), manifoldlikeness, stable dimension and topology, and
+                    curvature convergence. Imposed compatibility controls do not establish that source-selected
+                    refinement.
+                </p>
+                <p style={{ margin: '12px 0 0 0', fontSize: '0.85em', color: 'var(--text-secondary)' }}>
+                    On the same finite event type, the minimal Einstein-shape theorem uses a separately supplied 3+1
+                    tensor interface and nine supplied balances along exact source-unit tomography directions.
+                    Symmetry plus Ward/Bianchi conservation and connectedness imply all-null balance and one constant
+                    metric ambiguity. The poset does not construct the tensor fields, discrete step, or balances or
+                    identify tensor-coordinate differences with the constructed source carrier. The theorem supplies
+                    no identification with smooth physical curvature or stress-energy.
                 </p>
             </div>
 
@@ -182,9 +185,10 @@ export function LorentzPage() {
             <Explainer title="Why a 3+1 Lorentz Module?">
                 <p>
                     The OPH support is S&sup2;, whose orientation-preserving conformal group is SO&#8314;(3,1).
-                    This fixes the Lorentz group acting on the declared four-coordinate module and the H&sup3;
-                    observer-frame fiber. It does not prove that the event base is a four-dimensional spacetime;
-                    that conclusion is conditional on the separate event-manifold and physical-causality receipts.
+                    Independently of event height, R &oplus; the exact rank-three source Gram quotient gives an ambient
+                    target of dimension four and signature (+---). Canonical longest-parent-chain height enters only
+                    in the event placement F(e) = (&tau;h(e), x(e)). A smooth physical spacetime follows only after
+                    faithful placement, physical causality, and the full refinement-limit tests.
                 </p>
             </Explainer>
         </div>

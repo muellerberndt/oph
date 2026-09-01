@@ -43,8 +43,8 @@ export const CHALLENGE_URL = 'https://challenge.floatingpragma.io/';
 export const COHERENCE_URL = 'https://coherence.floatingpragma.io/';
 export const APPLICATIONS_URL = 'https://omega.floatingpragma.io/';
 export const OMEGA_URL = APPLICATIONS_URL;
-export const RESEARCH_RELEASE_ID = 'r2021';
-export const RESEARCH_RELEASE_DATE = '19 August 2026';
+export const RESEARCH_RELEASE_ID = 'r2033';
+export const RESEARCH_RELEASE_DATE = '30 August 2026';
 
 const GITHUB_PDF_BASE = `${RESEARCH_REPO_URL}/blob/main/paper`;
 const GITHUB_EXTRA_PDF_BASE = `${RESEARCH_REPO_URL}/blob/main/extra`;
@@ -63,7 +63,7 @@ export const OPH_PAPERS: PaperSummary[] = [
         title: 'Recovering Observer Spacetime and Einstein Dynamics from Overlap Consistency',
         href: `${GITHUB_PDF_BASE}/recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency.pdf`,
         surface: 'Spacetime and Gravity',
-        summary: 'The detailed celestial-screen, modular, event-manifold, stress, generalized-entropy, and conditional Einstein implication chain, with its physical inputs stated.',
+        summary: 'The source-derived finite causal poset, constructed 1+3 Lorentz carrier, conditional continuum reconstruction, and Einstein implication chain, with every physical-limit input stated.',
     },
     {
         slug: 'gauge',
@@ -157,7 +157,7 @@ export const CURRENT_RESEARCH_STATUS = [
     {
         tier: 'structural',
         label: 'Exact finite structure',
-        summary: 'The current corpus includes more than 6,600 machine-checked theorem and lemma declarations, including positive results, countermodels, and premise boundaries.',
+        summary: 'The current corpus includes more than 6,600 machine-checked theorem and lemma declarations. The exact spacetime precursor includes a source-derived finite causal poset, a four-dimensional ambient Lorentz carrier, and a finite Einstein-shape implication, with their premise boundaries kept explicit.',
     },
     {
         tier: 'branch-conditional',
@@ -171,7 +171,33 @@ export const CURRENT_RESEARCH_STATUS = [
     },
 ];
 
+export const SPACETIME_PUBLIC_ROWS: PublicRow[] = [
+    {
+        label: 'Source-derived finite causal poset',
+        value: 'exact finite order',
+        tier: 'structural',
+        note: 'Authenticated read-after-write provenance generates the strict ancestry relation. Lean proves that its reflexive closure is a partial order with finite intervals and constructs canonical longest-parent-chain height. The height is ordinal: it is not an execution rank, physical clock, or event time.',
+    },
+    {
+        label: 'Ambient 1+3 Lorentz carrier',
+        value: 'exact finite construction',
+        tier: 'structural',
+        note: 'Independently of event height, the exact rank-three source Gram quotient defines W_src = R ⊕ V_src with dimension four and inertia (1,3); source-unit directions map exactly to future-null rays. Canonical height is used later only in the event placement F(e) = (tau h(e), x(e)). The carrier is not an intrinsic dimension estimate or a manifold.',
+    },
+    {
+        label: 'Finite Einstein shape',
+        value: 'exact typed implication',
+        tier: 'branch-conditional',
+        note: 'On the same finite event type, nine supplied source-direction balances in a separately supplied 3+1 tensor interface, together with Ward/Bianchi conservation and connectedness, imply all-null balance and an Einstein-form identity. The theorem does not derive physical tensor fields, curvature, stress, coupling, or the smooth limit.',
+    },
+];
+
 export const SIMULATION_FRONTIER = [
+    {
+        label: 'Source-causal and causal-set diagnostics',
+        status: 'exact custody / exploratory geometry',
+        summary: 'The history-family receipt proves exact induced-prefix source-order custody but is not a density refinement. In the separate 2,304-event local-domain diagnostic, all 736 qualifying intervals of size 32-72 fall outside the frozen exploratory 3+1 ordering-fraction band. This is current-cutoff dissimilarity for an informational event semantics, not manifoldlikeness, a count-to-volume law, or a physical no-go.',
+    },
     {
         label: 'Observer-frame quantum statistics',
         status: 'exploratory / non-evidential',
@@ -264,6 +290,9 @@ export const PARTICLE_LANE_STATUS = [
 ];
 
 export const GRAVITY_SURFACE = [
+    'Authenticated read-after-write provenance generates an exact finite informational causal poset and canonical height. Independently, the exact rank-three source quotient defines the ambient carrier R ⊕ V_src with dimension four and Lorentz inertia (1,3). Height enters only in the later event placement F(e) = (tau h(e), x(e)); none of this yet constructs physical spacetime.',
+    'The connection to causal set theory is mathematical and conditional: the finite order satisfies the basic locally finite order axioms, while the physical causet reading still requires causal faithfulness, manifoldlikeness, topology, independent dimension tests, and a calibrated #I/rho -> Vol(I) law. The deterministic OPH history is not a Poisson sprinkling.',
+    'A separate exact finite theorem reduces nine supplied source-direction balances in a supplied 3+1 tensor interface to an Einstein-form shape after Ward/Bianchi conservation and connectedness. Smooth curvature, stress, coupling, and identification with the source carrier remain physical continuum inputs.',
     'Lorentz kinematics is recovered on the explicit BW scaling branch from the screen identity Conf+(S^2) = SO+(3,1).',
     'The Jacobson-type Einstein relation is local and branch-conditional. It uses the null-modular bridge, the separate bounded-interval projective branch, and fixed-cap generalized-entropy stationarity.',
     'Collar recovery has two routes: exact zero CMI on the declared central-interface branch, or a conditional finite-range Gibbs theorem requiring uniform strong conditional matrix mixing.',
@@ -350,8 +379,8 @@ export const PREDICTION_SURFACE = {
             summary: 'The published beta-shift surface reproduces MSSM-like running behavior without introducing a superpartner sector.',
         },
         {
-            title: '3+1 Lorentz-frame algebra on the declared celestial branch',
-            summary: 'The screen route supplies 3+1 Lorentz-frame kinematics from Conf+(S^2). It neither derives the event-manifold dimension nor excludes extra dimensions in a physical realization.',
+            title: 'Source-derived ambient 1+3 Lorentz precursor',
+            summary: 'The exact rank-three source quotient independently defines the four-dimensional (+---) ambient target carrier R ⊕ V_src. Canonical longest-parent-chain height is not part of that carrier construction; it appears only in the supplied event placement F(e) = (tau h(e), x(e)). The carrier is not an intrinsic poset-dimension estimate, and the physical manifold limit remains conditional.',
         },
     ],
     falsificationPressure: [

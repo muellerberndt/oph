@@ -1,5 +1,5 @@
 import { Explainer } from '../components/Explainer';
-import { CORE_PARAMETERS, OPH_PAPERS } from '../content/paperSurface';
+import { CORE_PARAMETERS, OPH_PAPERS, SPACETIME_PUBLIC_ROWS } from '../content/paperSurface';
 import {
     ALPHA_U_COMPARISON_REFERENCE_DISPLAY,
     ALPHA_U_FORWARD_REFERENCE_DISPLAY,
@@ -30,21 +30,51 @@ export function SynthesisPage() {
                 spine and a concrete screen-microphysics architecture. Both start from the same three-axiom basis on a
                 holographic screen S&sup2;, while specific pages add the theorem-local technical premises needed for
                 Lorentz, gauge, particle, or observer-level statements. The consensus spine produces an authenticated
-                finite informational poset. Its interpretation as physical causality, and its attachment to a
-                four-dimensional event manifold, require separate faithful-embedding, manifoldlikeness, dimension,
-                volume, cone, and E1–E6 receipts. Refinement must also solder the local rank-three neighborhoods into
-                global ~r³ carrier-ball growth; the seeded matching federation is expander-like and does not do so.
-                A same-carrier finite theorem separately works inside a supplied 3+1 tensor algebra: nine balances
-                on fixed algebraic inverse images of its coordinate tomography frame imply all-null balance and an
-                Einstein-form identity. The records do not select that distinguished nine-set or the tensors, the
-                nine-set is not invariant as a set under every rotation or Lorentz transformation, and the result
-                does not derive event dimension or smooth physical curvature.
-                A separate imposed FCC/O<sub>h</sub> fixture matches the cubic carrier-ball formula on checked radii 0–20 and the quartic fine-carrier formula on checked indices 1–10
-                against an external depth. Its depth-20 ordering fraction near 0.10 gives a Myrheim–Meyer inversion
-                near four, not independent dimension evidence. Its depth-24 extrapolation reverses the post-hoc
-                profile trend, its matched-profile comparison fails, and it is neither the current source architecture
-                nor finite causet similarity or a spacetime result.
+                finite informational poset and its canonical longest-parent-chain height. Independently of event height,
+                the exact rank-three source Gram quotient defines W<sub>src</sub> = R &oplus; V<sub>src</sub>, a
+                four-dimensional ambient target carrier with one positive and three negative directions; the
+                quotient&apos;s unit directions become future-null directions. This target-carrier dimension is not an
+                intrinsic dimension estimate for the finite poset, and the 1+3 precursor supplies no smooth Lorentzian
+                manifold. Event placement uses height only as F(e) = (&tau;h(e), x(e)) and therefore still needs a
+                source-selected spatial readback. Given an explicit edge-speed bound and converse-support
+                certificate, the generated order embeds faithfully into the constructed Lorentz cone and every
+                source interval is exactly the corresponding cone interval on the placed event image.
+                A physical continuum additionally requires agreement with signal causality, count-to-volume
+                calibration, source-selected refinement convergence, manifoldlikeness, dimension and topology, and
+                curvature convergence. On the same finite event type, a separate minimal theorem in a supplied 3+1
+                tensor interface turns nine supplied source-direction balances, Ward/Bianchi conservation, and
+                connectedness into all-null balance and an Einstein-form identity. The order and tensor fields share
+                events, but the order does not generate the fields, step, or balance laws or identify
+                tensor-coordinate differences with the constructed source carrier; physical curvature, stress,
+                coupling, vacuum, and scale remain continuum attachments. Imposed compatibility controls do not
+                establish source-selected refinement or
+                manifoldlikeness.
             </p>
+
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '12px', marginBottom: '16px' }}>
+                {SPACETIME_PUBLIC_ROWS.map((row) => (
+                    <div key={row.label} className="card" style={{ borderLeft: `3px solid ${row.tier === 'structural' ? 'var(--accent-cyan)' : 'var(--accent-rose)'}` }}>
+                        <div style={{ fontSize: '0.75em', color: 'var(--text-muted)', textTransform: 'uppercase' }}>{row.tier}</div>
+                        <h4 style={{ margin: '4px 0', fontSize: '0.9em' }}>{row.label}</h4>
+                        <div style={{ color: 'var(--accent-green)', fontWeight: 700, fontSize: '0.82em' }}>{row.value}</div>
+                        <p style={{ margin: '8px 0 0', fontSize: '0.78em', color: 'var(--text-secondary)' }}>{row.note}</p>
+                    </div>
+                ))}
+            </div>
+
+            <div className="card" style={{ marginBottom: '24px', borderLeft: '3px solid var(--accent-purple)' }}>
+                <h4 style={{ margin: '0 0 8px', fontSize: '0.9em', color: 'var(--accent-purple)' }}>Causal-set connection and present evidence</h4>
+                <p style={{ margin: 0, fontSize: '0.82em', color: 'var(--text-secondary)' }}>
+                    The exact finite source order is causal-set-like in the minimal mathematical sense of being a
+                    locally finite order. Causal set theory&apos;s physical reading also needs faithful embedding,
+                    manifoldlikeness, topology, dimension, and count-to-volume calibration; Lorentz-invariant
+                    reference constructions use Poisson sprinkling. OPH&apos;s deterministic log is not a sprinkling.
+                    The current 2,304-event diagnostic finds all 736 qualifying intervals outside its frozen
+                    exploratory 3+1 band, so the honest receipt is current-cutoff dissimilarity for the captured
+                    informational event semantics. It supplies neither manifoldlikeness nor a #I/&rho; &rarr; Vol(I)
+                    law, and it is not a physical no-go.
+                </p>
+            </div>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Local Closure And Global Readback</h3>
             <p style={{ marginBottom: '16px' }}>
@@ -135,28 +165,37 @@ export function SynthesisPage() {
                         fontWeight: 700,
                         fontSize: '1em',
                     }}>
-                        CORE SCREEN AXIOMS
+                        SHARED OPH BASIS + NAMED THEOREM-LOCAL INTERFACES
                     </div>
-                    <div style={{ color: 'var(--text-muted)', margin: '8px 0', fontSize: '1.2em' }}>&darr;</div>
                 </div>
 
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '16px' }}>
-                    {/* Chain 1 */}
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', alignItems: 'center' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px', marginBottom: '16px' }}>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                         <div style={{ padding: '8px 16px', background: 'rgba(201,112,112,0.15)', border: '1px solid var(--accent-rose)', color: 'var(--accent-rose)', fontSize: '0.8em', fontWeight: 600, textAlign: 'center', width: '100%' }}>
-                            CHAIN 1: GR
+                            GR: PARALLEL FINITE / ANALYTIC BRANCHES
                         </div>
-                        {['Entropy + Recoverability', 'Conditional Lorentz Branch', 'Geometric Modular Flow (BW branch)', 'Null Bridge + Projective Branch + Fixed-cap Stationarity', 'Supplied 3+1 tensors + nine fixed balances → exact finite Einstein-form reduction', 'Conditional Physical Einstein Branch', 'Classical Limits'].map((step, i) => (
-                            <div key={i} style={{ width: '100%' }}>
-                                <div style={{ padding: '6px 12px', background: 'rgba(201,112,112,0.05)', border: '1px solid rgba(201,112,112,0.2)', fontSize: '0.75em', color: 'var(--text-secondary)', textAlign: 'center' }}>
-                                    {step}
+                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(130px, 1fr))', gap: '8px' }}>
+                            {[
+                                ['Source-causal', 'Exact finite poset + source height; independently R ⊕ rank-3 quotient → ambient 1+3 carrier; F(e) = (tau h(e), x(e)) uses height only at placement.'],
+                                ['Modular / entropy', 'BW, collar, null-stress, projective, and stationarity inputs supply the conditional geometric/stress route.'],
+                                ['Finite tensor', 'Supplied 3+1 tensors + nine balances + Ward/Bianchi → exact finite Einstein-form shape.'],
+                            ].map(([title, detail]) => (
+                                <div key={title} style={{ padding: '9px', background: 'rgba(201,112,112,0.05)', border: '1px solid rgba(201,112,112,0.2)', fontSize: '0.72em', color: 'var(--text-secondary)' }}>
+                                    <strong style={{ display: 'block', color: 'var(--accent-rose)', marginBottom: '4px' }}>{title}</strong>
+                                    {detail}
                                 </div>
-                                {i < 6 && <div style={{ textAlign: 'center', color: 'rgba(201,112,112,0.4)', fontSize: '0.8em' }}>&darr;</div>}
+                            ))}
+                        </div>
+                        <div style={{ textAlign: 'center', color: 'rgba(201,112,112,0.5)', fontSize: '0.9em' }}>&darr;</div>
+                        <div style={{ padding: '9px', background: 'rgba(201,112,112,0.08)', border: '1px solid rgba(201,112,112,0.3)', fontSize: '0.75em', color: 'var(--text-secondary)', textAlign: 'center' }}>
+                            Recombine only on one source-selected family with physical causal, spatial, count-volume,
+                            manifoldlikeness, topology, tensor/stress, coupling, and curvature certificates
+                            <div style={{ marginTop: '5px', color: 'var(--accent-rose)', fontWeight: 700 }}>
+                                Conditional smooth Einstein branch &rarr; classical limits
                             </div>
-                        ))}
+                        </div>
                     </div>
 
-                    {/* Chain 2 */}
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', alignItems: 'center' }}>
                         <div style={{ padding: '8px 16px', background: 'rgba(122,184,212,0.15)', border: '1px solid var(--accent-blue)', color: 'var(--accent-blue)', fontSize: '0.8em', fontWeight: 600, textAlign: 'center', width: '100%' }}>
                             CHAIN 2: QFT
@@ -173,7 +212,6 @@ export function SynthesisPage() {
                 </div>
 
                 <div style={{ textAlign: 'center' }}>
-                    <div style={{ color: 'var(--text-muted)', margin: '8px 0', fontSize: '1.2em' }}>&darr;</div>
                     <div style={{
                         display: 'inline-block',
                         padding: '12px 24px',
@@ -183,7 +221,7 @@ export function SynthesisPage() {
                         fontWeight: 700,
                         fontSize: '0.9em',
                     }}>
-                        UNIFIED OPH PROGRAM
+                        SHARED EFFECTIVE OPH PROGRAM — WITH CLAIM TIERS PRESERVED
                     </div>
                 </div>
             </div>
@@ -218,7 +256,7 @@ export function SynthesisPage() {
                     <div style={{ padding: '12px', background: 'rgba(0,0,0,0.2)', border: '1px solid var(--border-color)' }}>
                         <div style={{ color: 'var(--accent-green)', fontWeight: 600, marginBottom: '4px' }}>OPH</div>
                         <ul style={{ paddingLeft: '16px', margin: 0, lineHeight: '1.8', color: 'var(--text-secondary)' }}>
-                            <li>2D support plus exact rank-3 local carrier and conditional 3+1D event-spacetime attachment</li>
+                            <li>Source-derived ambient 1+3 causal precursor; smooth 3+1 spacetime is an effective-limit target</li>
                             <li>Shared observer-patch basis for gravity and gauge structure</li>
                             <li>Explicit branch assumptions and continuation conditions</li>
                             <li>Certified local map roots; direct global N closure remains non-evaluable</li>
@@ -281,6 +319,13 @@ export function SynthesisPage() {
                     OPH draws on and synthesizes ideas from multiple research programs:
                 </p>
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
+                    <li>
+                        <strong>Causal set theory:</strong> The source-derived finite order realizes the minimal locally
+                        finite order structure, while faithful embedding, Poisson-sprinkling comparison,
+                        manifoldlikeness, topology, dimension, and count-volume calibration remain explicit physical
+                        tests. See <a href="https://doi.org/10.1103/PhysRevLett.59.521" target="_blank" rel="noreferrer">Bombelli et al.</a>
+                        {' '}and <a href="https://doi.org/10.1007/s41114-019-0023-1" target="_blank" rel="noreferrer">Surya&apos;s review</a>.
+                    </li>
                     <li><strong>AdS/CFT:</strong> The holographic principle and bulk reconstruction, with OPH asking for a separately tested analogue in cosmological settings</li>
                     <li><strong>Jacobson&apos;s thermodynamic gravity:</strong> Einstein-equilibrium logic used in the conditional gravity branch</li>
                     <li><strong>It from bit (Wheeler):</strong> Information as the foundation of physics, made precise through von Neumann algebras</li>

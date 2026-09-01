@@ -11,47 +11,94 @@ export function ClassicalPhysicsPage() {
 
             <p style={{ marginBottom: '16px' }}>
                 The <strong>Chain 1 synthesis page</strong> treats the gravity route as a conditional branch on the
-                declared paper surface. Authenticated read-from provenance supplies a finite informational poset,
-                while physical causal faithfulness and the continuum receipts supply a separate bridge to an event
-                manifold. Lorentz-frame kinematics sits on the explicit BW branch, and the Einstein step sits on a
+                declared paper surface. Authenticated read-from provenance supplies a finite informational poset and
+                its canonical longest-parent-chain height. Independently of event height, the exact rank-three source
+                quotient defines W<sub>src</sub> = R &oplus; V<sub>src</sub>, a four-dimensional ambient target carrier
+                with Lorentz signature (+---), not an intrinsic dimension estimate for the finite poset. Height enters
+                only in the event placement F(e) = (&tau;h(e), x(e)). A source-selected spatial readback,
+                physical causal faithfulness, and the continuum receipts are required for an effective event
+                Lorentzian manifold. Lorentz-frame kinematics sits on the explicit BW branch, and the Einstein step sits on a
                 Jacobson-type entanglement-equilibrium branch with the null bridge, the separate bounded-interval
                 projective branch, and fixed-cap stationarity kept explicit. Classical physics is the effective
                 limiting behavior of that branch.
             </p>
             <p style={{ marginBottom: '16px' }}>
-                A separate exact finite theorem works inside a supplied 3+1 tensor interface on the same event type.
-                Nine balances on fixed algebraic inverse images of its coordinate tomography frame imply all-null
-                balance and an Einstein-form identity. The informational order does not select those directions,
-                tensors, steps, or balances; the distinguished nine-set is not invariant as a set under every
-                rotation or Lorentz transformation; and the theorem does not derive event dimension or smooth
-                physical curvature.
+                On the same finite event type, a separate theorem works in a supplied 3+1 tensor interface. Nine
+                supplied balances along exact source-unit tomography directions imply all-null balance and an
+                Einstein-form identity after Ward/Bianchi conservation and connectedness. The informational order
+                does not construct the tensor fields, discrete step, or balances, and the theorem does not yet
+                identify their coordinate differences with the constructed source carrier. It supplies a finite
+                Einstein shape and no identification with smooth physical curvature.
             </p>
-            <p style={{ marginBottom: '24px' }}>
-                The derivation chain is:
+            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Three branches, one physical recombination</h3>
+            <p style={{ marginBottom: '16px' }}>
+                These results are not one linear implication chain. They are separately typed branches that can meet
+                only after their event, field, scale, and continuum data have been identified on one source-selected
+                refinement family.
             </p>
-
-            <div className="math-block" style={{ fontSize: '1em', lineHeight: '2.2' }}>
-                Core screen axioms &rarr; Recoverability + Generalized Entropy &rarr; Authenticated Informational
-                Poset + Exact Rank-3 Carrier + Supplied S&sup2;/Lorentz Frame-Cone Branch + Supplied Event-Population/Count Calibration
-                (distinct from public capacity N) &rarr;
-                Conditional compatibility condition (dense/isotropic link-direction coverage,
-                #I / &rho; &rarr; Vol(I), rank-3-compatible global gluing with ~r³ carrier-ball growth, and
-                refinement preserving order/directions/density) &rarr; Faithful Embedding /
-                Manifoldlikeness &rarr; Conditional Event Manifold + Lorentz-Frame Branch &rarr; Geometric Modular Flow (BW
-                branch) &rarr; Null Bridge + Bounded-Interval Projective Branch + Fixed-cap Stationarity &rarr;
-                Supplied 3+1 Tensor Interface + Nine Fixed Algebraic Balance Representatives &rarr;
-                Exact Finite All-Null / Einstein-Form Premise Reduction &rarr;
-                Conditional Physical Einstein Branch &rarr; Classical Limits
+            <div className="demo-container" style={{ background: 'rgba(0,0,0,0.3)', marginBottom: '24px' }}>
+                <div style={{ textAlign: 'center', marginBottom: '12px', color: 'var(--accent-gold)', fontWeight: 700 }}>
+                    FINITE OBSERVER / SOURCE INTERFACES
+                </div>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(210px, 1fr))', gap: '12px' }}>
+                    <div style={{ padding: '12px', border: '1px solid rgba(122,184,212,0.35)', background: 'rgba(122,184,212,0.08)' }}>
+                        <strong style={{ color: 'var(--accent-blue)' }}>Source-causal branch</strong>
+                        <p style={{ margin: '8px 0 0', fontSize: '0.82em', color: 'var(--text-secondary)' }}>
+                            Authenticated provenance &rarr; exact finite poset and source height. Independently,
+                            R &oplus; the rank-three source quotient &rarr; exact ambient 1+3 carrier and null cone.
+                            The placement F(e) = (&tau;h(e), x(e)) then uses height and a supplied spatial readback;
+                            two-way cone faithfulness and the physical continuum remain certificates.
+                        </p>
+                    </div>
+                    <div style={{ padding: '12px', border: '1px solid rgba(201,169,110,0.35)', background: 'rgba(201,169,110,0.08)' }}>
+                        <strong style={{ color: 'var(--accent-gold)' }}>Modular / entropy branch</strong>
+                        <p style={{ margin: '8px 0 0', fontSize: '0.82em', color: 'var(--text-secondary)' }}>
+                            Recoverability, the BW scaling branch, null-stress identification, the bounded-interval
+                            projective branch, and fixed-cap stationarity provide the conditional continuum
+                            geometric and stress ingredients.
+                        </p>
+                    </div>
+                    <div style={{ padding: '12px', border: '1px solid rgba(201,112,112,0.35)', background: 'rgba(201,112,112,0.08)' }}>
+                        <strong style={{ color: 'var(--accent-rose)' }}>Finite tensor branch</strong>
+                        <p style={{ margin: '8px 0 0', fontSize: '0.82em', color: 'var(--text-secondary)' }}>
+                            A supplied 3+1 tensor interface, nine supplied source-direction balances, Ward/Bianchi
+                            conservation, and connectedness imply the exact all-null / Einstein-form shape on the
+                            finite event type.
+                        </p>
+                    </div>
+                </div>
+                <div style={{ textAlign: 'center', color: 'var(--text-muted)', margin: '10px 0', fontSize: '1.1em' }}>&darr;</div>
+                <div style={{ padding: '12px', border: '1px solid rgba(0,255,65,0.35)', background: 'rgba(0,255,65,0.07)', textAlign: 'center' }}>
+                    <strong style={{ color: 'var(--accent-green)' }}>Conditional physical recombination</strong>
+                    <div style={{ marginTop: '6px', fontSize: '0.82em', color: 'var(--text-secondary)' }}>
+                        Same-family physical event/link identification + faithful causal placement + count-to-volume,
+                        manifoldlikeness, dimension, topology, uniqueness, and curvature/stress convergence +
+                        source-carrier/tensor identification &rarr; effective 3+1 Einstein description &rarr; classical limits
+                    </div>
+                </div>
             </div>
 
-            <p style={{ marginBottom: '24px', color: 'var(--text-secondary)' }}>
-                An imposed FCC/O<sub>h</sub> twelve-port fixture matches cubic carrier-ball counts on checked radii 0–20 and quartic fine-carrier counts on checked indices 1–10
-                against an external depth. Its depth-20 ordering fraction near 0.10 gives a Myrheim–Meyer
-                inversion near four, not independent dimension evidence. Its depth-24 extrapolation reverses the
-                post-hoc profile trend and its matched-profile comparison fails. The current federation selects
-                neither the gluing nor the thinning, and fixed O<sub>h</sub> ports are not an A<sub>5</sub>-compatible
-                refinement family densifying on S&sup2;. It establishes neither finite causet similarity nor spacetime.
-            </p>
+            <div className="card" style={{ marginBottom: '24px', borderLeft: '3px solid var(--accent-purple)' }}>
+                <h4 style={{ margin: '0 0 8px', fontSize: '0.9em', color: 'var(--accent-purple)' }}>
+                    Connection to causal set theory
+                </h4>
+                <p style={{ margin: '0 0 10px', fontSize: '0.84em', color: 'var(--text-secondary)' }}>
+                    Mathematically, the source-derived object satisfies the basic finite locally finite order axioms of
+                    causal set theory. The physical interpretation used in that program requires more: faithful
+                    causal embedding, manifoldlikeness and topology tests, independent dimension evidence, and a
+                    calibrated #I/&rho; &rarr; Vol(I) law. Standard Lorentz-invariant controls use Poisson sprinkling;
+                    the deterministic OPH event log is not itself a sprinkling. See the
+                    {' '}<a href="https://doi.org/10.1103/PhysRevLett.59.521" target="_blank" rel="noreferrer">foundational causal-set paper</a>
+                    {' '}and <a href="https://doi.org/10.1007/s41114-019-0023-1" target="_blank" rel="noreferrer">Surya&apos;s review</a>.
+                </p>
+                <p style={{ margin: 0, fontSize: '0.84em', color: 'var(--text-secondary)' }}>
+                    The current 2,304-event local-domain diagnostic is informational and current-cutoff only: all
+                    736 qualifying intervals of size 32&ndash;72 fall outside the frozen exploratory 3+1
+                    ordering-fraction band. That is a dissimilarity receipt for this captured event semantics, not a
+                    manifoldlikeness result or a physical no-go. No certified OPH density-refinement family or
+                    count-to-volume result exists yet.
+                </p>
+            </div>
 
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>From GR to Newton</h3>
             <p style={{ marginBottom: '16px' }}>
@@ -156,7 +203,8 @@ export function ClassicalPhysicsPage() {
                 <div style={{ padding: '12px', background: 'rgba(201, 112, 112, 0.1)', border: '1px solid rgba(201, 112, 112, 0.3)', fontSize: '0.85em' }}>
                     <div style={{ color: 'var(--accent-rose)', fontWeight: 600, marginBottom: '4px' }}>Declared branch outputs</div>
                     <ul style={{ paddingLeft: '16px', margin: 0, lineHeight: '1.8' }}>
-                        <li>Conditional four-dimensional event manifold after E1–E6 and physical causal attachment</li>
+                        <li>Exact source-derived ambient 1+3 Lorentz carrier and conditional faithful causal placement</li>
+                        <li>Conditional effective 3+1 manifold after the physical refinement-limit certificates</li>
                         <li>Lorentz kinematics on the explicit BW branch</li>
                         <li>Conditional Einstein branch</li>
                         <li>Cosmic-capacity closure boundary; no source-selected N</li>

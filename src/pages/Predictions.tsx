@@ -36,7 +36,7 @@ export function PredictionsPage() {
                 </h4>
                 <p style={{ margin: 0, color: 'var(--text-secondary)' }}>
                     OPH uses no fitted continuous values in its structural theory layer, yet the same observer-patch
-                    architecture supports a common dependency map across Lorentz geometry, the conditional Einstein branch,
+                    architecture supports a common dependency map across the source-derived finite 1+3 Lorentz precursor, the conditional Einstein branch,
                     quantum public records, a conditional Standard Model recognition packet, three colors, a rank-three
                     candidate family band, and linked conditional Higgs/cosmological capacity coordinates. The capacity
                     comparisons are target-exposed and carry no prediction status. Physical family attachment and

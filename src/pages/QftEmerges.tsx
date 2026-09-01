@@ -1,5 +1,5 @@
 import { Explainer } from '../components/Explainer';
-import { BOSON_PUBLIC_ROWS, PARTICLE_LANE_STATUS, STANDARD_MODEL_SURFACE } from '../content/paperSurface';
+import { BOSON_PUBLIC_ROWS, PARTICLE_LANE_STATUS, SPACETIME_PUBLIC_ROWS, STANDARD_MODEL_SURFACE } from '../content/paperSurface';
 import { SCREEN_CAPACITY_REFERENCE_DISPLAY } from '../core/ophMath';
 
 export function QftEmergesPage() {
@@ -170,6 +170,31 @@ export function QftEmergesPage() {
                 </div>
             </div>
 
+            <h3 style={{ fontSize: '1em', marginTop: '32px' }}>Shared causal-spacetime substrate</h3>
+            <p style={{ marginBottom: '16px' }}>
+                A relativistic QFT endpoint needs the same event and continuum substrate as the gravity branch. The
+                finite results below are exact at their stated types; they do not by themselves produce a physical
+                manifold or a local quantum field theory.
+            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '12px', marginBottom: '16px' }}>
+                {SPACETIME_PUBLIC_ROWS.map((row) => (
+                    <div key={row.label} className="card" style={{ borderLeft: `3px solid ${row.tier === 'structural' ? 'var(--accent-cyan)' : 'var(--accent-rose)'}` }}>
+                        <div style={{ fontSize: '0.75em', color: 'var(--text-muted)', textTransform: 'uppercase' }}>{row.tier}</div>
+                        <h4 style={{ margin: '4px 0', fontSize: '0.9em' }}>{row.label}</h4>
+                        <div style={{ color: 'var(--accent-green)', fontWeight: 700, fontSize: '0.82em' }}>{row.value}</div>
+                        <p style={{ margin: '8px 0 0', fontSize: '0.78em', color: 'var(--text-secondary)' }}>{row.note}</p>
+                    </div>
+                ))}
+            </div>
+            <p style={{ marginBottom: '24px', fontSize: '0.84em', color: 'var(--text-secondary)' }}>
+                This finite-order route connects mathematically to causal set theory, whose physical reconstruction
+                program adds faithful embedding, manifoldlikeness, topology, dimension, and count-to-volume tests;
+                standard Lorentz-invariant controls use Poisson sprinkling. The deterministic OPH log is not a
+                sprinkling. Its current 2,304-event diagnostic is dissimilar at the present cutoff on all 736
+                qualifying intervals. That informational receipt is neither manifoldlikeness nor a physical no-go,
+                and no #I/&rho; &rarr; Vol(I) calibration has been obtained.
+            </p>
+
             <h3 style={{ fontSize: '1em', marginTop: '32px' }}>QFT as Continuum Limit</h3>
             <p style={{ marginBottom: '16px' }}>
                 The proposed QFT endpoint is sought in a continuum/scaling regime where:
@@ -181,7 +206,7 @@ export function QftEmergesPage() {
             </ul>
             <p style={{ marginBottom: '16px' }}>
                 In this proposed limit, the screen algebra would be modeled by a local quantum field theory on
-                the conditional four-dimensional event manifold. A nonperturbative OS/Wightman completion, including locality,
+                the conditionally reconstructed effective 3+1 manifold. A nonperturbative OS/Wightman completion, including locality,
                 Poincar&eacute; covariance, positivity, and the spectral condition, remains an open Q4 receipt.
             </p>
 
@@ -208,7 +233,7 @@ export function QftEmergesPage() {
                     declared completions:
                 </p>
                 <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
-                    <li><strong>Chain 1 (GR):</strong> Emphasizes recoverability, generalized entropy, the explicit BW scaling branch, the null bridge, the separate bounded-interval projective branch, and fixed-cap stationarity. Result: a conditional Lorentz branch and a conditional Jacobson-type Einstein branch.</li>
+                    <li><strong>Chain 1 (GR):</strong> Three typed branches coexist rather than forming one linear chain: the exact source poset and ambient 1+3 carrier, the conditional BW/null/entropy branch, and the exact typed finite Einstein-shape implication. A smooth physical Einstein description follows only after their same-family causal, continuum, field, stress, and curvature certificates are supplied.</li>
                     <li><strong>Chain 2 (QFT):</strong> Emphasizes observer agreement on overlaps, gauge-as-gluing, transportability, the explicit compact-gauge refinement receipt, and the declared sector completions. Result: receipt-conditional compact gauge reconstruction, the structural Standard Model branch, and downstream conditional extensions.</li>
                 </ul>
                 <p>

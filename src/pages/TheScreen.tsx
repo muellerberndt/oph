@@ -67,21 +67,23 @@ export function TheScreenPage() {
             <p style={{ marginBottom: '16px' }}>
                 On the OPH geometric-support branch, the screen is a <strong>two-dimensional sphere S&sup2;</strong>.
                 It supplies Lorentz-frame kinematics, while authenticated read-from records supply a finite
-                informational order. The exact rank-three carrier&apos;s unit directions are algebraically equivalent
-                to S&sup2;/future-null-ray labels, but that is not a physical-sky or signal theorem. A four-dimensional
-                event manifold also requires the physically faithful images of authenticated local read-from links
-                to cover those directions densely and isotropically,
-                count-to-volume calibration, rank-three-compatible global gluing with ~r³ carrier-ball growth, and
-                the separate E1–E6 physical receipts. The seeded matching federation is expander-like, so the local
-                rank-three result does not supply that global gluing.
+                informational order and its canonical longest-parent-chain height. Independently of that height, the
+                exact rank-three source quotient defines W<sub>src</sub> = R &oplus; V<sub>src</sub>, a four-dimensional
+                ambient target carrier with Lorentz signature (+---); the quotient&apos;s unit directions become
+                future-null directions. Height enters only when events are placed by
+                F(e) = (&tau;h(e), x(e)). The target-carrier dimension is not an intrinsic dimension estimate for the
+                finite poset. The 1+3 precursor supplies neither a physical sky nor a smooth manifold. A source-selected
+                spatial readback, faithful signal causality, count-to-volume
+                calibration, source-selected refinement, manifoldlikeness, topology, and curvature convergence remain
+                separate physical-limit conditions.
             </p>
             <p style={{ marginBottom: '16px' }}>
-                An exact finite tensor theorem uses this algebraic direction sphere only inside a separately supplied
-                3+1 tensor interface. Balance on nine fixed inverse images of a coordinate tomography frame implies
-                all-null balance and an Einstein-form identity on the same finite event type. The records do not
-                select those directions or fields, the distinguished nine-set is not invariant as a set under every
-                rotation or Lorentz transformation, and this does not derive four-dimensional event geometry or
-                smooth physical curvature.
+                On the same finite event type, but in a separately supplied 3+1 tensor interface, an exact minimal
+                theorem uses nine supplied balances along source-unit tomography directions. Together with
+                Ward/Bianchi conservation and connectedness, they imply all-null balance and an Einstein-form identity.
+                The theorem does not identify tensor-coordinate differences with the constructed carrier. Provenance
+                does not construct the tensor fields, discrete step, or balances, and the theorem supplies no
+                identification with smooth physical curvature.
             </p>
             <p style={{ marginBottom: '24px' }}>
                 Each observer has access to a <strong>patch</strong> of the screen, a connected region carrying
@@ -213,7 +215,7 @@ export function TheScreenPage() {
                     The S&sup2; screen is motivated by holographic entropy bounds, in the regimes where their
                     geometric and gravitational hypotheses apply. Cosmological and black-hole horizons provide
                     spherical comparison surfaces. Identifying the declared OPH support with such a physical
-                    horizon requires the separate area, scale, and event-manifold bridges.
+                    horizon requires the separate area, scale, causal-refinement, and physical-manifold bridges.
                 </p>
                 <p>
                     Imported classical mathematics identifies the orientation-preserving conformal group of S&sup2;
